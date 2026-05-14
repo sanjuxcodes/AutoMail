@@ -1,0 +1,411 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp1372161dlb;
+        Mon, 16 Sep 2024 10:57:06 -0700 (PDT)
+X-Received: by 2002:a17:903:2284:b0:203:a279:a144 with SMTP id d9443c01a7336-2076e363b9cmr308190765ad.25.1726509425972;
+        Mon, 16 Sep 2024 10:57:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726509425; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FOrv+ojdF8AEHl2HjR+kN+fLLxGYBwP2FkYX+iOqOq1BD9aPDZGzU89pGDepkslUtu
+         zK7vM0EQkyk1NJ/UYrf6PlwnOF3Zb1TTJxd2/a1iE1nOYGxB0lXJey+btlJbgpjbRGHK
+         3pErDYbBPt91zHT1G7st85TaMPuXDA0XxNVtGrvcawKALFWGh1N4yl3ISo8pdFixt8oB
+         gblcQy7fF8xhye2L4KUA95tl6aVdAELrbsQSEbGqaSLTNIVHrbQMzAPZP0rmIMp4sZUG
+         fHGO63uaHwJW0h60oKxQZ21eZglzLQ544NTPn0j9HT9pIzrGLSuIJZu038PwAwKoAPVq
+         G4/w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=gyC/18tngyTo0ODNNPKTMcdeELrk4hV2+hZ49vIJsx0=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=F2Ji9+Gr3GWTP/5qVJ/H1FCGSwLt+KFoCk33wwl9WfWyHTTaZvuxPeQg1CLb3p1kUj
+         VxyRiJVNhWAGf7VmmOjhPOiuOb4VvrPTg8ZS+ojktX4GyGnGcS6smBvWF6d1BkUDJmq8
+         WdGX2chKT3NwFRqtouzxjE36lIVNy3tHRCqBibfian/kStwUQlooO0ysdJoK+j78bQnR
+         EQqTh/uwT4fxevphJ98TPU3PMoypHayZllDLDdUrY8xRWjA5/KxZBJhz4Kvo9ksm3yib
+         3jgMO5I/rzVXp/c9l5QW+K91Lm6FKsXQnYYiD90+6k3v4jC/nuVqWcfG+cib2MGqPk6j
+         zPWw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sabangcollege-ac-in.20230601.gappssmtp.com header.s=20230601 header.b=SzxL8qZM;
+       spf=softfail (google.com: domain of transitioning principal@sabangcollege.ac.in does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=principal@sabangcollege.ac.in;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=sabangcollege.ac.in;
+       dara=pass header.i=@gmail.com
+Return-Path: <principal@sabangcollege.ac.in>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d9443c01a7336-207946e3135sor42328175ad.16.2024.09.16.10.57.05
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 16 Sep 2024 10:57:05 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning principal@sabangcollege.ac.in does not designate 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sabangcollege-ac-in.20230601.gappssmtp.com header.s=20230601 header.b=SzxL8qZM;
+       spf=softfail (google.com: domain of transitioning principal@sabangcollege.ac.in does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=principal@sabangcollege.ac.in;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=sabangcollege.ac.in;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=sabangcollege-ac-in.20230601.gappssmtp.com; s=20230601; t=1726509425; x=1727114225; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=gyC/18tngyTo0ODNNPKTMcdeELrk4hV2+hZ49vIJsx0=;
+        b=SzxL8qZMC0Wb+vVIq6d3O4ax8+kdHLld3giTvIBpqqHrtMnIzzbo2cldxLQ9ihCPok
+         SiGLvwGlgs3Nv9DmfCrcGH5XbutOvcHAOWeQNrMSg6nf+26QseFF2lB7L3VyfcdqyZX3
+         ZdOGIHJzU+hlS30G04A34+5WhaoSykaeNakkMMEOvnpS3K+aFb8n9U1PZUGl/puIn8FR
+         vqiMHRlLYV9F+VhZ3oDl8a/dqiYvLQmzHAcT/Rb7uLfdBVUQIt2BERIDUvJhqmisfnSb
+         ZUfxUuabIb9Et+inX6lzt5bgWMBbPq4HOqfYPp1uEDtl4LUnM8hw6cN6AGtK1HfM7C2c
+         gVww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726509425; x=1727114225;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=gyC/18tngyTo0ODNNPKTMcdeELrk4hV2+hZ49vIJsx0=;
+        b=lnvYOtO/QX39+nRp12GLiN2Z/Y6qqaYzTEEfExjDhBz6PqXkA7/fmnajE6NI2EPhjd
+         bO1ZZZVKEzgxJpCD/C+p7dAt2lJejZHKbySexrKLlM35QfVjnBPiN1cyfYyt4175Far/
+         Y1ngIc99OMsTddzfuh+YsAJsx35hGXhOGJ4STwa7vpPO1iLPWuEv5amVXrUsavCimjqr
+         rHxNjUKVj00Ux2u8V8Z3Hkk97xCcarQYrg6n78PtzUG+gsn4p7oEuitV7a2n9COPPnlT
+         X/qp7vBgarUnZ/JJi1Fpnw5dbhtQbOe0dTJrxqZkquS2/fb9cGxoVNwnimsdLm6B7fEM
+         bTMA==
+X-Gm-Message-State: AOJu0YwP9MHfDkT/l7cddRlbisZqpmmnEP8E4ID16OZDeka/DRKwJMLG
+	DjgNl1mOCSPy4uCG35Xl79MJ1X+ZmvFocGIk/Q2wGv0WU6CCDlHtGp5ehaNv4QrZ7zgXFN7lWgQ
+	wwMm+D0UOSryEpAIRbYMiZ7jCoR4Ty03BiKjngOCqcgi9PXPz
+X-Google-Smtp-Source: AGHT+IFOWQDKdJMpEf6dq7NnYr21ZTxF1taXGxMVtAe4sUUrEZQSTU5Quf+2wfwZY9PsLgdsO305LoEt/vtcY+2BHgo=
+X-Received: by 2002:a17:90a:1bca:b0:2d8:7a29:838f with SMTP id
+ 98e67ed59e1d1-2db9ff901bamr19158791a91.10.1726509424759; Mon, 16 Sep 2024
+ 10:57:04 -0700 (PDT)
+MIME-Version: 1.0
+From: Principal Sabang College <principal@sabangcollege.ac.in>
+Date: Mon, 16 Sep 2024 23:26:44 +0530
+Message-ID: <CACeMhZZt_Kbf7Xj22LULnsUiDzUJQOVSbj_408sQ5_fsCGKbng@mail.gmail.com>
+Subject: Suspension related record of Sabang Sajanikanta Mahavidyalaya
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/mixed; boundary="000000000000f71abd0622404c8b"
+
+--000000000000f71abd0622404c8b
+Content-Type: multipart/alternative; boundary="000000000000f71aba0622404c89"
+
+--000000000000f71aba0622404c89
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sir/Madam
+Please find the table provided regarding recent suspension-related
+documents of the Mahavidyalaya. Please note no suspension issue prevailed
+in the Mahavidyalaya.
+-----------------------------------------------------------------------
+Professor (Dr.) Tapan Kr. Dutta
+The Principal & Secretary (Ex-Officio)
+Sabang Sajanikanta Mahavidyalaya
+Paschim Medinipur, WB &
+Former Head, Teachers' Training (B.Ed.) Section (NCTE Recognized) (On
+Lien), & Coordinator, B.Ed. (ODL), SOE, NSOU (BOCV-15),
+Panskura Banamali College (Autonomous)
+Paschim Medinipur, WB
+
+Office: 03222248221
+Cell: +919933076927, +917001705060
+email:  principal@sabangcollege.ac.in
+            principal.sskm18@gmail.com;
+           dr.t.dutta@gmail.com,
+web: www.sabangcollege.ac.in <http://www.sabangcollege.com/>
+https://www.scribd.com/user/29294549/Dr-Tapan-Kr-Dutta
+https://panskurabanamalicollege.academia.edu/TapanDutta
+
+***************************************************************************=
+**********************************
+
+***************************************************************************=
+*****
+
+*CONFIDENTIALITY NOTICEThis communication (including any attachment/s) is
+intended only for the use of the addressee(s) and contains information that
+is PRIVILEGED AND CONFIDENTIAL. Unauthorized reading, dissemination,
+distribution, or copying of this communication is strictly prohibited.*
+
+
+
+
+
+*DISCLAIMERAny views or opinions presented in this email are solely those
+of the author and do not necessarily represent those the
+Institution.WARNING:-This communication, including any attachments, may not
+be free of viruses, interceptions or interference, and may not be
+compatible with your systems. You should carry out your own virus checks
+before opening any attachment to this e-mail. The sender of this e-mail and
+Sabang Sajanikanta Mahavidyalaya shall not be liable for any damage that
+you may sustain as a result of viruses, incompleteness of this message, a
+delay in receipt of this message or computer problems experienced.*
+
+[image: Mailsuite] Sent with Mailsuite  =C2=B7  Unsubscribe
+<https://mailtrack.io/en/privacy/opt-out/unsubscribe/34798f317f122f0de8b0ab=
+f881796ef2886ff089/a50dd51da19d60975b7a163094637c6e67234704f76ff75d005355f3=
+fecf3fc2dfc37210f3e67839765690df0978e76aeb1e21391ada962f1c4690464956114b>
+09/16/24, 11:22:34 PM
+
+--000000000000f71aba0622404c89
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir/Madam<div>Please find the table provided=C2=A0regardin=
+g recent suspension-related documents of the Mahavidyalaya. Please note no =
+suspension issue prevailed in the Mahavidyalaya.=C2=A0<br clear=3D"all"><di=
+v><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signat=
+ure"><div dir=3D"ltr"><div style=3D"color:rgb(34,34,34)">------------------=
+-----------------------------------------------------</div><div style=3D"co=
+lor:rgb(34,34,34)">Professor (Dr.) Tapan Kr. Dutta</div><div style=3D"color=
+:rgb(34,34,34)">The Principal &amp; Secretary (Ex-Officio)</div><div style=
+=3D"color:rgb(34,34,34)">Sabang Sajanikanta Mahavidyalaya</div><div style=
+=3D"color:rgb(34,34,34)"><span style=3D"font-size:12.8px">Paschim Medinipur=
+, WB</span>=C2=A0&amp;</div><div style=3D"color:rgb(34,34,34)">Former Head,=
+ Teachers&#39; Training (B.Ed.) Section (NCTE Recognized) (On Lien), &amp; =
+Coordinator, B.Ed. (ODL), SOE, NSOU (BOCV-15),</div><div style=3D"color:rgb=
+(34,34,34)">Panskura Banamali College (Autonomous)</div><div style=3D"color=
+:rgb(34,34,34)"><span style=3D"font-size:12.8px">Paschim Medinipur, WB</spa=
+n><br></div><div style=3D"color:rgb(34,34,34)"><br></div><div style=3D"colo=
+r:rgb(34,34,34)">Office: 03222248221</div><div style=3D"color:rgb(34,34,34)=
+">Cell: +919933076927, +917001705060<br>email:=C2=A0 <a href=3D"mailto:prin=
+cipal@sabangcollege.ac.in" target=3D"_blank">principal@sabangcollege.ac.in<=
+/a>=C2=A0</div><div style=3D"color:rgb(34,34,34)">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0=C2=A0<a href=3D"mailto:principal.sskm18@gmail.com" style=
+=3D"color:rgb(17,85,204)" target=3D"_blank">principal.sskm18@gmail.com</a>;=
+=C2=A0=C2=A0</div><div style=3D"color:rgb(34,34,34)">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0<a href=3D"mailto:dr.t.dutta@gmail.com" style=3D"color:=
+rgb(17,85,204)" target=3D"_blank">dr.t.dutta@gmail.com</a>,=C2=A0<br>web:=
+=C2=A0<span style=3D"color:rgb(0,102,33);font-family:arial,sans-serif;font-=
+size:14px;white-space:nowrap"><a href=3D"http://www.sabangcollege.com/" sty=
+le=3D"color:rgb(17,85,204)" target=3D"_blank">www.sabangcollege.ac.in</a></=
+span></div><div style=3D"color:rgb(34,34,34)"><a href=3D"https://www.scribd=
+.com/user/29294549/Dr-Tapan-Kr-Dutta" style=3D"color:rgb(17,85,204)" target=
+=3D"_blank">https://www.scribd.com/user/29294549/Dr-Tapan-Kr-Dutta</a><br><=
+a href=3D"https://panskurabanamalicollege.academia.edu/TapanDutta" style=3D=
+"color:rgb(17,85,204)" target=3D"_blank">https://panskurabanamalicollege.ac=
+ademia.edu/TapanDutta</a></div><div style=3D"color:rgb(34,34,34)"><br></div=
+><div style=3D"color:rgb(34,34,34)">***************************************=
+**********************************************************************</div=
+><div style=3D"color:rgb(34,34,34)"><br>***********************************=
+*********************************************<br><font size=3D"2"><font col=
+or=3D"#0000ff"><i>CONFIDENTIALITY NOTICE<br>This communication (including a=
+ny attachment/s) is intended only for the use of the addressee(s) and conta=
+ins information that is PRIVILEGED AND CONFIDENTIAL. Unauthorized reading, =
+dissemination, distribution, or copying of this communication is strictly p=
+rohibited.</i></font><br><br></font><font color=3D"#0000ff"><i>DISCLAIMER<b=
+r>Any views or opinions presented in this email are solely those of the aut=
+hor and do not necessarily represent those the Institution.<br><br>WARNING:=
+-<br>This communication, including any attachments, may not be free of viru=
+ses, interceptions or interference, and may not be compatible with your sys=
+tems. You should carry out your own virus checks before opening any attachm=
+ent to this e-mail. The sender of this e-mail and Sabang Sajanikanta Mahavi=
+dyalaya shall not be liable for any damage that you may sustain as a result=
+ of viruses, incompleteness of this message, a delay in receipt of this mes=
+sage or computer problems experienced.</i></font></div></div></div></div><b=
+r><div id=3D"mt-signature">
+        <table border=3D"0" cellpadding=3D"8" cellspacing=3D"0" style=3D"us=
+er-select: none;">
+            <tbody><tr style=3D"display:flex">
+                <td style=3D"padding:0 4px 0 0">
+                    <img src=3D"https://s3.amazonaws.com/mailtrack-signatur=
+e/logo-grey.png" alt=3D"Mailsuite" class=3D"" width=3D"24" height=3D"20">
+                </td>
+                <td style=3D"padding:0 10px 0 0">
+                    <span style=3D"color:#333;font-size:12px;font-family:In=
+ter,sans-serif;font-weight:400;line-height:185%">Sent with Mailsuite =C2=A0=
+=C2=B7=C2=A0 <a href=3D"https://mailtrack.io/en/privacy/opt-out/unsubscribe=
+/34798f317f122f0de8b0abf881796ef2886ff089/a50dd51da19d60975b7a163094637c6e6=
+7234704f76ff75d005355f3fecf3fc2dfc37210f3e67839765690df0978e76aeb1e21391ada=
+962f1c4690464956114b" target=3D"_blank" style=3D"color:#666;font-size:11px;=
+font-family:Inter,sans-serif;font-weight:400;line-height:185%">Unsubscribe<=
+/a></span><br>
+                </td>
+               =20
+    <td><span style=3D"color:transparent;font-size:0">09/16/24, 11:22:34 PM=
+</span></td>
+
+               =20
+            </tr>
+        </tbody></table>
+    </div></div><img width=3D"0" height=3D"0" class=3D"mailtrack-img" alt=
+=3D"" style=3D"display:flex" src=3D"https://mailtrack.io/trace/mail/34798f3=
+17f122f0de8b0abf881796ef2886ff089.png?u=3D7566356"></div>
+
+--000000000000f71aba0622404c89--
+--000000000000f71abd0622404c8b
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; 
+	name="Suspension related docs.xlsx"
+Content-Disposition: attachment; filename="Suspension related docs.xlsx"
+Content-Transfer-Encoding: base64
+Content-ID: <f_m15b0lzz0>
+X-Attachment-Id: f_m15b0lzz0
+
+UEsDBBQABgAIAAAAIQBBN4LPbgEAAAQFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACs
+VMluwjAQvVfqP0S+Vomhh6qqCBy6HFsk6AeYeJJYJLblGSj8fSdmUVWxCMElUWzPWybzPBit2iZZ
+QkDjbC76WU8kYAunja1y8T39SJ9FgqSsVo2zkIs1oBgN7+8G07UHTLjaYi5qIv8iJRY1tAoz58Hy
+TulCq4g/QyW9KuaqAvnY6z3JwlkCSyl1GGI4eINSLRpK3le8vFEyM1Ykr5tzHVUulPeNKRSxULm0
++h9J6srSFKBdsWgZOkMfQGmsAahtMh8MM4YJELExFPIgZ4AGLyPdusq4MgrD2nh8YOtHGLqd4662
+dV/8O4LRkIxVoE/Vsne5auSPC/OZc/PsNMilrYktylpl7E73Cf54GGV89W8spPMXgc/oIJ4xkPF5
+vYQIc4YQad0A3rrtEfQcc60C6Anx9FY3F/AX+5QOjtQ4OI+c2gCXd2EXka469QwEgQzsQ3Jo2PaM
+HPmr2w7dnaJBH+CW8Q4b/gIAAP//AwBQSwMEFAAGAAgAAAAhALVVMCP0AAAATAIAAAsACAJfcmVs
+cy8ucmVscyCiBAIooAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAACskk1PwzAMhu9I/IfI99XdkBBCS3dBSLshVH6ASdwPtY2jJBvdvyccEFQa
+gwNHf71+/Mrb3TyN6sgh9uI0rIsSFDsjtnethpf6cXUHKiZylkZxrOHEEXbV9dX2mUdKeSh2vY8q
+q7iooUvJ3yNG0/FEsRDPLlcaCROlHIYWPZmBWsZNWd5i+K4B1UJT7a2GsLc3oOqTz5t/15am6Q0/
+iDlM7NKZFchzYmfZrnzIbCH1+RpVU2g5abBinnI6InlfZGzA80SbvxP9fC1OnMhSIjQS+DLPR8cl
+oPV/WrQ08cudecQ3CcOryPDJgosfqN4BAAD//wMAUEsDBBQABgAIAAAAIQAtrYIMdwMAAGsIAAAP
+AAAAeGwvd29ya2Jvb2sueG1srFVRb6M4EH4/6f4D4t0FEyAEla5CgF6kNBs12fYl0soFp1gFzBnT
+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
+AAAMAAwAJgMAAAQkAAAAAA==
+--000000000000f71abd0622404c8b--

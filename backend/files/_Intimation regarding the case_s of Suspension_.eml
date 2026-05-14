@@ -1,0 +1,108 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp2096668dlb;
+        Sun, 22 Sep 2024 23:57:19 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IF3Hi67tlG1y0Kx/ESxX5luAVmAfm4Vbcmo8MinAVVfvMAIbmnk/F2Fit6mVAy+zKNfI0vk
+X-Received: by 2002:a05:6214:4906:b0:6c5:7be4:6642 with SMTP id 6a1803df08f44-6c7bc839b68mr136450136d6.47.1727074639262;
+        Sun, 22 Sep 2024 23:57:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727074639; cv=none;
+        d=google.com; s=arc-20240605;
+        b=hSVcRqPcu0/FLZJH2+uT7JCdUclp0Hif4WZ6H3uplK/N6x/716n4eIvonZ7jLDf9Wy
+         LEG+sGlVxqfw4hbXvMr1yTLEDo6LiEeu+uU5G4CzA2Iku8n1PhPhnYCoVCpbQ5yzN15l
+         dShUWkVR/T6qqY7DPcdvO/qhxasy9Ezq8rbA1FajA+z7VxBtNlKFINN4+rvlmPnNRNx+
+         rSK6+f7FfEHx/s/c5IPc3eFXjomlV11HxVDGYnnqC5DDY1BQesDCx2lWZi+kL4YBUt4F
+         iawF36Xhqkn5B7od0Uo+ySDmt2Kv4PM42VeERdWHOd2jWkRSUe5DJxklDEhjQQak0r33
+         AbzQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:content-transfer-encoding:mime-version:importance:to
+         :from:message-id:subject:date:dkim-signature;
+        bh=Zo9SoD9VwKd+KP85gzaH2piOSzzT8UlzVxVTknO6h2I=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=dm2NTh1KNJ7hIVs7IZXW20XKVvArREA1J10maiG9PR4DYl24gqX0i9sb4DDMku/KtH
+         ePsQphpBCnI19+bbI4lZ5JAZAbkWLPaPGwp63TcdeLrMtQu82rJVWEkJkFugQgjR2/2B
+         dOybYnnHtx2m60t75rG7GxJMQH2seoQYJc1ACKXTMpQPBXdfQyQqFlSRQnGowE5NOawv
+         73qtsx+k5MHltAwM5sokKm00/Q8wVFuWNrrwGq9RpK9WfiB8wPanDHMieHC4TPLpTCFH
+         +PT1YuhoGXaCjXHtr3rVre0phS+uJQoY35P9ha/iEhrSZ6dMvT9vRsQ7OWWb8tJJrFUY
+         gn7Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=mBAzrv05;
+       spf=pass (google.com: domain of bhupendranathdutta@yahoo.com designates 66.163.191.206 as permitted sender) smtp.mailfrom=bhupendranathdutta@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <bhupendranathdutta@yahoo.com>
+Received: from sonic312-25.consmr.mail.ne1.yahoo.com (sonic312-25.consmr.mail.ne1.yahoo.com. [66.163.191.206])
+        by mx.google.com with ESMTPS id 6a1803df08f44-6c75e487e82si98875696d6.153.2024.09.22.23.57.18
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 22 Sep 2024 23:57:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bhupendranathdutta@yahoo.com designates 66.163.191.206 as permitted sender) client-ip=66.163.191.206;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=mBAzrv05;
+       spf=pass (google.com: domain of bhupendranathdutta@yahoo.com designates 66.163.191.206 as permitted sender) smtp.mailfrom=bhupendranathdutta@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727074638; bh=Zo9SoD9VwKd+KP85gzaH2piOSzzT8UlzVxVTknO6h2I=; h=Date:Subject:From:To:References:From:Subject:Reply-To; b=mBAzrv05BQ8IICDwrnO/ed3LhV/TKYM2IdhrqHtB2P8EwtqPLOyTok9ASZvSyphu+q4KR9RhUMmBMm3SJYNiLDtyBqn8Jd5tSUQbebwvvWPhXkECzNv+iMUESqkloKizgK1LM/3KrEiGmkvNp/tMfWGlTWsTBjV0FFgfxtQB0DajlRw/Tu5cBkHO1hWfUaXIfBpq+lvGIwNpZ/axj/YQwqGPDNqkCdq38+e2A2/Wiev3ulltowZc8j0LGNIx71yZTPjFrllsfm8yDHhrlgBIukz1SaUGQqZJeyEfdHuh0v8jJJuJqh0YlVO89MU7nw8eD6IkmHGw44c0+BHy/Uq10Q==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727074638; bh=1qlqgLuxj6sQr3jatESg069eFS/Hg03okGEUQs/HOMn=; h=X-Sonic-MF:Date:Subject:From:To:From:Subject; b=BgjLGn3uB8h0KbVJsNm6j0q1tyTdfua4nWg1BHh1adpVx1yNAC7tgdY637axDLm/aEOEs0RAPQzMQmqHlS05CZ0HCA/GISgmnAJHbGB/Xae+aQQxPQ1NcPbyKJ8VtyVz7+4Hdg8WsujeLqyq+mCRGCdkSK9FuuxZWCU2rt0zY7U+a7HQ7PcwJogeoC9mWGH7Eoras88kLlo3XIi8ajsYZ1sh/8b+KZl3BOOHGpAue/fQC0dSbm19A/jyS1P90SN1uq/DtvTJNU/j9qvgl17ZzdmZLiIftsDFXBWIuhhHhDNSR/r6Yl1KBMZ68onpeihagz9zgQvNRNVWRiAXyQhkPw==
+X-YMail-OSG: NmRB0wIVM1lF9NewiJmQ_0s3_sguHuYg32bLwPbxGt1cSrfpILpm_ucbn1mi7vK
+ dLnql2q39ieIhuqkIjYJ24zPXwTRYw0xPtZab_JSYUL1ZiTGYx_5EOZN561BGY1G6u.3Yuu4Iigz
+ PdAfzQhx2Xm3h4oU9QXN6buQUenNLoFmO7fSoARzBNhuV1vqOujHy7kFjxw.kcAu4lw8sptpALlX
+ LdTSUvqhn27vjgNd4_ryNGUP_ONrsk4brjdt.rsh5qEcBoYYw1Yvz2ZMR2p8ZIrGNJCkFQ5c.l79
+ DeB8j1wyf8bCiDcJay0XhyC6aE28obpLTU9yOBbC2k5.Sz4kh0QTKdXfZ8sFI1FisZ.zBCjGv0y5
+ 9GIhc3y0Mp9imzGyD7rp_SRPlh2aTgf8YV6RjZxkjFFyOxcO.voVkvplsshcI6Kcaa0A2NN_HpqA
+ q50X3Q8KwAimJpixYmRlN7f_JmCpTy61V9oMlfRQ4.8KBs6BC9L2243SFJZ3X9KNtGioNx7uS2I4
+ 74hld5zG9_zSdy1Q0IbMj_yLwqzV.V2AurawzMpwSXD07CCl6d7TzsQHfNTdoIXK8IrY5Hz8BKzf
+ 90.m9hUaUaVeY_r2ZnXrat7Ex_SuLsiGOFfJ4YS58Fjjuft214efZIEZzJIkgIuPSamow8CxBWmJ
+ mYCELd6RDd7GzWBA5vxufxKshZA8jEbU2R_Xrkpe869Htr1kSAs1MbQvyDgiyfF31uzHPJ_478jQ
+ 4OCDpSKfHAk2o7j7iy5JewF8wLjw9a8Yr6sbqhHIrz6xTAnHrGlOqSuium8ROEN8vkwFBKijw_oA
+ sfFyLpeVUlRUfr8QrGvx3p3reaqY8TfNc.S4llSiLyQl6vMhLDxKDV8wLVXOWgU1rCEIrkJuH2uW
+ pnfrMpeSjr2DjWn5u1LTWUFc1CGP2.euz27IfpbtNjCndwCeS_56gPdXUVsT_3y0Bxx_hqbf2SEl
+ DU0BvsQDPBaGBJ6BujC2LJp2JWc8FRtOP1Wt1ahZzVJS2QSv5ACsgA8X9Nn8TiGBmDMo4UyOCqIB
+ QqNglX.fYnhnEftT4.U4M2WUc0IRhGqI09lw7RQ4xIDONfbH6kum1ZqvCEvZO3ZC4lxGm3LJxJ.6
+ PkUqcnHXSuMiK0wydHt_rGu9WfsTBjSgthu1gH6AqBTA9j1FjB3B6SU4BDWWTWx71fwMmOoyJZxN
+ WzWfVQD4ERHddJPQjREvU3SzyRgxbaN4m0bX3LCXgEtXIfZLM.EGcUhI4vwxJc68lWNbmG._sfan
+ kFjEOLhw_bAtucEIJI1r2JSHOX0LLiavU6OV_ZQyAfrKqfp0MzwPgE61SVLcRDzuN9PQKUbpNC.5
+ g_QqskflX5CRpaXBXtZlG9sYDcwZnOHLklRPTB3RTBfPyvKA730fEMiBl8nXGkdJw2D658oT3uQy
+ It7M5XJUhgKCAYcM4In.m7QwpWLox7dTaYnyXFQvMtNKGZKiPmmWyujetxEK.GB_AmuH.fuPPp_M
+ UeAHsABoT5rlXXO6X6Vb.2uZ4EgOFpUQ2zNIDMZ5uwcktGia2izAdQN6xRKn4jo5XHmYJ9HIPCeY
+ LtvXkEJ8N1o6bsvjB2C1g2RpNIB0NI5CnaY9uMd6CQ6dsfEX2iEgrSEOFO_zM4MsvKuGwUrTF28.
+ bCmOazevmlUpwMpX0qC_DVFGLUOC_ImuzNFp3kWnKuqcexWH8Bm9rx5tY1XSEe87OGbX3wP7.r6e
+ w9fuxKFuBG_e8OXCwnz0BIyRnrnO6jHqlSSryVOWSaKhA2jqFfUGvJZSDiYizNnGOrO89IlBLqZk
+ PahZzMJ4Ka3R4hyKuYcVBCV__eM0QsBzz6YOnDuz3xqz8dqA4ieqwpzXxIhdVqXJVA3QQTfi_HdI
+ NTF9mau_M9obS1M40u9RqRP6aPyO0oy9tHed6n5wsm2Y5tgjKim9KwlmHAPRRN7adoswYyTJVxvU
+ a9l3VkoSAhuKUCS94Jvl.AC4zgb13UxBPO9oMlJq1V3VWnWyqusxYR59oCDbccJtpI0PuWDblXOa
+ SBIqP7PFvXzbnePrB3A_fnPO0zy3T0H4Y8n5NJbKFqRn0EnVbu0x.xiY8SsI3yXTclTx1H1e.4zq
+ 3rS4Bmel1KM8dfT0f0zW34UArOntPU2DX1x2FeCHKTKOGQp1Qff9gIEuqhtoYSJdnXTaIeSoXoM6
+ nvWfMikbTyFx0W1K3DTNnvtKHdvd5r9Ng_godquur1xeOpjibxMqjrQ.J0.NtbBw3CmcSukfel7d
+ AXVBmNDcYw7JsGRszsFtfvFGygHJx6XbUQYUSd1sB1dmePpu845k9fo8tBIyDCK8fTkz2Vx172AM
+ P1Jl9EYtDdlcvwXy7Z9st4k3qVnsM9zfNXOUQYZo6CQ--
+X-Sonic-MF: <bhupendranathdutta@yahoo.com>
+X-Sonic-ID: f12002de-9c92-4364-93af-4aa2233439b4
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic312.consmr.mail.ne1.yahoo.com with HTTP; Mon, 23 Sep 2024 06:57:18 +0000
+Received: by hermes--production-sg3-fc85cddf6-6lk5x (Yahoo Inc. Hermes SMTP Server) with ESMTPA ID c0872a9afc099bcf370ace757b08296f;
+          Mon, 23 Sep 2024 06:57:12 +0000 (UTC)
+Date: Mon, 23 Sep 2024 12:27:04 +0530
+Subject: "Intimation regarding the case/s of Suspension"
+Message-ID: <126fbdcb-2085-4def-b23c-654424c6e673@email.android.com>
+X-Android-Message-ID: <126fbdcb-2085-4def-b23c-654424c6e673@email.android.com>
+From: "Dr. Bhupendra Nath Dutta Smriti Maha" <bhupendranathdutta@yahoo.com>
+To: grievance.hed.wb@gmail.com
+Importance: Normal
+X-Priority: 3
+X-MSMail-Priority: Normal
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+References: <126fbdcb-2085-4def-b23c-654424c6e673.ref@email.android.com>
+X-Mailer: WebService/1.1.22645 mail.backend.jedi.jws.acl:role.jedi.acl.token.atz.jws.hermes.yahoo
+Content-Length: 784
+
+PGRpdiBkaXI9J2F1dG8nPlNpciwmbmJzcDs8ZGl2IGRpcj0iYXV0byI+SXQgZm9yIHlvdXIga2lu
+ZCBpbmZvcm1hdGlvbiB0aGF0IHlvdSBoYXZlJm5ic3A7IHNvdWdodCBpbmZvcm1hdGlvbiBlYXJs
+aWVyIGFib3V0IHRoZSBjYXNlcyBvZiBzdXNwZW5zaW9uIGlmIGFueSBpbiBvdXIgY29sbGVnZS4g
+SW4gdGhpcyByZXNwZWN0LCBJIHdhbnQgdG8gaW50aW1hdGUgeW91IHRoYXQgdGhlcmUgYXJlIG5v
+IHN1Y2ggc3VzcGVuZGVkIGNhc2VzIGluIG91ciBDb2xsZWdlIHRpbGwgbm93LiZuYnNwOzwvZGl2
+PjxkaXYgZGlyPSJhdXRvIj5XaXRoIHRoYW5rcy4mbmJzcDs8L2Rpdj48ZGl2IGRpcj0iYXV0byI+
+PGJyPjwvZGl2PjxkaXYgZGlyPSJhdXRvIj5TaW5jZXJlbHkgWW91cnMsJm5ic3A7PC9kaXY+PGRp
+diBkaXI9ImF1dG8iPlNkLy1QcmluY2lwYWw8L2Rpdj48ZGl2IGRpcj0iYXV0byI+RHIuIEJodXBl
+bmRyYSBOYXRoIER1dHRhIFNtcml0aTwvZGl2PjxkaXYgZGlyPSJhdXRvIj5NYWhhdmlkeWFsYXlh
+LCBIYXRnb2JpbmRhcHVyPC9kaXY+PGRpdiBkaXI9ImF1dG8iPlB1cmJhIEJhcmRoYW1hbjwvZGl2
+PjwvZGl2Pg==
+

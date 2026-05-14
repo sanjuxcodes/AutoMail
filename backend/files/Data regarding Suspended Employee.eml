@@ -1,0 +1,599 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:726:b0:89:ead2:3829 with SMTP id 38csp774718dlh;
+        Thu, 12 Sep 2024 02:20:27 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHcZH8h4QWzG/Hn4xPr/VvGMWwJyJgfKdkbip0sQYdOhtGOdxZbkAwOl2JhtULg8AHByqwj
+X-Received: by 2002:a05:6e02:1609:b0:396:e8b8:88d with SMTP id e9e14a558f8ab-3a08490f9damr23834775ab.11.1726132827056;
+        Thu, 12 Sep 2024 02:20:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726132827; cv=none;
+        d=google.com; s=arc-20240605;
+        b=bR6udftdZl0iGNsHCzrJsezIFjn5QFnjJugk2E5K/c8QllJ5wxLQmDTHB+E/bSULXb
+         q0CU4sv5ZnqALe4ruaZHR6n3AoRdQD+YPj0ikQXDWpbmrPGaDwQ6OqB/qbjcIZ3g1V2v
+         2g980IMprOHhA1n/sEgdCCzQHKFozg5UsDM8B0SUatCtJM6zLs9EPeNF/RSTvjZGBKqS
+         8BX7NpgdP28rA3UbhCm9NpYlp1QuzvbQG0nTk7yrs1iXok2RG9UdS/D7CKQakswRajXx
+         +aUhaeIoPKlywgrig8SHKkKVArfGiJElaouc6oAcDmpG+f/rYmqLJQyIY5PiKEjGY/OI
+         iZ4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature;
+        bh=2TxPgo+XJKQoRbObOvKLKERP22E3kC/hvHXat0TY5+I=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=HEYdQvkzUY2Nk91gR9bf92j6h6WCY+RVsBCCOC7hLr2jrDZLJt/NdM1FrFSJZXBhUt
+         W6O1/WJZYo4NxWnJXWmm9hqSae63dp+Vwi37KucvNWJjHCP3dB0pPvTAqA0l2lY+z3SA
+         6JXWu+LC9t3JAfApTqKoCiPScOTYoGGWba/rdD2EhPNDjQyRvl5ffbkW93HohWbXxyD/
+         D3eBmCv+G+YNnOjlImK0yF/T/I4MCz4gYPm1hzm1/+E5xLgpX/K9l8EVP11X9PB/07NI
+         oIkXJKcQM/YMNMfHVdx3cvVmRGu9l3Eei2asMx9lF7Cl2CRAgyEt2ZJmRo2ZHg7dpd39
+         AcDg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.co.in header.s=s2048 header.b=eD3U4xvD;
+       spf=pass (google.com: domain of mgclalpur@yahoo.co.in designates 106.10.241.209 as permitted sender) smtp.mailfrom=mgclalpur@yahoo.co.in;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.co.in
+Return-Path: <mgclalpur@yahoo.co.in>
+Received: from sonic308-19.consmr.mail.sg3.yahoo.com (sonic308-19.consmr.mail.sg3.yahoo.com. [106.10.241.209])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-7db1fde7db7si1914229a12.572.2024.09.12.02.20.26
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 12 Sep 2024 02:20:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mgclalpur@yahoo.co.in designates 106.10.241.209 as permitted sender) client-ip=106.10.241.209;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.co.in header.s=s2048 header.b=eD3U4xvD;
+       spf=pass (google.com: domain of mgclalpur@yahoo.co.in designates 106.10.241.209 as permitted sender) smtp.mailfrom=mgclalpur@yahoo.co.in;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.co.in
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.co.in; s=s2048; t=1726132825; bh=2TxPgo+XJKQoRbObOvKLKERP22E3kC/hvHXat0TY5+I=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=eD3U4xvDkmIs1UixBjRhHuEVjj0BTx49KNcLY4W6+TPoYNT6L8hD8B2rmQX+HFyrtC6KS+0wLGrdPxsmS/Y/y3qxEn/uBpJno+K6DVzs6ooLn2gJusoL9u8Q5e3jX0flXrDNXwp8jq5VyYF/opt6J+y19E+pxxCZEkmqpvGnkMfZ19kjM1Wi2j9FeJhlFVe45RO9+SLpmsEFQ3ay1YbozqjwM8IMreTt7oqFnR28VPSE7gKzSSt3iCi+2DtOdQLPqQ0lrPEKCdOkiU6rW7QaWNDv5LImmYxdaXOuzxd6TljGtwBJzvglbY8xyMeG+RyE91NZFeSL9S4R854zDPkcBQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1726132825; bh=9vlJe8/pxTCOVFgVHaO8m90aA2VAXvAtdVECbb//P/s=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=h4RVZdxRPTkmhbRZ7N9Zs81CZXEXYMR+bK7fNPt55JkL2PexJ8gbNXtvW0ul9BQ+pVb8kjNmIs6MinFBFVVqAbUcBhUT5TQ3NW+92+abSxfoIuga21cG1cZT7WhT+aiDXzJFQ1zZUR/l1XKhLrUrjtaVoI/cNq/gONwS4s3wJmhWIMuLjVCXpkJPjnQ66nlovIOK8MPGOK+cgGIYRfTOypchtrJ4xtB2/n41YBR/XAUU3HpaEvG2Gxi0VaPwilvmWaTcIDzoknIi0eFCw4JVDaIjmoK7VG8PBPuahd+8WkAJ7dzDySp1Irj2U77+qG+ktUKN3xxn2gI4FiL1Y+Gz8w==
+X-YMail-OSG: qh9cNQAVM1mLul9h5b0h7QcyBY6D3KbUO_L5QWUGGyAii7vQiQ7vklWuRahMD2O
+ pSclOTGZSVAFdHZtgnWnZGPQh3hWW2PQ.8gLWZjxU3OR0AwyKa10r8i6LNvzLlDbGw4GhPWEn5do
+ vQstS24JX2aAeKWKPXTnyCbUr0DTDZC0l3SbdK74V5KLlF_nEPKM3Mt1L4VAxuuqVWl5OeaAigNz
+ aknLFodIUh.1YeiAP2N9gaqAGcDeyWyxnaxr9zA1EQParf.qJ7zS76R5xbFSHkc8.Tg4UwxyxKdk
+ MgImav4DJ7dFJ5jzbZCEfsWRoW1clEFMypPbscVmsqOMevQkSfvKX2G61HYq98skuax4j5fmFLzX
+ UYirWBJjtaQYQtJGqdi.bXJMiuPc_Gg.OnkE.SmbAoYuDebME3MzZHVRBdZcvLjqGChFkKD.ndxQ
+ NlSTlWQXG60D2h6Bi5AaUnwdpjNBDM8AbXjC2bo5LgNfz7_elNWAUdU5VNUfF03bLCqZqK7lyQjx
+ qcCKxJdh674x1idZXjWE7mBQvZEelaFzz28Y9_0BnxH6DsAPTzEecDDXH4qBW9Q2icXTOtJDS0kx
+ E2LaUEtiI4ow0qQWqLYtyrUJlLfaJwz4JPDLCbjX0UP6UQH4Si6cZ63MdbJjrP9Pqh1RWMqOJo_b
+ KW1.jESA2LPZPv8giaxzNmuZupX8dFRUE8mAKJYG5HbVD1EiK4j3Clj0P4oP8oWTERpK_9fLxEFf
+ RiIBfWFXMYOItPAxOijZJVXWaLwoLac3PFuZXjGyPkN0NXNdaRDT15h4rc42vGlcd22lg4w3KUsD
+ v1jCS1fj75j5We4VMtQ0XQcNeYJNvBKq.AwDyJrNiJyJBdKZ6pC6OSPYBa1Wm1kpTHhmVzaJKLg2
+ 9vdCLL5HOp1cYGqTz7KJeNkAOMGNiDQ9m0FQ972ObjBjj0mw6eXW.NYzTDDG37BlwVb6QBP1Cn3E
+ 8WS5.J0BfCfH3HtLpikNZro2SIBrDOIcgrsFJyiqmC524_aSyl43yWJ_71EoVvPu_YnLf5dUG9D_
+ 6f1ZoiIbdmGa7Wo1O2mt76aHTKIuf.nwwTjUS3JXZf9tlDdMdv6.qSDPClsP5DBHkBrcIrhmhNxO
+ I6KUa4AqCrq7.6K.O5.sce7soZOog_zwOPWoBoOOaELoO8BjS78dKaGLb5pv4Zq.ud71HlQ3D_nR
+ F_lDQcXMrSN6VD5yO_rrBboZB_TDeIvqmgpk4qa5nsoQfffo..NVLMSCMnxBMJvXMLwnJsWiRB8h
+ Odd84dzRWZadDS9Kr3SC1ts4M9t.SBJnC.ZBlZhC5Tj9XofR9QfKhB_Pl.plz_E6NA3gVikzpH5W
+ 6dAP_TCxHzeGuRIoLHcXPUAG3m6ynSXxPa0jWxYlGUQezB4yT.cFjCcZoUCXhQUuD7d8UtJXuPlT
+ BI2QTAY0sU4WmLXz6CN8EbpOctaoHQt2u1JjmC77AAYHXz_ROfHBdoFe9rCXTbLryhSNWSOZtzBB
+ 4QbYoG7dpmwFU_z_XBHL_xNaeU.jvZYBlL5lS6tqltCTZLdOQPGnq56JnjqM9ER3LZu1jupez_hV
+ UDIIRSVRULg5V0VueKqiHA3T_WX.kn7b11Ny1pVW4oN2r3tJmPzMa8QfJotas4ZgWLERZXipiea4
+ V3oNoZOLeEivwGPWYBfO9kFpMVOzkYKLOFUpwKCIzUdahKYOa7VjfUhHU4vMUCDST93SuXYYLPST
+ EBbOPbkeKxqp56AKE1jDL1C82sISn3IgPNuj6Dr8cjScnWGL053zvhDE4yaAn3GBXVcC6iSuLt90
+ fXSooUrHxXp9hH3aTrTC5VWIJcKmbALaNoNG7et.r4Qpf34XhRZO9In7WRIwLvuYxHH2Uyu4lQfd
+ p7wlvgeupSPyr42CaeSWWDjXcIbPC5MKL_vL.i2CEb4mD3K1AbYRESDAbLd9o5XMV7CHf7jMaLOR
+ j1wjNmtlC.E5qqR9D1UEgmNHrHO6IZGaiRwKv57AYFJJpzyue3.XBbL5Bnl0RWj6XNxYjE5g4bzk
+ D6B3vLPzNSZ1HUfPTExbdo9GfVjdhdaK_ket_8fJ.77RUiwfVJVEAsqsKHgLfLY2OOx3R_Zpu0F2
+ ZhkF9u79IJUtCRfR5HNTONYnlAPGMmkdumpTKXayRlWvlnJZyd4v6_W2_owCFHtUlKJKdzvuxVWV
+ ZgY0tdKavf19sm3k0LT5.8TLpwLmZunqR2c5VrNPLB6hW4DXbBFrJ.EYl8n1R2Ewzy7qVAr_4hIc
+ kqYHP_ZzF7KXIYFUMPLEDkVzGiFTynH_cAAPoCWHoUmLHOGOo4GqdK_zIV7n1EGSSxQ.UsYF8gFC
+ b2qS9XMDFCRRHwPCDlmbM5UeyHM5DGDUNW58Xs2QA53simKUDkPot13rE7w--
+X-Sonic-MF: <mgclalpur@yahoo.co.in>
+X-Sonic-ID: 7e8cac15-cdeb-4f85-ad43-3e7b94f77d9b
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic308.consmr.mail.sg3.yahoo.com with HTTP; Thu, 12 Sep 2024 09:20:25 +0000
+Date: Thu, 12 Sep 2024 09:20:24 +0000 (UTC)
+From: "Mahatma Gandhi College, Lalpur, Purulia" <mgclalpur@yahoo.co.in>
+Reply-To: "Mahatma Gandhi College, Lalpur, Purulia" <mgclalpur@yahoo.co.in>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <1979235188.4447962.1726132824351@mail.yahoo.com>
+Subject: Data regarding Suspended Employee
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4447961_1292055506.1726132824349"
+References: <1979235188.4447962.1726132824351.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YMailNorrin
+Content-Length: 26246
+
+------=_Part_4447961_1292055506.1726132824349
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+| =20
+Name of the suspended employee
+  | =20
+Name of the office / institution with address
+  | =20
+Suspension from
+  | =20
+Reason for suspension
+  | =20
+Any other details
+  |
+| =20
+NIL
+  | =20
+Mahatma Gandhi College, Lalpur, P.O. =E2=80=93 Daldali, Dist. =E2=80=93 Pur=
+ulia. =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0PIN-723130
+  | =20
+N.A.
+  | =20
+N.A.
+  | =20
+N.A.
+  |
+
+
+This is for your kind information.With regards
+
+Dr. Santi Kundu,
+
+Principal,
+
+Mahatma Gandhi College,
+
+Lalpur, Daldali, Purulia.
+
+PIN - 723130
+
+------=_Part_4447961_1292055506.1726132824349
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydpd8403679yahoo-style-wrap" style=
+=3D"font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 1=
+3px;"><div><div><br></div><div dir=3D"ltr" data-setdir=3D"false"><div><!--[=
+if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"--"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true"
+  DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99"
+  LatentStyleCount=3D"267">
+  <w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" Name=3D=
+"caption"/>
+  <w:LsdException Locked=3D"false" Priority=3D"10" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>
+  <w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+  <w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+  <w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Placeho=
+lder Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Revisio=
+n"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" Name=3D=
+"TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+=09{mso-style-name:"Table Normal";
+=09mso-tstyle-rowband-size:0;
+=09mso-tstyle-colband-size:0;
+=09mso-style-noshow:yes;
+=09mso-style-priority:99;
+=09mso-style-qformat:yes;
+=09mso-style-parent:"";
+=09mso-padding-alt:0in 5.4pt 0in 5.4pt;
+=09mso-para-margin:0in;
+=09mso-para-margin-bottom:.0001pt;
+=09text-align:justify;
+=09line-height:150%;
+=09mso-pagination:widow-orphan;
+=09font-size:11.0pt;
+=09font-family:"Calibri","sans-serif";
+=09mso-ascii-font-family:Calibri;
+=09mso-ascii-theme-font:minor-latin;
+=09mso-fareast-font-family:"Times New Roman";
+=09mso-fareast-theme-font:minor-fareast;
+=09mso-hansi-font-family:Calibri;
+=09mso-hansi-theme-font:minor-latin;
+=09mso-bidi-font-family:"Times New Roman";
+=09mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+=09{mso-style-name:"Table Grid";
+=09mso-tstyle-rowband-size:0;
+=09mso-tstyle-colband-size:0;
+=09mso-style-priority:59;
+=09mso-style-unhide:no;
+=09border:solid black 1.0pt;
+=09mso-border-themecolor:text1;
+=09mso-border-alt:solid black .5pt;
+=09mso-border-themecolor:text1;
+=09mso-padding-alt:0in 5.4pt 0in 5.4pt;
+=09mso-border-insideh:.5pt solid black;
+=09mso-border-insideh-themecolor:text1;
+=09mso-border-insidev:.5pt solid black;
+=09mso-border-insidev-themecolor:text1;
+=09mso-para-margin:0in;
+=09mso-para-margin-bottom:.0001pt;
+=09text-align:justify;
+=09mso-pagination:widow-orphan;
+=09font-size:12.0pt;
+=09mso-bidi-font-size:11.0pt;
+=09font-family:"Times New Roman","serif";
+=09mso-bidi-font-family:"Times New Roman";
+=09mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]-->
+
+<table class=3D"ydp620e3da9MsoTableGrid yahoo-compose-table-card" border=3D=
+"1" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;=
+ border-width: medium; border-style: none; border-color: currentcolor;">
+ <tbody><tr>
+  <td width=3D"115" style=3D"width: 1.2in; border-width: 1pt; border-style:=
+ solid; border-color: black; padding: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Name
+  of the suspended employee</p>
+  </td>
+  <td width=3D"225" style=3D"width: 168.5pt; border-width: 1pt 1pt 1pt medi=
+um; border-style: solid solid solid none; border-color: black black black c=
+urrentcolor; padding: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Name
+  of the office / institution with address</p>
+  </td>
+  <td width=3D"87" style=3D"width: 65.5pt; border-width: 1pt 1pt 1pt medium=
+; border-style: solid solid solid none; border-color: black black black cur=
+rentcolor; padding: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Suspension
+  from</p>
+  </td>
+  <td width=3D"96" style=3D"width: 1in; border-width: 1pt 1pt 1pt medium; b=
+order-style: solid solid solid none; border-color: black black black curren=
+tcolor; padding: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Reason
+  for suspension</p>
+  </td>
+  <td width=3D"93" style=3D"width: 69.85pt; border-width: 1pt 1pt 1pt mediu=
+m; border-style: solid solid solid none; border-color: black black black cu=
+rrentcolor; padding: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Any
+  other details</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=3D"115" style=3D"width: 1.2in; border-width: medium 1pt 1pt; bo=
+rder-style: none solid solid; border-color: currentcolor black black; paddi=
+ng: 0in 5.4pt;">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">NIL</p>
+  </td>
+  <td width=3D"225" style=3D"width:168.5pt;border-top:none;border-left:none=
+;  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;  bor=
+der-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-to=
+p-alt:  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-al=
+t:solid black .5pt;  mso-border-left-themecolor:text1;mso-border-alt:solid =
+black .5pt;mso-border-themecolor:  text1;padding:0in 5.4pt 0in 5.4pt">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">Mahatma
+  Gandhi College, Lalpur, P.O. =E2=80=93 Daldali, Dist. =E2=80=93 Purulia. =
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>PIN-723130</p>
+  </td>
+  <td width=3D"87" style=3D"width:65.5pt;border-top:none;border-left:none;b=
+order-bottom:  solid black 1.0pt;mso-border-bottom-themecolor:text1;border-=
+right:solid black 1.0pt;  mso-border-right-themecolor:text1;mso-border-top-=
+alt:solid black .5pt;  mso-border-top-themecolor:text1;mso-border-left-alt:=
+solid black .5pt;  mso-border-left-themecolor:text1;mso-border-alt:solid bl=
+ack .5pt;mso-border-themecolor:  text1;padding:0in 5.4pt 0in 5.4pt">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">N.A.</p>
+  </td>
+  <td width=3D"96" style=3D"width:1.0in;border-top:none;border-left:none;bo=
+rder-bottom:  solid black 1.0pt;mso-border-bottom-themecolor:text1;border-r=
+ight:solid black 1.0pt;  mso-border-right-themecolor:text1;mso-border-top-a=
+lt:solid black .5pt;  mso-border-top-themecolor:text1;mso-border-left-alt:s=
+olid black .5pt;  mso-border-left-themecolor:text1;mso-border-alt:solid bla=
+ck .5pt;mso-border-themecolor:  text1;padding:0in 5.4pt 0in 5.4pt">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">N.A.</p>
+  </td>
+  <td width=3D"93" style=3D"width:69.85pt;border-top:none;border-left:none;=
+  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;  bord=
+er-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top=
+-alt:  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt=
+:solid black .5pt;  mso-border-left-themecolor:text1;mso-border-alt:solid b=
+lack .5pt;mso-border-themecolor:  text1;padding:0in 5.4pt 0in 5.4pt">
+  <p class=3D"ydp620e3da9MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter;line-height:normal">N.A.</p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div><br></div><div dir=3D"ltr" data-setdir=3D"false">This is for your kin=
+d information.</div><div dir=3D"ltr" data-setdir=3D"false">With regards<br>=
+</div><div class=3D"ydpd8403679signature"><p>Dr. Santi Kundu,</p><p>Princip=
+al,</p><p>Mahatma Gandhi College,</p><p>Lalpur, Daldali, Purulia.</p><p>PIN=
+ - 723130</p></div></div></div></body></html>
+------=_Part_4447961_1292055506.1726132824349--

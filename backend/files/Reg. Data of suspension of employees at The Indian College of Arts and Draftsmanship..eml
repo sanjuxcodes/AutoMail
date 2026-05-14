@@ -1,0 +1,123 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1779176dlb;
+        Sun, 22 Sep 2024 05:23:26 -0700 (PDT)
+X-Received: by 2002:a67:ce18:0:b0:49b:fe4d:20e4 with SMTP id ada2fe7eead31-49fc9661fc0mr3916859137.28.1727007805925;
+        Sun, 22 Sep 2024 05:23:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727007805; cv=none;
+        d=google.com; s=arc-20240605;
+        b=PJK10aYjOP/B4yqQ7cYSpQXCwilvQm3un+5vqCVMa9TfJIgasGbPpO83OhiMqnoCJS
+         rozWqmPPnzGijFKa7qxcbGevghS2hQIk2EshXg3k8PmVupR8c6t5SxzGs/HcXrDhlkCu
+         c43L7O4uiRnxuyjBVlvFeHdyxJp4LS6pIFpFjqEoCurnwXhk5Zi7QlOpcmu4nlE4YoFd
+         KqJS99KCpp/rzL4xBYDGEWaZimccZJVhrYcE39vHwk2rqPpyrr9wvcBIR8e2BplC0UAJ
+         luKkzewX16ULcd1jjwM5qmOjwBrSyEGOxTEADRdXPsmVDc7Sf+HuoSYonvtdzrmF40kq
+         3ltw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=rK+miOpnaiQj0c5wpjQa3HK8X5muIgEG21LIOKncP5Y=;
+        fh=jzKZa2Bp6CPEaH+8/7tVzSa8QHIkd1239g90qR5btuA=;
+        b=UMjtKVMvNATP721ZuM/k3X1h5Uiw9lgPcvsITpk4pXxTaSICCJ1sRaU5qna4Rldq1s
+         DzBUuZMI+xbXBJ2YwCvrNAIazvZTJZpkpG6rqvl2VZvyqaZLSsXaFMFeXzG5+6RmhjK4
+         juiZhQjJ5pjGy5LwHF2Qq/imNtiiimquy4AqNXlG1oUxQV6rp+t599g4dp9Mf9pAD5OX
+         JrXgoScusWVtASgyWRnXlYxhffnfGvhTZUgMohDn71zYXkqxkjlGbywaxreDGzz42Q3O
+         n8ezbUr6IEpPW2QFy5R2Wvgnvy/mnp8XtlmY4ijzlCFnPwEJhRoFGnUB3tOESTuXMqpE
+         Gdxw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=k0uEceq8;
+       spf=pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=asisghoshjdpi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <asisghoshjdpi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ada2fe7eead31-49e940f3177sor744936137.0.2024.09.22.05.23.25
+        (Google Transport Security);
+        Sun, 22 Sep 2024 05:23:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=k0uEceq8;
+       spf=pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=asisghoshjdpi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727007805; x=1727612605; dara=google.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=rK+miOpnaiQj0c5wpjQa3HK8X5muIgEG21LIOKncP5Y=;
+        b=k0uEceq8705XAF6cQPu/d0hf1tqDhMK1FS50ejIyXV5C4KcSTaEvgJ3B9t7Kb//f8o
+         hk/jfDFy2pohNDhpykrXbbkNaVz3byrHpziUTgC7UC8eWT78zVt7QEkrWagnzWE3zcvC
+         NCtESYy676F7lrGdJdGCo2oFzDP9zNgOcdozrcB7SuosqtnKAYYPcm36udXiWISth55A
+         JokazG2yH0mmYT/Ee5YlkloXummd2hzaSvzf6hfjH3rVfgt80bt95HyBurSVCxqpKp7d
+         yt7KTJI+RmoxidfspJyfCHnCGQxK/egGTJK+JbB9wsCPaWpS7JWjnrE6IFNrKGEbjdx6
+         yP0Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727007805; x=1727612605;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=rK+miOpnaiQj0c5wpjQa3HK8X5muIgEG21LIOKncP5Y=;
+        b=K/QZy8ZhKTJpaj7zgy84dd+CiBYg4lQ6z5Nn4P7mIAZJzDfaYBq2fk1H77H0k6ef9B
+         YXkUjk1IVnCwhwBrfR+6T5pahf/riseANz0q0XA7v6aofuVRcpmY1JPYfCw6I4eMTpsa
+         lWPKiXkTN+rjPVTWhu6mFPZxluUe/DAqSgm+OKQlGtHLd6/Jy5GCLq4qgIT8k+A+eLc3
+         Tk9NLOdNyUsVVq8q0H5cAb8QsyyYTKgLTRxz9R/A9SqbuOxdnSXqsh2LLr3vRX0uJJ+i
+         BYCZ7b6vu0e+LaCa1wK/gz//2tLPnDs9UJMdlp5wj11jBIxaw3FejgEZStJ9CLc7jh35
+         wSoA==
+X-Gm-Message-State: AOJu0YwqN5e97P3HGZR+sm7U9TW71zPm9Imtlk/mhOK/kaMgOV5evzfN
+	3zu+g4iadOcHTnmCBFOHoBic6SZcXEwfVcz1ZM1IGXwhrzTXrbeuOmY7c4d/87eqC79QaRU4+4O
+	qdEc5hh0ey6si1bvy8v4+Lxoa8EQrQw==
+X-Google-Smtp-Source: AGHT+IGvLTmqyvHvgaw2RZ9ungXNTcr5sBLnKM9IqOB6ke7OJvrZVbwAJFD1+Rptt+YLNh9+IPXPOV5uiIzOVbiLg7o=
+X-Received: by 2002:a05:6102:941:b0:492:aa07:26da with SMTP id
+ ada2fe7eead31-49fc74fa3eemr2385429137.2.1727007805271; Sun, 22 Sep 2024
+ 05:23:25 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAJk1W52SEM_fMWTD_0R4bYR1zDc7NrWLns6uGzVZmQMT0U3JA@mail.gmail.com>
+In-Reply-To: <CAAJk1W52SEM_fMWTD_0R4bYR1zDc7NrWLns6uGzVZmQMT0U3JA@mail.gmail.com>
+From: Asis Ghosh <asisghoshjdpi@gmail.com>
+Date: Sun, 22 Sep 2024 17:53:14 +0530
+Message-ID: <CALQBz5pLUvF2+FFB0NO12mBNC4i2mLhu5CJvTTuzgQXkg3D1hA@mail.gmail.com>
+Subject: Re: Reg. Data of suspension of employees at The Indian College of
+ Arts and Draftsmanship.
+To: Art College Kolkata <theindianartcollege@gmail.com>
+Cc: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000c1f82c0622b456f1"
+
+--000000000000c1f82c0622b456f1
+Content-Type: text/plain; charset="UTF-8"
+
+Please fill up the Format in College letter head and resend
+
+On Fri, 20 Sept, 2024, 11:28 pm Art College Kolkata, <
+theindianartcollege@gmail.com> wrote:
+
+> Sir,
+>
+> This is to hereby bring to your kind notice that we have no recorded case
+> of suspension of any staff of any cadre both Teaching and Non- Teaching at
+> The Indian College of Arts and Drftsmanship.  This information is provided
+> to the best of my knowledge.
+>
+> Thanking You,
+> Kallol kr Roy,
+> T.I.C ICAD.
+>
+
+--000000000000c1f82c0622b456f1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Please fill up the Format in College letter head and resend =
+</p>
+<br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Fri=
+, 20 Sept, 2024, 11:28 pm Art College Kolkata, &lt;<a href=3D"mailto:theind=
+ianartcollege@gmail.com">theindianartcollege@gmail.com</a>&gt; wrote:<br></=
+div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-lef=
+t:1px #ccc solid;padding-left:1ex"><div dir=3D"auto">Sir,<div dir=3D"auto">=
+<br></div><div dir=3D"auto">This is to hereby bring to your kind notice tha=
+t we have no recorded case of suspension of any staff of any cadre both Tea=
+ching and Non- Teaching at The Indian College of Arts and Drftsmanship.=C2=
+=A0 This information is provided to the best of my knowledge.=C2=A0</div><d=
+iv dir=3D"auto"><br></div><div dir=3D"auto">Thanking You,</div><div dir=3D"=
+auto">Kallol kr Roy,</div><div dir=3D"auto">T.I.C ICAD.=C2=A0</div></div>
+</blockquote></div>
+
+--000000000000c1f82c0622b456f1--

@@ -1,0 +1,111 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1281446dlb;
+        Fri, 20 Sep 2024 23:32:44 -0700 (PDT)
+X-Received: by 2002:ac8:7dd0:0:b0:453:76d6:65d4 with SMTP id d75a77b69052e-45b204dfe53mr72232261cf.11.1726900364408;
+        Fri, 20 Sep 2024 23:32:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726900364; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sOgxf9Bo6o/qG/5LTFTAziRitGrZLds+eLWirAUpLYFWOUHL+HG4byw5SQNuUxJRxO
+         5uIk6qFTUcN9ZxAAZ3qu/fi4dvG+YiwyWSe88lX+4MRJOmUhTsCWNk8jVn3rowOvTcfg
+         3nbtmTTl7lhMJJTfJQyMjwSccMi3dJBWR2TZocDcv/SK4l3COMzx47sefWSRfN18YXtB
+         k5vJb9AawC1iKftM1/XiVTrE+Uxf8r2IMAXgqe5uYaqqeLXruvUzQj8sktyoNgfrC8G6
+         jNhXZe971lRHFHpmqrzu2+HfxpqQ8CoxsinnzHp+HQJOSU/cbX2ufX4QBIQ3nCTnO9eE
+         bO/g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=j48z8VxZpCgwz7SSBMYtg5RQ9N0Bc1j0T1nZx9aFc6A=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=nncDb671NmqUsvnhtCuOHyqe6e/ieWbXf/zGKuqjUUx9AVeHC2tGksCYHCefHrz45i
+         17qNU4d7DcW62x6nq76r8yR0l48sgy3PWisQlRtq5CZmkP28Pdl3j7cZx7xShUOeagQ0
+         tC7wownaBAy9HsoqsWzI/fy7WvDh2zDjStj1xI2RTThdyevBLShFKwj2vYRpFrkJgLqO
+         86P4xbofO5eHcVQg4lwalYL7HxP0sLxmXhrXXeYvj0S+eqwPj4ZHBLlKI5cBvRzUjidZ
+         PQiTrBNsSI4Z35hJpV0UZrqwyBXC9EclKVY701P9gBbiwSqqj2F/EVmGgIiCcHjUFqh5
+         HcLg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=WvLPSSKG;
+       spf=pass (google.com: domain of mamsalar1986@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mamsalar1986@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <mamsalar1986@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d75a77b69052e-459aab93ad1sor96968701cf.0.2024.09.20.23.32.44
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 20 Sep 2024 23:32:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mamsalar1986@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=WvLPSSKG;
+       spf=pass (google.com: domain of mamsalar1986@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mamsalar1986@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726900364; x=1727505164; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=j48z8VxZpCgwz7SSBMYtg5RQ9N0Bc1j0T1nZx9aFc6A=;
+        b=WvLPSSKG60vYJDupAcVGy6mM9CgOL1QpHUAzlJGkf/a85JKeXPV5OuRVWjDWUzGyAT
+         GcUdM6zlPn8iKD07tIcWGOS4ggjxvIK1AT5Qm9W0ONy/lGWA8j5+SI+O9WquT/zVD3RW
+         wg7URcoQYIDfgman559HgyDZiD6BcqSJ6UtOYZCztu+pNSIyabx2YhWojVgYslXNP2K6
+         V3wTQ8kq5MPv8mzEuQuU/u4bpXHWkWN9ZWMLIMrfnvPghAfJsF2OxxC1gpjka3nO9rcM
+         KcDnDRpgW2c8n1PC6PuMtyfB2Q7OfDJFZDy81U06jX8imWyI1+aIZpSmsXJs+yeErMIQ
+         CSUQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726900364; x=1727505164;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=j48z8VxZpCgwz7SSBMYtg5RQ9N0Bc1j0T1nZx9aFc6A=;
+        b=q/r90HEaZzVRuVIvGDNzVG+2zPKOi9qKio4bLWdPub7pSjISxM7+VPZxlFOfMrn9X+
+         AoUCidtUwmI0aS4pguDpCfMRPLsynYKsxG69XfrsWnXVz9Mik8B5CQ0FjczrQlC008eQ
+         ZCd3hIl4j+zyiKI5OaC15iTTTSTXmR6fURsvM2xit3C7vd9UrEOMrG26nvh7KRRKZrfz
+         uaU3AVhUsybBCFpVyygSjJS7Ip79N4dS37JKZFn3AvKLdRi5X7vE9eah4DP0KozOJfVy
+         Yz0H1kI80gIwTmbVnXfFyjrtFM5SmODOGH0J+J/LUtdJdNe7Am5ufZbNdOa28rBS3bPx
+         tLNw==
+X-Gm-Message-State: AOJu0YwRpa641V1AOALjvO+XRydJOhpFEq4z/BBFCpcnxtSTIu55kbII
+	n1+DQ+gRCHutlPntB2utT6KEame1zcSvYPkS1RG3FrU0vUVhh5iJGcEywlzt9PZcOKOyiV0qpGM
+	C5G/33pCnGm8J0P9joHMZv+oLe1AFjw==
+X-Google-Smtp-Source: AGHT+IFWJ0NBJnvNRmF9iQwjmaQooPdEtKyiXdNhWKloigT6GeYJv0tmKIb9GpZ3UDyx3bQ1nVcvRcjnj1Bo3cnWuyk=
+X-Received: by 2002:ac8:7dc3:0:b0:44f:5e2c:1600 with SMTP id
+ d75a77b69052e-45b20509867mr67278841cf.28.1726900363660; Fri, 20 Sep 2024
+ 23:32:43 -0700 (PDT)
+MIME-Version: 1.0
+From: Muzaffar Ahmed Mahavidyalaya <mamsalar1986@gmail.com>
+Date: Sat, 21 Sep 2024 12:02:32 +0530
+Message-ID: <CAPaJFCXzhvnYgq=mhu0QBcFEW9sZkkkH8w5oYrbRBD5n0RAbWw@mail.gmail.com>
+Subject: Regarding suspension of employees of Muzaffar Ahmed Mahavidyalaya
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000bd164e06229b52d5"
+
+--000000000000bd164e06229b52d5
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+In response to your query related to suspension of employees, the
+undersigned would like to inform you that there is so such case in Muzaffar
+Ahmed Mahavidyalaya, Salar, Murshidabad
+This is for your kind information.
+Thanking you,
+
+Yours faithfully,
+
+Dr. Karunamoy Chatterjee
+Principal
+Muzaffar Ahmed Mahavidyalaya
+
+--000000000000bd164e06229b52d5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><div style=3D"font-size:12.8px" dir=3D"auto"><div style=
+=3D"width:352px;margin:16px 0px"><div><div dir=3D"auto">Sir,=C2=A0<div dir=
+=3D"auto">In response to your query related to suspension of employees, the=
+ undersigned would like to inform you that there is so such case in Muzaffa=
+r Ahmed Mahavidyalaya, Salar, Murshidabad=C2=A0</div><div dir=3D"auto">This=
+ is for your kind information.</div><div dir=3D"auto">Thanking you,</div><d=
+iv dir=3D"auto"><br></div><div dir=3D"auto">Yours faithfully,</div><div dir=
+=3D"auto"><br></div><div dir=3D"auto">Dr. Karunamoy Chatterjee=C2=A0</div><=
+div dir=3D"auto">Principal=C2=A0</div><div style=3D"color:rgb(136,136,136)"=
+><div dir=3D"auto">Muzaffar Ahmed Mahavidyalaya=C2=A0</div></div></div></di=
+v></div><div style=3D"height:0px"></div></div><br></div>
+
+--000000000000bd164e06229b52d5--

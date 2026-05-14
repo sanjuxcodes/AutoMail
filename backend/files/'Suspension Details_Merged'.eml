@@ -1,0 +1,95 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp253763dlb;
+        Fri, 13 Sep 2024 04:56:16 -0700 (PDT)
+X-Received: by 2002:a2e:d01:0:b0:2f7:7f76:994b with SMTP id 38308e7fff4ca-2f78e18c56fmr21429951fa.24.1726228576009;
+        Fri, 13 Sep 2024 04:56:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726228575; cv=none;
+        d=google.com; s=arc-20160816;
+        b=c958/OA58W7igVUXSuhSXJh7piJdQPQcmiMDKTSXJpoKWM7A895jPPx/GoZOI+ySGJ
+         3GyvGtUU/ZAcWiWoUvmJDQu3JU/Gjb7ZUSBTvZ0A12HEcN9rcAIaSBANG1qaR4tusDrB
+         C9zP28hUC5C6w8Vzn7QC/qktAKA2JJe6K5LgbLmdAhng531GFB9HJ7qToA54S7yA9Kdd
+         ivzqRLYYbotfd8JS9wKF1ltZPA25PlzkFKqhP6uupQO/3CBsF4Q+7nfz48cIxqb2QAIs
+         ytkoIyoBtCloOCbdLNBBbKCVSX/ujFtb520pFmp5RRUHa+H/yGR5EDjOVeFM4Dwg9Ngb
+         DCiA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=u44utmAU15OIOeziIt7SMUE9K0K7z7gjXlgTy/B6Nts=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=wK1hPckeEFGp4UcbCOn8VH7h2IiozQWu8sqNRRWLMVkMDl/c9ORAZV0ucquTyTxKwx
+         1ZhRI7d56kpxUS61fzXSQPGJnIhSlkn/E2ifdXJo3ZDrUGMkGE6+kv4C78iF3Up+xy+8
+         QKa+QQhXyC0fMEHLP7z0k91bXBFIASfHHmFVwbQDNwfuMxU4n9PKSdYV78YE69mXFW//
+         7H/YBp++e6oyXFld3AsjXzpYJbBZe7hXY8Vd6pDhbnMFXGIebmwyMUCJflSrJDJok8l5
+         UqhvJ448Jn6v0T1BSomePZueesUkFywZFtJNrs288UzCOCT1eRrqR4wZDvxzBadIMtsU
+         SNzw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=mlWG6tqS;
+       spf=pass (google.com: domain of collegenistarini@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=collegenistarini@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <collegenistarini@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-2f75c03d64fsor24343151fa.9.2024.09.13.04.56.15
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 04:56:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of collegenistarini@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=mlWG6tqS;
+       spf=pass (google.com: domain of collegenistarini@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=collegenistarini@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726228575; x=1726833375; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=u44utmAU15OIOeziIt7SMUE9K0K7z7gjXlgTy/B6Nts=;
+        b=mlWG6tqSbHsBuerMeSwDHXDVUPkqCiGj+/shhlD8Mqu8AngI1BQxy/AD18tmAjOTqF
+         mNjFRXPR+QXSll+HLPuySOZFjmPWqc8rMJdVJczm2gCqrM4h8FYr09JM6StAHsZy1HUZ
+         tg6IAudvttVcWqt5EYt38tmbb+7l+RxR0mb9r1FX/aGtiouOJb+WjtI23GA16Kb+P9oN
+         TeUkq2QH6m5HqcVQtX4ZWAF0TV7763tEDXWT527+m1oFDaWMtrqgSahXNwB7TbT547bB
+         /wuAkkZ9xI7iMHxJb3I0LGqa5Ljstn+ojyuijGiOmUrKm3FfNdp1rm916dU3pS/h9/9a
+         496A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726228575; x=1726833375;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=u44utmAU15OIOeziIt7SMUE9K0K7z7gjXlgTy/B6Nts=;
+        b=pS07x+xB5SPVE3cpRRzgHG3wo0B1gYl3PTeOjTwYwy9C15SrdYc4qbVkxz3Q3rGhZc
+         hdM95U5ZLybZspoqlJ/QFUXn7RHe8XrkfRve/0heKxGXTXFKnrp+D5qK//8onLrq+6Wu
+         AN5yV6WXD14/F4lnB38c7Zhcwb4jwJ7DdSDE5XgGnaNfmPLJKzw7GTInPS7AqaoIwiKe
+         FxhZZsbUyiYM6Oieg2RdvRkLFhwhDxt0vWkgqKKzpmEQqJ7KvVEotL/QWOfz6p85TBXS
+         ndRDPWwYfYb0DO0ZaaE5RceYpXTh3OffVbc0IgECh5k5coP/xJ4a4pqOKMKwbkm/DkoP
+         vYEg==
+X-Gm-Message-State: AOJu0Ywizn+FUrpZ0qLhzuLdZXqtLJGeb5vuuOFcYP5PNWqzxpW1EX2D
+	9ADeaYnzN+xW/jLTfWeXUZ7Y3LN1xouTBG9+kqt7VdkX87GFK0laJ/nI9n3thZ3ynUmt4GbERx2
+	5HO/TVrPrEdCX/q50BePgygISVwDQRg==
+X-Google-Smtp-Source: AGHT+IF+VzI71oK4OwyAEM0XDzzyhYDdM6zflBDozMh4uUvPFfiYfeBW1WP1ufdNW11xB10+UfG7fKYPXlydI8BIrqg=
+X-Received: by 2002:a2e:bc0a:0:b0:2f7:51a2:96f2 with SMTP id
+ 38308e7fff4ca-2f787dabd10mr39728221fa.8.1726228574826; Fri, 13 Sep 2024
+ 04:56:14 -0700 (PDT)
+MIME-Version: 1.0
+From: Nistarini College <collegenistarini@gmail.com>
+Date: Fri, 13 Sep 2024 17:26:01 +0530
+Message-ID: <CAJr9RVigJNfgtykS5xEfGNiMiPFvDeOrskEytyJr16eg0T7cTA@mail.gmail.com>
+Subject: 'Suspension Details_Merged'
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000000fa770621fee98a"
+
+--00000000000000fa770621fee98a
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+Please see the attachment for suspension details.
+Principal,
+Nistarini College, Purulia
+
+--00000000000000fa770621fee98a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir,<div dir=3D"auto">Please see the attachment for suspe=
+nsion details.=C2=A0</div><div dir=3D"auto">Principal,=C2=A0</div><div dir=
+=3D"auto">Nistarini College, Purulia=C2=A0</div></div>
+
+--00000000000000fa770621fee98a--

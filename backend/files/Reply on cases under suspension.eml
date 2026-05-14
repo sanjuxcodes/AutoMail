@@ -1,0 +1,110 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp1884197dlb;
+        Mon, 2 Sep 2024 09:53:57 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFeEpqcFwTramcj/4RbCX2jo3V+FPJWixYNMK6l3iW7it90EY+rT58ziyaNXH0SnFv+zEOA
+X-Received: by 2002:a05:622a:2508:b0:456:4592:a401 with SMTP id d75a77b69052e-456fd7d1f1cmr91453451cf.34.1725296037200;
+        Mon, 02 Sep 2024 09:53:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725296037; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rOOp8O0KvZJBELv4kCUsNRMVKVEYYPEsBE9YhRv/7sxmMJfdBBaTWFIyan78kSF4nt
+         2JFS+fS/5vWsL5uIrL0OS80SIcQXSxNjtlkHT4YgmZjsmcSUd/2zmde6QWwmPZ1ZiLnc
+         LRa96+oZN/PZ2ZEZt2hSIEBr/IOHJv9XnO3fqtUWzzSimOCqbhbz1UtmAPY9TRxLYyEv
+         gdoaFNwZp/MMpLTYG6VIKQWUm7lhJwpasD8s31rtHUjbGwnfxftpA29woHYYewcu0RXU
+         2xT+lXEG0i6p/prLTGVmnNium/IF5jwSyNI1qu8vUV9JyEP2TBbTuXxeYf3ts7+cjnSk
+         sBtQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature;
+        bh=ZIIdm0Clg2A/bS3qwluuOavao8DtFV5fuvzfPe6nilw=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=DVydKq+bBdeZBRTkMpqO02VgK5lK8QYHeV3LYWnEoaLsm5y3kL0aGsirsQGT4kbSF4
+         6OWxFQT44PkbQPK3OUXnMrmwLP8YscXZpLbiBzGqdYhYPY94cb4NqTdFblvWvg7y8abw
+         6XSo9Jve6WtD5o5F2tUq8d2dCfxvJipvy6aOatse4S2qHcY3TpDK6A01ZqQYHqXq9xaU
+         tcl9ZoT+hlh9aT1ezdMU7BxLIPdu8ip79V8PMQT3R781guq2Say3doj+N/ouuDOWpNzx
+         3BuMHLsBXuLSt8hNtFT68pA2xwqzztCcLicYvxU6IHrIsWuleOY6sOk6EIsw3wT8yVeG
+         lCqQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=QyDpH8PH;
+       spf=pass (google.com: domain of smahish@yahoo.com designates 66.163.187.146 as permitted sender) smtp.mailfrom=smahish@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <smahish@yahoo.com>
+Received: from sonic316-20.consmr.mail.ne1.yahoo.com (sonic316-20.consmr.mail.ne1.yahoo.com. [66.163.187.146])
+        by mx.google.com with ESMTPS id d75a77b69052e-45682c8666fsi115156881cf.124.2024.09.02.09.53.56
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 02 Sep 2024 09:53:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of smahish@yahoo.com designates 66.163.187.146 as permitted sender) client-ip=66.163.187.146;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=QyDpH8PH;
+       spf=pass (google.com: domain of smahish@yahoo.com designates 66.163.187.146 as permitted sender) smtp.mailfrom=smahish@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725296036; bh=ZIIdm0Clg2A/bS3qwluuOavao8DtFV5fuvzfPe6nilw=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=QyDpH8PHKRRion75vIAQXXRbgb/Ksm8JsBP3N1cP6GScnslcG2IWcumtC3edUBUAQcmVWUKARhfFrMUrKnTKNRTduQPPuz2e+ax9EV+7jPDFJSAdpZuBO4sMu++nuFAqAqEmb0il2qJM2ZAXj9FbYAB5tCcOVcUoHJkqq/CyKGaHGD1R3DFdBvbz20cG9xCB+y7xka3B2TE3m58Eui1Gc7ghDEAonZ8ZCj1xAB+vfrMF6nqGg4u5XDgpq5K8CZ+slr7G79SLM10oypye8ZxJpRIdTmjvOQ351+lLzWsaU6svyaa9wS8Y7mzh53TiEo1blPlhC3fF0NxmmsC0+dDizQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725296036; bh=JME51j7qSfTzkcK6yWl5dI1Cx3L/lWNHAUk2EuA+8n9=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=ssq4BPufNpaF5Bo+4fI59xXDqka2E15AL92naMkklDPMMHQsQO7L7P6nMylb0rtL9SH19rPLJjYM4dMYpO6+e2WExC8IZStV4b6HEMLG3kZvT9ie3juwp8LAINH+7fexNgjHksUEAxn8cDe+FtiJIf2yJDCD6i/hyDkpcw8HtQIplzqnKolUjJYiE5ljcOR2q98KTJ7oQmxGcgphZ9v73yoRR2YSob/vUJke1E/jkbwy9A8rLz0DXbMQU3FkFVlnadSpaMl0Qt2tAdT/1arM57GKv8h3HHDOhDKxR3AwauGNu7b8mYj79i9YLeWwWeW1k0ML2rPATaeiil35LLY5dA==
+X-YMail-OSG: pGYCklkVM1k98E1NBfY4bXzzViiiQNGstLPVIu_o7DzUdJep38MPALiDF3aR9Wa
+ GfY682iVs125UFM1Y05efDHeOWLwCEaG83_gE7Oy0NfDaKSlFMql9CusWL9.Gt7h7BLIFvs4XSAv
+ 7Jrjn0YFcgO00IoBhQbn9E6tL2P97AR4LJMvagfpz5OizL8Bh82O61yLPcF2I9CAAXQFGFQXfdJt
+ 1lX3jOQid6E3fFgMK.CzUYqitaoBGtfeSr5Gy6v9pihzspgZxbNQzJN2u6FWuwbcx1t6aDVL3MCV
+ Uuo5UnAJ_l9Hl4IwIf3hST434XvV_GFr.EyxfVqwNafLCj6MKshgHnxUDElYxjdJOLhqg7kweIFU
+ PX8xnqU8vmgKA8AjM7xnkxehLzdEltl4_irJMDEEWdCw2_XWcfq7YvtLtQcLcttB6RjImLmuFjXy
+ DHT4aHyFmajDNeZzGYYHYdxfjRFUJ5Qj2.MB3gHhalMyqAxLNWQqR1g3Vuqmc4zXE18zEcBlUUj_
+ 3nH7WsqdP9BySoFEyMojKCeTXUgrpSKz1H59JXmX6k2._6ymANjrpERPZDmRMEVBsLWpsJ7NN3ZI
+ KyyapMR1o5oqd857TU4hBlVDYC0aTJUkMwC43GxXr7eVX0BoV4JNbf.GKwljfmt.yXi7w1M4B0Ki
+ nnFJmPqXJ98M5V09x9qvXk8bqt9a2wCEKQ6No0bWFVwniBvZUWAdc5pcVVs9l7m_CDRNJSYLxtTU
+ s45miamPSj_CrYUbW4205lZzstLwgaqIp2vA1OT3nXK4r4uBMbJZ1.SVSM93QjoOpjh.E1tHzl4i
+ q0XFlqu9MlnGlBr9LojGnDNlstjzhRvxfo4i1YZ6LVYUoyzsSAMjiJS4N_KDLCF40M7gyHhpXiYQ
+ 7NdzZrpPQ7_I52LWC46eyA3zBaslar8uYlwW9CKprBKlwZg9imX6tjNVf5jKhAaAxngeXF44OYIn
+ 2Qt_ePgVSHjDiOHthuDnxN6ToD.z9xh.EyLl4su41NAG1RIoaWCNvv7azcsdCjZLSxEDMMtdhI0u
+ Aqp9F6.BOvzLKlOoshI2DiGXrmdLS563i_3..hi_zTDJIWk0dTRFZGtjPtsu7wWvSmf2urmqKvMl
+ LaYxzRZohI8BaD6ShLp7gJcKVqS6xviuPns3qoIu5Wuv4aMe8Kgyb9RnHD4cU8p0QuXnunI2XcR0
+ mNJs0YngQgbiqmwwYRxS3KfT5Uby49rQEaJMIsExF6XS9lU1lAaQUCS9HwNcy3QPD1CE4EVKdSkd
+ R1A.TbvngDGYwYARYQhfSyT68OH0Yuhoz4tEV3QA9Y5TjgUDtiIBJgeID3d6578Mj7om9Op8C8Kk
+ oQ5VY9B9.VNYHbfNF_Jg9XfyLYUFdeDd730sJvBbQMZTedW0nibC89q76xm0fveaRmi2I3sMZQFY
+ LByg4YtOpHYC1tEr7ZviAzhKT_gycrjUbn1NCGZfDVsPJn3Q_IC1_D9hlSOHiMVqGBdAjzzBf5KH
+ uUn5p2UBT.cuNQiW7.Kp50dbsRhJkS5Avbju_9TjuXTD.G5P_4ckaC3O7zV8ihXneU_u6eLXWkjm
+ f5AnkACtanFVUkps9tyVFk2nVCjGz.auO1YdltamUdVDA6CnaaaJjOORIzn23PgqJ.rJueuYDbvG
+ PtnjqtzVDwERsFjDboIb5AiSttbVd5VPD5ZECmGiB.zhHjOmU6Qe0JJeP9VeI.U7.NLIuNrPEaGm
+ emKaTu6I.Z2I_31wq51acTE2ihridFpRtvQvPXrqXo77cT8A8VIdytSDgTngSKrzvkVynIuQhuPP
+ gIh0JHH1GEWhv0eMwzadBQN71958BxPgaLhtSrWtoDzdaBfssDaZGx2p0K2aEpGfIKh518Z3s8hv
+ nKpjAn6ep6KP21ltwoyI2F0dqCM8EyMwrzZzuD5Ki9JMG5PdIqfl_tWjQ7uVub4XZ1EpP5VZ1a3S
+ a_3Weh5qmVf._ZkjBjnHFg7FVcNbP9OGEOR3WRa90C4iCno7n_Z3bexGyzsCIZeTtbxRl.Eg7srh
+ jDcqyY6pjEjNsGRdG88icb797tnFdcU4NxMnwa4Gdb0b7DhM0qVJ42InyEQu3yQM1ZxtftRnf_D5
+ w4gLcaAMVJJJryo9yP9YMWr8GkKTOj0i4IzcR8SRGHmOHGeVbK2MsfcljdwaHPxj07kuc0jSbHUv
+ S_xy2_lY9_1uUdZPLvfJu7Qw9lMfthpNcQ8CW4tXvzdvOs07dNEfF7j6Zuw5jN88IP.SrXOQwpb_
+ e_ZSzivpwTR_hS57VM9lxffl2X2UwfbML4A63CJXbsSTc2786QnbtBsKaReZ0vxPJxC2J21cNn4g
+ 2QensX3SA5smUK5TaN0w5eeGU9sX0QB7obgdFuspUxa_b1IbGeQ4guUjrVUpZNs8-
+X-Sonic-MF: <smahish@yahoo.com>
+X-Sonic-ID: fb62de7d-308f-46e0-a1bc-0bdec6c567c9
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic316.consmr.mail.ne1.yahoo.com with HTTP; Mon, 2 Sep 2024 16:53:56 +0000
+Date: Mon, 2 Sep 2024 16:53:55 +0000 (UTC)
+From: "Prof. S S MAHISH" <smahish@yahoo.com>
+Reply-To: "Prof. S S MAHISH" <smahish@yahoo.com>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <2136869985.2718953.1725296035699@mail.yahoo.com>
+Subject: Reply on cases under suspension
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2718952_342893383.1725296035698"
+References: <2136869985.2718953.1725296035699.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YMailNorrin
+Content-Length: 1564
+
+------=_Part_2718952_342893383.1725296035698
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Sir,
+This is to inform that there is no case of suspension, pending at Govt. Col=
+lege of Engineering and Textile Technology Serampore.
+Thanking You.
+
+Prof (Dr.) S S Mahish=C2=A0 Officer-in-ChargeGovernment College of Engineer=
+ing and Textile Technology Serampore,=C2=A0Hooghly West Bengal,=C2=A0India =
+712201=C2=A0Mob: +91 9434608337
+------=_Part_2718952_342893383.1725296035698
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div class="ydp121be568yahoo-style-wrap" style="font-family:verdana, helvetica, sans-serif;font-size:16px;"><div dir="ltr" data-setdir="false">Sir,</div><div dir="ltr" data-setdir="false"><br></div><div dir="ltr" data-setdir="false">This is to inform that there is no case of suspension, pending at Govt. College of Engineering and Textile Technology Serampore.</div><div dir="ltr" data-setdir="false"><br></div><div dir="ltr" data-setdir="false">Thanking You.</div><div dir="ltr" data-setdir="false"><br></div><div><br></div><div class="ydp121be568signature"><span style="color:rgb(91, 136, 40);"><span style="font-weight:bold;">Prof (Dr.) S S Mahish</span>&nbsp; </span><div>Officer-in-Charge</div><div>Government College of Engineering and Textile Technology Serampore,&nbsp;</div><div>Hooghly West Bengal,&nbsp;</div><div>India
+ 712201&nbsp;</div><div>Mob: +91 9434608337</div></div></div></body></html>
+------=_Part_2718952_342893383.1725296035698--

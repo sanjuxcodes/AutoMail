@@ -1,0 +1,111 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:726:b0:89:ead2:3829 with SMTP id 38csp159145dlh;
+        Wed, 11 Sep 2024 00:45:31 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFt37ZioAomoQYB0bYQD7YpmOM8qIPcHoPwQhFgumnbQZkL/cQ3ZISlMGs7A51dxAbLaSAN
+X-Received: by 2002:a17:90a:8585:b0:2d8:a744:a81c with SMTP id 98e67ed59e1d1-2db6717b80dmr8728468a91.1.1726040731439;
+        Wed, 11 Sep 2024 00:45:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726040731; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ig3bgpv5/hPg3vDyqGWlYGQ+SiprIu7Is0p48Lk1404QugcR5qfZR3RHnGbo+AJar4
+         PhiEO9MQ6SYHNJ86NlTUt2mQyl2ulPUqV3+whnZvcoVNYfezC7kV47nakzevUk9ifLcS
+         RFmSb32rH1+U/+HQ3OwODDLgjG8qhVYE7+GiO9CnroH3gNEyoFpQDTTzzEIJv7kxAi66
+         h/9Fe1M7r8EDQhCcwg7tHZdb6tY5smc3kZXwTuvQzYKZtFNPAB0Dhaa9JnWtptt/Ev+B
+         2C3fhmBX6i2AHL7J04eTujAmcmb8z58uUXKkzbBgKnPAWEZS5IE5CPrl5DmMU62I2s+R
+         sgnA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:message-id:to:mime-version:date:dkim-signature;
+        bh=4eQyPmtBCuKw1bC3hwZI/NZh2P9R8YnF8Hp5Z9nQqRo=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=IYlBlDjrF4EX8cNMOvD5f8BDAMdv7um9MQ8w6NOLqCDVk1U9egcGcCogiLf9jLnfB3
+         Zojb4iKP0p8nlG+vW2EzS62/M6KQkYftv1sXxTQDneoGPAXP2hX4QlVoZsr7l/h35sOQ
+         R9FeunCz7N5YTAxjy573yzPpAgsMZsIERhIHSFXdTG/nMzf+QxBdSOxZWRVmpPYXcwg6
+         PWd9rDIGdMi3XQAC46MTLsutmDnbjUucUlj6XMso1FUPplYd43s1MIDT/Y/DzWC2uFRt
+         9CQMEpkUT0VrryLHcbNWpwUtsRV6sP9XjoAgV7xrXjOJ3x49lEYiW3qw9vgfiRjEumsI
+         iPfw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=dTaRC5bi;
+       spf=pass (google.com: domain of jallawcollege@rediffmail.com designates 114.31.224.116 as permitted sender) smtp.mailfrom=jallawcollege@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <jallawcollege@rediffmail.com>
+Received: from f5mail-224-116.rediffmail.com (f5mail-224-116.rediffmail.com. [114.31.224.116])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-7d825ab1454si9301819a12.521.2024.09.11.00.45.30
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 Sep 2024 00:45:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jallawcollege@rediffmail.com designates 114.31.224.116 as permitted sender) client-ip=114.31.224.116;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=dTaRC5bi;
+       spf=pass (google.com: domain of jallawcollege@rediffmail.com designates 114.31.224.116 as permitted sender) smtp.mailfrom=jallawcollege@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1726040728;
+	bh=4eQyPmtBCuKw1bC3hwZI/NZh2P9R8YnF8Hp5Z9nQqRo=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=dTaRC5biAXHr/cL0pHQv7aN9L99y18Qw1EkQcuiLa1S9iDJY8MHvTrp2u6vuF8pAZ
+	 JwbDmp7KlglAylBmXsKHojnh2D4owOq3K8XoBK+gcfkZjgtArJ8Ez4QQ+Ay+0Ed/86
+	 b6V8GIRBea7neRvF6EW3/IfSxBcGkMYgFqUbxRpo=
+Received: (qmail 19080 invoked by uid 510); 11 Sep 2024 07:45:28 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 0
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudejtddguddvfecutefuodetggdotefrodftvfcurfhrohhfihhlvgemucftgfffkffhhfdpqfgfvfenuceurghilhhouhhtmecufedttdenucenucfjughrpeffggfvkfhsuffhtgesrgdtreertddtjeenucfhrhhomhepfdetsghhihhjihhtuceuhhgrthhtrggthhgrrhhjvggvfdcuoehjrghllhgrfigtohhllhgvghgvsehrvgguihhffhhmrghilhdrtghomheqnecuggftrfgrthhtvghrnheptefgfeevheetvdfglefhkeeuhedujeeutdfftedtkeefkeeuledtheduieegffdunecukfhppedutdefrddvudejrddvfedtrddunecuvehluhhsthgvrhfuihiivgeptdenucfrrghrrghmpehmohguvgepshhmthhpohhuth
+X-Remote-IP: 103.217.230.1
+X-REDF-OSEN: jallawcollege@rediffmail.com
+Date: 11 Sep 2024 07:45:28 -0000
+MIME-Version: 1.0
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Received: from unknown 103.217.230.1 by rediffmail.com via HTTP; 11 Sep 2024 07:45:28 -0000
+X-Senderscore: D=0&S=0
+Message-ID: <1726039957.S.30537.autosave.drafts.1726040728.19011@webmail.rediffmail.com>
+Sender: jallawcollege@rediffmail.com
+Subject: =?utf-8?B?UmVwbHkgb2YgeW91ciBvcmRlciB2aWRlIE5vLkdSQy1IRUQvMDIoMTApLzI0IGRhdGVkIDI5LjA4LjIwMjQu?=
+From: "Abhijit Bhattacharjee" <jallawcollege@rediffmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_629899ada9228df618a78aa1de95a27b"
+
+--=_629899ada9228df618a78aa1de95a27b
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,&nbsp; &nbsp; &nbsp; In reference to the above subject, this is to inform you that the above order mentioned in subject is not applicable because no suspended officials and staff are in position in the Jalpaiguri Law College.
+
+&nbsp; &nbsp; &nbsp; &nbsp;Kindly, acknowledge it and take necessary action please.&nbsp;Thanking you.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yours faithfully,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Prof. (Dr.) Abhijit Bhattacharjee&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Principal&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jalpaiguri Law College
+--=_629899ada9228df618a78aa1de95a27b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<span style=3D"text-size-adjust: 100%; color: rgb(0, 0, 0); font-family: He=
+lvetica, sans-serif, arial; font-size: 12px;">Sir,</span><br style=3D"text-=
+size-adjust: 100%; color: rgb(0, 0, 0); font-family: Helvetica, sans-serif,=
+ arial; font-size: 12px;" /><span style=3D"text-size-adjust: 100%; color: r=
+gb(0, 0, 0); font-family: Helvetica, sans-serif, arial; font-size: 12px;">&=
+nbsp; &nbsp; &nbsp; In reference to the above subject, this is to inform yo=
+u that the above order mentioned in subject is not applicable because no su=
+spended officials and staff are in position in the Jalpaiguri Law College.<=
+br /><br />&nbsp; &nbsp; &nbsp; &nbsp;Kindly, acknowledge it and take neces=
+sary action please.<br style=3D"text-size-adjust: 100%;" />&nbsp;</span><br=
+ style=3D"text-size-adjust: 100%; color: rgb(0, 0, 0); font-family: Helveti=
+ca, sans-serif, arial; font-size: 12px;" /><span style=3D"text-size-adjust:=
+ 100%; color: rgb(0, 0, 0); font-family: Helvetica, sans-serif, arial; font=
+-size: 12px;">Thanking you.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yours faithfully,</span><=
+br style=3D"text-size-adjust: 100%; color: rgb(0, 0, 0); font-family: Helve=
+tica, sans-serif, arial; font-size: 12px;" /><span style=3D"text-size-adjus=
+t: 100%; color: rgb(0, 0, 0); font-family: Helvetica, sans-serif, arial; fo=
+nt-size: 12px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pr=
+of. (Dr.) Abhijit Bhattacharjee</span><br style=3D"text-size-adjust: 100%; =
+color: rgb(0, 0, 0); font-family: Helvetica, sans-serif, arial; font-size: =
+12px;" /><span style=3D"text-size-adjust: 100%; color: rgb(0, 0, 0); font-f=
+amily: Helvetica, sans-serif, arial; font-size: 12px;">&nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; Principal</span><br style=3D"text-size-adjust: 100%; col=
+or: rgb(0, 0, 0); font-family: Helvetica, sans-serif, arial; font-size: 12p=
+x;" /><span style=3D"text-size-adjust: 100%; color: rgb(0, 0, 0); font-fami=
+ly: Helvetica, sans-serif, arial; font-size: 12px;">&nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jalpaiguri Law Coll=
+ege</span><br>
+--=_629899ada9228df618a78aa1de95a27b--

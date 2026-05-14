@@ -1,0 +1,321 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp651301dlb;
+        Thu, 19 Sep 2024 20:37:34 -0700 (PDT)
+X-Received: by 2002:a05:651c:221b:b0:2f3:cb02:cb53 with SMTP id 38308e7fff4ca-2f7cb2cfe3amr10755111fa.2.1726803453696;
+        Thu, 19 Sep 2024 20:37:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726803453; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fuAw9mxC8mThSWP5hi2TdbdzQDVu+1cIPARVnuK637ChhxdGR0zDJBStGTiDc9YJUq
+         yomMMOxSm7O04Mi/CDYrsr0YmCSeFpH2y4Hr3aw6u+JT4zOwL/qplL4UZ66tD+4NEcao
+         CNQms/OiRXTi7vIb+PP9hQfdEhKe64toIex+1aNA+aXuKQClaORqQ39l8OrGDTN9m2TI
+         KZVz+ABuO6L+2oXZAIRKhdKdw3nBHmoSOQEcCdgK/bktobkgw2oPJl10pRWYnSBgCgPx
+         l1qJP1GqCkn/V7ZCfcIsoL5tPZ4e83VRKo7g5AqSc+Pn+81+8pWOy5cI7x/6atFIMMmK
+         Y29A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=LMKhGmyOQTLloEaF9meeF/c1pxHBpCxdVOl4szEw2h0=;
+        fh=LsDMjGD5efnVReSNUxdXq+HveSjpXslNuMHiMGMmbmE=;
+        b=iZe3ttZyXuztThhbvJrjbjv7KuD6wDlejebNZlRQufMQrH1LCw3GFUm1kj1fv2KtTD
+         zDds4dg7zl8FZWfFSV034yeHv1sYKdcPF2Dob2XoOUYAPqTNj2fj98yDaZzgUCzDGKic
+         iJLgSWnxTrDQUPb74uGQ9tmIMe0nSqXS/GFj6UHIy7Pz9A47swNKDcH357bT0cz6Yx4K
+         I+0jtzGWzWp3ZqUtyc/gxHrOHZgKfSUxLGKKmlsDV8vDF7el7zbL5QdGXqu6h+wYkdt3
+         eP/5oSUbh+CvHU34Crv9Sn6A2bV4IyXtchaUeOZgMGDeWAMwUXtSVokI9Qt0MA2yvOZB
+         mNVQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Uwxg4N9D;
+       spf=pass (google.com: domain of jaydeepsarangi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jaydeepsarangi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <jaydeepsarangi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-2f79d48668dsor20578071fa.15.2024.09.19.20.37.33
+        (Google Transport Security);
+        Thu, 19 Sep 2024 20:37:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jaydeepsarangi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Uwxg4N9D;
+       spf=pass (google.com: domain of jaydeepsarangi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jaydeepsarangi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726803453; x=1727408253; dara=google.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LMKhGmyOQTLloEaF9meeF/c1pxHBpCxdVOl4szEw2h0=;
+        b=Uwxg4N9D25DvhM/oKrp9gDizmcTIKS82Wi4KKwWdPXaEURO7zufXNFHL1MHOtDBxdu
+         0K67zlPd8ECk8UWxI0YLNG2LDXN6DU15MrqyyI105VOrsGvulI01h34uiWNPo405N2Eg
+         tqVJDsOLa6xnobmgbkoTsuj/Ab5Vd9+dvS+pc1D95lDpps2p5J4XDszOushNpYGAnveW
+         ibB6qdCuBVGMrqP1DIg8PbjmRDoPDLLzimwRakK9RGa1Ms4+t9Qa8OiND4nPoUuIlYB5
+         NwGoOkd+ufqYCIqmnYOZcplUleHp46HvQXu6xq7d8YFujr6WXlmp24/FlEwJOZe9Z+/j
+         yR8w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726803453; x=1727408253;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LMKhGmyOQTLloEaF9meeF/c1pxHBpCxdVOl4szEw2h0=;
+        b=oaRfv3e5AgisSd+wFkxEvTwRhn60u6X90QlCgnm6QZCsW9s51EKMfJjzY1y0awKCaH
+         QhebrXlbXafM3Cr4MhLB9lFK0n0NgmJnM7zxdjBOTLKl55K3v7iaK+BnR1KOdWtntdCB
+         MmDtYfcSXXsKqpg5bCYJyi2W+hkuUyunkPI/UY/0pnQeDUbyiMNjyqQPOvyPQcBGKAa2
+         cXt/z+twebt3vqFPaHXCy8lnwf+r5MAgs/u3lMHKwm/XxK47VWlrEK9SCcbq4WgCvNmc
+         sugmvgxLbd3EvJ32pMuN58KNZ1UIt8moK3TqWKsWSrghcpTl92fZLess970C7FLQDYj6
+         MM7g==
+X-Gm-Message-State: AOJu0Yx8F4x5NtBSiZlxL+O2hnj7pskSCYyYgVKxBrIJhhT+y5R2utlW
+	TtFD2MMtkVG9pqFTniBRmTdPcb5FGJyKG7fay6bS1bfl9u9lXmVGI/aIVK8DUcq7uu1wKGA9Yy0
+	rp/0O+CyR7J0iNXl+uWoivh2ILUYs897h
+X-Google-Smtp-Source: AGHT+IEwR9HPUtGUeYz4tEmH6eYcFTTfRk48UUNI+3UR+ALObcPSyhr2xAecCbpXB6osysUVw4bBeWF/GhHZlei3rGg=
+X-Received: by 2002:a2e:4a12:0:b0:2ef:2d3a:e70a with SMTP id
+ 38308e7fff4ca-2f7cb2f6912mr7501981fa.18.1726803452191; Thu, 19 Sep 2024
+ 20:37:32 -0700 (PDT)
+MIME-Version: 1.0
+From: Jaydeep Sarangi <jaydeepsarangi@gmail.com>
+Date: Fri, 20 Sep 2024 09:07:20 +0530
+Message-ID: <CAE_wic-Hq4oAP49ZJrtsEX5mdtyF-=GMksXL46+PgaxmeEctOg@mail.gmail.com>
+Subject: SUSPENSION CASES: N/A
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Cc: Asis Ghosh <asisghoshjdpi@gmail.com>
+Content-Type: multipart/mixed; boundary="0000000000005d831b062284c27f"
+
+--0000000000005d831b062284c27f
+Content-Type: multipart/alternative; boundary="0000000000005d8318062284c27d"
+
+--0000000000005d8318062284c27d
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir,
+There is* no *SUSPENSION CASE at our college ( NEW ALIPORE COLLEGE) till
+date.
+Thanking you,
+regards,
+
+*Jaydeep Sarangi*
+
+Principal, New Alipore College, Kolkata:53
+
+President, Guild of Indian English Writers Editors and Critics(GIEWEC)
+
+Vice President, Executive Council,Intercultural Poetry and Performance
+Library, ICCR, Kolkata
+
+
+Website  Link:  www.jaydeepsarangi.in
+Ph : 9477807031
+
+--0000000000005d8318062284c27d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Sir,<div>There is<b> no </b>SUSPENSION CASE at our co=
+llege ( NEW ALIPORE COLLEGE) till date.</div><div>Thanking you,</div><div>r=
+egards,<br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" da=
+ta-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><br></div><div><p cl=
+ass=3D"MsoNormal" style=3D"margin-bottom:0.0001pt;color:rgb(34,34,34);line-=
+height:normal;background-image:initial;background-position:initial;backgrou=
+nd-repeat:initial"><b><i><span style=3D"font-size:12pt;font-family:&quot;Co=
+mic Sans MS&quot;;color:rgb(11,83,148)">Jaydeep Sarangi</span></i></b><br><=
+/p><p class=3D"MsoNormal" style=3D"margin-bottom:0.0001pt;color:rgb(34,34,3=
+4);line-height:normal;background-image:initial;background-position:initial;=
+background-repeat:initial"><span style=3D"font-size:12pt;font-family:Arial,=
+sans-serif"></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0.0001=
+pt;color:rgb(34,34,34);line-height:normal;background-image:initial;backgrou=
+nd-position:initial;background-repeat:initial"><span style=3D"font-size:12p=
+t;font-family:&quot;Century Schoolbook&quot;,serif;color:rgb(0,176,80)">Pri=
+ncipal,=C2=A0New Alipore College, Kolkata:53</span></p><p class=3D"MsoNorma=
+l" style=3D"margin-bottom:0.0001pt;line-height:normal;background-image:init=
+ial;background-position:initial;background-repeat:initial"><span style=3D"f=
+ont-size:12pt;font-family:&quot;Century Schoolbook&quot;,serif"><font color=
+=3D"#38761d">President, Guild of Indian English Writers Editors and Critics=
+(GIEWEC)</font></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0.0=
+001pt;line-height:normal;background-image:initial;background-position:initi=
+al;background-repeat:initial"><span style=3D"font-size:12pt;font-family:&qu=
+ot;Century Schoolbook&quot;,serif"><font color=3D"#38761d">Vice President, =
+Executive Council,Intercultural Poetry and Performance Library, ICCR, Kolka=
+ta</font></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0.0001pt;=
+color:rgb(34,34,34);line-height:normal;background-image:initial;background-=
+position:initial;background-repeat:initial"><span style=3D"font-size:12pt;f=
+ont-family:&quot;Times New Roman&quot;,serif">=C2=A0</span></p></div><div><=
+span style=3D"color:rgb(34,34,34)">Website=C2=A0 Link:=C2=A0=C2=A0</span><a=
+ href=3D"http://www.jaydeepsarangi.in/" style=3D"color:rgb(17,85,204)" targ=
+et=3D"_blank">www.jaydeepsarangi.in</a><font color=3D"#134f5c"><br></font><=
+/div><div>Ph : 9477807031=C2=A0</div></div></div></div></div></div>
+
+--0000000000005d8318062284c27d--
+--0000000000005d831b062284c27f
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; 
+	name="SUSPENSION CASES.xlsx"
+Content-Disposition: attachment; filename="SUSPENSION CASES.xlsx"
+Content-Transfer-Encoding: base64
+Content-ID: <f_m1a639bt0>
+X-Attachment-Id: f_m1a639bt0
+
+UEsDBBQABgAIAAAAIQDIo800dgEAAAQFAAATAN0BW0NvbnRlbnRfVHlwZXNdLnhtbCCi2QEooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAKxUyW7CMBC9V+o/RL5WxNBDVVUEDl2OLRL0A0w8IRaObXkGCn/fSVJQqWgk
+FC6Jsszb5iXj6a6yyRYiGu8yMUqHIgGXe23cKhOfi7fBo0iQlNPKegeZ2AOK6eT2ZrzYB8CEpx1m
+oiQKT1JiXkKlMPUBHD8pfKwU8WVcyaDytVqBvB8OH2TuHYGjAdUYYjJ+gUJtLCWvO77dKlkaJ5Ln
+9r2aKhMqBGtyRSxUbp3+QzLwRWFy0D7fVAydYoigNJYAVNk0RMOMcQ5EbAyFnIw/2HQ0GpKZivSu
+KmaQOyuJHUB7HKXsoZeIBuyuRvmfEGlvAXtTnfptQQ/MZ+KNYPEyaz8LTHmy2QGWJmAHQ3d23Zl8
++bheer++dip1G9JKGXfQfa4EXKFZ9AElF663AKgbrUEPAkNCJAPHzM5xcwFr701tUTan/i08rcYR
+vysD1oGliqDnxF/O6ur1/I3dpeO4i9xHuHwZh87W02c2IJt/2OQbAAD//wMAUEsDBBQABgAIAAAA
+IQC1VTAj9QAAAEwCAAALAM4BX3JlbHMvLnJlbHMgosoBKKAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMks9OwzAMxu9IvEPk++puSAihpbtM
+SLshVB7AJO4ftY2jJED39oQDgkpj29H2588/W97u5mlUHxxiL07DuihBsTNie9dqeK2fVg+gYiJn
+aRTHGo4cYVfd3mxfeKSUm2LX+6iyi4saupT8I2I0HU8UC/HscqWRMFHKYWjRkxmoZdyU5T2Gvx5Q
+LTzVwWoIB3sHqj76PPmytzRNb3gv5n1il06MQJ4TO8t25UNmC6nP26iaQstJgxXznNMRyfsiYwOe
+JtpcT/T/tjhxIkuJ0Ejg8zzfinNA6+uBLp9oqfi9zjzip4ThTWT4YcHFD1RfAAAA//8DAFBLAwQU
+AAYACAAAACEAgT6Ul/QAAAC6AgAAGgAIAXhsL19yZWxzL3dvcmtib29rLnhtbC5yZWxzIKIEASig
+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArJLPSsQwEMbvgu8Q5m7TriIim+5FhL1qfYCQ
+TJuybRIy45++vaGi24VlvfQS+GbI9/0yme3uaxzEBybqg1dQFSUI9CbY3ncK3prnmwcQxNpbPQSP
+CiYk2NXXV9sXHDTnS+T6SCK7eFLgmOOjlGQcjpqKENHnThvSqDnL1MmozUF3KDdleS/T0gPqE0+x
+twrS3t6CaKaYk//3Dm3bG3wK5n1Ez2ciJPE05AeIRqcOWcGPLjIjyPPxmzXjOY8Fj+mzlPNZXWKo
+1mT4DOlADpGPHH8lknPnIszdmjDkdEL7yimv2/JbluXfyciTjau/AQAA//8DAFBLAwQUAAYACAAA
+ACEAE51rcqQBAACyAgAADwAAAHhsL3dvcmtib29rLnhtbIxSTU/cMBC9I/U/WL5n7QRnv7RZ1O2m
+KhJCqFA4u85kY21iR7a3Car470ySLiBx6Wk+/ebNG2+u+qYmf8B5bU1G4xmnBIyyhTaHjP56+B4t
+KfFBmkLW1kBGn8HTq+2Xi01n3fG3tUeCAMZntAqhXTPmVQWN9DPbgsFKaV0jA4buwHzrQBa+AghN
+zRLO56yR2tAJYe3+B8OWpVawt+rUgAkTiINaBqTvK916ut2UuobHaSMi2/ZWNsi7rymppQ95oQMU
+GRUY2g7eEwtK3KndnXQ9VFOeUrZ9W/LOYTBs+6ih8+/5IST9kzaF7TKK2j1/8Lsx/aSLUGU04WKF
+9Sn3A/ShChmdz8U4hn2AHvXBEaMlZiR/P2gW4yEGe4380HdrjY67LuKBKDs/U7JWd44MZmxMRBqv
+hg7ow40P/7Tu4/ST2o1WznpbhpmyDZuE/nSzmLM4ns42QpKT0xn9Gwv+dcFXIuL5ZRqJ5SqJluIy
+ib6JfZKni3yf79IXPA3OXZ8/zsCyki48OKmO+N1+QrmTHk81LYR8ca2JNTrnV9tXAAAA//8DAFBL
+AwQUAAYACAAAACEAaQBVAmMCAAABBQAAFAAAAHhsL3NoYXJlZFN0cmluZ3MueG1svFTRbpswFH2f
+tH+446mVWiCsmtqK0HlgWksEI3Ba5ZESN0ECO7NJuu7rZ0i3LGkm9WkIkHzw9TnX5xj/5kfbwIYr
+XUsxtka2awEXlZzXYjG2piw+v7RAd6WYl40UfGy9cG3dBB8/+Fp3YGqFHlvLrltdO46ulrwttS1X
+XJgvT1K1ZWeGauHoleLlXC8579rG8Vz3i9OWtbCgkmvRGd6RBWtRf1/z8A8Q+LoO/IHkWq/KypCb
+VTRXG24FKZpgoDGwOwzFtMhwGuEI8CRL6Axj8J0u8J2+flhjbzqNYxJicICkBSNsyghN4YGwO0BR
+lOOiOCjuu3wrYEca53RySHi8JseoMFwxzV81Fz31u+hQOgNqms0hwgyRpDgsC37jZlN22gqG4vgM
+SAz9AmeAGMzoNN9rvdSw4gpSacNtHp7f4chxvU8j99TxLiBCzOyrd2W7l7bnehf7YtU//ckS06ux
+xvgyeLRVZ3ghi3oxETzQPIITKGjMIKTZDE4BJQUFRo2NpkMgEbw2aWj6OzOvRyfw1+bRP2FTNkNw
+zKiSjVTQmfiZkIwsg6hYim47JSyb+lHVPfpUtnXzsoW9Hhgiy7dAWwupetAZmLpgoWq+KUXF7SWf
+28+PXxcms41dyXa7Cwey/oOk47GCbzMYfbbdq8EhyGhBGLnHyWy3fbujcHwJE5CUQthbRgpA9wQl
+6FuC4dXGCU6HU5JSBijLEhIOX08gRadvgngwCd51pfjB2E8ymmOThiTBt3g/al2QOugAOt5LpmpR
+1auyOYOUPwNq6pVUHELZNHzB/5LrmF9Y8AsAAP//AwBQSwMEFAAGAAgAAAAhADttMkvBAAAAQgEA
+ACMAAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsc4SPwYrCMBRF9wP+Q3h7k9aF
+DENTNyK4VecDYvraBtuXkPcU/XuzHGXA5eVwz+U2m/s8qRtmDpEs1LoCheRjF2iw8HvaLb9BsTjq
+3BQJLTyQYdMuvpoDTk5KiceQWBULsYVRJP0Yw37E2bGOCamQPubZSYl5MMn5ixvQrKpqbfJfB7Qv
+TrXvLOR9V4M6PVJZ/uyOfR88bqO/zkjyz4RJOZBgPqJIOchF7fKAYkHrd/aea30OBKZtzMvz9gkA
+AP//AwBQSwMEFAAGAAgAAAAhAP5AaZpwBwAAkyAAABMAAAB4bC90aGVtZS90aGVtZTEueG1s7FlL
+bxs3EL4X6H9Y7F3Ra1cPI0qgZ9zEToJISZEjLVFaxtylQFJ2hCBAkZx6KVAgLXop0FsPRdECLdCi
+l/6YAAn6+BEdclcrUqIS2/ChLWxftNxvhsOZ4Tez5PWbT2PqnWAuCEtafvlayfdwMmYTksxa/sPR
+oNDwPSFRMkGUJbjlL7Hwb9748IPraE9GOMYeyCdiD7X8SMr5XrEoxjCMxDU2xwm8mzIeIwmPfFac
+cHQKemNarJRKtWKMSOJ7CYpB7b3plIyxN1Iq/Rsr5X0Kj4kUamBM+VCpxpaExk6OywohlqJLuXeC
+aMuHeSbsdISfSt+jSEh40fJL+s8v3rheRHuZEJU7ZA25gf7L5DKByXFFz8lnR/mkQRAGtXauXwOo
+3Mb16/1av5br0wA0HsNKU1tsnfVKN8iwBij96dDdq/eqZQtv6K9u2dwO1b+F16BUf7CFHwy64EUL
+r0EpPtzCh51mp2fr16AUX9vC10vtXlC39GtQRElyvIUuhbVqd7XaHDJldN8Jb4bBoF7JlK9RkA15
+dqkppiyRu3ItRk8YHwBAASmSJPHkco6naAxZ3EWUHHHiHZBZJNU0aA8j4306NBZbQ2pGT4w5mcuW
+f3uOYF+stb759dfXL35+/eKX1y9fvn7xg6ndkttHycyU++vbz//++hPvz5+++evVF+nUm3hh4t9+
+/+nb335/l3rYTIZZX/749ucf33z12R/fvXJob3N0ZMJHJMbCu4tPvQcshgVq79j24CN+PolRhIgl
+gSLQ7VDdl5EFvLtE1IXrYNuFjzjwiAt4a/HEsnUY8YUkjpnvRLEFPGSMdhh3OuCOmsvw8GiRzNyT
+84WJe4DQiWvuLkqsAPcXcyBQ4lLZjbBl5n2KEolmOMHSU+/YMcaO1T0mxPLrIRlzJthUeo+J10HE
+6ZIRObISaS20T2KIy9JlIITa8s3hI6/DqGvVPXxiI2FbIOowfoSp5cZbaCFR7FI5QjE1HX6AZOQy
+crjkYxPXFxIiPcOUef0JFsIlc4/Deo2g3wEOcYf9kC5jG8klOXbpPECMmcgeO+5GKJ67sEOSRCb2
+I3EMKYq8+0y64IfM3iHqGeKAkp3hfkSwFe73E8FDoE/TpHWCqDcL7ojlLcys/B0u6RRhF8u0eWyx
+a5sTZ3Z0FjMrtQ8wpugUTTD2Hn7ksKDD5pbP10bfjoBV9rErsW4jO1fVc4IFNEKqc9mmyAMirJQd
+4hnbYc/hcoN4liiJEd+l+S5E3fR5H+qYk0rv0fGxCbxLoMGDfHE65Z4AHUZy79R6P0JW7VLPwp2v
+S27F7yx7DPblE8uMM+xLkMHnlgFiN2Xe6ZsRotYE64QZIWghXHQLIlb41yKqrmqxhVNuam/adRig
+9bE6mpgk721v0ry8/MbGke+X09K4FVuk9OZ8zcwu0tjfaGF24f6DjUsPLZL7GGrFNitd9S1XfYv/
+v+9bdu3lq25lV09x1a340EVcdSvZ6cjldCvrBgV6F3V+kJ7U6HObeOexzZRQOpRLig+EPrkR8M0y
+GcCgktNHljg/xptH8FOVOZjAws040jIeZ/JjIqNhhOZw6lP2lZKZyFTPhDdnAk4b9bBTt8LTRXzI
+JulpZbmsTibTyiqQXI+XwnwcTppkiq7V1ydwuXpt7UyflK4MULLnMcKYzDai6jCivhpUTtLnsuA0
+hxF6ZZdiRdNhRUOpX4VqywowLY8KfFR78Cne8sMAREAIjtugAZ+oOKWhXkVXB/MyI73LmVYGlOBI
+PMuAdaSbytady1OrS1PtDJG2jDDSzTZCe0Y3eCKCT90sO9XoWcw4b6yb65Ba5ilXZL4wzKg33mXF
+RWMNcpvcQBOTKWjinbb8WjWElBmjecufwqkv/IznkDtCfVchOoOrk7Hk6Ya/CLPMuZA9JKLU4Zp0
+UjaIicTcoyRu+Wr5eRhoojlE21auACH8a41rAq3824yDoNtBxtMpHksz7MaI8nT6CAyfcoXzrRa/
+OFhJsgWEexhNTr0juuAPEKRYWC8rB06IgKuBcurNCYHbrJzI1vm3UZgy2jWvk3QOpeOIziOUVRST
+zFO4pvLcHP2U+8B4ytYMDjVckhXCo5kqsKZTrWqaV43Uhp1V9/1CynMGaa5rpsUqqmq6WcyaYVUG
+Nnx5sSJvWLVyMZRLs8Kn1L1Juc0V1230CXmVAIfn/nNU3TMUBMO09WSWacribRpWnJ2N2rVjtcD3
+mHaWImGwfm2ldsNveY1wTgeDF6r8ILeZtTA0XfWV2tP62tu8mWZHT4A8etDlLqgUOpRwessRNERD
+3ZOktAFb5KnMtgb88hactPxnpbAddCtht1BqhP1CUA1KhUbYrhbaYVgt98NyqdepPIfCIqO4HKZX
+7gO4pKDL7OJdj29dvsere5hrYxYXmb5cL2rD9eV7uZJdvuvL+5bvvIX3CLDPs1pl0Kw2O7VCs9oe
+FIJep1FodmudQq/WrfcGvW7YaA6e+96JBgftajeo9RuFWrnbLQS1klpHo1moB5VKO6i3G/2g/Tzr
+Z8AFKY9kTgE/awNv/AMAAP//AwBQSwMEFAAGAAgAAAAhACU6MOEEAwAAoAkAAA0AAAB4bC9zdHls
+ZXMueG1sxFZta9swEP4+2H8w+u76JbGXBNulaWoYdGXQDPZVseVEIEtGUjqnY/99J7/Fo0sbutJ9
+iXTn091zz51OiS7rklkPRCoqeIy8CxdZhGcip3wbo2/r1J4hS2nMc8wEJzE6EIUuk48fIqUPjNzv
+CNEWuOAqRjutq4XjqGxHSqwuREU4fCmELLEGUW4dVUmCc2UOlczxXTd0Skw5SqJCcK2sTOy5jtGk
+UySRerQeMANcHnKSKBNMSEuDewDSaDguSWtxjRndSGrMClxSdmjVvlE0iDq7knIhjdIxIdvASbQx
+Vu8Ya/8u8ZoUFeRIGRvI9Q25oEiiCmtNJE9BsLr9+lABtRwq3VLU2L1gvZX44PnB6IDTBARWhcyh
+s8ZlbVVJxEihgQNJtzuzalHB70ZoLUrY5BRvBccMtk5/ol/NSehIaL4Y6V3TPG1fUJ6TmuQxCqcN
+FmPYRTjLvsHSQDnLHCD3iM+yb5N7OTfIecTKWa5HUE6Q17EIvZARxu4Ne9+LoTAetERdWHxfpqX+
+DAzCEDC3o99CF3TbtgitYIoz9tb6HrkNX+XWqovB/ylQHuD7GyjQ96ctXFXskEIWZlS00rLpx6N8
+xeiWl6Q1SSKYIK1o/ZC4WpO6OWrSrIvTBP0zFgjwv/LcCUkfgSIzYjPggbST8TXp+m9E/RtCgi5+
+rhtOVv8ZCE3DQ4uP7tEft2i4D5Z5mWJ0Zx4/NsKx2VOmKR86/HiDwGdeH++ka2aYxht4Y81tHaJA
+Ujkp8J7p9fAxRsf9F5LTfQnV6Ky+0gehGxcxOu5vzdz1QhMD2vxWwaCE1dpLGqOfN8tP89VN6tsz
+dzmzpxMS2PNgubKD6fVytUrnru9e/4KczKu/qL3pk5e/pJkUShT6IoNxLoqCZuTp2z935v3rD04W
+ioGV7JLtwN8fdTEaCS38ZsoD7DH2uR+6V4Hn2unE9expiGf2LJwEdhp4/iqcLm+CNBhhD16H3XMd
+zzuCDxaaloRR3teqr9BYC0UC8ZkknL4Sjhr+WiW/AQAA//8DAFBLAwQUAAYACAAAACEAz3ORaAcD
+AABvCAAAGAAAAHhsL3dvcmtzaGVldHMvc2hlZXQxLnhtbIyWW2+bMBTH3yftO1h+H5ckJCwKqZpA
+tT5MmtZdnl1wglXAzHaSbp9+xxA74ERqXwL8fP7nZsPJ6u61rtCRCsl4k+DQCzCiTc4L1uwT/PPH
+w6cYI6lIU5CKNzTBf6nEd+uPH1YnLl5kSalC4KGRCS6Vape+L/OS1kR6vKUNrOy4qImCR7H3ZSso
+KTpRXfmTIJj7NWEN7j0sxXt88N2O5TTl+aGmjeqdCFoRBfnLkrUSr1cFgzVdEBJ0l+D7cJmFAfbX
+qy70L0ZPcnCPFHl+ohXNFS2gAxjpyp45f9GGj4ACcCk7A+2S5Iod6ZZWVYIfQt2dP10UfQ8hfBtj
+eG/iPXTd+CZQQXfkUKnv/PSFsn2pIHCk5TmvwBZ+Uc30fmBUk9c+K1aoMsHTwJtNokUcTiKM8oNU
+vP7dr4Rnfa+cnJVwPVllOAvmb+imZx1cz7pw4r1DNzvr4Gp0kTeJozB6KyLU0dUIV6NceHEUzebx
+4maNft+krtEpUWS9EvyE4PRAt2RL9FkMlxFsWq7hvabQN4ygyfp0HNfRyj/C7uRni42x0P3Xkq0L
+UhdkA+BDdJsCtHuQAtIbO9Xnp09Fr3Zp2lQCJ5Vri3Bssb22mIwt0muL6dgiu7aYWYtROdC1QTmm
+DE0TDE5sGbGVd4VujIXtqAEXyeexJDUWRpINwCgnOGE3ctJU52TkGxdsXZC6IBuAUUQ4hTciajqK
+6IKtC1IXZAMwiji/GVHTUUQXbF2QuiAbgFHExc2ImiYY+mJ3ej7eto2xMH3fuiB1QTYAoxT0t/T6
+9dU0wdAom8LCScFY2BRckLogG4BRCjAmbuSw0diGDy/vbK/tP/n9l6imYt8NB4lyfmhANIW339LB
+QNIn1eWLJTTnBo+XkDFw3wpgSLRkT78SsWeNRBXdQajAg9aKfpx094q3HYXuPXMFo8I8lTCHKXzp
+Ag/esh3nyjxAEO33iapDi7hgMGO70ZrglgslCFMYlcD/cVio0paBD6z/PyiWX57FkhUJFo9FN5N8
++1dh/R8AAP//AwBQSwMEFAAGAAgAAAAhAEQg7CHQAAAAEAQAACcAAAB4bC9wcmludGVyU2V0dGlu
+Z3MvcHJpbnRlclNldHRpbmdzMS5iaW7yYAhgUGDwYUhkKGZIZShi8AKSJUCRACA7nyENyCsGwkwg
+Ow+oJgco48tgCITGDGYMIMDIwsxwh8GEmX82kA2Er7jyOUAsdoYIJhB/IEGwi4svAxvQBUDsEaDg
+k1icWuSVWqIQUJSfllpcnJmfl5ij4GtoaGymgNWZyK4HsamBQRbBzJFiEQBx4YAfyIqC8yDqYNyG
+hgaG/0DOfzCBYPwHi8JUQWgNIJWCKkQ07x4zAwMIw0EDnEUwNpk2p841QdLLgtA6yhoiIQAAAAD/
+/wMAUEsDBBQABgAIAAAAIQBdxrzaVQEAAGQCAAARAAgBZG9jUHJvcHMvY29yZS54bWwgogQBKKAA
+AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMklFPwjAUhd9N/A9L37d2Aww0YwQxIAkqkRmN
+b017gcWtW9rq4N/bbTBH9MHH3nP69ZybhpNDljpfoHSSyzHyPYIckDwXidyN0Us8d4fI0YZJwdJc
+whgdQaNJdH0V8oLyXMFa5QUok4B2LElqyosx2htTUIw130PGtGcd0orbXGXM2KPa4YLxD7YDHBBy
+gzMwTDDDcAV0i5aITkjBW2TxqdIaIDiGFDKQRmPf8/GP14DK9J8XaqXjzBJzLGynU9wuW/BGbN0H
+nbTGsiy9slfHsPl9/Paw2tRV3URWu+KAolBwyhUwk6toullunMX902IT4s64WmHKtHmw294mIG6P
+0fp5+ThbrqerEP8WLbJu0HBBODYTbRqcldfe7C6eoyggQd8lI5cMY79P+wNKBu/V2xf3q4zNIDsl
++AcxIDHp0V6fBqMO8QyI6tyX/yL6BgAA//8DAFBLAwQUAAYACAAAACEAb353EoABAAD+AgAAEAAI
+AWRvY1Byb3BzL2FwcC54bWwgogQBKKAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACckkFr
+4zAQhe+F/Q9G90ZOWJYlyCqlaelhSwNJs2dVHsciimQ0U5P013dsk8bZ7ak6jeY9nj6NpG4Oe5+1
+kNDFUIjpJBcZBBtLF7aFeFk/XP8WGZIJpfExQCGOgOJG/7hSyxQbSOQAM44IWIiaqJlLibaGvcEJ
+y4GVKqa9Id6mrYxV5Swson3bQyA5y/NfEg4EoYTyuvkMFEPivKXvhpbRdny4WR8bBtbqtmm8s4b4
+lvrJ2RQxVpTdHyx4JceiYroV2Lfk6KhzJcdbtbLGwx0H68p4BCXPDfUIphva0riEWrU0b8FSTBm6
+dx7bTGSvBqHDKURrkjOBGKuzDZu+9g1S0n9j2mENQKgkG4ZmX46949r91NPewMWlsQsYQFi4RFw7
+8oDP1dIk+oJ4OibuGQbeAWfV8Q1njvn6K/NJ/2T/cWGHL806LgzBaXaXTbWqTYKSx33Szw31yGNL
+vgu5q03YQnny/C90L70ZvrOeziY5r/6BTz0lzx9XfwAAAP//AwBQSwECLQAUAAYACAAAACEAyKPN
+NHYBAAAEBQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLAQItABQABgAI
+AAAAIQC1VTAj9QAAAEwCAAALAAAAAAAAAAAAAAAAAIQDAABfcmVscy8ucmVsc1BLAQItABQABgAI
+AAAAIQCBPpSX9AAAALoCAAAaAAAAAAAAAAAAAAAAAHAGAAB4bC9fcmVscy93b3JrYm9vay54bWwu
+cmVsc1BLAQItABQABgAIAAAAIQATnWtypAEAALICAAAPAAAAAAAAAAAAAAAAAKQIAAB4bC93b3Jr
+Ym9vay54bWxQSwECLQAUAAYACAAAACEAaQBVAmMCAAABBQAAFAAAAAAAAAAAAAAAAAB1CgAAeGwv
+c2hhcmVkU3RyaW5ncy54bWxQSwECLQAUAAYACAAAACEAO20yS8EAAABCAQAAIwAAAAAAAAAAAAAA
+AAAKDQAAeGwvd29ya3NoZWV0cy9fcmVscy9zaGVldDEueG1sLnJlbHNQSwECLQAUAAYACAAAACEA
+/kBpmnAHAACTIAAAEwAAAAAAAAAAAAAAAAAMDgAAeGwvdGhlbWUvdGhlbWUxLnhtbFBLAQItABQA
+BgAIAAAAIQAlOjDhBAMAAKAJAAANAAAAAAAAAAAAAAAAAK0VAAB4bC9zdHlsZXMueG1sUEsBAi0A
+FAAGAAgAAAAhAM9zkWgHAwAAbwgAABgAAAAAAAAAAAAAAAAA3BgAAHhsL3dvcmtzaGVldHMvc2hl
+ZXQxLnhtbFBLAQItABQABgAIAAAAIQBEIOwh0AAAABAEAAAnAAAAAAAAAAAAAAAAABkcAAB4bC9w
+cmludGVyU2V0dGluZ3MvcHJpbnRlclNldHRpbmdzMS5iaW5QSwECLQAUAAYACAAAACEAXca82lUB
+AABkAgAAEQAAAAAAAAAAAAAAAAAuHQAAZG9jUHJvcHMvY29yZS54bWxQSwECLQAUAAYACAAAACEA
+b353EoABAAD+AgAAEAAAAAAAAAAAAAAAAAC6HwAAZG9jUHJvcHMvYXBwLnhtbFBLBQYAAAAADAAM
+ACYDAABwIgAAAAA=
+--0000000000005d831b062284c27f--

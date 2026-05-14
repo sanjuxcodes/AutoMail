@@ -1,0 +1,90 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp1745703dlb;
+        Mon, 2 Sep 2024 05:41:00 -0700 (PDT)
+X-Received: by 2002:a05:690c:6c84:b0:6d8:cf5a:9426 with SMTP id 00721157ae682-6d8cf69d91amr27602787b3.44.1725280859792;
+        Mon, 02 Sep 2024 05:40:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725280859; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WWluP11gOsutjt2Sq++w6C9hDHmx3Wf1ktpdjlDs+trFMeLypVaWXA8LcI/10bc5Df
+         +1yreBq76pU99ztq/bgvRIu4cTb0zidcN0nEa1BrQxJ1/+wwlIOhhis8mqbQY0vbnoJb
+         M28nPMzUPlmKWvfOCldxI25kj0jw4pBCWQeugoDvkRN4sc43GF9Xt68p0w6qSlmLVOwc
+         eD9oZ7VsH3Es/mORrpdRTMnF876wqPKy2pYMa1kBimBmHy9dJE4mwZHCBH1N4Pbay4t/
+         RUyMpkUCJpM2fhrWZB07uLPy/ceIgvsJf5NdalLcgUmLhdV+uPkNFyCQgrPaNFEtVHiX
+         VACw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=kqRFCex6sGjEu2+vj6G/XcBYr7k8qC01RbOq2dJhygs=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=0HNpJh+B+BCE1I66eoxg55sUF56oXLBgBjE8VpnR+e6VYIxVqZRDQtZN/yNo/evWuI
+         K6OHCGZn9fvuHMYhMW179+LIYxlZRWfoywJ5O27n9Ji1lMDvCs8AJFL+n2LvYMyL5/wN
+         jijHpzvp7x12iAeYFlfDPYGCJjX2J70/Lqt6EUoD3zeX5U/zxMKT3kqM7ntbJ4Xuubf7
+         O2PVFBqdta9JT0rwl1gF4ocHMqTdja0avWbBuDZMkpv+U6N6DZDY44yTqu8e0kLQLUQD
+         VoOe13xYD7ALIS9zd7r1xQcc/LGFCLpKvW1DCr1rSxRdJ3+pQ90AQADkA2N/ytHZAznJ
+         HxvQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@jgec.ac.in header.s=google header.b=pGRb7iDA;
+       spf=pass (google.com: domain of principal@jgec.ac.in designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal@jgec.ac.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=jgec.ac.in;
+       dara=fail header.i=@gmail.com
+Return-Path: <principal@jgec.ac.in>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6d2d38d0ea7sor51753257b3.1.2024.09.02.05.40.59
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 02 Sep 2024 05:40:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principal@jgec.ac.in designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@jgec.ac.in header.s=google header.b=pGRb7iDA;
+       spf=pass (google.com: domain of principal@jgec.ac.in designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal@jgec.ac.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=jgec.ac.in;
+       dara=fail header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=jgec.ac.in; s=google; t=1725280859; x=1725885659; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=kqRFCex6sGjEu2+vj6G/XcBYr7k8qC01RbOq2dJhygs=;
+        b=pGRb7iDAtKNGpgTQWZYjRpTFMXdPaNvc0fKYkMJ2SKf7ix5IjdeYXxKcOBUh0Z0tdh
+         ESVMAQoOg9nOvIjXvVE1xmaanwakIeXmNJT4DQfQ+CPo3H1SNZ4O47euWsOhLl0cggGa
+         FIFhJXDhaqupnMEeWEFIt/mXK0fzmUq/dJxPjRJZlg18W+uOWYeHN1QG0Kr1vls4ReyD
+         jYu9FX2W5t9+encv//juBebvNhtD+akszc81AAuB477/6682xt+wfxrpp6w77Bn0hum2
+         eQB6INry3Yu+MtsAyz0F1IekfLU5g3/jaaRuV2WffRymenGSYfgWkl36wQbuar9sSkqh
+         D6Hw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725280859; x=1725885659;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=kqRFCex6sGjEu2+vj6G/XcBYr7k8qC01RbOq2dJhygs=;
+        b=IdFVtzj/ryDw7vVZXPVa8kofE+zoTHwr1lyhjhyhB/5huIWKnEbMgP8swN0BhhrEpT
+         H65lW2jybQ1hrpEYSdSaZVMFxYMAN/X7+DWpyDz0uJYnJrZ0LHml2PZkbK2RqRxqFaEk
+         1BVGM9HfpAY3+sh8VN/uGZ5+9Cq9rCjcZVEAlrEp0oSYHbWU05iQ+cw6hV/XPn2xLA07
+         pAc7lgDE14mLf9rBTvGEaLHz4HdT87mZrRva6PlA/tSuJ17MmCXYZnzDSrAGFonnl6y0
+         pWxEgmsmwi7H8NwaIyC5eaSsEhwR+COdx/GPNYm8NW1JL8ia0eJ3Va9j4bD37JKXyVNa
+         XdUg==
+X-Gm-Message-State: AOJu0YyySXasSGkQ1bYJaa/NXqfUzefMhxHfX3EyFyP0yE+nBYeaqz/a
+	ypB6DDTSVqFkM6RsJhtcUfVrF4oyYRlrsel88W3evnGtcqI64hbcok0p+cqrIGDq1vnBXJLlpnm
+	hPR6AV7XjyA6uU8RDq41Ed0yQRDKhiBg2pajSEIsiYx5Y36jV
+X-Google-Smtp-Source: AGHT+IGY0k1Em9RBpRISKqxpSukf4NE8ro2uqwDsuartSC78OJeDOYGPDJ8HaP+nidYwGL2TlvDbe4gjb0J0ux5RQWU=
+X-Received: by 2002:a05:690c:c93:b0:6ad:5dde:bd39 with SMTP id
+ 00721157ae682-6d40fc0e6b7mr89484207b3.39.1725280858772; Mon, 02 Sep 2024
+ 05:40:58 -0700 (PDT)
+MIME-Version: 1.0
+From: Jalpaiguri Government Engineering College <principal@jgec.ac.in>
+Date: Mon, 2 Sep 2024 18:10:46 +0530
+Message-ID: <CANBAbOu8=OuKfb9RTTpDHq0TTMqFsXtkNkj5FwGokD78tO3oOw@mail.gmail.com>
+Subject: No case
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000b9b53106212240fd"
+
+--000000000000b9b53106212240fd
+Content-Type: text/plain; charset="UTF-8"
+
+There is no case in our record.
+Thanks& regards
+
+--000000000000b9b53106212240fd
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">There is no case in our record.<div dir="auto">Thanks&amp; regards</div></div>
+
+--000000000000b9b53106212240fd--

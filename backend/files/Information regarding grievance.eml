@@ -1,0 +1,95 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2495:b0:89:ead2:3829 with SMTP id cq21csp133527dlb;
+        Thu, 26 Sep 2024 21:13:02 -0700 (PDT)
+X-Received: by 2002:a05:620a:424a:b0:7a9:a9be:2fc4 with SMTP id af79cd13be357-7ae373c5348mr348188185a.29.1727410382216;
+        Thu, 26 Sep 2024 21:13:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727410382; cv=none;
+        d=google.com; s=arc-20240605;
+        b=bOuKUx75EQREhiFiJGjufiMtkjyTWj6GYihGEh6vY4PYASb/lt0dOQ271yTdqqDphN
+         w3saqxBo8qibCB88JbZqpcMWqbUdAKRD7llyZYLI2dWeEExuRFzuz5IxfafOQYKYizSO
+         3xGLxDHLHlvmKrUk94Zie6gHmyR/DZM8itL/TG6/8Ze3r7+FhRiGmz3m8ESHoafq1A+/
+         Basyk1IgT9gNNhJLBl3pTg602jRDilrgdOOniqc9gzOq1JxMa/u+ZQac/cgt99NVeeMp
+         jL2nKYihHTi4CLr2wquZu7MfdLN60KPmd5bi2TIRWFMKOuK1C3D54sU3zxFyfZ0jEVlo
+         XynQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=7AqqihMP2+34k5KiDA7VVKCCvh3kene3kWZXAb/TiO8=;
+        fh=YTR5Td0a0MkfsS7IyRufiIlBxB064Jdpn8eVsgfQScI=;
+        b=IJQauX5A9IBB/rrn/y2B9UrC4v5YyZwq3z6LDCZkjh/GjSsKna5cDGM6x0V4YnmfOK
+         d+xu5F7s71pMV0pVUwa4JBU7VXDo12axqsInR4z4hTY0S5o5jnT3uM4kgKd2M1HkMKw2
+         htyPRsHg8GFBahcQ/6dEwk0vW9JKMsbUtZb2FPbLxY/v/u8RXe44V1gb+7bskNECQ5aq
+         RYQmrZgQN+3SftSJVVEA2e2yyfJpdAj7T2eQDDJIaFmWeaXCstipXuYRr7yjkwdLl1JR
+         w2PY2M3h5+qYaq0VfiryfBjGQYi8ES6y8cnNm0qlNgraNCOXWys/TyQDBF7HrDKRrV76
+         KGPw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="l7jG0E/2";
+       spf=pass (google.com: domain of umadhar13@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=umadhar13@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <umadhar13@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id af79cd13be357-7ae370f357bsor105431985a.8.2024.09.26.21.13.02
+        (Google Transport Security);
+        Thu, 26 Sep 2024 21:13:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of umadhar13@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="l7jG0E/2";
+       spf=pass (google.com: domain of umadhar13@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=umadhar13@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727410381; x=1728015181; dara=google.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=7AqqihMP2+34k5KiDA7VVKCCvh3kene3kWZXAb/TiO8=;
+        b=l7jG0E/2td2rz77X5IYPsGhF/g/CcjIlVCt5WJnodkrIFprNvRjWNmLthF/7fgMUKH
+         VH8EXSBU3L/BzagMG0lX7/35MAcxKpWrxtTVypXE9b7W0HiieFTShb3QKvT6k5nt3fQ/
+         +J8Kht9MYysBNau67H/MpiBKLcDZCuoxVogpsm0Rc7cFBefmaHVitEJ1E7z5mOBvHFHA
+         GIkqdmZMWp1oZ0R7epPoPHYghV3uUcsFBlucaWtk8FypTAGIikssfdvQVLz1Hz3m+UHg
+         k6jfJZH25tAGeWjNmtINur5SFWjpZjw8h3/YNSxi8EiQUaTN7oShlAVukj4ugAJ+TRVU
+         LlrA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727410381; x=1728015181;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=7AqqihMP2+34k5KiDA7VVKCCvh3kene3kWZXAb/TiO8=;
+        b=hvK3UJ6+V6XKYHnz09TGwYDneTwMJSlDkGiETwu/1PAurPLAGDHz1LQem78Vm2nXDY
+         /MTj8MUFEwaGHZOOkgKtt+DkzTojjgPzr5BdatsBNK6eH33aqwYEfDaii54LI8KtDs1l
+         HAIte6pEP28GHBXECXltJ671ciWcff57eQSn3hvIyEhJg0t8YRonSSxOz+kf70h+BtFb
+         zQv3lLAvfUGnwkhNt6hvi/Cg6bfvSbwhv1EP/+8X//UdKZA/xOwEE9YeELm8aREYMmjH
+         4WAV9Cp/j+4BcJT8TUWnhkX9Ql6EObP41DVwzYZSg7ROWxms4Aq+6GFRFd+4gTVY9Q2z
+         Bx1A==
+X-Gm-Message-State: AOJu0YxbmhnGK7d/L/05PQublfOfH1Y0yCxq5ckkwrPIjrGDUlSS9vbU
+	+QtQi9/s+WOGYQSViMylNNE7mxHhBCwSa3PM6SohTzZf4vM1S3NtlkEYeOOE9LtE8oPHniqlB4I
+	v758ovQTJh1kpvImYYJrGBtb18gGvEw==
+X-Google-Smtp-Source: AGHT+IHbbvQ3op0E0Fa+IO7zI+mJm6SZmsk97XDrWstCCH6tMmBa3icFYT017fU+2L7q++25++LR1gDOyc2XLLHl6Qc=
+X-Received: by 2002:a05:620a:2802:b0:7ac:aad3:9135 with SMTP id
+ af79cd13be357-7ae3731acaamr346682185a.15.1727410381389; Thu, 26 Sep 2024
+ 21:13:01 -0700 (PDT)
+MIME-Version: 1.0
+From: uma bhaumik <umadhar13@gmail.com>
+Date: Fri, 27 Sep 2024 09:42:47 +0530
+Message-ID: <CAE-i1wMVgaWvm5BqHARO-vc=VxfPeH6nF84+EH4fo=MakGOO6A@mail.gmail.com>
+Subject: Information regarding grievance
+To: grievance.hed.wb@gmail.com
+Cc: Rama Prasad Bhattacharya <raprbht@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000002a07470623121247"
+
+--0000000000002a07470623121247
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+No staff of our college is in suspension
+Regards
+Uma Bhaumik
+
+--0000000000002a07470623121247
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir,<div dir=3D"auto">No staff of our college is in suspe=
+nsion=C2=A0</div><div dir=3D"auto">Regards=C2=A0</div><div dir=3D"auto">Uma=
+ Bhaumik=C2=A0</div></div>
+
+--0000000000002a07470623121247--

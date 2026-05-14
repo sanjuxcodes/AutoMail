@@ -1,0 +1,120 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:429f:b0:89:ead2:3829 with SMTP id bk31csp494751dlb;
+        Thu, 26 Sep 2024 10:48:23 -0700 (PDT)
+X-Received: by 2002:a17:90b:104:b0:2d3:c088:9c54 with SMTP id 98e67ed59e1d1-2e0b876d788mr597074a91.6.1727372902961;
+        Thu, 26 Sep 2024 10:48:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727372902; cv=none;
+        d=google.com; s=arc-20240605;
+        b=RcERDu+K+XWOURcgncpkloNEEDTy3fp63jSwBj8L8oafHVYoM6k1Tl5odbPTgDzWfB
+         3DJv8cb1PBnZz6yT9FenuxTlOt26Z1Y48/MuzHZ58Ows5X4RCQrr+9+j6Idh3aU+31N6
+         xzZQiBy8nJNSsclvnCyIkunDuIY9kkvXlEJYUaWHDnmqgDFRx+rOuFoGPzIDHLiuMQtL
+         zapSk1ZqraRr8rmuxGekYvkca+tkwACALQ9ZBzll5pClaQrpNcUvkoGx7tfGsB6R0+Hn
+         vmMlWsac0q81Pps0cB/76az0isvDc0UnewlBomQGL5HY0tZSFU1yx/l5a1Ozw/xFW7RH
+         lVTA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=IlRVnSlGVkSyuSpF5CKgz2iwejWU7YXa6D1oMsoqWzA=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=HU7XfiV5Tp68r7v6TCkTos2QH0tWYatColDYy4Ykn7f5uhKhUZvctARyRpwc0Kn0/W
+         2xNLupwzIS1XFb0Yn/sKQW0zAPtmZw9qKlgGfzF3BBs2HhU5b5hU7LJWH64KvA23v+Xu
+         BF72aYO406m7F7PWndUUcIV49rgpnJhAo2OnDM5KRWL/K/cxeLswEgf/OljQTcgYIdfc
+         drqAKCh4yFnZlf4f10wgYS6IbBQqSF7yvXyGK25mqmsPKcI2EjfS8V4fdo1/sP/q2Jif
+         UuwFlaRvs05sigIUplYe8Ut5+MLXjsLSyDapNX9+AL8wyyHxz9OtZcW1tOVNFlmWq30I
+         1Ohg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="m3/WP2Rx";
+       spf=pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=shampasnl119@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <shampasnl119@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 98e67ed59e1d1-2e0b7279f6fsor224104a91.5.2024.09.26.10.48.22
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 26 Sep 2024 10:48:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="m3/WP2Rx";
+       spf=pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=shampasnl119@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727372902; x=1727977702; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=IlRVnSlGVkSyuSpF5CKgz2iwejWU7YXa6D1oMsoqWzA=;
+        b=m3/WP2RxgtQtFdSQUnjKTVmFjM/FwW9QF3o1UGIjus7CQavHklaaMrXXUTVzK+ixLb
+         dYcQ3TGs6Th8AVed6irR0eH0J1+aAlECjaNs43SS8JU6Rf9r3WSQFxv/BJH9Xo6TeMhB
+         NPZTjQwdcuOx2XiqZU/ZtvgiB7jU/yOeyfSKVcTxh+4h/o6gV5+TnNjuBh6pNUjMUDy3
+         gmClkuGjdJDDhjLIOwNTABBXTTQojw9hDNU74a5ZlvhRVAV3hEflYUq7H9Kf9jT/+8BI
+         OWNRwPNCw65A61LbDQr63aIRKFKZ6RJM6F7rcK3uqpR7fNExc5nW84+9gUv9/52iLxEx
+         wnrQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727372902; x=1727977702;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=IlRVnSlGVkSyuSpF5CKgz2iwejWU7YXa6D1oMsoqWzA=;
+        b=IRiven57JFCObgeHs3Gt0U2gNApALZG2WzRUFBTSqZnDyP+NRFQT3hdvxOlhbcTS4G
+         7wkhQTnru1IkV/jKQxKMaIfCox/c72ULAp4ywt8RKSUR+qtiL+phWCIjD7qv/EQg410l
+         dmBQvRr+Yt8xc+dfl2yXtfHv/AE7R2jNZys5rtJtTj49e7QIfZBrFQzgpx6fupFBzDZA
+         2P3ePQlEEnoHG00JO324G6oULgkp0pyQzJqsGr6vaNgr7jUdgxcccJQ1/6ya965v/nLX
+         PmUGA5rQjOYbzOhP+yDrRknaioCVcWnRGLTFnjPoFBj64jPDxJXmYzuox2P6gzDUT3rj
+         SzJw==
+X-Gm-Message-State: AOJu0Yz3FmiAkuvcUAKCipkfJP41pTyN/Y/BP6CkV2s34a4gqQoRfx+H
+	hAGAksaZyLqCAerb6cLc2OJ2iQpqBJeqkARc4rVuZrtqbxbobAQZUXsb41x2HcMNnBMsV54mcMU
+	+U1plyniXuLLuYwmlkb4itwgPrQkItQ==
+X-Google-Smtp-Source: AGHT+IHrUa1MxhIaIf9WxSgQy3daAEzqZMIQvQraPQ2WuNAm6knzsCvOQWUYRGI6+AZvp/7s+THJKBOPrCBGU7xggvg=
+X-Received: by 2002:a17:90a:740e:b0:2da:95ea:da99 with SMTP id
+ 98e67ed59e1d1-2e0b876e677mr604217a91.7.1727372902066; Thu, 26 Sep 2024
+ 10:48:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAJfF6DKJ0YirS0CL_DP7zYMhJGA5pi89j-PUqcQoT3zeX51VPw@mail.gmail.com>
+In-Reply-To: <CAJfF6DKJ0YirS0CL_DP7zYMhJGA5pi89j-PUqcQoT3zeX51VPw@mail.gmail.com>
+From: Shampa Mitra Sanyal <shampasnl119@gmail.com>
+Date: Thu, 26 Sep 2024 23:18:09 +0530
+Message-ID: <CABLuPV_nkNqVCr=zPXZWHPk0s7naP+xe4VPHwVKamLmha1Zd6g@mail.gmail.com>
+Subject: Fwd:
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000038f02c06230958f4"
+
+--00000000000038f02c06230958f4
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ---------
+From: Bhangar Mahavidyalaya <bmv.college@gmail.com>
+Date: Thu, 26 Sep, 2024, 11:05 pm
+Subject:
+To: Shampa Mitra Sanyal <shampasnl119@gmail.com>
+
+
+Respected Madam,
+With reference No-GRC-HED/02(10)/24 dated 29.08.24 we are to state that
+there is no such case in Bhangar Mahavidyalaya as of now.
+Thanks and regards
+Dr. Virvikram Roy
+Principal
+Bhangar Mahavidyalaya
+9830215482
+
+--00000000000038f02c06230958f4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong c=
+lass=3D"gmail_sendername" dir=3D"auto">Bhangar Mahavidyalaya</strong> <span=
+ dir=3D"auto">&lt;<a href=3D"mailto:bmv.college@gmail.com">bmv.college@gmai=
+l.com</a>&gt;</span><br>Date: Thu, 26 Sep, 2024, 11:05 pm<br>Subject: <br>T=
+o: Shampa Mitra Sanyal &lt;<a href=3D"mailto:shampasnl119@gmail.com">shampa=
+snl119@gmail.com</a>&gt;<br></div><br><br><div dir=3D"auto">Respected Madam=
+,<div dir=3D"auto">With reference No-GRC-HED/02(10)/24 dated 29.08.24 we ar=
+e to state that there is no such case in Bhangar Mahavidyalaya as of now.</=
+div><div dir=3D"auto">Thanks and regards=C2=A0</div><div dir=3D"auto">Dr. V=
+irvikram Roy=C2=A0</div><div dir=3D"auto">Principal=C2=A0</div><div dir=3D"=
+auto">Bhangar Mahavidyalaya=C2=A0</div><div dir=3D"auto">9830215482</div></=
+div>
+</div>
+
+--00000000000038f02c06230958f4--

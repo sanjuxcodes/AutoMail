@@ -1,0 +1,102 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp2037442dlb;
+        Sun, 22 Sep 2024 19:53:24 -0700 (PDT)
+X-Received: by 2002:a05:600c:4f0f:b0:42c:b62c:9f0d with SMTP id 5b1f17b1804b1-42e7ac4b1d4mr121231155e9.17.1727060004664;
+        Sun, 22 Sep 2024 19:53:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727060004; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sIK0ZHjWsLpKhD4a2ErgnKB+AXGHTg2RER2IT+KY9EUivnRbiKzvvNU/+oMkPa7PIT
+         uF+F4jdMIfF+V0lGpz9zV2SCNyQqKAo7Z4vlFzr7goKISB2nFRdYZB5IRMYIlBnrudja
+         T1j7ma42RujxDrzt21jsGIHcngnY7wWra+Pc6+XT6d0j5vuJZN/wcbcX5Gz5D9YTSF+L
+         yPUPeVWOEWaEyp+xV6qZew0dGpBLYKYq2YOj98dYS57l7YpSdvRZYG/80EfNYg7tCVgd
+         oIgQ0CgBG++MFQH/Ubn9654nRouZ9S6o2G9NzrkG0Wikv+hOwgj+B0naGDg3ro0vY8J0
+         ZXpw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=cuwPoKY4WIDGnUPz4M4eOubJIKOWHQyCK3OmtftxaSs=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=Z86PNJ4VgUbM00l/4pOe3xaIe+Sj7JZuAIvFI2UU+9Kj/oUnCXhIDibWkNjtQJmfN/
+         KC/dFB2oUp+E/74XNpkdOTd9LZKQQdVwOh1Ot/aJrmbbv6vsINFTgViJMn0wOM3Bohde
+         B9+LcAblaCGQYs6o07f4dj1+yE4KVotIV3bDj+Sc6thmCVg9EUcGg32dym9S18RqVkhb
+         epLLAdujg+sMNkrigf1HDURSPyAbgXJDEyvx0xHTdFCgMLAt7/C954snacNps7gmyqHl
+         3oU/cjNyljR/mGYaHDf0PwpngcsdwOhPkxy2jsrj3zgvVV2kv0sDJT8MtN9b5Yd7XmDI
+         DTqQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sonamukhicollege-ac-in.20230601.gappssmtp.com header.s=20230601 header.b=rWnA0O9l;
+       spf=fail (google.com: domain of principal@sonamukhicollege.ac.in does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=principal@sonamukhicollege.ac.in;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=sonamukhicollege.ac.in;
+       dara=pass header.i=@gmail.com
+Return-Path: <principal@sonamukhicollege.ac.in>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ffacd0b85a97d-378e6f2740dsor5750712f8f.0.2024.09.22.19.53.23
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sun, 22 Sep 2024 19:53:24 -0700 (PDT)
+Received-SPF: fail (google.com: domain of principal@sonamukhicollege.ac.in does not designate 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sonamukhicollege-ac-in.20230601.gappssmtp.com header.s=20230601 header.b=rWnA0O9l;
+       spf=fail (google.com: domain of principal@sonamukhicollege.ac.in does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=principal@sonamukhicollege.ac.in;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=sonamukhicollege.ac.in;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=sonamukhicollege-ac-in.20230601.gappssmtp.com; s=20230601; t=1727060003; x=1727664803; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=cuwPoKY4WIDGnUPz4M4eOubJIKOWHQyCK3OmtftxaSs=;
+        b=rWnA0O9lD62riVTUCl6wPyuJPz2PVz1rh2Z8gwCiJnwaU6DYwMhJNvQKwvz00KJXL8
+         MKsU158ydc8A9fAoR1NnG1rMxmI5lBRpVSO3Gqif2oVT2FVTXUuf6RFKAhXiS8qjzeXk
+         rkoooD8CkExkKzzvpVMQ+ERZUeMzfj1b8moYUcKTF6iLYIXZ8AiAvzBp6xNGfeegCs6m
+         HtG/L9gLhmCkJ6d1URkXWJGXGCUttG63Rj055DzNvEe/lg/91BuiUUdT8+fHBzEM2bOR
+         a+doy9f5FZgPsGQLLkf8Hla7eB7l6FV9Ey/dSmx+Lt2aG3D9VNA3ankd1GyZrTCEe9FP
+         pq2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727060003; x=1727664803;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=cuwPoKY4WIDGnUPz4M4eOubJIKOWHQyCK3OmtftxaSs=;
+        b=S6fOgg/WVio/L8riPumAB0N5lkmzWxMPPKE/rG1DuwvozRNC6y3gt5nnhUsSrVQJMF
+         SAwFG41Tu8HLBD9graMV8cHcIVTk25d5v8kadYpGJkEawQM6HQD6jzPDdFqb9qWGG2U4
+         n4Np8zjLRPj5z2McUrxBulyRCbAdmdw2a+gBs6vLqKpThFin84mn7RqcbPFlYwN1BDlQ
+         P8aOf1EaEz8bL88irJrS0HJipB4PIZXu6b6kJUyvecreAPoyu8OTFWi52sh9IO0/kQf9
+         pzLy9AA2GJkGAPOfxQs5cm3rWu4I3q9ZYwNk1uR+FN84bHUl8p05vqD5/IXEF6TyRA8V
+         ZkHw==
+X-Gm-Message-State: AOJu0YwP/mvRPMDBOtSbptFmcf6ogkY2Jsh0UfCawuSslhP5FEgs2ith
+	OEb6ZkVVdsxtZT/Y/2JDTRr23Jp2CSKmSGuW66DHyA2ej8Ln/OPdvlNEq5MXhsS3Ge6feJ98E+R
+	X7EojbIQJnqOX4N9ru5OtUt6KO+wBy3AELmTyO6P7Hw1oHanu
+X-Google-Smtp-Source: AGHT+IHWn6GtLwiMguGM2G1JCGpJHIW5ny8wMK/cmiBr3lbnv/l4iMTRmqDZeEWHUwbkM0O4DUTu9LR6yPW0VV5X0MI=
+X-Received: by 2002:adf:e44c:0:b0:374:c5b4:1be0 with SMTP id
+ ffacd0b85a97d-37a4238ca79mr7940166f8f.53.1727060002902; Sun, 22 Sep 2024
+ 19:53:22 -0700 (PDT)
+MIME-Version: 1.0
+From: Principal Sonamukhi College <principal@sonamukhicollege.ac.in>
+Date: Mon, 23 Sep 2024 08:23:10 +0530
+Message-ID: <CACOFthkycG7p0TkUURovoi-9VgxNbT9MLBSBD-Ozbf3xemP9gg@mail.gmail.com>
+Subject: Sonamukhi College AISHE C44762
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000fab5cf0622c07d96"
+
+--000000000000fab5cf0622c07d96
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+As per college record - NIL suspended case of employee.
+Thanking You,
+Yours' faithfully,
+Dr. Bappaditya Mandal
+Principal, 7076289635
+Information Gateway : www.sonamukhicollege.ac.in
+
+--000000000000fab5cf0622c07d96
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir,<div>As per college record - NIL suspended case of emp=
+loyee.<br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" dat=
+a-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div>Thanking You,</div>Yo=
+urs&#39; faithfully,<div>Dr. Bappaditya Mandal</div><div>Principal, 7076289=
+635</div><div>Information Gateway : <a href=3D"http://www.sonamukhicollege.=
+ac.in" target=3D"_blank">www.sonamukhicollege.ac.in</a></div><div><br></div=
+></div></div></div></div></div>
+
+--000000000000fab5cf0622c07d96--

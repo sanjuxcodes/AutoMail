@@ -1,0 +1,89 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp130573dlb;
+        Thu, 12 Sep 2024 23:42:53 -0700 (PDT)
+X-Received: by 2002:a17:907:f153:b0:a7d:e956:ad51 with SMTP id a640c23a62f3a-a9029438ed1mr483495666b.21.1726209772750;
+        Thu, 12 Sep 2024 23:42:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726209772; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kgMCcPZ3LVQ5hI8YbxgrN174KMmX2Fa2LWMqsiIUPiCALM3TGXdjiSF+sA16SCixLR
+         GNGJDj5kH4shy0CmI7iLgX2XTKWLdLwpeG9xDDfwxCH69ktZ4yRaAbNJiATPMD4koRcL
+         hzLXZDrYf8j2dj0lehn4QicNcamfI4mKM4CbOwyYHVEqngUPE9fq6M8ZGYeAivXuVV6L
+         RJDK/9uZcehOoqBgfzqyFX29QgO9HZW4Mrm1HA2I8o7IRUx5BPTpRv1Dx/vxd89TrGJl
+         /scJH/ug2ZZI5ySFeiKLGMn64cXhtrSVSJ60HGraz9besigvpO5Zj7ZPDQBeiop+3vIm
+         KA6Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Xa3soXOgMDdrRZ7nv4TFRY22JbJTWuFPVSSvpqPi+RI=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=0ZIhJmU9x8f3icKKgFabRci+HMfT2kgPkK8oq85z8jGrUckEdC4psOlCtFkKWYvBho
+         9+1yYXc5ASnS9RIDu25VkHKO1P5LxA/BWa/ERJ6nWJFL9rdIOc+8vUS6Ln3C4urmxUuw
+         t7cW9YsRgLgLP8Og30CllQ4eHIBQRSXADUwKtO5Mj5zvWpU5dmlyHP5lv9/tYm8rGYbX
+         QhCeUpBP7f9+B7lWQLtOyMfEfAGwL2NhJCSEDw3F905TuvOsJmEG+ir9HPHTAyoZis5/
+         vECSUruX2w6jkYYhfyslgsAa7ZUBHDCPd7SEwBVkjOC7m12s3Zm4O2SqG8jlIDmicX0P
+         TTGA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZlrKocfl;
+       spf=pass (google.com: domain of deroziocollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=deroziocollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <deroziocollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-a8d25c24b0esor429138566b.15.2024.09.12.23.42.52
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 12 Sep 2024 23:42:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of deroziocollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZlrKocfl;
+       spf=pass (google.com: domain of deroziocollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=deroziocollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726209772; x=1726814572; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Xa3soXOgMDdrRZ7nv4TFRY22JbJTWuFPVSSvpqPi+RI=;
+        b=ZlrKocfltVPggpGzQ7If9iA4Z2kBS6SNR9rVgimU0uS2jNfoyq8Wx8OzyO43ybtobr
+         qUJXbLNdDhiVwaqvavznQAPDboQSoI1EO1BLxk4yaTSnI8ogWfgpkOqrZUCTNUmJsMqc
+         PuG3EWnKSYhTf84my2muccStvtM/Li+77sHMm5KFzzsipSyvOmuV22W4Dxki7F1YfumP
+         kz5m7pitlJ09gO06qWiRJnILHULCfsjrghypm/DtxnYQmjZeCJdsE/mKnGzXM57VfVod
+         W3pRnLfWeIoTNzTUi05oXvdCQhtC1cq7IoMWc7Flws4IvWuy7Ok17/JqoFMhcMw6+GmM
+         gDZg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726209772; x=1726814572;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Xa3soXOgMDdrRZ7nv4TFRY22JbJTWuFPVSSvpqPi+RI=;
+        b=YIeCMAi2l+F8uNUKQSXDVA2MsmwgKgWRzy07WStWyVB5SCl7enw0mDUnJlCwLfqvHW
+         Jd3js+dFHNwF/exJfMsPxQ9uwV437BKiC7L/X6/wanP2W5h6BwXGNhsH3UbDvTpgL/Pe
+         0BLCIdDTM+CMjhGDaELLUXEhw4UE0hvDePLoCD1TcjynjblncQ86vPs/up90dDdvoEsC
+         l4moygEnHiVANg2Qsm783sUcwAd5+dF2RCov4PNFIGeiHpOAqalbuMCMGCX7b+NoqCcP
+         LjYVsZlNEfXbSUMTK5bkXC5OArQTKufjh80B7YHXyd4s42ET4C5/TlLL/7oQ/dEofQyY
+         eIew==
+X-Gm-Message-State: AOJu0YxA+767QA4g+aLZCHUotiJagBkATHAZBcLQ2WQYRH7VsGd4UThj
+	yHdsvk1584k5j+dXXwHbcXl0HhIpX2UmTqNrQt56Tmo3ayNrJ/+Px0NwRSHxm6gCydMQwaS4BBn
+	HzR3P3K/Wx35SUsr/vjdM+5l1rfc1NA==
+X-Google-Smtp-Source: AGHT+IFkbaRTDzsuyte2dYgsEW052Z/EMpJijN2Zd9Ygn5ChVPLgFwmrzgGWc68DjYYcz0mFlNNFNUHCbsFhXLfHzdw=
+X-Received: by 2002:a17:906:fe4d:b0:a7a:b385:37c5 with SMTP id
+ a640c23a62f3a-a902943825cmr549832966b.17.1726209771801; Thu, 12 Sep 2024
+ 23:42:51 -0700 (PDT)
+MIME-Version: 1.0
+From: Derozio Memorial College <deroziocollege@gmail.com>
+Date: Fri, 13 Sep 2024 12:12:15 +0530
+Message-ID: <CAC_ixVONSM9eMk07z+j-KsCb9tqQo9t3U-gjXi_bVM4HV7ymtA@mail.gmail.com>
+Subject: Suspended Related Data (Derozio Memorial College)
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000004199940621fa8803"
+
+--0000000000004199940621fa8803
+Content-Type: text/plain; charset="UTF-8"
+
+NIL
+
+--0000000000004199940621fa8803
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><div class="gmail_default" style="font-size:large;color:#000000">NIL</div></div>
+
+--0000000000004199940621fa8803--

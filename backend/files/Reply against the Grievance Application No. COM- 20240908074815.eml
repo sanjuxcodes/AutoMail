@@ -1,0 +1,113 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6729:b0:89:ead2:3829 with SMTP id bq41csp236317dlb;
+        Tue, 10 Sep 2024 00:30:26 -0700 (PDT)
+X-Received: by 2002:a05:690c:2c13:b0:6c1:699f:cf8 with SMTP id 00721157ae682-6db44f41a3fmr103427087b3.14.1725953426098;
+        Tue, 10 Sep 2024 00:30:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725953426; cv=none;
+        d=google.com; s=arc-20160816;
+        b=N6SareDbJEsuOfF+7N8Nh9P1pWB5MkGKBfzRd3jHOpUC0wdnIzQxuPEIfShUno43BH
+         Ff5AIb90wo0vW0yQhtGtTWCAQ8I1V0F7l8HORRuAUcjmn2NNRUG1f+mAtlZH22MeO0dU
+         zQh3drgxrgrdXZlCcjYtOzIeSvMEc49qLSIyvFhOP5ueYuUxLpp/CExKfQJmbCnt6EzV
+         I8l5TyUcOg0+R5FO9XY+lcmFUh1OIV9ArOAe4G1/pC1NBYbdxcESAWFUdR7sWyGcmjPx
+         gHhXpaOJvd5QU0DweQfps5gk1vUx6QxxXVg4q16Cq1N4M32Y73jpAMKvIF4EKOGHynS4
+         mnQQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=XSNTAJt+EkZuwDXAZBE+6wSrM1OWPdirhSCE4vzdrv4=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=grTd7dN6RHXz0DYOxhAd12eiRvKPsd44FKZY4rvfP+/MkJJoTOilAlzvXYwMM9pHyK
+         vfBi8/i5VNUEAUKtulbdDA35ZBqozwqEUTXT85VlBB38EyaViJxpThRH116dAnz1DnPp
+         Xu7qKKUqkcirmNZYleTHW53aa0y06U+hVa0lea+N+uBOYl7qzlADix9P7e1NuxQuCYJ9
+         xcBUup7gzj5XHcsAYK5PtqnPzpFBfYZzJg42w6Hjt6CLiJvZ2ozUzXMDgHp7Jsv2rZMa
+         QanDuwqCyaxfBEhU9hj+0tcl+GdO/xC75dnrFmverI9gexghXGTMwH++CTUdz+S6lfA8
+         a3PQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hlk5Lxu3;
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <wbcscchairman@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6db5c635715sor32265707b3.9.2024.09.10.00.30.26
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Tue, 10 Sep 2024 00:30:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hlk5Lxu3;
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725953425; x=1726558225; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=XSNTAJt+EkZuwDXAZBE+6wSrM1OWPdirhSCE4vzdrv4=;
+        b=hlk5Lxu3zBQlh603CPfKmg7jF1+qS1+UZPFBNvFGKQHzko6mjJCrArwIq6aFHOck9W
+         QjuqEF6DmlATR+6NaJ00GKQhjnH9XQ+WDBWYht+yIukkqXNh+f3Yxm4Op5jFCKCRXwir
+         YyZ+Mrixb3Q0E+FPK9Hdlq4VwQbEFM83WlziWwcvWvrvphFzy08ADpzMMteiRSuHDznf
+         YhRkpTPK+XvUiGQNhfAQ2S7Y2c5oEtSD0qOzju8YuehBZtI/68vr6SjvK1hsDhdEer4W
+         LpvXt5YLC/dIvUuHAXnvFIb1hWSgU/58VazXrssY1LCLsycZ8pvK1+4rGwW0xQtqjO9F
+         f2Lw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725953425; x=1726558225;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=XSNTAJt+EkZuwDXAZBE+6wSrM1OWPdirhSCE4vzdrv4=;
+        b=rHv20Tx21yfNzS1IcFP/9yt5BBZALlWjM1l8S/wplxthMfnSereLvV0R5GgZCPZAOL
+         hkrmsX3DxwBjUNfQNlvxDp4yi2/1LiSw1dN6dFM+c1L6MwMptCf9vjb8BY0e32+HJIvD
+         luUzZgEjs31QjwdpIP7kTj8U28XmDHpSOc4jwbDEAhJFHkJh0eMJs9xrQVdI6PVXCL7L
+         603GiaABd5Z00XCCgSDzifBQRNtYfgX5WwmaR+7+gfZt5kkqJmLWFOlCyET61DCC1e3r
+         W3cSXfW7F4fX/87JpTXGizxcrB+ATbVM1VkcvYg5AoHjzLCRDm/gWz49pAsNRXl1YyRL
+         OiDQ==
+X-Gm-Message-State: AOJu0YzDd4LAwfazporefVkO/OauGPaUIBGKOY2KvWuNGWz4gt57nmDB
+	gLQADrJeAIYY+T9BQybhnkcdttSE+hOPa9GdpZ9usy0forYWxNQ2JMLhy7H6ZSgw8/x8sLQ6yEr
+	yRZfOvM2uEDIJL821MGMBSpXbdxJxdg==
+X-Google-Smtp-Source: AGHT+IGcDKa6As9BuQeaWhlQyCL4NbYjurLp4YoXUN7WH/gMmiXTKeyAc8g/ZAeIkm2+bi8vjPwqkEh+6BSfrGTO5vA=
+X-Received: by 2002:a05:690c:6689:b0:618:2381:2404 with SMTP id
+ 00721157ae682-6db452d8321mr143417737b3.44.1725953425522; Tue, 10 Sep 2024
+ 00:30:25 -0700 (PDT)
+MIME-Version: 1.0
+From: Chairman West Bengal College Service Commission <wbcscchairman@gmail.com>
+Date: Tue, 10 Sep 2024 13:00:07 +0530
+Message-ID: <CAND_RKuiBCriGSN4F+Vb3ExFHPF4GaACbObn3Zrn_JaA2m6f7Q@mail.gmail.com>
+Subject: Reply against the Grievance Application No. COM- 20240908074815
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000d3d0230621bed828"
+
+--000000000000d3d0230621bed828
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Respected Madam/ Sir
+With Reference to the Grievance Application No. COM- 20240908074815 : There
+is no specific grievance against the said Application No.
+Regards
+Office of the Chairperson
+
+*West Bengal College Service Commission*
+=E2=80=9CASANNA=E2=80=9D Building, Plot No. DG-10/1, Premises No. 13-0327,
+Action Area =E2=80=93 1D, Rajarhat, New Town, Kolkata =E2=80=93 700 156
+
+--000000000000d3d0230621bed828
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-size:small">Res=
+pected Madam/ Sir<div>With Reference to the=C2=A0<span class=3D"gmail_defau=
+lt">G</span>rievance Application No.=C2=A0<span class=3D"gmail_default">COM=
+- 20240908074815</span>=C2=A0: There is no specific grievance=C2=A0against =
+the said Application No.</div><div>Regards</div><div>Office of the Chairper=
+son</div></div><div><br></div><div dir=3D"ltr" class=3D"gmail_signature" da=
+ta-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><font color=3D"#3d85=
+c6"><b>West Bengal College Service Commission</b><font size=3D"2"><span sty=
+le=3D"font-weight:normal"><br></span></font></font></div><div><font size=3D=
+"2" color=3D"#3d85c6"><span style=3D"font-weight:normal">=E2=80=9CASANNA=E2=
+=80=9D Building, Plot No. DG-10/1, Premises No. 13-0327,</span></font></div=
+><font color=3D"#3d85c6"><font size=3D"2"><span style=3D"font-weight:normal=
+"></span></font><font size=3D"2"><span style=3D"font-weight:normal">Action =
+Area =E2=80=93 1D, Rajarhat, New Town, Kolkata =E2=80=93 700 156</span></fo=
+nt><br></font><br></div></div></div>
+
+--000000000000d3d0230621bed828--

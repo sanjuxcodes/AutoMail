@@ -1,0 +1,130 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1349810dlb;
+        Sat, 21 Sep 2024 03:38:53 -0700 (PDT)
+X-Received: by 2002:a05:6830:6608:b0:708:29dc:d2fc with SMTP id 46e09a7af769-713934b4fb9mr4559405a34.19.1726915133438;
+        Sat, 21 Sep 2024 03:38:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726915133; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ls4gThSzC1M+DcfJXaRYwj2KAXNoEoQVBUdEdgcq4WFWQVG1qNCLYK5XR2EV9LFiIw
+         ddZYDzbVBSxcDP54EBzmd8PgZZf4mUlrkXzxQWbT2xYYVMhLZXHiB2jjfRoGPg3Ucadh
+         AH7cg8cHOYJ08MVauJP0igstaHqZN7LGfePUZfbZcNyUqLVu7U0YnRSQQTGbaX9RF1mR
+         uEt3YWfCqKvnIEVRxYw8mst8gQbElTpVqdsVj08jgmDZCiDoxJUM6usoVyY8HS1u+6Db
+         DbAzQia8KBa2wnF2Xr2wDvYT2+lhTBNzYuwBnuda1Ko+v4ZAH8UBRiGpgD/NsFI8fgxa
+         11rw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=LGvi2yUgOXUkfOfSGoj/VH56wibxqCHHcghMhNsSLsM=;
+        fh=4Ilid9gma1hpLCC/L1w/y3LWzEFYFPDUPI+PuS/Vk2w=;
+        b=tbTHp/FDPsfncI9xj4A2hEhh1JP6ZOYK8L88H5RuY8O6S9K957fwESG3Jvqe9f3Vt4
+         5Y7zBcMGC3GrZk+8FE0H5kTw3md67vsPUL3vI+wO/DlOWM4J/YCY6JTk6YkOd85scUaP
+         zNj50fhWLdxWtXFRijwgV+g2X4mDR8+LuOl+OZEB9j26cG1LFkHto6GmcJyDxQKVG3Y2
+         pH92SDt5fhFFuEjfjX/WTs1zewrjNZikGHZJZRUtLAP3qwBp1DSLQC82Xxswg8IQVRN+
+         GfsoSvunGZB3BMlgWkTcYREJbvicvDHzIy0EpPZqma8IhClzQ9qN2ZMjSiIJJJpt0kNp
+         4TLA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=d6YZWXCD;
+       spf=pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ddpiab23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <ddpiab23@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 46e09a7af769-71239e7d336sor5405420a34.1.2024.09.21.03.38.53
+        for <Grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sat, 21 Sep 2024 03:38:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=d6YZWXCD;
+       spf=pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ddpiab23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726915133; x=1727519933; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LGvi2yUgOXUkfOfSGoj/VH56wibxqCHHcghMhNsSLsM=;
+        b=d6YZWXCDG6UUkd4OYhrLs5qPC8JzZx12EbxPpMV3+44Km3eTyOOLNFIBISzw3hMquE
+         lO2tH2MtJogz4gqBGYWrD6ragARk71OwTlI0iGZNdDvCEJXKEpr3zAV8cTHsiiAt0iW2
+         gJ+ZDg6sZLCQZw5sTbWyd3JaVQ470rFX31SE3M0HpeBy1Xot+sxhqsQXe+JguU/7Yw6u
+         qPrJG5EyPyuZCbOTvQOwu0+/tZpPujg/+djMAugqp1E9EkaswDLmqY5u1u6LUubrLA+j
+         2cuG5+J1dCvb8s6X9sxRwBGhhg+ktTxEscVVQS7DZ9pMhwLDNZlY8I5kyGBgHdSKvLrL
+         j1Xg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726915133; x=1727519933;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=LGvi2yUgOXUkfOfSGoj/VH56wibxqCHHcghMhNsSLsM=;
+        b=EcwFulHs0ETU5ah3WNh7p3NLeefnJYqxuWRlebmh83NGxixqB0GXYtwOVNLXGQjWh7
+         jYJ5fOiFbcKNjKpK8IN3Vpq0RITxKvswy99O3Af72MvtHJNaN6JCuFAtTaza2hsU7Rh8
+         tRWjZ9cVYtz2clJ3A9MThd/p6cPBzPIuTF8LweZa79IzfzmI6Xa+MybG3M4J0fEhle3K
+         tYbIHp7b9W9xFGFkQRO0EWRNdmV79WO9xF21Iz95RWtJ7Oz+W+Xzq2uxP4+9829WghRQ
+         7X2YqipGDHEeO4G+0GxigaPEnVskrBxlVtnknBmk3UT9zFwkcLsE2YDru8QTz0zndeYA
+         +iTg==
+X-Gm-Message-State: AOJu0Yy0MVIkbFKedKcW++QLFaJ6r+5Zwv7X3yRZu0MpoyX+NfJQeEvd
+	qOzQP3EYYuY3xGp7lRdMguUmbQqHw5ZZ1xw1GsKxrjvxCqPezsMpatIc585fseU3zwye4vWHK9g
+	TKCnUZPWr9IGWMS4GN5sQNyjOn7ymOg==
+X-Google-Smtp-Source: AGHT+IHpFZu9fQPJgTHUNMwRnkvQZoI6mW1R0iiH0VP+qtZvaMX9JnnxqIHcaJMmnqYexjgd6vGeNBZ7BLBvd9DXEMk=
+X-Received: by 2002:a05:6870:972c:b0:278:237:57ea with SMTP id
+ 586e51a60fabf-2803cfa022bmr3432669fac.28.1726915132876; Sat, 21 Sep 2024
+ 03:38:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAPaJFCXyUwQYrPLqejzkXYNf-umNh5qrWvdKLtSpe5o=MoL_2w@mail.gmail.com>
+In-Reply-To: <CAPaJFCXyUwQYrPLqejzkXYNf-umNh5qrWvdKLtSpe5o=MoL_2w@mail.gmail.com>
+From: DDPI AB <ddpiab23@gmail.com>
+Date: Sat, 21 Sep 2024 16:08:25 +0530
+Message-ID: <CAM6sAwe1GABNCiHAN+AbSzZ_C8_fn=K4XdNDXMkq6r2xrG0nDA@mail.gmail.com>
+Subject: Fwd: Regarding suspension of Employees of Muzaffar Ahmed Mahavidyalaya
+To: Grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000000d713006229ec3ee"
+
+--0000000000000d713006229ec3ee
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: Muzaffar Ahmed Mahavidyalaya <mamsalar1986@gmail.com>
+Date: Sat, 21 Sept, 2024, 11:44=E2=80=AFam
+Subject: Regarding suspension of Employees of Muzaffar Ahmed Mahavidyalaya
+To: DDPI AB <ddpiab23@gmail.com>
+Cc: <karuna_ds@rediffmail.com>
+
+
+Sir,
+In response to your query related to suspension of employees, the
+undersigned would like to inform you that there is so such case in Muzaffar
+Ahmed Mahavidyalaya, Salar, Murshidabad
+This is for your kind information.
+Thanking you,
+
+Yours faithfully,
+
+Dr. Karunamoy Chatterjee
+Principal
+Muzaffar Ahmed Mahavidyalaya
+
+--0000000000000d713006229ec3ee
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong c=
+lass=3D"gmail_sendername" dir=3D"auto">Muzaffar Ahmed Mahavidyalaya</strong=
+> <span dir=3D"auto">&lt;<a href=3D"mailto:mamsalar1986@gmail.com">mamsalar=
+1986@gmail.com</a>&gt;</span><br>Date: Sat, 21 Sept, 2024, 11:44=E2=80=AFam=
+<br>Subject: Regarding suspension of Employees of Muzaffar Ahmed Mahavidyal=
+aya<br>To: DDPI AB &lt;<a href=3D"mailto:ddpiab23@gmail.com">ddpiab23@gmail=
+.com</a>&gt;<br>Cc:  &lt;<a href=3D"mailto:karuna_ds@rediffmail.com">karuna=
+_ds@rediffmail.com</a>&gt;<br></div><br><br><div dir=3D"auto">Sir,=C2=A0<di=
+v dir=3D"auto">In response to your query related to suspension of employees=
+, the undersigned would like to inform you that there is so such case in Mu=
+zaffar Ahmed Mahavidyalaya, Salar, Murshidabad=C2=A0</div><div dir=3D"auto"=
+>This is for your kind information.</div><div dir=3D"auto">Thanking you,</d=
+iv><div dir=3D"auto"><br></div><div dir=3D"auto">Yours faithfully,</div><di=
+v dir=3D"auto"><br></div><div dir=3D"auto">Dr. Karunamoy Chatterjee=C2=A0</=
+div><div dir=3D"auto">Principal=C2=A0</div><div dir=3D"auto">Muzaffar Ahmed=
+ Mahavidyalaya=C2=A0</div></div>
+</div>
+
+--0000000000000d713006229ec3ee--

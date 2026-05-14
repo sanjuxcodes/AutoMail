@@ -1,0 +1,92 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2495:b0:89:ead2:3829 with SMTP id cq21csp216878dlb;
+        Fri, 27 Sep 2024 01:24:46 -0700 (PDT)
+X-Received: by 2002:a05:6512:3d04:b0:52c:e1cd:39b7 with SMTP id 2adb3069b0e04-5389fc330e1mr1328249e87.5.1727425486652;
+        Fri, 27 Sep 2024 01:24:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727425486; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sf2tiPCOY1gmymqjItRmBlYNWNSOHNH4hUXfNmByFHv6vtAB49YFKhVnuIC0AvOJMC
+         HHEnN2KuG/ySWwlH7dstypneLlyy13MybXikO+q4NwmiVn7EcBIuJlAMitA2ZYO1zQrJ
+         joM/SINz8ti0I5v2UocONriS19UO/VyScJ7XcN6fYJc4iO+iB/mlRVwn6MZ3ZfLrbvyi
+         cCkubM5cAqgBSsn6j01Rc+/iqvKmghqRHa4O69jfPumyTBoSP7rXeZMGMD+aPdD5rEPd
+         WAXvXAKN2HrRaY6h/Vl/qXe3XQKbQsD1QEJLLOc/lY0A9JDLIJSaJhT9RSTTm1QNzz3N
+         r/ZA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=PVeDe3NwC01xaNyfPpBbpkt6457TgeaT59m+/DgFXgk=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=uoj1blup9tskWga75cDsahTPtl2OGOsWF7FhZruNSS00m7BGmLSlEREYEyYCPo4zN2
+         rdQmtNyvZBuGp5rJbn4pAJnrOXF5ruGlNfprOsrJFN7Uhq4mrd1MXYA7SJnDj9uAIzPK
+         xBdQrT4d1owXaMb2M3NkAJPD46HtepuiT8yfO6c1Qju4LQkNGCOfOgHJ4l7x6uvgBSan
+         i1bZ+IAGPoA/X3aNV4eFvpfO0QZyN7TR2MnwXOhcFGCyz3R8mQUPIwQTLMYlmVno6KU3
+         FvXU3YJEI/tsYpm+FkFfHlxIbAT+MDcUwGX7o1f82CnPdS4c2Li7NB8WjNIn3JC2Aa+y
+         Y6Uw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Je6lxF5N;
+       spf=pass (google.com: domain of kbbncollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kbbncollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <kbbncollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 2adb3069b0e04-5389fccf650sor433566e87.0.2024.09.27.01.24.46
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 27 Sep 2024 01:24:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kbbncollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Je6lxF5N;
+       spf=pass (google.com: domain of kbbncollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kbbncollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727425486; x=1728030286; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=PVeDe3NwC01xaNyfPpBbpkt6457TgeaT59m+/DgFXgk=;
+        b=Je6lxF5NTJB/+tdXn8Bv7Pr4D+/CJszP1uYYgUeKZAuVntp/YOzJQc/IyhWqGN/P1q
+         M/+N8SuHUdW0myufVWZTey6tNN5Z0uiAWd/GGz/KvNw/jltkqsEc0wO/TubWTPWSIKJF
+         63jsG0XPDrO+bI+7wpoJw+0luw0klwacKj7u5uDYHxPI+T5jx/jLcRqPZzabNglpqdEC
+         WnjUE5C0uhWpiA1l9ZhCTSWkS1lMlyCxPrbBHTMBBrWn/HHrURR46XE9PbK7SVXfjlPg
+         ornicUd+sqY0cnHDgMKaFIwLGHlsoSx9/XS8cPk2wqRaWEu9/VkXtm9rYL15Bpy+b5+T
+         uw5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727425486; x=1728030286;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=PVeDe3NwC01xaNyfPpBbpkt6457TgeaT59m+/DgFXgk=;
+        b=v2CbRI6r8lcgD6ANmj80ka27rpcN89UfjUgjLQRfe63Eu/MzF+WhKlci0T6JUdJLcj
+         QylI4PKquxLDn+BCYDMylIMemnD3Ocp5TT+fwE7gDWK9PNJPWV7ILFtEJCA9TOqU39rW
+         rgfU1PE7hX3sp9lj8UC+eZLM5tvG4brU8I9fB0l1ythw9ep8asMDbk9wEYzQixueNAzt
+         AxSQzGX/anmCbxlHohmLdAxAYcKmLTaoF3fPXoLYVulJDfQi/ZoX+nXSiQXl6MYDg/Qo
+         R89zObOuEX7fOwiY7VP83MS6x0NhvifeD+MWOOYqdInc3z15h/z/y5nSv5pdoXJXk/V1
+         u71g==
+X-Gm-Message-State: AOJu0Yy5ANohQUfZNsRzQ2YuSJ9FiE9sA2TJe9TsoaH9wl3rmOTv6als
+	xIRUHN88OdtEn//yWzVmPJrBOvHc6l8DI0AxnmfsTBv+a6HW+DgtCfvr07O5tvUjdZ+0EEm3AtC
+	LvH+YWl3M4oKHiIo/Ho9tuFBKaKoRWpYSe34=
+X-Google-Smtp-Source: AGHT+IF93LqLTVkFakRB8Mo5c4Uq7khHUfhLXZy289dPeXjdQhU9DK0lM40ZFbuSn3lNvUhd/yatk6mrqSP0OLI3Hwg=
+X-Received: by 2002:ac2:4bc4:0:b0:536:548a:ff7f with SMTP id
+ 2adb3069b0e04-5389fc80f3bmr1260095e87.58.1727425485658; Fri, 27 Sep 2024
+ 01:24:45 -0700 (PDT)
+MIME-Version: 1.0
+From: kishore bharati bhagini nivedita college <kbbncollege@gmail.com>
+Date: Fri, 27 Sep 2024 13:54:34 +0530
+Message-ID: <CA+iZjBLa5xEq9et2=_75_=gvARWXMQoO-RC0chuz4OUF1ee70A@mail.gmail.com>
+Subject: No Grievance
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000072e10e0623159632"
+
+--00000000000072e10e0623159632
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir/Madam
+The status of the Grievance is "NIL".
+With regards,
+Principal, Kishore Bharati Bhagini Nivedita College(Co-Ed)
+
+--00000000000072e10e0623159632
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">Dear Sir/Madam<div>The status of the Grievance is &quot;NIL&quot;.</div><div>With regards,</div><div>Principal, Kishore Bharati Bhagini Nivedita College(Co-Ed)</div></div>
+
+--00000000000072e10e0623159632--

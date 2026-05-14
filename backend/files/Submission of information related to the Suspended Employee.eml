@@ -1,0 +1,414 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp198083dlb;
+        Fri, 13 Sep 2024 02:55:18 -0700 (PDT)
+X-Received: by 2002:a05:6512:b9b:b0:533:4638:df40 with SMTP id 2adb3069b0e04-5367fee46cdmr1109611e87.27.1726221317892;
+        Fri, 13 Sep 2024 02:55:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726221317; cv=none;
+        d=google.com; s=arc-20160816;
+        b=f0zeuFIz5U7dyE7nHKDiiPJMKRRcXzaf93Wlqq5yJT/lkcD4j771ZlToCafIQPEi4A
+         +rx7gf5chyhGDKqnqmI7gXZsYSMbSfTTzbFH0r8YHB/MbzGV9KbUObR0qWGR3P/MqR2S
+         t/dVyB4FvKOilotlMUnYNvFR1TeFiv2+1lSwkg1i6Mmbtrl85lu+eDfSvBlF8xl3nWQD
+         y6h+Lr+5xDRPzy6ISQ4TTTKLJZ79UqWxRhnF50MdIIAK96vzjznYowwsFyp7gsR/b6c0
+         JfD/iS24mwgn9/JsYU0VLswxw7lg0f75L5J9IdRf5JC4sdHBy8uxT2P5MxzBpxPQDVfY
+         XeNQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=n5wHkyMZFfW/HG9e+S6fiHjZixAo7R2RoIWh5nUShYE=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=utokPlZvISiwe1jf8/AWifr8/yxjpeBdTEEUR4pgSPxlINSuAHQQKb4+CbVK3bb3xI
+         /UBT5+7SgzqH21c0fvzsTk6nQFZ5UEGfyQxJQQPmNpYAgsHGeq4hFUZ7O9F629+RtXWb
+         S/wY1B49oW0hLeZzIggfYN2lGEtO6Yu9Ua6i5MBePrOFNj2vvpHZDEOdowbZ8NS1850y
+         akmtREvsxa+quCaFlA7XdnEjJyXAyMiO2dA00eIc1AH5APTcryN59GIJC2kNA13G7QT/
+         T8hSDzCaVQas2ox+xMU7z+dLv5KJ9v2K9bSHDrFP/RCcvzP9Qbe1JA120XwPxZcqOTeJ
+         BKDA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IFcpM7LK;
+       spf=pass (google.com: domain of bhairab1968@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bhairab1968@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <bhairab1968@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-a8d2584a871sor432599566b.4.2024.09.13.02.55.17
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 02:55:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bhairab1968@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IFcpM7LK;
+       spf=pass (google.com: domain of bhairab1968@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bhairab1968@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726221317; x=1726826117; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=n5wHkyMZFfW/HG9e+S6fiHjZixAo7R2RoIWh5nUShYE=;
+        b=IFcpM7LKEfn9FfyplcS2AHEQNGTKa2QjEJIVTAd3ISbvzRJwup+iG6cb1cAcus/55g
+         gDQjRcOCVA0cNpBeDRg+2RqkDH1kq1BxCwqpdXjz4KQ9fEppo56LC+1VPDnl2qmU23hk
+         b1d5+ayID7eWC7Sm/jpOz6V7VpgwQp/pXzyg3EW4/v1zv+1R+HCbTl+RONx8VKAx81yX
+         00ge2AytHJLrnnwnoBMvOAwl6VAwjbkaxV1NeN3JTPCbv6i8yiwto/wdGLWf37gKgckI
+         U12zMIYidVm1sZnjDuTIJsq9aaQzSWZJ4s772FOuZjV/sZdA6bfec0ebC7ue1NEn5KW+
+         H55g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726221317; x=1726826117;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=n5wHkyMZFfW/HG9e+S6fiHjZixAo7R2RoIWh5nUShYE=;
+        b=dYHpF6M4TbgH92XMM8M1VwA0x18F/6oxeMmL41iQNs8n2PXdpISpy07OGPAJW8QGiy
+         OVETXWhETtcrdmapfJvtzg58eTKape+Xqp+xnuXYAvZmqpRVaLRDfo8dWXmq8TNV8lAR
+         aTeKDyz5VsI0mdoiQXetPXVTFGM+R5kdLH+9DNDNHToZK7mAE4rSwT1o1c+hQepJJBGn
+         Ryza4T2LHQTwRqoTIAkYTUFQzcLcYQaPuGiOO4g65YSuEznAIn2fIBvvH93Ssrq9lGyQ
+         zIpFIQql3vSVSOLOYWkCVuLnxq6CVkS5Tu96OkATRq5hny2+1mD8BFtW0rOpUH+AzAbn
+         1FnA==
+X-Gm-Message-State: AOJu0Yz6QAEcKgvzOhek6XB3dQNMxp8wACUDKTNSRn7X+fWOeUiKevRM
+	dFf8mkMJcCBYSpjCl+Ytekk4NADnMT9CSHniIvgowx5Ndhq5AentcL2Xp+nmNewbAUq9/94CXC1
+	Q36CVfDpG1Xu6XYfrpvTS+MeQngrVnCVp8fs=
+X-Google-Smtp-Source: AGHT+IHHsXQ3BzTGDMBNjpMZbSrgekd2qMOtK2IXpPW6mSqmvjJbrJbgc5IW0F6RwhwZy05Cp34OjhWFO0hQEPcYdT4=
+X-Received: by 2002:a17:907:7f23:b0:a86:700f:93c0 with SMTP id
+ a640c23a62f3a-a9047d1ac6dmr141054566b.35.1726221316522; Fri, 13 Sep 2024
+ 02:55:16 -0700 (PDT)
+MIME-Version: 1.0
+From: Bhairab Ganguly College <bhairab1968@gmail.com>
+Date: Fri, 13 Sep 2024 15:25:04 +0530
+Message-ID: <CAAoLJw_n6SDqKgV1OkDR6yjw8NPbNmggBO7VQKwv-kRxu0GgMA@mail.gmail.com>
+Subject: Submission of information related to the Suspended Employee
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000006013710621fd382b"
+
+--0000000000006013710621fd382b
+Content-Type: text/plain; charset="UTF-8"
+
+To
+
+The Principal Secretary,
+
+Higher Education Department
+
+Govt. of West Bengal
+
+
+Respected Sir,
+
+
+With reference to the notification no. 21-Pr. Secy-HED/24 dated 29-08-202,
+I do hereby submit the following information for your kind perusal.
+
+*Name of the Suspended Employee*
+
+*Name of the Office/Institution with Address*
+
+*Suspended from*
+
+*Reason for suspension*
+
+*Any other details*
+
+Nil
+
+NA
+
+NA
+
+NA
+
+NA
+
+
+
+With warm regards,
+
+
+*Prof. (Dr.) Subhranil Som*
+
+*Principal, Bhairab Ganguly College,*
+
+Govt.-Aided, NAAC Accredited Grade 'A+' College
+
+Affiliated to West Bengal State University
+
+Feeder Road, Belgharia,
+
+Kolkata-700056, West Bengal, India
+
+
+
+*Additional Charge as Officer on Special Duty (OSD)*
+
+Department of Higher Education,
+
+Government of West Bengal, India
+
+
+Fellow, Nikhil Bharat Shiksha Parisad, India
+
+Honorary Fellow, International Association of Professional & Fellow
+Engineers Inc. USA
+
+Sr. Member IEEE, Member IAENG, IACSIT, ISOC
+
+Lifetime Member of AUN Research Lab
+
+
+
+Web: www.bhairabgangulycollege.ac.in
+
+E-mail: subhranil.som@gmail.com /
+principal.office@bhairabgangulycollege.ac.in
+
+Mob: +918178982064
+
+Ph: (033) 25643191
+
+--0000000000006013710621fd382b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-he=
+ight:107%;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span =
+style=3D"font-size:12.5pt;line-height:107%">To</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">The Principal Secretary,</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">Higher Education Department</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">Govt. of West Bengal</span></p><p class=3D"MsoNo=
+rmal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-size:11pt;font-fami=
+ly:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:12.5pt;line-hei=
+ght:107%"><br></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">Respected Sir,</span></p><p class=3D"MsoNormal" =
+style=3D"margin:0cm 0cm 8pt;line-height:107%;font-size:11pt;font-family:Cal=
+ibri,&quot;sans-serif&quot;"><span style=3D"font-size:12.5pt;line-height:10=
+7%"><br></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">With reference to the notification no. 21-Pr. Se=
+cy-HED/24 dated
+29-08-202, I do hereby submit the following information for your kind perus=
+al.</span></p>
+
+<table class=3D"gmail-MsoTableGrid" border=3D"1" cellspacing=3D"0" cellpadd=
+ing=3D"0" style=3D"border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width=3D"120" style=3D"width:90.15pt;border:1pt solid windowtext;padd=
+ing:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><b><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Nam=
+e of the Suspended Employee</span></b></p>
+  </td>
+  <td width=3D"120" style=3D"width:90.15pt;border-top:1pt solid windowtext;=
+border-right:1pt solid windowtext;border-bottom:1pt solid windowtext;border=
+-left:none;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><b><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Nam=
+e of the Office/Institution with Address</span></b></p>
+  </td>
+  <td width=3D"120" style=3D"width:90.15pt;border-top:1pt solid windowtext;=
+border-right:1pt solid windowtext;border-bottom:1pt solid windowtext;border=
+-left:none;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><b><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Sus=
+pended from</span></b></p>
+  </td>
+  <td width=3D"120" style=3D"width:90.15pt;border-top:1pt solid windowtext;=
+border-right:1pt solid windowtext;border-bottom:1pt solid windowtext;border=
+-left:none;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><b><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Rea=
+son for suspension</span></b></p>
+  </td>
+  <td width=3D"120" style=3D"width:90.2pt;border-top:1pt solid windowtext;b=
+order-right:1pt solid windowtext;border-bottom:1pt solid windowtext;border-=
+left:none;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><b><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Any=
+ other details</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=3D"120" valign=3D"top" style=3D"width:90.15pt;border-right:1pt =
+solid windowtext;border-bottom:1pt solid windowtext;border-left:1pt solid w=
+indowtext;border-top:none;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span lang=3D"EN-IN" style=3D"font-size:12.5pt">Nil</s=
+pan></p>
+  </td>
+  <td width=3D"120" valign=3D"top" style=3D"width:90.15pt;border-top:none;b=
+order-left:none;border-bottom:1pt solid windowtext;border-right:1pt solid w=
+indowtext;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span lang=3D"EN-IN" style=3D"font-size:12.5pt">NA</sp=
+an></p>
+  </td>
+  <td width=3D"120" valign=3D"top" style=3D"width:90.15pt;border-top:none;b=
+order-left:none;border-bottom:1pt solid windowtext;border-right:1pt solid w=
+indowtext;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span lang=3D"EN-IN" style=3D"font-size:12.5pt">NA</sp=
+an></p>
+  </td>
+  <td width=3D"120" valign=3D"top" style=3D"width:90.15pt;border-top:none;b=
+order-left:none;border-bottom:1pt solid windowtext;border-right:1pt solid w=
+indowtext;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span lang=3D"EN-IN" style=3D"font-size:12.5pt">NA</sp=
+an></p>
+  </td>
+  <td width=3D"120" valign=3D"top" style=3D"width:90.2pt;border-top:none;bo=
+rder-left:none;border-bottom:1pt solid windowtext;border-right:1pt solid wi=
+ndowtext;padding:0cm 5.4pt">
+  <p class=3D"MsoNormal" align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;=
+text-align:center;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span lang=3D"EN-IN" style=3D"font-size:12.5pt">NA</sp=
+an></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:12.5pt;line-height:107%">With warm regards,</span></p><p class=3D"MsoNorm=
+al" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-size:11pt;font-family=
+:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:12.5pt;line-heigh=
+t:107%"><br></span></p><div><div dir=3D"ltr" class=3D"gmail_signature" data=
+-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin-bottom:0cm=
+;line-height:normal;background-image:initial;background-position:initial;ba=
+ckground-repeat:initial"><b><i><span style=3D"font-size:12pt">Prof. (Dr.) S=
+ubhranil Som</span></i></b><span style=3D"font-size:12pt"></span></p><p cla=
+ss=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:normal;background-i=
+mage:initial;background-position:initial;background-repeat:initial"><b>Prin=
+cipal, Bhairab Ganguly
+College,</b><span style=3D"font-size:12pt"></span></p><p class=3D"MsoNormal=
+" style=3D"margin-bottom:0cm;line-height:normal;background-image:initial;ba=
+ckground-position:initial;background-repeat:initial"><span style=3D"color:r=
+gb(61,133,198)">Govt.-Aided,=C2=A0NAAC
+Accredited Grade &#39;A+&#39; College</span></p><p class=3D"MsoNormal" styl=
+e=3D"margin-bottom:0cm;line-height:normal;background-image:initial;backgrou=
+nd-position:initial;background-repeat:initial"><span style=3D"color:rgb(61,=
+133,198)">Affiliated to West Bengal State
+University</span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line=
+-height:normal;background-image:initial;background-position:initial;backgro=
+und-repeat:initial"><span style=3D"color:rgb(61,133,198)">Feeder
+Road,=C2=A0Belgharia,=C2=A0</span></p><p class=3D"MsoNormal" style=3D"margi=
+n-bottom:0cm;line-height:normal;background-image:initial;background-positio=
+n:initial;background-repeat:initial"><span style=3D"color:rgb(61,133,198)">=
+Kolkata-700056, West Bengal,
+India</span><span style=3D"font-size:12pt"></span></p><p class=3D"MsoNormal=
+" style=3D"margin-bottom:0cm;line-height:normal;background-image:initial;ba=
+ckground-position:initial;background-repeat:initial"><span style=3D"font-si=
+ze:12.0pt;color:#222222">=C2=A0</span></p><p class=3D"MsoNormal" style=3D"m=
+argin-bottom:0cm;line-height:normal;background-image:initial;background-pos=
+ition:initial;background-repeat:initial"><b><span style=3D"color:rgb(33,37,=
+41)">Additional Charge as Officer on
+Special Duty (OSD)</span></b><span style=3D"font-size:12.0pt;color:#222222"=
+></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:n=
+ormal;background-image:initial;background-position:initial;background-repea=
+t:initial"><span style=3D"color:rgb(61,133,198)">Department of Higher Educa=
+tion,</span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-heig=
+ht:normal;background-image:initial;background-position:initial;background-r=
+epeat:initial"><span style=3D"color:rgb(61,133,198)">Government of West Ben=
+gal, India</span><span style=3D"font-size:12pt"></span></p><p class=3D"MsoN=
+ormal" style=3D"margin-bottom:0cm;line-height:normal;background-image:initi=
+al;background-position:initial;background-repeat:initial"><span style=3D"fo=
+nt-size:12.0pt;color:#3d85c6"><br></span></p><p class=3D"MsoNormal" style=
+=3D"margin-bottom:0cm;line-height:normal;background-image:initial;backgroun=
+d-position:initial;background-repeat:initial">Fellow, Nikhil Bharat Shiksha
+Parisad, India<span style=3D"color:rgb(61,133,198)"><br></span></p><p class=
+=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:normal;background-ima=
+ge:initial;background-position:initial;background-repeat:initial">Honorary =
+Fellow, International
+Association of Professional &amp; Fellow Engineers Inc. USA</p><p class=3D"=
+MsoNormal" style=3D"margin-bottom:0cm;line-height:normal;background-image:i=
+nitial;background-position:initial;background-repeat:initial">Sr. Member IE=
+EE, Member IAENG,
+IACSIT, ISOC</p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-heig=
+ht:normal;background-image:initial;background-position:initial;background-r=
+epeat:initial">Lifetime Member of AUN Research
+Lab<span style=3D"font-size:12pt"></span></p><p class=3D"MsoNormal" style=
+=3D"margin-bottom:0cm;line-height:normal;background-image:initial;backgroun=
+d-position:initial;background-repeat:initial"><span style=3D"font-size:12pt=
+">=C2=A0</span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-h=
+eight:normal;background-image:initial;background-position:initial;backgroun=
+d-repeat:initial"><span style=3D"color:rgb(61,133,198)">Web:=C2=A0</span><a=
+ href=3D"http://www.bhairabgangulycollege.ac.in/" target=3D"_blank"><span s=
+tyle=3D"color:#1155cc">www.bhairabgangulycollege.ac.in</span></a></p><p cla=
+ss=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:normal;background-i=
+mage:initial;background-position:initial;background-repeat:initial">E-mail:=
+=C2=A0<span style=3D"color:rgb(34,34,34)"><a href=3D"mailto:subhranil.som@g=
+mail.com" target=3D"_blank"><span style=3D"color:blue">subhranil.som@gmail.=
+com</span></a></span>=C2=A0/=C2=A0<span style=3D"color:rgb(34,34,34)"><a hr=
+ef=3D"mailto:principal.office@bhairabgangulycollege.ac.in" target=3D"_blank=
+"><span style=3D"color:blue">principal.office@bhairabgangulycollege.ac.in</=
+span></a></span><span style=3D"color:black">=C2=A0</span><span style=3D"col=
+or:rgb(34,34,34)"></span></p><p class=3D"MsoNormal" style=3D"margin-bottom:=
+0cm;line-height:normal;background-image:initial;background-position:initial=
+;background-repeat:initial"><span style=3D"color:black">Mob: +918178982064<=
+/span></p><p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:nor=
+mal;background-image:initial;background-position:initial;background-repeat:=
+initial">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style=3D"line-height:107%;font-family:Calibri,sans-serif;color:black"=
+>Ph: (033) 25643191</span><br></p></div></div></div></div></div></div></div=
+>
+
+--0000000000006013710621fd382b--

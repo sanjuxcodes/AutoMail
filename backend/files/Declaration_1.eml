@@ -1,0 +1,209 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6188:b0:86:fb3e:d4ed with SMTP id n8csp19928dln;
+        Tue, 3 Sep 2024 23:01:10 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFxbIAxWxeXwkTUb8nfLIA0h1PCPbKP5oEl/XIL6Pc0hfWOxAmaAkCH79FFj2YANGF9XSxv
+X-Received: by 2002:a05:6214:5c44:b0:6bb:b238:bc66 with SMTP id 6a1803df08f44-6c3c62a4c35mr76666966d6.26.1725429670243;
+        Tue, 03 Sep 2024 23:01:10 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1725429670; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=ferhlQED5soFEpIQsknpa5Gqs5ELxQ+hPqZwgzguEHa59IFLPDEfHDL0DYATqzeAob
+         NYys54GUzSitR1cCjL1luGXst7MnSJfutYiQay3DZ/nC/9O6TVUkj5d0JLU5F/M14vVZ
+         qRLvdGZUNvoV8bkR+qKIo+cnvhxMbcJwwS3cbsTWnL9V2eoLF4lDUn0t7GKSMydpzoBD
+         RUENkEsR08BZSOZUhhFQQ9Dz4CNtBFVzDgriT4lMgVgBrRhJkdraEmNlzWdNQSX5MVvn
+         k379ULcyxsQy+/3WfuMOo+5QZ305aNMT63/3LnIRmCTkbeP5NV2BWy9KfSoNIyhX/i0K
+         tQeQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :message-id:date:thread-index:thread-topic:subject:to:from
+         :dkim-signature;
+        bh=LfpFSdMirt1FLfGTDn6XgjpFlK9t34b883HaClUsRuI=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=oolTvtZXXjPszZQqHE96uO89VtFzQaRlRKyNSZVrMO7BD3iwxtMWs56bfIJVuzjShr
+         6AfUmtvkLywGnonxGtXNq2vgbDdjku+nJRUlXSnAXR89LykFoDTcF3B0j8Xd2xmFSyQf
+         pIe6G87Duq6c7c6hIhyh42dH6rg6M3tILZUTn/+AFx/L9A6VDaBa2t/cCBh4Q2lIMCSI
+         FrkCn4WY4zXg8JesHBBUaQpduWlPIJSu0hPMs9C4qNvKY2FPEiWXcy59d8o+Dp5LqlgM
+         GGdL1E7WF9KG1XPZryacENsm1JngHCC7JTtAqK2eCt9DUG+wTI1pt/qR+C+2/qOLyMnE
+         Hbyg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gcett.onmicrosoft.com header.s=selector1-gcett-onmicrosoft-com header.b=i4gfUeo4;
+       arc=pass (i=1 spf=pass spfdomain=gcettb.ac.in dkim=pass dkdomain=gcettb.ac.in dmarc=pass fromdomain=gcettb.ac.in);
+       spf=pass (google.com: domain of principal@gcettb.ac.in designates 2a01:111:f403:2020::729 as permitted sender) smtp.mailfrom=principal@gcettb.ac.in
+Return-Path: <principal@gcettb.ac.in>
+Received: from IND01-MAX-obe.outbound.protection.outlook.com ([2a01:111:f403:2020::729])
+        by mx.google.com with ESMTPS id d75a77b69052e-45682c873f5si141130971cf.114.2024.09.03.23.01.09
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 03 Sep 2024 23:01:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principal@gcettb.ac.in designates 2a01:111:f403:2020::729 as permitted sender) client-ip=2a01:111:f403:2020::729;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gcett.onmicrosoft.com header.s=selector1-gcett-onmicrosoft-com header.b=i4gfUeo4;
+       arc=pass (i=1 spf=pass spfdomain=gcettb.ac.in dkim=pass dkdomain=gcettb.ac.in dmarc=pass fromdomain=gcettb.ac.in);
+       spf=pass (google.com: domain of principal@gcettb.ac.in designates 2a01:111:f403:2020::729 as permitted sender) smtp.mailfrom=principal@gcettb.ac.in
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=SfyTEwiJNMQQufzH6rd40gTF4HGHFSh7msypalBXxoC574MKyjs/a5Se2Gc7BK/uCVfSSSt4FbxuZhF0mYyJ5U12vJWOPMZr2lYAvMKUz+x9i43seN8vGOC3FwtbmTlIyFq2iguFu0jZ/ArY7sIr5me3B+7C/MbSmeQv/ugDcmeSEIj8dFCH5bChHp6vT5rxksRzF1UF0RtKYd2uE8FadQ28juu1Np7pat+hTO7qjxosCuISMhJ03ydqrPOY6U5MT/NDndBDPBdk+Hv6SDhKQi12QqrlqTDeFvm7scqX85SkFV7gbpvkO4ULSLIVs4QYS6XQhIsGyj37d1jGc0BZSA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=LfpFSdMirt1FLfGTDn6XgjpFlK9t34b883HaClUsRuI=;
+ b=WuMrHZrlHs4SmPM8xyutlLFxnyvaqOrNfr/+2kuyBPhEEz7BB5VbaZPo9sp/DyGcbTkP09QCAnjkiB3utpQCh4sAPhDzIIR+Q655n9XFEvU0Mn3vLO/HGAI470+S6HuvgmZNTk50ZIoJGHCSCl/ErLHV+sAD1tW1iVrJZCcKqBkTyciX0pfwO7Fv2yZHBNpUAEWaTQrYunlWGVGNdYMdoTYRWJkuKqp/4jnftiD1z1hiv2BMYJoDDTF1f8jkCzQN2cfCnbdTjXs5rmwUw4gI9jUgtskSX8/JH0sTzHySMs8rqY+rkt5v4ZaCSiMT7vwkv/+M1dfA0O39MbJcs3Ko9A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=gcettb.ac.in; dmarc=pass action=none header.from=gcettb.ac.in;
+ dkim=pass header.d=gcettb.ac.in; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gcett.onmicrosoft.com;
+ s=selector1-gcett-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LfpFSdMirt1FLfGTDn6XgjpFlK9t34b883HaClUsRuI=;
+ b=i4gfUeo4LWqeg2Ihd3yKLjbNhTC6qFMftxeWUHb+CFRAZ+TnG+vffgTdbQXrS8AtDXsP0O8UFYTTWEumUxpUSEHkU1ylFOOCZv+i7g45ZoGfH8GRxsOHq44NVBC2M2jExqtHpCJ6u7xtfwwuJQlX2GHcc2ag/fshB9+s7MWyE15qVyI2rH70SG8qNlrZclj16JaDtByDKQ60bbM3pknrmUeLw2pp+NHw1Wv3RaRLMW/hhd9DgNWzvys2bU+saLdj3qaiN/SqDDnaAc5T+huqCq5815IARJ9zjrbO4DdYTDMoJleyRlKXpSuz5PFVGyNjCQv+ISP1SwQh5jX2lB8v9g==
+Received: from PNXP287MB0061.INDP287.PROD.OUTLOOK.COM (2603:1096:c01:a4::12)
+ by PN0P287MB0744.INDP287.PROD.OUTLOOK.COM (2603:1096:c01:10d::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7918.25; Wed, 4 Sep
+ 2024 06:01:04 +0000
+Received: from PNXP287MB0061.INDP287.PROD.OUTLOOK.COM
+ ([fe80::759:a63e:2978:72c6]) by PNXP287MB0061.INDP287.PROD.OUTLOOK.COM
+ ([fe80::759:a63e:2978:72c6%5]) with mapi id 15.20.7918.024; Wed, 4 Sep 2024
+ 06:01:04 +0000
+From: Principal GCETTB <principal@gcettb.ac.in>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Subject: Declaration
+Thread-Topic: Declaration
+Thread-Index: AQHa/o9W421L0KqxvUa/Q0JFow9bjQ==
+Date: Wed, 4 Sep 2024 06:01:04 +0000
+Message-ID:
+ <PNXP287MB006171FE4F178504DB4A66CC8E9C2@PNXP287MB0061.INDP287.PROD.OUTLOOK.COM>
+Accept-Language: en-IN, en-US
+Content-Language: en-IN
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=gcettb.ac.in;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PNXP287MB0061:EE_|PN0P287MB0744:EE_
+x-ms-office365-filtering-correlation-id: 82d3d059-a5cb-471d-cc0c-08dccca6f615
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|41320700013|1800799024|366016|376014|38070700018;
+x-microsoft-antispam-message-info:
+ =?iso-8859-1?Q?ZOXStC6YKJoD49KH91ewsGpYsEgfcWoDH7P/X5em15FNQyemr66/4ygijh?=
+ =?iso-8859-1?Q?KJ7GT9jK0Jc2CKum5EbzRF9AtE7fdkI4bpBUe8RKeNzsHBi83m5KkTSctt?=
+ =?iso-8859-1?Q?Uf0359wQlQtBFmzlej7zIImTlkS8Vlhp+zZrWVt12xF394JzipzcNrFJiP?=
+ =?iso-8859-1?Q?lybDyugRKY9ocLEl3TX8xtunMr2sAhv+jjbHJWJHGt+pofI7BqXELiNcvJ?=
+ =?iso-8859-1?Q?y22HCVgPJ5u4xTaMAoG+T5NqwUQ4SRqfu0wfNZhUgsgMtPU0Kdp8cGt6Kz?=
+ =?iso-8859-1?Q?IjwDamHHzk6kUtAo0DnMQFKxzllozRn90zp90KhNRHPvj67OmJZM/H1yXq?=
+ =?iso-8859-1?Q?kJoBYU8lKDOwaz0LbHnhSxQAAuAb9Rqg8okyeR6BeE7Aw6I2sPKNdUKzYj?=
+ =?iso-8859-1?Q?u/yVsXrbg4GCuDCu7j7YvkLF0/hGoTc6/B5a3HVHMRm/+4Zl84sQaNikjV?=
+ =?iso-8859-1?Q?97NVOPaiP8opM4vU6JwdeQgDinnEhhl9e7bO7bfxjYRyE+/mwbn55ntp5W?=
+ =?iso-8859-1?Q?bt4QmArAGCOr3IsfWPYK+XpTyrYnUJCqWNhL5ua25+SThMSgCf0JFBO4aM?=
+ =?iso-8859-1?Q?PAoxDvMbrlmOUbyK2siD4XzM4EUsXFiFyYI+Zn4S9fKzZA5TiGrOXKlJvG?=
+ =?iso-8859-1?Q?bCWMtCpnU5X23yrL0CmpGiDgYB1Ysl7Mj+lirkwHpbvltX3cwK9KpMJfYR?=
+ =?iso-8859-1?Q?wDvhiNLIDjW28DdJF828wO/vBfxutxD35CWx+45PjBc/5zPtH1iQgtirmJ?=
+ =?iso-8859-1?Q?KtYS1v7AOfB/AMywHjc5h32L95gTF+WL8l5aEd8eeyNT4Sy2QeaAPXW8fK?=
+ =?iso-8859-1?Q?D17eZHpGeif5vgaxTmAoI/jo4dUbOnQbOpx7XxQUGJY0uEV7/Iax8CckWF?=
+ =?iso-8859-1?Q?pbEio7bzOwl35hug/lr65Z6R7d4+S7ok+fzCRLc7IAEEmu9qsf/i5MwT4P?=
+ =?iso-8859-1?Q?GXSV6tVUzp6LJ+IcBhOVJ5l2JNq+1qi2BX1rOwtZ7oNHqFF3IOJfEKIE4S?=
+ =?iso-8859-1?Q?Epn/oe9qKBri6vy/Fimjhriv7OQK9uyLluIbeTQd/zYUE3ugyVCDzMZTWw?=
+ =?iso-8859-1?Q?w1AmwL9kZDo1G88YPv8hmDj864CLWLhi0UngOi8NICH8k+8nkGFIK5IYkE?=
+ =?iso-8859-1?Q?khZmKxQZGpwqy44mbTW4A25sAZ94mRF42QKsU8HdwM9ubLeF5iH1CgImMp?=
+ =?iso-8859-1?Q?LKhXVBZJoUdlx/ENwhpMenGlieMEYJInOgrG7EoySGn6p53+yJ7X2/uRfi?=
+ =?iso-8859-1?Q?SAF+Ex2VFvFZ4YJAKw0SU+GNEgmWiv41ZIW575+DTObhKWJLQzN0dqkf5L?=
+ =?iso-8859-1?Q?0UKvU0OeXWPGfKPnMp4J6R3g/QhEtWseQ1yaKNeZ1Fa0b4YJ8BURNUpzvX?=
+ =?iso-8859-1?Q?8ZTnGpb/j+aCFI96iNhez9uiN9VtEvMiVvF7pvVaGz/5iNTOUfcnndW0P6?=
+ =?iso-8859-1?Q?gSYGVGRF+twsiCW9CKbWpB+fyxa/Eh3atj+F+w=3D=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PNXP287MB0061.INDP287.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(41320700013)(1800799024)(366016)(376014)(38070700018);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?xNVV3Mg6y0v2WrKVxNmaSq8ysHpSD0CgH1xx7cRNwNPOFNgj2s1r2BO80a?=
+ =?iso-8859-1?Q?ATlDdUEBoxbpZ5lXc+pKXbXPLY69haTGesM4hAHtq0PQUllXsBHVOBEG3o?=
+ =?iso-8859-1?Q?xhyEkLt9SWYlQQIW/2fL/yO5+g3lRLRmtnAIRhrmlVBxIwGntJRUizWzJu?=
+ =?iso-8859-1?Q?CJVEucvnAXhlJMu88atWdqye/IMBDVV0/IJCWXtQoD/wfM14ifs31JYgd+?=
+ =?iso-8859-1?Q?krOas5uCScFNI/Rli/jmVDl7hgox/TcmEE91r/It+Ht/MPeKnJkNmSFU7S?=
+ =?iso-8859-1?Q?UhMNRqzP6WlE7CK1mj7GH42WicDts5SPhtITn/lnIeELzMzooDwmw3cm4h?=
+ =?iso-8859-1?Q?KCcH9sdbX12zBrBimDceouTCbCHNGUga9+dFVVkH0x5+k/3yVbkrI4fNwS?=
+ =?iso-8859-1?Q?/T5rk1jJcUSGET4oIrvXKW+DsY/iQ7JAPFdLFf1nRvTZnhTUr4hYF2SEuM?=
+ =?iso-8859-1?Q?w0no2bFG/St7bnn1xA0RwZup+vNfmmJzgUuSHDQQEezG5xKhpH/z1GJ5S2?=
+ =?iso-8859-1?Q?p7cf0CE8ESvzKaBxV6Ix9MqJky46KFGuaqLt0rMYDUbfAeF3hHsfe3yMpr?=
+ =?iso-8859-1?Q?hyoXtSxCOU4QxKbEfyQJ2mvfm6hexq7E/BhyimVFhp3qFkxyqtzY4RrU79?=
+ =?iso-8859-1?Q?SCkXz9c3u/5/pSPYlKEED6+bAqZfMdjOc8RipY/wh/xmVHbNt1EC4USIud?=
+ =?iso-8859-1?Q?cDJ7yW5B0exdrzv7wXOO8qi8fsjXfxm7PJAZuRgszwJVET3YUf3qPjl1SR?=
+ =?iso-8859-1?Q?/ItboDFwZeJZGhSCr7Uv5PQSTV/gn14bdR603DyeM87goZCwNI+uQWEVs0?=
+ =?iso-8859-1?Q?DgIDU0mC3S3so25U/ZrUzdH9wstaXpZO2XEL1yKMNPilQjIBPJ6UCmg6bQ?=
+ =?iso-8859-1?Q?DYlVbBu3btZ3fDUka0yLrMvY98q9VyxZ5JGs/1Kb2QDbz0jYtrp4aESpzp?=
+ =?iso-8859-1?Q?P/DoiYLbl4fI6EDp8QHGsC63BiMoO5hryfaqazPiLxv1iHySF2UAQj6d5Y?=
+ =?iso-8859-1?Q?4EFLky4AY0UsUFlR0yy5cTP2tPetQOSVbAaLlm3JteWswiQf6E39y0rYji?=
+ =?iso-8859-1?Q?+00KodVJeQazt9mX81+3KpDL1ELAFO0OvQNjIU3ZKdMtcp50vC7Zlv4cN8?=
+ =?iso-8859-1?Q?zPanstFIb+iQCN/tcfJ2oGBbgFvR3vG+ApmXUWgaw4yhY7GY87ha4sKbMY?=
+ =?iso-8859-1?Q?JKlwbckX4rC30Bn5+glYjeZ7liDd+fqpp8woXvMJ4ZndbGYt8HpWqTk58y?=
+ =?iso-8859-1?Q?Sky76rlAOtwJuwa8Ds9cw9f+ZlHnnhKcDqC7VzjQ0RjleehX6pI6LWon/g?=
+ =?iso-8859-1?Q?yjDrj7xSOvf5yeYg0AtXv3SRWviZKfZYYn9n2D6tBn1OYJhKOOf2/Ae68O?=
+ =?iso-8859-1?Q?AnOBmtKNUlKIUvZ095fjRYOw7TwEZa1Na4sZO2gmFqXufaM91DEGUov4h+?=
+ =?iso-8859-1?Q?JubNbfw/FdiUN+c8mc43tpR+Dt+cleX2QwQzHrxN4vfLHyiMG/fW3wKeF4?=
+ =?iso-8859-1?Q?YQiQQAWAPQmKPhM1PtMegFc67X7eS6+58LRc/a4nHGuCyj9T0V3gnrKaKR?=
+ =?iso-8859-1?Q?FDuja70zZHJF/vVoBaBE3C0FYo0IBfFHaL5c2+Vz3UazR/vFT2vnjPgzhV?=
+ =?iso-8859-1?Q?qHiGUIDLM5bY44nsfulaYfiwF71gqm2Dk4?=
+Content-Type: multipart/alternative;
+	boundary="_000_PNXP287MB006171FE4F178504DB4A66CC8E9C2PNXP287MB0061INDP_"
+MIME-Version: 1.0
+X-OriginatorOrg: gcettb.ac.in
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PNXP287MB0061.INDP287.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 82d3d059-a5cb-471d-cc0c-08dccca6f615
+X-MS-Exchange-CrossTenant-originalarrivaltime: 04 Sep 2024 06:01:04.4779
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 1cd35145-3c00-4e4f-8fc7-891b91c79920
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: GPGWbsBkDi1G/vmhD29jbJZv+2GEvsH2XEXVnupm4aiE2vdg8dnK1b9JLEQiusvZ1cIYmiNTQoFx3Q7A4gyHhg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PN0P287MB0744
+
+--_000_PNXP287MB006171FE4F178504DB4A66CC8E9C2PNXP287MB0061INDP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Sir/Madam,
+This is to inform you that we do not have any case of grievance at Governme=
+nt College of Engineering & Textile Technology, Berhampore.
+Regards,
+Prof.  Anindya Ghosh
+Officer-in-Charge
+
+--_000_PNXP287MB006171FE4F178504DB4A66CC8E9C2PNXP287MB0061INDP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dear Sir/Madam,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+This is to inform you that we do not have any case of grievance at Governme=
+nt College of Engineering &amp; Textile Technology, Berhampore.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Regards,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Prof.&nbsp; Anindya Ghosh</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Officer-in-Charge&nbsp;</div>
+</body>
+</html>
+
+--_000_PNXP287MB006171FE4F178504DB4A66CC8E9C2PNXP287MB0061INDP_--

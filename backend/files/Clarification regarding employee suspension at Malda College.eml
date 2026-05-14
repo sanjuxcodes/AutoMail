@@ -1,0 +1,94 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp127832dlb;
+        Fri, 13 Sep 2024 17:37:15 -0700 (PDT)
+X-Received: by 2002:a05:620a:370f:b0:79f:793:9a63 with SMTP id af79cd13be357-7a9e5f60eaamr1214612885a.44.1726274234587;
+        Fri, 13 Sep 2024 17:37:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726274234; cv=none;
+        d=google.com; s=arc-20160816;
+        b=gYyGYm9LP2kISjhKH6rh8jNbD+nJAw8MqshN8Zctoes8eFXJefJYbeGf6rCPn66jJC
+         /fG/NJeCG4IkoYVsLniqme1FSg8HIfjyKJpQuJt6yDO7LNBiLVbNxlcpKm1WTder1BWu
+         AvNO+5tLLXww6HUXcSYkv0ULdKRxOxOfdNeV5PWcsUAmkhtiJ1c/ZHAuupBYSxXcEZE/
+         zR6z3fWX0f7r3DQQwl3rLItrNNu3Q3C65k9xpWhjRutJf3xH0+dSuD2jKJKAfVBdpq8h
+         EKoYsy6yIxjFBhtL8nkxBubeRKyOSgcKXBv0wNl3xYse3uulhr/qivmSKBpTSOSeFsS2
+         JlAg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=XYtOSjUzKkx1zsWZvH95DpjBDrfN8AbF2IAiywV5oaE=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=hTZ/ZVSlgdSCpYysof/Tt0FUZd8A82MAnPy2zPSJgIMeUG7twyvR07stDl+rTYkog/
+         OBeL2BCHtQ21lRcckhpuKs0EVVwV1htj1Qod7By80NmUF1KSBB+LCQs83p8sKB9OeYr9
+         7bbNovxNNWDOTZxGNnlnxT/Cbf/v26YS2Rd96xkMM4TEXZC1scpyCNaAl9/VVs5QxfXa
+         KdSaYX96zo3md6h5dZLaBrsMzLfJmfuyoWkfD67DPcXHNj9H//IF+p9s7SQi9K6cG+OV
+         GueTP8pKxylbMN/zzIVaqeO9QokO5Mo3+UpLrEzB2M7tmjVJvhN+tGbgniRey8xDyCIp
+         hwGA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=UrUW98Yo;
+       spf=pass (google.com: domain of principalmc1944@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalmc1944@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principalmc1944@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id af79cd13be357-7ab3e96d61bsor15165685a.3.2024.09.13.17.37.14
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 17:37:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principalmc1944@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=UrUW98Yo;
+       spf=pass (google.com: domain of principalmc1944@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalmc1944@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726274234; x=1726879034; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=XYtOSjUzKkx1zsWZvH95DpjBDrfN8AbF2IAiywV5oaE=;
+        b=UrUW98Yo+JsXfBHFfX6aDcCSakmsEYYzU+atOg4ypBIqXk1kr+qN2nggrz+UV+BbT/
+         FdaDsqafz9twlFLVvHGaUrJ7FIkLGXTJ4o2ZBN4U5z5/xMRz8m0nV5m6o3EEJ1BQnLx3
+         r/3RSqkFDnKXmhme2B1nF/p56It1rBVtCVdgyniXx7Y15KewbyObwcG3/aChUvJKoHDx
+         gUu4k/7sMT+mvmzgU8N7Bqvhg0i506WE29g0oeh/5itgGN4fxcYFqV2jYN3WFZquzc+F
+         r7P42wKz+yyEvztsB45kEu98gLe5SYyVcrO4f9mwalBe4ubWx+Wv2ferwAQ27jFhsiPh
+         IWow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726274234; x=1726879034;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=XYtOSjUzKkx1zsWZvH95DpjBDrfN8AbF2IAiywV5oaE=;
+        b=OPnC/r9uclTl/XYJif7TdiJ+YYrqudJobhKNLoddJ4WaQPJjehl8bc76HyCE5zU1k8
+         futErTptafK4TkCMt9vwxduJBAodKRpECXG0YXeTsUiRvVjKJ53CnhEHdF2F0tXGKfmW
+         6mVE34UU+23ulJ7T3mZ331I5nSPaG2jm2t/MQhxjKm9NPQyzt5pLQKEmOLVWWcR7p9ET
+         uwQYSMHJxeWYcBNbc+UapQNsw1zX342PBGpVSqAdq6gHVwrL43RPhw5N9TzNaaJjoY2W
+         wIjW54/bIAd/NwpUahG67xi4vdQK8kwhBVM8CmqTYTxHFnEoBckQQpdj1UJLa2e3Rjvf
+         7NgQ==
+X-Gm-Message-State: AOJu0YxbaK3mtKmJWbJRG+T25K27fD7seNsU70gplFTBRThJP6s+vUF3
+	nvVFPbNxHIS8yltR00xw1XoKhLmevieIoPmFcmYKyZfD1ktHWfdAVVZKErL1l4AMpirHYE8ZLxG
+	xbjcr2z19LwAOYzo7sGlmWhyY8pmcrg==
+X-Google-Smtp-Source: AGHT+IHsWY/TZ+4OB4z0xoSgKwr6Ezdp31Rd7fTlolYn/EZtbWZFoHI5gp530fIOl0Y9/ckegHMwFf3yKc0DBwsiIiY=
+X-Received: by 2002:a05:6214:2b82:b0:6c3:5d9f:cea6 with SMTP id
+ 6a1803df08f44-6c5735832eamr127289936d6.27.1726274233675; Fri, 13 Sep 2024
+ 17:37:13 -0700 (PDT)
+MIME-Version: 1.0
+From: Malda college Malda <principalmc1944@gmail.com>
+Date: Sat, 14 Sep 2024 06:07:02 +0530
+Message-ID: <CABQQQywVOkszG8mGBjGdQxd3MJrg4h4h_SiNfKHsxdjVgPo7QQ@mail.gmail.com>
+Subject: Clarification regarding employee suspension at Malda College
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000007bb71a0622098a93"
+
+--0000000000007bb71a0622098a93
+Content-Type: text/plain; charset="UTF-8"
+
+Sir
+This is to inform you that no employee has been suspended at Malda College.
+With regards
+
+--0000000000007bb71a0622098a93
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir<div dir=3D"auto">This is to inform you that no employ=
+ee has been suspended at Malda College.=C2=A0</div><div dir=3D"auto">With r=
+egards</div></div>
+
+--0000000000007bb71a0622098a93--

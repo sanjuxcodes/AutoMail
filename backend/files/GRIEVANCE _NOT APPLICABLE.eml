@@ -1,0 +1,106 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6188:b0:86:fb3e:d4ed with SMTP id n8csp360078dln;
+        Wed, 4 Sep 2024 10:33:45 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFz+c1QKaoYCjq4uvUS7kDcj/4vLdec47uywySZkwgHJguRt7pGet7nXkzUATT7lZsAePw3
+X-Received: by 2002:a17:902:f681:b0:205:951b:563f with SMTP id d9443c01a7336-205951b5934mr73677345ad.49.1725471225276;
+        Wed, 04 Sep 2024 10:33:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725471225; cv=none;
+        d=google.com; s=arc-20240605;
+        b=L9DK088Ja/qHMcHFeh15qON1kTwAzEL0meKFv88C7cgK8LPGdhyhVUBbnQTHTJhCAL
+         q+9vjsIVkGt/6bw1qtU2SsNLeh+voEMFoFF5vIpKpn4EaDlJ+UwMuNYJhghJUo6wvWQw
+         Q9+0NUF28tJaU2FmThZx3JuJ+vnGo/9HkOg1RAlP0kxFXNkayiWN16lVibtA1zJXd9lD
+         7gQzSwy53gkvNKGBXnsn+4e6KR3SUOtIjPd8H4RU5n03+yEMD6r4oOIo1Xnjop6tCAyj
+         kCyLZcmdOXOCeGtA22SISXmAq9y0eaDzOifAHWCIUV0b9NlQtoKwdJzYJ4UdK+Q9+mp7
+         cUtA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature;
+        bh=iqLuvu/Pj3G7SiqoyC99bAe9klDEYlIdqbe2QXM8sFc=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=DLWtDelpHMynCPgRQueN5cjT0jOiOP/eg+bcgNhpzHIc3u+MlgpOAI/WRruJz17rmd
+         JKpUVIaXJbONLpMopKFYFNwsriL1OfSaTbUDGCYt3XWKfzpTpc07drBJW2SRUXhx2Ed/
+         dfzVRrlx7BslFJP3xg2EZXcixvKwgWFLPEhBkAUAmV0lQcfpRkRPYs8rQSOEqWXRK1dY
+         4uuhnQXS/rHlxY70ZG8stFwpHYYD/K/qkWW+CT3mehB9D0DSURvTh0FbQ2ZQrYuf61z8
+         PUp3bo/f1bAtJ1OGsYPI/k20Ot+Wn+jigrnvf3aP8hwJWJ0E4QV6oS0cLapU69ifH42B
+         8juw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=iPRQl7ky;
+       spf=pass (google.com: domain of gazolemahavidyalaya@yahoo.com designates 106.10.240.79 as permitted sender) smtp.mailfrom=gazolemahavidyalaya@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <gazolemahavidyalaya@yahoo.com>
+Received: from sonic313-20.consmr.mail.sg3.yahoo.com (sonic313-20.consmr.mail.sg3.yahoo.com. [106.10.240.79])
+        by mx.google.com with ESMTPS id d9443c01a7336-206aea53e2csi25854705ad.528.2024.09.04.10.33.44
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 04 Sep 2024 10:33:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gazolemahavidyalaya@yahoo.com designates 106.10.240.79 as permitted sender) client-ip=106.10.240.79;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=iPRQl7ky;
+       spf=pass (google.com: domain of gazolemahavidyalaya@yahoo.com designates 106.10.240.79 as permitted sender) smtp.mailfrom=gazolemahavidyalaya@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725471223; bh=iqLuvu/Pj3G7SiqoyC99bAe9klDEYlIdqbe2QXM8sFc=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=iPRQl7kyHGroRvfo1e746SSgIyRa0IHFUZmIJsU3h5f09UJQyblV70P/3FN2Z9RJOllXrHmfYqz8gJSmpoIWoKaXrG978mdD4+SEWP9Fo43SZB3YdHCwf5bTsnFej76D7akiDgLFqph8FihicPEmF+cEj6bHTdXibYcXud+d1JPRpBdipLKfVfLqVC3DURmRWCCQQS0KPeorl+SI+TyclURoSbyQ9Oi4V8XCnNn7RNQJNUfom6jU6EznvC73c/m49MCGdfuoeq6sM37Zda7F4IaF8Tcj7lBqd7k42Y+4sxYVA7cwu5CNqNVZqqk1R8jIauYNGHTYWscMeyDKYN8siA==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725471223; bh=1nDu+jWJHD9/Xw2aozbHK4Cx7WHob3Ud84BndW0Rd8p=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=WWwOdYPNJLcgxDb6R8wOBysy6a1zRTA62M6Ff1M6BNf8QwPMr77uvBwIHkP4p08IDJgB23KILC2a+ef+qYp2D6Xf+DTpOuGTJY31gJS57GA7eeO3ORGhsHtMqjvHZz8jGAsC/R4bnaE4p4Yv4pzap0Rwj97TSqZIxTUNDd65Edtj655p347ulcKqsgC7Cw+2/J/WrDlS/XNfm3QAMP2IgNUd7mG6HksQlr5Bzen9p3EriJrvp0P6nYCB9Sc4+ER4rflg3GuKHtbPER5iCFOQsETEVQDFjwI4A6iEtYCqhSX2iL4Wi1LfnhlfcL0Kgg0gfxDe1ARvFISb9rRkCmzyLQ==
+X-YMail-OSG: n0R_YbEVM1kVnNAG_ybxIQ7VNf8wDwjldcKvkjTDPsPZwuAHBvVFOZPfm66rVfC
+ Syb4BxE4uf4brjIAXyuGrkEGRLlxpR6hgjlx3dN6E2XCmtodwffjO78uWRD84zrvyHLM0OElqWT7
+ GqGEb35X5KVIcc65bI9l6uRtRruPbPBbgCpFmYwGfytDi5sT_Ch4BOeDuhwrdhNUuP8b5h_qLi52
+ zhg4LKFSfj7AH5e1iDRH2AkmYwzEtMJ0Te2oBmeGB6mTDGjBL6ACIH49lSNhnYvENqsNYvzQE9oo
+ 5IG0UudqpARJqVXAW9xPJ9Lq8OLJarPWkLn0PbTMRPD22t0HQ2nZytkvbql0aSeVPzEEM9hS4u3_
+ uHhu1VRXTjWltxg8ujrShforV7Xl7ED2yB4XAmMk3GQ4P7cpq9YUdY6AxTzLEw5KLUVc4MpykR2G
+ zAlVyV1wrUxWc0Zh0QdPGFNAzbj_kE49hffb3FY1psJ81208JxfuwGt544iolLWy2kMKr3wCZTE1
+ pvSJkNJGwj_xKtelC_IIz1cPBwehCD499GIrGkNz8v6dCx9Ti1qp7L7TFuWYsKOFQpbiTwGWmHmw
+ DQ.DFEeDLq9K4f5oTz.Joemd2lKH1vR1BPFcMPS_EXrVcIz239Xp3uZyOZuhN__23MgMUYUNW.ur
+ _3GW9Fan1tfxTMXUT.Op4hmliKPwJiedD3Ye3HAU6LaqNjxAtBkv4aC9NlVQiRw3aw2XH1T1YG7N
+ 5YJDka5exmWooO7svyzSYfkKYun5pp_uyb6ny.rA9oj2axq756bdZzSOOPX3g53PnqlkeyfkKFt1
+ HDHN1OJfv__OUEOmvKAlTjkEkqQroqDFrYDU9vvZwtKsHwOWqoFeQSg14m7pL.keo5_Ysk3WsQPY
+ _.X10.Um8J1Nej4IrmKPTJ9AM5pFAikvYR2J0js2kLZHVt9hjzqOVWuVt0eAkjlL_tdRUtUphTVd
+ I8xwNOiXgzfFxi3y_oqn2TmeRznAhVZa79avOXWOPztClGP7rPe_KLijefzuNiP8R5VNYTADoVci
+ IiTc.Ld7I59v.TSs1VjmP104uYaWpUrYW9ipIX98AtBLIk1gkm_nBTydsXChE6q3RGE310JCq6V9
+ 7p3ZcvCLaQg2YKz2MGXY_yjBiC4GAJtOBtRs30t83pI3rAS_akYRk76L3PkRaFFrsTwGJEyeNEri
+ NGnjx3yniu14HdDx6fhlFeiPDl3lNwCuz29BOceO6eY57tGr1fO8kLBTFbGThEnKS1aDkOj3W57W
+ mMchZZf.A2EuPWck8dN5JVyBWfZVYGJbmk84PsCOxYl6zLqFOCza4xVTS0YE_yg1.CCS2XUP5E_F
+ 98slxjxvmjODb.XdF3u5o40rTQ3TTTJnqAv57HTIn5bQlfkYA8EtKLxMzMHIvRKyU1OPlmstP9yT
+ _mmh785wooov7NV_YVdZeBbpDpdugBLq3GGOH1N2HGS1qduRY8I5yMRvuogD_xhJ_quNKThzrkei
+ 5FtHFaNl4691WPG0KZy_loSRLOY9PhbqjwdpZ60vrce5ebsj7MSR9XWZtzPX1xjuGP.xE.24sl4o
+ Ta3FMlEOPJ6dOvOgWQP_fU0Hjj8SCyuGWHGA2HX0l.Q6qoxGhlqv9bDfK0t_aRCjs2TSKwBvzkOa
+ 1UMldHR.ffr0SrC0bHjch8R10.ucaIcVdJVfGzS7QCf9ewCbFpDsf5itZ9UTmMaT.sk1Kb5cvhKj
+ 0vpGdFi1M5eMPhfZfDWxWl8DijLKgLhEsFxOa9RivwT7YE63al.iEGbXiScptP9wKBi6puVksr.u
+ B33.jnOVScbFUjyf0szt1yJx9MmhWpYfbfQK8nmFfAYCKbW7g2iBjAcW_eXufbu2P7NiXzW0gHAT
+ BUz0CauvmLuIEoS3JcmCdkk9wm4syTREfYlIigG9xzvxJHylCLZhmM68AB5ZDhuE3PBb3t3HYxt3
+ RgQ0u1ppL8XtZJgkkLvOojkviZFxX6NTvwQUHf7MSHoQomS8FzeSYQwwjDn47hnJjO7It4zDLsxU
+ THXUY7vYUUiNyqKLvXE.Uvr7w0.yZOX3gm7jAfzXeHvTDQ9_XWq8QdarhxGiR7ZqpR6xw8PeOFnX
+ lpUoJipLWloVyEG1Fl6aPtM8PwldITCYn5ZYV9NTGGXZv3ZrU.qOWeV0JBRIfAvCdEe5YwXWjPLi
+ IkFVfx0wP9Hcrnycl94ZWgTlDDympELcCsnZ4lzHBhbrx6U1ZKG.LoGVFctAny8VXUswK_pFVi3n
+ 3p0KpAL4huvkx0pVLv_ApqP1K4nxDCqLo3_TnudE.jWBAFdKlFA0qGjhDgi4K1J02W2Ep24vVlIy
+ 9GuwFayYrMBzP4KfMrR6T6XWw.htVEbvAtsST9LGsHWUUMTg19a5hYU2LFbj8kM9hC_SCCemB6SZ
+ Os5A-
+X-Sonic-MF: <gazolemahavidyalaya@yahoo.com>
+X-Sonic-ID: 6a182f53-6ef2-4519-8224-c95dce74b61c
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic313.consmr.mail.sg3.yahoo.com with HTTP; Wed, 4 Sep 2024 17:33:43 +0000
+Date: Wed, 4 Sep 2024 17:33:41 +0000 (UTC)
+From: Gazole Mahavidyalaya <gazolemahavidyalaya@yahoo.com>
+Reply-To: Gazole Mahavidyalaya <gazolemahavidyalaya@yahoo.com>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <1289913998.2445413.1725471221566@mail.yahoo.com>
+Subject: GRIEVANCE _NOT APPLICABLE
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2445412_881070320.1725471221565"
+References: <1289913998.2445413.1725471221566.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YMailNorrin
+Content-Length: 1211
+
+------=_Part_2445412_881070320.1725471221565
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Sir/Madam To answer the question about any suspension cases, I would like t=
+o let you know=C2=A0that there are no such cases. Hence, this is NOT APPLIC=
+ABLE for Gazole Mahavidyalaya till date.Sincerely yours
+Teacher-in-ChargeGazole Mahavidyalaya
+------=_Part_2445412_881070320.1725471221565
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div class="yahoo-style-wrap" style="font-family:courier new, courier, monaco, monospace, sans-serif;font-size:13px;"><div dir="ltr" data-setdir="false">Sir/Madam</div><div dir="ltr" data-setdir="false"> <span>To answer the question about any suspension cases, I would like to let you know&nbsp;</span>that there are no such cases. Hence, this is NOT APPLICABLE for Gazole Mahavidyalaya till date.</div><div dir="ltr" data-setdir="false">Sincerely yours</div><div dir="ltr" data-setdir="false"><br></div><div dir="ltr" data-setdir="false">Teacher-in-Charge</div><div dir="ltr" data-setdir="false">Gazole Mahavidyalaya</div></div></body></html>
+------=_Part_2445412_881070320.1725471221565--

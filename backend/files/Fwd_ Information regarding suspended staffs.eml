@@ -1,0 +1,132 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1349672dlb;
+        Sat, 21 Sep 2024 03:38:18 -0700 (PDT)
+X-Received: by 2002:a05:6871:150:b0:277:f93b:2123 with SMTP id 586e51a60fabf-2803a5dda31mr3786873fac.19.1726915098052;
+        Sat, 21 Sep 2024 03:38:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726915098; cv=none;
+        d=google.com; s=arc-20160816;
+        b=r/KV1SiNGJBeWsqLEfJA1rtUifhx4nT+fTVGiemiqYzuC9oClBGIWC5xpLmqeoeskW
+         IpcbW5Gcot2nH6Cys/ioQ+RZCxdSteH43nxDBZFKuhppnzx9VfIcOVUiBQe7CYEvnoGa
+         yaE5Cj26I8OZF/6Qy2nWQzxAvbWDm15w0MbK1VkXMsWVjooxgFJuEMedeG9PYjoaCxro
+         nfZNDTX2PJLYDFfN47SuEmp5V5Jwtp+BPK1Gs/OvEYApWXOjM7XtDBijqElqnJP+s1aK
+         uQrrunxwhuKYMUjlO5QhlnJrPhkfhEEBcnN4u1ADSADxB0UjItS1g46EwpPcvZ+m3t/2
+         vExw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=ER9ZbH5OdPxJGnY6yd70hMnvcl/wnEHhHDFu89NI6PM=;
+        fh=4Ilid9gma1hpLCC/L1w/y3LWzEFYFPDUPI+PuS/Vk2w=;
+        b=LGuwIVm0dQNT72w9WtCOLNW+DNg6WO3lAHxp0cfs8addbDWJP5yGTPFhxW2cOgyTRi
+         GbTUGai1ks2tB+VNgHxsmQfXG2eX3hNRsxQcafjv3GbvP9rOjs3q2WjkQoioCMVJ5OEI
+         URlJdBkLiLc/54IDexoYUCdu04iSuA8SZQ0woq02nV3alHJUZYQVxEvH7K1rCKa7AYdq
+         M/T6ZmTNdDXfDiuIdFNf5xbuDKvDFUlS9fMne7qQr8cDgpxN3zIiEJyPcQtkWjGRZLEx
+         urImH7Zhlk4o2yVPOaYJYMoEB7179C3eBAvw0F83AzQnrNuVizZHk2v+7PF5LldikSd5
+         /dPg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Xk6+5pze;
+       spf=pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ddpiab23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <ddpiab23@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 586e51a60fabf-27c9561b23csor3705293fac.1.2024.09.21.03.38.17
+        for <Grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sat, 21 Sep 2024 03:38:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Xk6+5pze;
+       spf=pass (google.com: domain of ddpiab23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ddpiab23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726915097; x=1727519897; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ER9ZbH5OdPxJGnY6yd70hMnvcl/wnEHhHDFu89NI6PM=;
+        b=Xk6+5pzeTjsOfTljNBZxHo73FhU+72/gWUsFzsNSqUxBrMVppsAeX6tsCZWV9SyHQE
+         dOmO2iXza2/x/l74wIzB52Q3LnFarS+tzj8O5efZPtqZEwuk8xeZxBFXjI+emyHo6D9p
+         bcsHD5ZQRagzORxxMioNz0QY9qlPU3yZjwftK+rujdnipMp9/XWubF1aLztvmcj9Iu0o
+         NS6AmzCTyySvZTakZ+MT5/Sb7NaKWbwAgwTOR0OYQMd8qh6/euNvFPDNZVI8bnWWvIWs
+         xUukkmUqBnmJOhvidKuVYr0yG+PvUqZvlCi+2CpfX0lNAbSw3PI5IZRIpF5QfHXCPip3
+         COvg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726915097; x=1727519897;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=ER9ZbH5OdPxJGnY6yd70hMnvcl/wnEHhHDFu89NI6PM=;
+        b=kssja9fVHlyBAOM/q1X2HIDRmBdlv5t/hn3hd6LJmoL0EI+FkKsHWCuJLphbblitoK
+         P/I+wAuPMqkur7ne0kiIzDBXTMhAIXL599e8qcQSM2qsHEwnUbkyTm7jD1JJ92QjT2jq
+         xEwCdVeij/u5QNyPDp0gfOL2+0K67jWc9ErLv8JVXmOGkGUgHOju8cEE3JzyT7/VXpbm
+         y8txOczdPSuquUeF9Bmyd1JbyuV5fAbFfMAGf0ZSt93f5fn0OyvsO2Oef+DDXKx+faTx
+         wV67oTa4cNecNJcGOevraNvXICDQrnR01/XELt7DIVPgrXZPlgy1Lq60T1tbXIOPU2HG
+         AGLQ==
+X-Gm-Message-State: AOJu0Yy6rvFQu2WRkzh3+kU0rC8iOJLZ9OdUmalPuh7qJVjECNuq6vwJ
+	/nXT4O+2zP2Bm/UKCKS3p44vD8dt0BnpWbuAlcuoZ5o25Fj/VSnOfuyFcQq0NJpaEYIfUkJ/t18
+	i6Cwb4dYAkBDoCdwTpEF1sccXIFb5eg==
+X-Google-Smtp-Source: AGHT+IE2SYSK90feJ/7nlLDToBxV71CvS4oPIv7iqgbzroZtH535nNFAueiTioCca8ANLWNI0I4tZ7rN3ZtLGiRQAls=
+X-Received: by 2002:a05:6870:d181:b0:270:6ec0:c00 with SMTP id
+ 586e51a60fabf-2803a5d6d3fmr3815141fac.12.1726915097532; Sat, 21 Sep 2024
+ 03:38:17 -0700 (PDT)
+MIME-Version: 1.0
+References: <290308746.559601.1726899657776.ref@mail.yahoo.com> <290308746.559601.1726899657776@mail.yahoo.com>
+In-Reply-To: <290308746.559601.1726899657776@mail.yahoo.com>
+From: DDPI AB <ddpiab23@gmail.com>
+Date: Sat, 21 Sep 2024 16:08:04 +0530
+Message-ID: <CAM6sAwcHDwUQozy594Joh_U9-bBWnpEJymTQpmR_YYGhaHGN9A@mail.gmail.com>
+Subject: Fwd: Information regarding suspended staffs
+To: Grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000f21fa506229ec038"
+
+--000000000000f21fa506229ec038
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: S.R.Fatepuria College <collegesrf@yahoo.com>
+Date: Sat, 21 Sept, 2024, 11:51=E2=80=AFam
+Subject: Information regarding suspended staffs
+To: ddpiab23@gmail.com <ddpiab23@gmail.com>
+
+
+Dear Sir,
+In response to your letter, I would like to inform you that no suspended
+staff is there in our college         (Swaminarayan Rameswar Fatepuria
+College, Beldanga, Murshidabad)
+With regards,
+Dr. Suhas Roy
+Principal
+S. R. Fatepuria College
+
+Yahoo Mail: Search, organise, conquer
+<https://mail.onelink.me/107872968?pid=3DNativePlacement&c=3DGlobal_Acquisi=
+tion_YMktg_315_EmailSignatureGrowth_YahooMail:Search,Organize,Conquer&af_su=
+b1=3DAcquisition&af_sub2=3DGlobal_YMktg&af_sub3=3D&af_sub4=3D100000945&af_s=
+ub5=3DOrganizeConquer__Static_>
+
+--000000000000f21fa506229ec038
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong c=
+lass=3D"gmail_sendername" dir=3D"auto">S.R.Fatepuria College</strong> <span=
+ dir=3D"auto">&lt;<a href=3D"mailto:collegesrf@yahoo.com">collegesrf@yahoo.=
+com</a>&gt;</span><br>Date: Sat, 21 Sept, 2024, 11:51=E2=80=AFam<br>Subject=
+: Information regarding suspended staffs<br>To: <a href=3D"mailto:ddpiab23@=
+gmail.com">ddpiab23@gmail.com</a> &lt;<a href=3D"mailto:ddpiab23@gmail.com"=
+>ddpiab23@gmail.com</a>&gt;<br></div><br><br>Dear Sir,=C2=A0<div>In respons=
+e to your letter, I would like to inform you that no suspended staff is the=
+re in our college=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0(Swaminarayan Rameswar F=
+atepuria College, Beldanga, Murshidabad)=C2=A0</div><div>With regards,=C2=
+=A0</div><div>Dr. Suhas Roy</div><div>Principal</div><div>S. R. Fatepuria C=
+ollege<br><br><div id=3D"m_-6643334132156378265ymail_android_signature"><a =
+id=3D"m_-6643334132156378265ymail_android_signature_link" href=3D"https://m=
+ail.onelink.me/107872968?pid=3DNativePlacement&amp;c=3DGlobal_Acquisition_Y=
+Mktg_315_EmailSignatureGrowth_YahooMail:Search,Organize,Conquer&amp;af_sub1=
+=3DAcquisition&amp;af_sub2=3DGlobal_YMktg&amp;af_sub3=3D&amp;af_sub4=3D1000=
+00945&amp;af_sub5=3DOrganizeConquer__Static_" target=3D"_blank" rel=3D"nore=
+ferrer">Yahoo Mail: Search, organise, conquer</a></div></div></div>
+
+--000000000000f21fa506229ec038--

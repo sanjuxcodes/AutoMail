@@ -1,0 +1,261 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2188:b0:89:e154:6a97 with SMTP id bh8csp170901dlb;
+        Fri, 6 Sep 2024 23:19:20 -0700 (PDT)
+X-Received: by 2002:a05:6512:694:b0:52c:e17c:cd7b with SMTP id 2adb3069b0e04-536587ae767mr3934344e87.22.1725689960638;
+        Fri, 06 Sep 2024 23:19:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725689960; cv=none;
+        d=google.com; s=arc-20160816;
+        b=W3K+zxymE8bMoryAJ8fR5ap9pNeqzHQJf99ub4Wc/PjnYDtDm78pNe7gFhJ1rOczIw
+         rHjJxFlTHntTGLDt/2e4ZxHAwTm01OQ+pe9KGV6NovtKCgP5VX6drgCclQJPTXcy+ZSZ
+         /5LEF0m+DEic/H1mJ7pJVhigGYEaas6aLe0z+Eu7uZd7U/+5ECJZjGbh70RM6nnOzkGI
+         8rZF+6+m+Lr77isLLNPXyD5s9OdI6i4ucdjsnN4M+k87ZXHLbBryHJz2/MXyNilyQJpm
+         03/HTPIqb3MbPtvVKJ7qsk3T1Y44wn6UOPQ31B3duFX4x0WprbnQy9hIabvwVomgQSqv
+         aYXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=dUn5TMwc8g7KDMcONvb40ioYjLDGUrWlKSV+weuDqws=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=LR+5cE8CE38F8o1tWRGPbazk5Ff9g7Qgdidjk50d6DeHKGgcdYx33k4cBNCFrHDpiS
+         JRojS2wOw12W8ukCd+P33u+tzawMx8pYxS5ux5V2ODrQq35tTXLk4EjI4TbNd7CDAwIj
+         F9Ik94+nibBG/5FS5Oc6pq5HmTPaEhRv7jzw2urfmTa0d5tufHC6OQvBITrfdT3u3Qjo
+         TMaXIOnjQSHA/V4PZrBfRijwtSceu4PU12m9L+J0bY+t0ZbHrCTNdT7BGiPsu/7pJ/y1
+         xp0URGmSvYk4R972zD/pBn1dxybcx6cgsrRzBnXYim+v/qwLTqC7qMJNtF984k9K1wi3
+         T+Mg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=CFFTDQts;
+       spf=pass (google.com: domain of mphalguni1968@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mphalguni1968@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <mphalguni1968@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 2adb3069b0e04-5365f8c6c76sor117354e87.22.2024.09.06.23.19.20
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 06 Sep 2024 23:19:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mphalguni1968@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=CFFTDQts;
+       spf=pass (google.com: domain of mphalguni1968@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mphalguni1968@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725689960; x=1726294760; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dUn5TMwc8g7KDMcONvb40ioYjLDGUrWlKSV+weuDqws=;
+        b=CFFTDQtsLxv8avUalwdCP+0yqlkSM2ae/F+bvCPZ9w4USpFRb7axV95j3vkwdzcMBj
+         TUVFKODCaMeAJ9dANTI+pM+uzc/fHzIwa1KL+k/QzmiPBR5IYTLjZ34sxZZUw+PZ4W3Z
+         Oz2vzt8k9xnnJ1uMmbuG0X9wyNGY+uj7o/y3VlAt6FKrsUYMvb1H+m2dMbKNO8vgsU3h
+         dSVaWkbnxG8V5CFGmf3LWpwp6WS1+fJoRxaQodRlkVfSCX9hmKgP9LqtkUYi3+F+PsyB
+         +uUD0A6M1A6QAQdV2pisCgWif0adt1fohOes2qoaLbhsFn9BoGAetdeQ0s16ej8Q2PtL
+         a5Xg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725689960; x=1726294760;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=dUn5TMwc8g7KDMcONvb40ioYjLDGUrWlKSV+weuDqws=;
+        b=My8YwHd6/r0mZGbrM2Au2dDtqE5ysnuVB6J/OMfl1xpZKShTJ9cDjT4m7+Vv/fcjXz
+         B5EJKy6yy9Kci9W0bZpt7TclJ6kbErKuyY3DRqAue75fxfuKST2FOxHcDDUcvR6dAEyf
+         K7hYkLDTrxVGuCK+ptvK7trcm7v9idA43h5Lnf6c4UbW1uzbhsqLKwEFOP1+UcelHN9A
+         EkyzcdqVXmj0r4YlkUiUxNM2it6qLZkSp39qNA/LCAKSVTE6MLJdUuG0cgm3ffBgaUYb
+         kCwRxBkQVlf5ZpMq90W9LteWBYeP/RajPdJdzwyCFZJigBmO6SyA9q8AmJBQcjamrzya
+         5h/g==
+X-Gm-Message-State: AOJu0YxDnsZ7SXs951276mzyo1693hqvSzt97gSRJbNQdVqzLkbMPhNb
+	nPbDKOJ+xfH2ZVABBsrPxvqjMJbmyBMeFxDzhsD17XGwHr/oxXLsUwpOFYXYw5XRHfVR9FK7YrO
+	IzHMbUrxgx5PPYEGwztTobdQwg8/GzQ==
+X-Google-Smtp-Source: AGHT+IEgUnkCoD3sX870kbC/4gLoUoZrsvb+0iJqO/DIh+63wvYB57boBwWtwwzu4wajPKrb6x5aXbBPbXkJgYPPinE=
+X-Received: by 2002:a05:6512:1149:b0:533:324a:9df6 with SMTP id
+ 2adb3069b0e04-536587ba955mr4148025e87.29.1725689959323; Fri, 06 Sep 2024
+ 23:19:19 -0700 (PDT)
+MIME-Version: 1.0
+References: <977983940.2633323.1725689330604.ref@mail.yahoo.com>
+ <977983940.2633323.1725689330604@mail.yahoo.com> <CACpKi4pZ9=4eRGZNHZ_aqrs5p=mOchuBBCJW_0wm-nxtTbV=qg@mail.gmail.com>
+ CACpKi4pZ9=4eRGZNHZ_aqrs5p=mOchuBBCJW_0wm-nxtTbV=qg@mail.gmail.com <66dbef26.170a0220.24a522.2ad0.GMR@mx.google.com>
+In-Reply-To: <66dbef26.170a0220.24a522.2ad0.GMR@mx.google.com>
+From: Phalguni Mukhopadhyay <mphalguni1968@gmail.com>
+Date: Sat, 7 Sep 2024 11:49:06 +0530
+Message-ID: <CACpKi4pcdNFGxxv771ynMnZGYv3PhdCtFj0H=gQkdTyPY63+GA@mail.gmail.com>
+Subject: Fwd: Delivery Status Notification (Failure)
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/related; boundary="00000000000004c1970621818157"
+
+--00000000000004c1970621818157
+Content-Type: multipart/alternative; boundary="00000000000004c1960621818156"
+
+--00000000000004c1960621818156
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Madam/Sir Please find the attachment and do the needful.
+Regards
+
+---------- Forwarded message ---------
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+Date: Sat, 7 Sep 2024, 11:43
+Subject: Delivery Status Notification (Failure)
+To: <mphalguni1968@gmail.com>
+
+
+[image: Error Icon]
+Address not found
+Your message wasn't delivered to *grievence.hed.wb@gmail.com* because the
+address couldn't be found or is unable to receive email.
+LEARN MORE <https://support.google.com/mail/?p=NoSuchUser>
+The response was:
+
+550 5.1.1 The email account that you tried to reach does not exist. Please
+try double-checking the recipient's email address for typos or unnecessary
+spaces. For more information, go to
+https://support.google.com/mail/?p=NoSuchUser
+a640c23a62f3a-a8d25d2c19fsor21968966b.21 - gsmtp
+
+
+
+---------- Forwarded message ----------
+From: Phalguni Mukhopadhyay <mphalguni1968@gmail.com>
+To: grievence.hed.wb@gmail.com
+Cc:
+Bcc:
+Date: Sat, 7 Sep 2024 11:43:43 +0530
+Subject: Fwd: Photo from Dr. Phalguni Mukhopadhyay
+----- Message truncated -----
+
+--00000000000004c1960621818156
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Respected Madam/Sir Please find the attachment and do the=
+ needful.=C2=A0<div dir=3D"auto">Regards=C2=A0</div></div><br><div class=3D=
+"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded me=
+ssage ---------<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">Ma=
+il Delivery Subsystem</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:mai=
+ler-daemon@googlemail.com">mailer-daemon@googlemail.com</a>&gt;</span><br>D=
+ate: Sat, 7 Sep 2024, 11:43<br>Subject: Delivery Status Notification (Failu=
+re)<br>To:  &lt;<a href=3D"mailto:mphalguni1968@gmail.com">mphalguni1968@gm=
+ail.com</a>&gt;<br></div><br><br>
+
+
+
+
+<div>
+<table cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-top:32px;backgr=
+ound-color:#ffffff"><tbody>
+<tr><td>
+<table cellpadding=3D"0" cellspacing=3D"0"><tbody>
+<tr><td style=3D"max-width:560px;padding:24px 24px 32px;background-color:#f=
+afafa;border:1px solid #e0e0e0;border-radius:2px">
+<img style=3D"padding:0 24px 16px 0;float:left" width=3D"72" height=3D"72" =
+alt=3D"Error Icon" src=3D"cid:icon.png">
+<table style=3D"min-width:272px;padding-top:8px"><tbody>
+<tr><td><h2 style=3D"font-size:20px;color:#212121;font-weight:bold;margin:0=
+">
+Address not found
+</h2></td></tr>
+<tr><td style=3D"padding-top:20px;color:#757575;font-size:16px;font-weight:=
+normal;text-align:left">
+Your message wasn&#39;t delivered to <a style=3D"color:#212121;text-decorat=
+ion:none" rel=3D"noreferrer"><b>grievence.hed.wb@gmail.com</b></a> because =
+the address couldn&#39;t be found or is unable to receive email.
+</td></tr>
+<tr><td style=3D"padding-top:24px;color:#4285f4;font-size:14px;font-weight:=
+bold;text-align:left">
+<a style=3D"text-decoration:none" href=3D"https://support.google.com/mail/?=
+p=3DNoSuchUser" target=3D"_blank" rel=3D"noreferrer">LEARN MORE</a>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr style=3D"border:none;background-color:#fff;font-size:12.8px;width:90%">
+<td align=3D"left" style=3D"padding:48px 10px">
+The response was:<br>
+<p style=3D"font-family:monospace">
+550 5.1.1 The email account that you tried to reach does not exist. Please =
+try double-checking the recipient&#39;s email address for typos or unnecess=
+ary spaces. For more information, go to <a href=3D"https://support.google.c=
+om/mail/?p=3DNoSuchUser" target=3D"_blank" rel=3D"noreferrer">https://suppo=
+rt.google.com/mail/?p=3DNoSuchUser</a> a640c23a62f3a-a8d25d2c19fsor21968966=
+b.21 - gsmtp
+</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<br><br><br>---------- Forwarded message ----------<br>From:=C2=A0Phalguni =
+Mukhopadhyay &lt;<a href=3D"mailto:mphalguni1968@gmail.com" target=3D"_blan=
+k" rel=3D"noreferrer">mphalguni1968@gmail.com</a>&gt;<br>To:=C2=A0<a href=
+=3D"mailto:grievence.hed.wb@gmail.com" target=3D"_blank" rel=3D"noreferrer"=
+>grievence.hed.wb@gmail.com</a><br>Cc:=C2=A0<br>Bcc:=C2=A0<br>Date:=C2=A0Sa=
+t, 7 Sep 2024 11:43:43 +0530<br>Subject:=C2=A0Fwd: Photo from Dr. Phalguni =
+Mukhopadhyay<br>----- Message truncated -----</div>
+
+--00000000000004c1960621818156--
+--00000000000004c1970621818157
+Content-Type: image/png; name="icon.png"
+Content-Disposition: inline; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <ii_191cb217a0fd3f2f3341>
+X-Attachment-Id: ii_191cb217a0fd3f2f3341
+
+iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAYAAADnRuK4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABTdJREFUeNrsnD9sFEcUh5+PRMqZ
+yA0SPhAUQAQFUkyTgiBASARo6QApqVIkfdxGFJFSgGhJAUIiBaQB0ZIOKVCkwUgURjIg2fxL4kS+
+YDvkbC/388bi8N16Z4/d7J/5PsniuD3fyePP772ZeTsDQRAYQL/UGAJAIEAgQCBAIAAEAgQCBAIE
+AkAgyJT3Mv+Eq7vYK8mTE+MDRCAghQECAeRQA5V2ZOpmg5vDx3NPzRbmGRMEcmTrEbNNB8zWfRD+
+f/Efs2e3zCZvMjaksBg27TfbcuSNPEKP9ZyuAQKtHX2O9ncNgWC57umMPKvRNb0GEKgnLoUyxTQC
+rcns0/6uIRAs8/hGf9cQCJZpTpjdO2f25/03z+mxntM1eLtsZAgiUtX4JcaBCAQIBAgECARQ8CJa
+G5jab4J4pm4WZmO3OALVh802fIwcLkyPkcKAGggAgQCBAIEAgQCBABAIEAjKA/1AnahhbO5FdOOY
+VsrrDbPBYcYKgf5D2wLaV3p+22xh1u17tO3S+DTcvxvagUDeivPgx/a/95J/73w7Sj26Hn4pKo2M
+ehuV/KyBJM6d0f7k6RKx/R63vvL2tmf/ItDdM2ZTP6f7nkp9Y2fDx1v9akmpIU+KSCLVUghUQfSL
+zVKeTklbLxGoctw/nzC5rw8L5KRNbkpnKq6pgSqEClzNnFzY+XnYWrt6VpVk1vbwWvg+RKCKMOUw
+Q1LEOXA+/MX3mpJvGDHb265xtnzmFoUK1HaKQGlMtePYM+q2KKjXuaS1NJYIEKgI8jhEgqHt4cqy
+Ky53j3hyHz2bqSLp2o2LbJ7MxKovkGqXteoWpaOk96O9/yF/dF7NwlS36AuIQIBA5celQK4PIxBE
+4LLzrtoLgaALdSy6CJRkWQCBPGLsTHznomZ9nszUECgJ2ml3WWHe+QVFNPSQx6UdZNtxr9pbEShN
+eTTz8mQXHoHSlke7+Z+c9m6VGoHSkEfs/trLW3wQKApN1V3lGfnGu2Z6BFoLtYCs3GWBPAiUCLVh
+/HoaeRCoT9R873KLM/IgUBfapnCpe5AHgXry4pf412ihEHkQqCdxd5VqrcezhUIESsJMTJ+Pdthp
+Z0WgyNlXXPHc2Mc4IVAELl2Gnh8mhUDvCkfbIVAkcbf/aOoO3fMKhqAD3frTa4quwpn0hUDOkQhI
+YYBAgECAQAAU0QlYObl+5Ug8NcprZkZxjUCxRPVA6zmtEXHCBykskrhjgHXN09PoEcgFl4M4H11j
+nBAoApcj6ZoPGScEAgTKApcDoTw5sgWB+sGlz1n90IBAPdE6j1o21PfcC11jLagL1oFWRyGlKU3p
+OxcSJQ7NZAjkhHp/uG2HFAYIBAgECASAQIBAgECAQAAIBOkxEARBtp9wdVfAMOfIifEBIhCQwgCB
+ABAI0oV2jhxZ+nfBatuPZfgBCy0Eqqo8c01b+uu51XZvzOgDWoHNTGR+pCwpLEd5svuAZXlO2uEr
+PyEQ8hRWHgRCHmqg0sjTnLalv6crJQ8C/U8stqNO0I4+VZOHFIY8COS1PGL2ybd5yUMKK7s8zYmL
+dujyd3n+nESgcsvzZd4/KwIhDwIhT35QA6UyE1qyxZnfvJMHgdKS549JC1qvvJOHFIY8CFR5eV5O
+XimqPAhUdHnmfx+zgxdOFXkoqIGKKs/cswnb/8Oeog8HEai48nxUhiFBIORBIOShBioskkbySCLk
+IQIhDwIhj28p7FApR6b1qlEbHGpkO/rr6215vi/zH1r2x7tApSGFAQIBAgECAQIBIBAgECAQIBBA
+LK8FGADCTxYrr+EVJgAAAABJRU5ErkJggg==
+--00000000000004c1970621818157
+Content-Type: image/png; name="icon.png"
+Content-Disposition: inline; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <>
+X-Attachment-Id: 
+
+iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAYAAADnRuK4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABTdJREFUeNrsnD9sFEcUh5+PRMqZ
+yA0SPhAUQAQFUkyTgiBASARo6QApqVIkfdxGFJFSgGhJAUIiBaQB0ZIOKVCkwUgURjIg2fxL4kS+
+YDvkbC/388bi8N16Z4/d7J/5PsniuD3fyePP772ZeTsDQRAYQL/UGAJAIEAgQCBAIAAEAgQCBAIE
+AkAgyJT3Mv+Eq7vYK8mTE+MDRCAghQECAeRQA5V2ZOpmg5vDx3NPzRbmGRMEcmTrEbNNB8zWfRD+
+f/Efs2e3zCZvMjaksBg27TfbcuSNPEKP9ZyuAQKtHX2O9ncNgWC57umMPKvRNb0GEKgnLoUyxTQC
+rcns0/6uIRAs8/hGf9cQCJZpTpjdO2f25/03z+mxntM1eLtsZAgiUtX4JcaBCAQIBAgECARQ8CJa
+G5jab4J4pm4WZmO3OALVh802fIwcLkyPkcKAGggAgQCBAIEAgQCBABAIEAjKA/1AnahhbO5FdOOY
+VsrrDbPBYcYKgf5D2wLaV3p+22xh1u17tO3S+DTcvxvagUDeivPgx/a/95J/73w7Sj26Hn4pKo2M
+ehuV/KyBJM6d0f7k6RKx/R63vvL2tmf/ItDdM2ZTP6f7nkp9Y2fDx1v9akmpIU+KSCLVUghUQfSL
+zVKeTklbLxGoctw/nzC5rw8L5KRNbkpnKq6pgSqEClzNnFzY+XnYWrt6VpVk1vbwWvg+RKCKMOUw
+Q1LEOXA+/MX3mpJvGDHb265xtnzmFoUK1HaKQGlMtePYM+q2KKjXuaS1NJYIEKgI8jhEgqHt4cqy
+Ky53j3hyHz2bqSLp2o2LbJ7MxKovkGqXteoWpaOk96O9/yF/dF7NwlS36AuIQIBA5celQK4PIxBE
+4LLzrtoLgaALdSy6CJRkWQCBPGLsTHznomZ9nszUECgJ2ml3WWHe+QVFNPSQx6UdZNtxr9pbEShN
+eTTz8mQXHoHSlke7+Z+c9m6VGoHSkEfs/trLW3wQKApN1V3lGfnGu2Z6BFoLtYCs3GWBPAiUCLVh
+/HoaeRCoT9R873KLM/IgUBfapnCpe5AHgXry4pf412ihEHkQqCdxd5VqrcezhUIESsJMTJ+Pdthp
+Z0WgyNlXXPHc2Mc4IVAELl2Gnh8mhUDvCkfbIVAkcbf/aOoO3fMKhqAD3frTa4quwpn0hUDOkQhI
+YYBAgECAQAAU0QlYObl+5Ug8NcprZkZxjUCxRPVA6zmtEXHCBykskrhjgHXN09PoEcgFl4M4H11j
+nBAoApcj6ZoPGScEAgTKApcDoTw5sgWB+sGlz1n90IBAPdE6j1o21PfcC11jLagL1oFWRyGlKU3p
+OxcSJQ7NZAjkhHp/uG2HFAYIBAgECASAQIBAgECAQAAIBOkxEARBtp9wdVfAMOfIifEBIhCQwgCB
+ABAI0oV2jhxZ+nfBatuPZfgBCy0Eqqo8c01b+uu51XZvzOgDWoHNTGR+pCwpLEd5svuAZXlO2uEr
+PyEQ8hRWHgRCHmqg0sjTnLalv6crJQ8C/U8stqNO0I4+VZOHFIY8COS1PGL2ybd5yUMKK7s8zYmL
+dujyd3n+nESgcsvzZd4/KwIhDwIhT35QA6UyE1qyxZnfvJMHgdKS549JC1qvvJOHFIY8CFR5eV5O
+XimqPAhUdHnmfx+zgxdOFXkoqIGKKs/cswnb/8Oeog8HEai48nxUhiFBIORBIOShBioskkbySCLk
+IQIhDwIhj28p7FApR6b1qlEbHGpkO/rr6215vi/zH1r2x7tApSGFAQIBAgECAQIBIBAgECAQIBBA
+LK8FGADCTxYrr+EVJgAAAABJRU5ErkJggg==
+--00000000000004c1970621818157--

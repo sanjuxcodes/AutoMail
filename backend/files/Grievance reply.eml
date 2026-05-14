@@ -1,0 +1,112 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp156410dlb;
+        Fri, 13 Sep 2024 01:01:49 -0700 (PDT)
+X-Received: by 2002:a05:6a21:6f83:b0:1cf:5d45:3b29 with SMTP id adf61e73a8af0-1d112e8bfb9mr2946430637.35.1726214509742;
+        Fri, 13 Sep 2024 01:01:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726214509; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XqGhLdhn3114NCSCA8BLsRwdA/Ou4Xh7DtB8qrxE0XvC7XwhRNFWfj+6XP7VVEq7gQ
+         NIHWQUQ2+sQyaXaTidLgLxT7MUGyQRfUnEB2y8Mr2O9nuR1lqUkM4dBD8dMafQfqs7Hu
+         Wt3jg0v/eq7400SL4mzd/XYV1ZDFb15pS5QitjXT4Ibq7yh/YnUsE2rlWNlu9mGfpljF
+         0e7OBQDZhoUzjwLsw/iBDwOEZlteKJjkZgb0pdBsFwXDF8UPnLRmrsA5yV1DxCrlmgrD
+         UwT/678AKBkvssnINsgfgcBUzml01vD9da+Y8Vt6gFO2yjw8E0CwUJK2Ra175ZEHkKPc
+         G+iw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=UZQNO4gWjY3ksrV/ydqWsv2zJS8C8eFG80o1gbhV3B4=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=VGSF0FeCk711yBEwp0k+PPQ1d7xZNR2C5dXKibFqwTvUKzFQtPdpdeFhMRIBeFfnwd
+         6qyhUxqzcvj7kZpfmXFlygGNKV+hPO/bb9RzOoOXdVLu59KDACxSffyyvvnuoAXRiVfC
+         oTjFbm1depqow9REoFBYYOBZCjN+80AxY6in9coPOeXkhVIFHGtiIQtPbXqNaBECTojw
+         9pN6ExFfZOEREMYzmObHdC8etmB5O6ULhEYcCFGZxNkwxj1vefkOhE5dd7nnD+9NAC2B
+         cmPlVhheEWjsnH3NJ8p97hH++BP3nfeW6LBEEpwS5xHWOyA049ZL7y6lcEUSzvGGxUVs
+         esIQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="SO/v8YT+";
+       spf=pass (google.com: domain of manikchakcollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=manikchakcollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <manikchakcollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 41be03b00d2f7-7d823de9dccsor5132185a12.4.2024.09.13.01.01.49
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 01:01:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of manikchakcollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="SO/v8YT+";
+       spf=pass (google.com: domain of manikchakcollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=manikchakcollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726214509; x=1726819309; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=UZQNO4gWjY3ksrV/ydqWsv2zJS8C8eFG80o1gbhV3B4=;
+        b=SO/v8YT+qphFXbat0ucttatgRIHPcDzSmA3RCsmSIbCf9jkHdaYTtKWv+o/MYMpH3F
+         eFXcGtx2uInA8suAojY5V55jYddlv+gB9kuo3wlF9wpFVtlYxvKoAWVO48UsWmkSx1jW
+         uW25czHaSpFZBKViv5ZdSK1RJic/qZ2K/X5S9v2zd7r79uHMHxA8ReZE+68Fi7cOgbAK
+         8nM+4RAR9FPfRgjm5BLpIPQrQ6s/fxU6mzD7OTwlpylvvXx89FMXjEpc6lIirVYBrdpy
+         44QzuR+7mW9inHXjyGeoPLVNwDYaZvu2vhdgUQRCPw37qW8ClCiWCCU9SlAxfiD3iFZt
+         kpGw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726214509; x=1726819309;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=UZQNO4gWjY3ksrV/ydqWsv2zJS8C8eFG80o1gbhV3B4=;
+        b=U09Y6QjKDEuAUiESzbqZ0t1Hcc5YOf+JK9JeOtftrEKggqQsXjUeuRrpUi21Q6suas
+         KuIFTe5pv9w8sRwycCZHIt/pBRbwIjYRNzsEhs5rvAmEEYoSDx4Ch0JszlQ/n+hU6ZPL
+         MKXYIOzb5kyCxIXRffM1LcS0GBi97uDj3YfOoYaBxm8RanQynTuxSg/+v5oT/ifndRDu
+         RWTaFOxRcig0g4Jh90tFQ5H0+mcbH42AEHoGGcODsQejsBItzlEDsc2NUmuthaojnUO5
+         TaOOzRTznWutrTyvITKI8sxc0UXPQxMveuvPpLuGI+e5H3mPL8PSLZrEyXkIDNHE96EZ
+         7DGA==
+X-Gm-Message-State: AOJu0YzMbJjfQNiVskWwYjELGrvghL4rVJ2EfgH+mp4sA8p6XB7ChEW5
+	i2FAhKizH5gOBTTXDdoQrm0aaMgTCwdTred1QBmszk2heWcLutTX3FYFl0W7fttCaGudl0rooDF
+	sIWP4gdriL5EC24BJHxUDro/ntZrFPhypeg4=
+X-Google-Smtp-Source: AGHT+IEyqMC72/A1H6YMCC3CprFWL60q183Ys0LRM7aetUwoUiEewvsmKRQfOXA5qF2KfcbeR19xwWeVOjjsUFxCdRY=
+X-Received: by 2002:a17:90b:1e09:b0:2d8:812e:e3cb with SMTP id
+ 98e67ed59e1d1-2dbb9e1d7f0mr2599985a91.22.1726214508788; Fri, 13 Sep 2024
+ 01:01:48 -0700 (PDT)
+MIME-Version: 1.0
+From: Manikchak College <manikchakcollege@gmail.com>
+Date: Fri, 13 Sep 2024 13:31:39 +0530
+Message-ID: <CANzMMiMU8pFt_Pgn_kmd2_RpSU4nTU4PifJJ2aEzSa33YAg3OQ@mail.gmail.com>
+Subject: Grievance reply
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000009a458d0621fba229"
+
+--0000000000009a458d0621fba229
+Content-Type: text/plain; charset="UTF-8"
+
+Not applicable for Manikchak College
+
+Dr. Aniruddha Chakraborty
+Principal
+Manikchak College
+P.O. Lalbathani, Mathurapur
+P.S. Manikchak
+Malda, 732203
+AISHE Code: C50818
+
+--0000000000009a458d0621fba229
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Not applicable for Manikchak College<br clear=3D"all"><div=
+><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signatu=
+re"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div =
+dir=3D"ltr"><div><div><font size=3D"2"><span style=3D"color:rgb(0,0,0)"><br=
+></span></font></div><div><span style=3D"color:rgb(153,0,255)">Dr. Aniruddh=
+a Chakraborty</span></div><div><span style=3D"color:rgb(153,0,255)">Princip=
+al<br></span></div><div dir=3D"ltr"><div><font color=3D"#0000ff"><span styl=
+e=3D"color:rgb(153,0,255)">Manikchak College</span><br></font></div><div><f=
+ont color=3D"#0000ff"><span style=3D"color:rgb(153,0,255)">P.O. Lalbathani,=
+ Mathurapur</span></font></div><div><font color=3D"#0000ff"><span style=3D"=
+color:rgb(153,0,255)">P.S. Manikchak</span></font></div><div><font color=3D=
+"#0000ff"><span style=3D"color:rgb(153,0,255)">Malda, 732203</span></font><=
+/div><div><font color=3D"#0000ff"><span style=3D"color:rgb(153,0,255)">AISH=
+E Code: C50818</span></font></div></div></div></div></div></div></div></div=
+></div></div></div></div></div>
+
+--0000000000009a458d0621fba229--

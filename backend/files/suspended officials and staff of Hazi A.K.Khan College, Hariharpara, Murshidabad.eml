@@ -1,0 +1,122 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp1717478dlb;
+        Mon, 2 Sep 2024 04:47:26 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFILzijGSxLseEH9oPpLLEuxBDEaiL36mcGao9pEcWsAZgxv/iEQ40zxBGMeNlacl25azZp
+X-Received: by 2002:a17:90a:a88e:b0:2c9:36bf:ba6f with SMTP id 98e67ed59e1d1-2d86ad2c9d0mr15962360a91.3.1725277646078;
+        Mon, 02 Sep 2024 04:47:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725277646; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Ya5BdeA0ldKUYAj/21JwtP/vY7SzBKsWB9T8Qbw9BaQDBHUBI0BC0KtB3wd81XrXDu
+         EVWMBbPMLnMX4YBD3NhAaRVI3xMgxIutxpGnC8JsEzWbGDyFsCf49l5r/dN0c4au+7Bh
+         KWfUn9N8qKDBAmacJwPtY4tA3hh2ZPH2lZh37IgFxgxyNIh4KCspN44xWFVBhVyn+TW4
+         tiiw6GXkPI+mCulJ8Ib9WQU74HZawuQpkwclVQYi+BaPo0tLekkcHmWtdDB1o9Xz21Bb
+         VOtuNABMote08Gb8p+dT52CP+j/Xcd4Lii5MllzBMJSjId1i0B+/MkHaNjhDiPvT4I4D
+         fSKQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:from:date
+         :dkim-signature;
+        bh=QwL4sBB1Dz1GOgGFmxkjEXuXW4xcbjmTvrvl2b874iA=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=iO5qhKH7C6//sGDxM8Yo9NyPVGlhu0z1CJm8pwoXOSAabwwn0CXenSbAXP9CFUZw66
+         tE7lgigzMC6At35aUIohoTHIRp+iR6xG/ArW2We5f9wowLaHzDi3mKdK/N50spuTGKmv
+         AoFCcYTCjr11Bu909yUZEy+DcTMtByfPrfSgeKypVfa/KO9aGqd3BqGuxO5gcRL9mGus
+         r4lRVvkMBxGIWUcKsChCJNNvUlTTswGiV2m3NWWjwkXd8WOSbWfu6jh9jG+RESOrQpKV
+         bv7yixG0aoyIwvVK0aPGB8PEda4NvUPBnb3OsJo+HH7VeMXT+M2xheHqD7/OFv5TkRCY
+         adUQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=hBmXssPN;
+       spf=pass (google.com: domain of haziakkhancollege@yahoo.com designates 98.137.66.84 as permitted sender) smtp.mailfrom=haziakkhancollege@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <haziakkhancollege@yahoo.com>
+Received: from sonic321-21.consmr.mail.gq1.yahoo.com (sonic321-21.consmr.mail.gq1.yahoo.com. [98.137.66.84])
+        by mx.google.com with ESMTPS id 98e67ed59e1d1-2d88997169csi6403895a91.45.2024.09.02.04.47.25
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 02 Sep 2024 04:47:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of haziakkhancollege@yahoo.com designates 98.137.66.84 as permitted sender) client-ip=98.137.66.84;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=hBmXssPN;
+       spf=pass (google.com: domain of haziakkhancollege@yahoo.com designates 98.137.66.84 as permitted sender) smtp.mailfrom=haziakkhancollege@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725277645; bh=QwL4sBB1Dz1GOgGFmxkjEXuXW4xcbjmTvrvl2b874iA=; h=Date:From:To:Subject:References:From:Subject:Reply-To; b=hBmXssPNHATLsKZ/ZJNBRB1vqU6P1HwnbP3Q1M2ZFzCo0DYCCvBET1T7/bNpBu2W2vlXIpVlY1UxAzzc4mW2sbXdwMzMRHYLWkV7sI7aUFrHJeqVbYcy35+F0ABde78y/aVVbIQOyW8hoZLUU71LLjywDn6B0Cb1mjQISdcZtRok8Cg8TKQMlcOhdAJ+qehMfn6p0aB7x1gSx6NB5uwJTzmqYKBc8oHiWXBDM/QHw4qYYWLGtw8yMeHzGar8lEA/MxixDuPkYzKh5Af2ovIVikiWBhOuTzG4nOGBu0hjsUjxLuXwlCKNYuf96wDNYMcDtgW6febk8cOgESAXRsRHWQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1725277645; bh=3tzgtYV4WygS6sBoglgLArke7uQoPwNq5PpBWUWDd0b=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=Z48tkNCUmn0nE6rDLvLy0DIQnTjuKMGMkrrLRZKjDqbuyg8n1Tb+5lHagr9/HpR5ge/c5SvKfmgFsaK2yiVXJJEeCzHwQo7pkT7PFGZr3gpUxUcmmtkOVaeqSBEY+Dh14Q274WOqzPVxtYN2yBgB5RXdbSGhn11Id4EkAbUem/3MExfRJ2rOgP+6p+6qaYGHd41MezTXpbZnflAnykF7MOwUphX4I6VOE+MRpOO230ebvdTQQkri/U7Thvdw6fD5o2JHc5YBrL/QnPD49fxvoFg6sW8ptNjbBmlsCQ7h+Lf+lGr/KhDEZZl0c1+UbqEH7RMB2hTztYUyjPwsPUVcfA==
+X-YMail-OSG: .gYOG6AVM1ljkeeGMbe4FGA6JylEZij.hsftpfViYH3EUJBPHoRwYoBuVpHOJxk
+ Jm9o4W3cq5ZLenGi6As_tGC3iGCzXS9nR5JA7B.5ixe0zBG4fEjC_mV_D5a8.Zm3rHt5ed1G_Qvf
+ M8x9oNEE2E9JT0PbREClxILIOmCJ7LCy_aEKuYXJtGsq6FzM7_5F_o53Vxc8rbpAJbpr2Sx2WS4T
+ aT17f4wMscAk0cO.bxnKojdWnqxRCf7r5j96_6l_6JuxtakpLU3rYiNx6Tf_Gwlq.m.VGApteWm7
+ 7CUrUpUDSHBXBHfCzJrETuVO2.KMcY8pbZ0WZp5g0F4skt14eJlC1QSTFwpEjUNY3OSMs3ME1rJP
+ qF1nmgDfypogUmBSjaFEYLtuATWcnwo0ErXhabZvLzMc34MIUzma2Iks1OAQScYV_QyeXMarvpFx
+ G3H7Xz2Oxc6IfXidvUnV9BxsCch3IZqPx319xCjHPUfVPwuSEat_8CD6mfbj1ODtIm0p4Im7XVsb
+ U2eJxyDNGllXyPCjxiVRMDNIF7EERnEg3w6kRdb61ZnZs1ZcEayPtIgPiauBMFG1BVKry8mTHwDY
+ karHJS9d3HpXjF1AR34uBoq8MMTnx7LQyhUjS4DXBtP.c5WLNTrz6QaaMH3JnabQJTGDnHJ69ktW
+ F7peOjcfd6oYydjWopkoEHueouS89aVgTWZ9brvd1xMq8DmBJg9UYXSnuLPQh5eqpkIJB85pDd0K
+ G2AnC.VhQdHl2l_BBMU3zCbWOPaxlgUVp9n518CSYykl5ILI07k0QoPmF9bs.8dMpjfRE4gA0BKS
+ kHX22ZZshujXbYCahECqRUYbORwTxvDCJbhplTkX03DXgd2Ahd0jwqiDYSIY_scTCG_iJLWm8TXY
+ .X3JUG62sno9.8AQpazXVrZ9LZ7dpg4fDX4WguZQLKbrQf7fhCYvQYwJhovHOPSM700wsKLjPDNU
+ jMBFA3Sf7g2zRlsZFMKBjXgXchUyEsOKbHMaXorIieqT6E0WF.5FRhUZ5IkTzi2BopzjWK6z1xsP
+ G_qA_eJD8VkVlaxTij43JVzt0cstdTbtK34..4dLU_nGAh2tm7WoJZNvcFVJ2T4LL.IBD3ZMQKCb
+ XxWdDy.MDupA4oD0hykMB4VurNwhpA5Ik6HSL2AJE9L8yHPnZ4KEfogixelXq5bQgF8DeUy9Sb0b
+ _D3gcgYEi8yK5zuHH8zPgPD.HKTGkD7cfl5QfJFwMOp1BRZoyuZmL6_Yojv8hRPPd0fglVx2qnaV
+ nk35UaRkGxJ5pAlcq0wKSNXAuWLxvO5iS1hs7k84ULPikzH8pHemI.kr.lD2YsLAg7ciApB061bf
+ WwIfvOrIuJOGFLR7D_DgPcSOiB2YHqO9omzn9qm0VEOd6ujUIWm4iY6qLhPkUPDxcbQH1bR9p0ni
+ T_BWbFl7gClIapAWBhsZzhwNLqr8NYaZBiA2DFWLcnpWXgAFFnjuO3OujCEmzQ74fsJ.PuZGlN5a
+ V3wRdpakTO9JPrlkYIUIbkAZQVs6wKpOyo3XohkwOttCe440PMVA5OsqQUK8nFiKzV4Mx0JhxX5s
+ AmKs0jwg0_rjO8tpH5xYSKfE.vi7TpGWv13C2d8UuYHEt8SfzeEA.KcFSq2fpZtO.y36qsoJJbOf
+ 7NWqoqQdqJD1Uy_VoI3rOn9E79jV6VS62FPBMuwFuhcz4BALa4KsI_qFJoStjr4waWsjBj_jCq9L
+ dpaIGKs5DLy0hNyA2KItdpXlh9yRO_O2pkpEf1miD3bM8Do3GEEAS7ABOC9YWaIGJsWC4JRPLRRa
+ rTXUfcDP3vJSfXYLxX01jHq8_30UC14APk15o4x9_n2O0tOpktTPnV5qwVRKkMbgsS8pKHod.js2
+ gmD2lfxXPq5Vp69RiIGOyyHULHJko44KmyGTsDiPdTGLt8CmsMbEVchkS2oE_dYPHpvwARBZVbUT
+ 2fmEgJYuMxlgQKD0Csitw9zELKjZRgo0Mo3E0BJSQGFfxGGTmV.jqwT5tiMG_Hyph47dBBB9sMtk
+ Qt4IUuvg479wtZznKp7JQubmzwEG3bD4dfrpPotU1R8TeUUhEwP5Ae9Qk_E9yHCbQmqJ.Q6YtvCw
+ Y_NzszFF0R.3KJ7nhCmZT3qHgnCPoDJ9_yUINMt_XJsc4OgRB0U6d90BAtI9jTC7s97p9oMDKcOe
+ vR.DvpCx5CCRwyhJ2KiHUHJrWU8xsLvCZc28zp_w7IckQw5SB32UWnf2vLHGFjGynpfKomFgbSlN
+ zg_jq_kKOrU8PetTXl6px6hDznYHJ.0DnPVTcTgV0la2bHdREFwa0BA--
+X-Sonic-MF: <haziakkhancollege@yahoo.com>
+X-Sonic-ID: 1f873de8-4ef2-41b0-bd6f-33227e47ebf3
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic321.consmr.mail.gq1.yahoo.com with HTTP; Mon, 2 Sep 2024 11:47:25 +0000
+Date: Mon, 2 Sep 2024 11:47:23 +0000 (UTC)
+From: Insar Biswas <haziakkhancollege@yahoo.com>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <1161617422.2151876.1725277643159@mail.yahoo.com>
+Subject:  suspended officials and staff of Hazi A.K.Khan College,
+ Hariharpara, Murshidabad
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2151875_1987090275.1725277643158"
+References: <1161617422.2151876.1725277643159.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YMailNorrin
+Content-Length: 1908
+
+------=_Part_2151875_1987090275.1725277643158
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Sir/Madam,=C2=A0=C2=A0=C2=A0=C2=A0With reference to the note issued by=
+ the Higher Education Department, Government of West Bengal on 29th August =
+2024, bearing No-GRC-HED/02(10)/24, I am pleased to inform you that=C2=A0 n=
+o staff member or faculty of our college is currently under suspension.
+
+Dr. Goutam Kumar GhoshPrincipalHazi A.K.Khan CollegeHariharpara, Murshidaba=
+d
+------=_Part_2151875_1987090275.1725277643158
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydp8b6d8e08yahoo-style-wrap" style=
+=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px=
+;"><div><div dir=3D"ltr" data-setdir=3D"false"><span>Dear Sir/Madam,</span>=
+</div><div dir=3D"ltr" data-setdir=3D"false"><span>&nbsp;&nbsp;&nbsp;&nbsp;=
+With reference to the note issued by the Higher Education Department, Gover=
+nment of West Bengal on 29th August 2024, bearing No-GRC-HED/02(10)/24, I a=
+m pleased to inform you that&nbsp; no staff member or faculty of our colleg=
+e is currently under suspension.</span><br></div><div><br></div><div class=
+=3D"ydp8b6d8e08signature"><div style=3D"font-family:Helvetica, Arial, sans-=
+serif;font-size:16px;"><div style=3D"text-align:center;"><i><b><font color=
+=3D"#70aced">Dr. Goutam Kumar Ghosh</font></b></i></div><div dir=3D"ltr" st=
+yle=3D"text-align:center;"><i><b><font color=3D"#70aced">Principal</font></=
+b></i></div><div dir=3D"ltr" style=3D"text-align:center;"><i><b><font color=
+=3D"#70aced">Hazi A.K.Khan College</font></b></i></div><div dir=3D"ltr" sty=
+le=3D"text-align:center;"><i><b><font color=3D"#70aced">Hariharpara, Murshi=
+dabad</font></b></i></div></div></div></div></div></body></html>
+------=_Part_2151875_1987090275.1725277643158--

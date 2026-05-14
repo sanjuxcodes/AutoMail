@@ -1,0 +1,84 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1756111dlb;
+        Sun, 22 Sep 2024 04:17:24 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHOxo7tizFQgZn7JYkOkTbEkYl6o531/xKFaOzW9eYZBUerjiHs8LYIotgyXy9q/bCpf0Gb
+X-Received: by 2002:a17:902:ce8c:b0:206:ac11:f3fd with SMTP id d9443c01a7336-208d9839477mr111644555ad.30.1727003844037;
+        Sun, 22 Sep 2024 04:17:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727003844; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ju0JCwAFUBOBExhsNv3PzaasVKSrQyB/TcsfibUG743q0PUY2f+MMqwlAESVRjcva+
+         oFreHklRvRmUboXr3VdfNSXAfY37P117c4FSsJBGDKKT8PYCEaSApdSfcV8FppR9iJmY
+         pGIh4uxF+hDmA4h27m61+n/r8/nI3aXil/zPr3d2tDype8LI6gzWXBqYwbxytadFjsOh
+         i8optX+JNCt6aFyP/pugjq5eR/a0U79reQNreziamCakRF5WTaRUlo6lLd3eXdu+sP81
+         j/X2s6IZWtgQm9DifVkFpNn62cuCWao+v7kxCjCp8B68KFW94O74vNWQU+Alkk3JmGkO
+         z3aA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:to:mime-version:message-id:date:dkim-signature;
+        bh=feCow9MRRa//QnmgYVcyooBjk1IpNH8wBF2qT5MbXpg=;
+        fh=+ZLbLWn/l/XTvAiF6yPHBIX6F5VHQevdrYk5oe1V2hQ=;
+        b=I2Cdob/fau7/fDUJtvh4CIZcCIWNWEc1s1dVQ1v0USx+EYev+/zhB6RoJanMygyp5h
+         B3ImocYx3umtCsQRg5brfm5weGAGB24lyNdYBqY+cdFuz9FquBQ0CVjAVCRICnyZE3mq
+         3V7KVbm5IxN0yJjntpaY6/yPLbqjZRqpou4uPWLAkhVVKp4JJHdXqQK/QgBbTzIDCi53
+         xYvU/nlyfTOcGCVmQXIwJi+XlONQKFVvANNRBD4ta6JOB5OUDh23PuCO/MlT8jzEoAOB
+         31HMXZbXFojYC5LW+tn+a9daFXG1TkqqZNM062K/fSgIur0vQO4ora3O4BBx9tu0Y5R5
+         gRBQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=LWD0dyCR;
+       spf=pass (google.com: domain of uluberia_college@rediffmail.com designates 114.31.224.114 as permitted sender) smtp.mailfrom=uluberia_college@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <uluberia_college@rediffmail.com>
+Received: from f5mail-224-114.rediffmail.com (f5mail-224-114.rediffmail.com. [114.31.224.114])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-7db499b99a8si20103743a12.632.2024.09.22.04.17.23
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 22 Sep 2024 04:17:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of uluberia_college@rediffmail.com designates 114.31.224.114 as permitted sender) client-ip=114.31.224.114;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=LWD0dyCR;
+       spf=pass (google.com: domain of uluberia_college@rediffmail.com designates 114.31.224.114 as permitted sender) smtp.mailfrom=uluberia_college@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1727003841;
+	bh=feCow9MRRa//QnmgYVcyooBjk1IpNH8wBF2qT5MbXpg=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=LWD0dyCRwgD08nV4WqO2XY0H4VEwLhFfljPi1yKpVUbBw7/zR1BC/prbj5EWF+5NW
+	 iUgRM+/PEwSJeH97iGC+04lej+/9vPmkc3e5MyRThH0GmxrrCMI8GJRoyRbZRDYtcX
+	 btTycKFBC9QuZzaZ9/4ErLZzw8px5a5oA0JRWVQI=
+Received: (qmail 15554 invoked by uid 510); 22 Sep 2024 11:17:21 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 0
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudeljedgfeelucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgfffkhffhpdfqfgfvnecuuegrihhlohhuthemuceftddtnecunecujfgurhepfffkggfvshfuhfgtsegrtddvredttdejnecuhfhrohhmpedffgfnfgeugfftkfetucevqffnnffgiffgfdcuoehulhhusggvrhhirggptgholhhlvghgvgesrhgvughifhhfmhgrihhlrdgtohhmqeenucggtffrrghtthgvrhhnpeduleekueejgfegteelleejleejgfdvieejuddvgeetheeivddvteehhfetteevtdenucfkphepgeehrddvgeelrdeikedrudehkeenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepmhhouggvpehsmhhtphhouhht
+X-Remote-IP: 45.249.68.158
+X-REDF-OSEN: uluberia_college@rediffmail.com
+Date: 22 Sep 2024 11:17:21 -0000
+Message-ID: <20240922111721.15541.qmail@f5mail-224-114.rediffmail.com>
+MIME-Version: 1.0
+To: <grievance.hed.wb@gmail.com>
+Received: from unknown 45.249.68.158 by rediffmail.com via HTTP; 22 Sep 2024 11:17:21 -0000
+X-Senderscore: D=0&S=0
+Sender: uluberia_college@rediffmail.com
+Subject: =?utf-8?B?VWx1YmVyaWEgQ29sbGVnZSA=?=
+From: "ULUBERIA COLLEGE" <uluberia_college@rediffmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_8c994410b9e1dbf9b7d14b29ef0913b0"
+
+--=_8c994410b9e1dbf9b7d14b29ef0913b0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+There is no case of suspension in Uluberia College 
+Principsl
+
+
+
+
+Sent from Rediffmail using iOS
+--=_8c994410b9e1dbf9b7d14b29ef0913b0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+There is no case of suspension in Uluberia College <br />Principsl<br /><br=
+ /><br /><br /><br />Sent from Rediffmail using iOS<br>
+--=_8c994410b9e1dbf9b7d14b29ef0913b0--

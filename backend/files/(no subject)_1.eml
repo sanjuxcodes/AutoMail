@@ -1,0 +1,93 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:690:b0:86:fb3e:d4ed with SMTP id y16csp198442dly;
+        Wed, 4 Sep 2024 23:37:23 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IG14b59TbleIFI8a9+0LnBDb0/dn5cVeq7mVWete1g459M9T2O4n1vR3qaxLdbmaLmIRKcf
+X-Received: by 2002:a05:6359:7c04:b0:1ac:549b:ce02 with SMTP id e5c5f4694b2df-1b603cd5fdamr2877078055d.28.1725518243647;
+        Wed, 04 Sep 2024 23:37:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725518243; cv=none;
+        d=google.com; s=arc-20240605;
+        b=HgMVxhhymsdIiAAJ6oTFfhOjY7Z3uFH1JFs/UaUeV92kSQvAfYnMpJDmzbE+qQE6UT
+         7LYvkztEVJYH22lY3AHYLXdMWbM3xaTCy9hv9vKttQ+CQPeuzsy+2Xd/NvluxVyMwy8G
+         MoBIC2O4TU7gCX/8h2EWHo6AUZ5q4v101XNJjX+rOAH8IbCMWi4dANkqVHVRY110jwEX
+         HVu3C6XDtzaOiBAmLMDAyV3F5CJ3RBzc7/9dM5V11ag4DA+hJqohGRulySIheKDqDLhB
+         zEw6imqCohcX7axJEME69dm5Zqqlz5bpMM7wrHL5HLQ6bbxt6KuZAlwowdtlKO6I8bNl
+         gKXw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:to:mime-version:message-id:date:dkim-signature;
+        bh=rndGi69fepQbqBWKu9BeRqE/lHXd5kXw70ZvHwTodbk=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=ZXPlBQLp1A8fQnCCXIvIOCpith+OwBtLi0AhbM7sl3p886GFV2bDszQRvBJf2v/I4x
+         o3I3uoloZaCJj1DBw2KH8bkYH8+WXgPFeH0wER3v6AH29NFREia+uIt2sKs+ogcHDaL6
+         a67KH7sfaERjY86gFg5QLW9Kt9CNsIxdmI23EzdfCLc4jAUxwy0MzIbzlMZ1TgJJmPtW
+         1bGxWUWCtjnDGJOUk/IZR2Z0+ZcbO07PFUwvVmUqOVP5Ln94mtGM5myZqHW4w02S7sXL
+         LixtWIS9YQ5rnanGW/HQCEe2BC9iswePZMKRCVlKOWJXNOg5iYFWL8IpSMT+PM/b6Lm9
+         uJgg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=ZEG6wqro;
+       spf=pass (google.com: domain of chakrabarty40@rediffmail.com designates 202.137.235.223 as permitted sender) smtp.mailfrom=chakrabarty40@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <chakrabarty40@rediffmail.com>
+Received: from f4mail-235-223.rediffmail.com (f4mail-235-223.rediffmail.com. [202.137.235.223])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-7d50b8256f9si973162a12.181.2024.09.04.23.37.22
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Sep 2024 23:37:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of chakrabarty40@rediffmail.com designates 202.137.235.223 as permitted sender) client-ip=202.137.235.223;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=ZEG6wqro;
+       spf=pass (google.com: domain of chakrabarty40@rediffmail.com designates 202.137.235.223 as permitted sender) smtp.mailfrom=chakrabarty40@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1725518241;
+	bh=rndGi69fepQbqBWKu9BeRqE/lHXd5kXw70ZvHwTodbk=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=ZEG6wqro9YwikAQNJ6K6n8IRNTumfeo2cs2AaNJGRwY8EtUK+E5EZcxXZmzvpAXVm
+	 X9qtXlDcIRXxb3hZ0DP6FSeqzrZPePJH30HxtlxiIfSm22dWCTLYXtiMYjllwampHl
+	 iGJJoD3QI/ExtQ1BXCRU1KBV1slH3X1ZvHEF2b7M=
+Received: (qmail 21185 invoked by uid 510); 5 Sep 2024 06:37:21 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 10
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudehkedgudduudcutefuodetggdotefrodftvfcurfhrohhfihhlvgemucftgfffkffhhfdpqfgfvfenuceurghilhhouhhtmecufedttdenucfgmhhpthihuchsuhgsjhgvtghtucdluddtmdenucfjughrpeffkfggvfhsuffhtgesrgdtvdertddtjeenucfhrhhomhepfdfmrhhishhhnhgvnhguuhcuvehhrghkrhgrsggrrhhthidfuceotghhrghkrhgrsggrrhhthiegtdesrhgvughifhhfmhgrihhlrdgtohhmqeenucggtffrrghtthgvrhhnpeeitdehleetgffggedujeethfefgfehieeflefgffdvfeekgeekfeduvdefhfekkeenucfkphepudegrddufeelrddvudejrdeikeenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepmhhouggvpehsmhhtphhouhht
+X-Remote-IP: 14.139.217.68
+X-REDF-OSEN: chakrabarty40@rediffmail.com
+Date: 5 Sep 2024 06:37:20 -0000
+Message-ID: <20240905063720.21181.qmail@f4mail-235-223.rediffmail.com>
+MIME-Version: 1.0
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Received: from unknown 14.139.217.68 by rediffmail.com via HTTP; 05 Sep 2024 06:37:20 -0000
+X-Senderscore: D=0&S=0
+Sender: chakrabarty40@rediffmail.com
+Subject: 
+From: "Krishnendu Chakrabarty" <chakrabarty40@rediffmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_ad4fac261396fe768715632e4d0303e7"
+
+--=_ad4fac261396fe768715632e4d0303e7
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+Sir
+There is no case of suspension at the Government College of Engineering and Ceramic Technology as on date.
+
+Thanking you
+
+Principal
+Government College of Engineering &amp; Ceramic Technology
+73 Abinash Chandra Banerjee Lane
+Kolkata-700010
+West Bengal
+India
+Phone:(033) 2370-1264/2363-3675
+Fax:(033)2363-2072
+--=_ad4fac261396fe768715632e4d0303e7
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+Sir<br />There is no case of suspension at the Government College of Engine=
+ering and Ceramic Technology as on date.<br /><br />Thanking you<br /><br /=
+>Principal<br />Government College of Engineering &amp; Ceramic Technology<=
+br />73 Abinash Chandra Banerjee Lane<br />Kolkata-700010<br />West Bengal<=
+br />India<br />Phone:(033) 2370-1264/2363-3675<br />Fax:(033)2363-2072<br>
+--=_ad4fac261396fe768715632e4d0303e7--

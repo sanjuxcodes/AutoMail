@@ -1,0 +1,143 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp249289dlb;
+        Fri, 13 Sep 2024 04:46:23 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHfxepDrsUBQpaK6tVMZQECX3DXQHYCg6bGBKhiQPnh7ORc44UF5lishwW1gcpNubDtCqpv
+X-Received: by 2002:a62:e717:0:b0:717:8a7c:dd82 with SMTP id d2e1a72fcca58-71907f55c29mr19788536b3a.9.1726227983216;
+        Fri, 13 Sep 2024 04:46:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726227983; cv=none;
+        d=google.com; s=arc-20240605;
+        b=TK5XorapMEaCI7RZCJPi4g8xmTBS2UaVqkP7Kd/EutsjsYmvX3k9LcEPkqPJq6f+Y6
+         flGQ7muiB35pkvptsCVcDm5FetW/ddYwpa19bPIP5RbMtyPbE4+oxszBDXa8zaIAuI1c
+         VnVhPQcBH5wVfYt/dkH00V92SSEWzlxfiCDl/Gt8/ErbTwrxhmQsLqXuPhlhpBAYX2DH
+         cMmqRmMzEKyxGMhYX2v1yJip2C01BkP3lStMsWJ9K6ZG0QQSWSoe9bwtRCGI1xtVxJPi
+         Jt8GgLArBOqSW201suBQsfHX+QHukjypl5fCEyLiYm7PQk+vaXMb132soiJL+Ou5PUp5
+         uQ1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:message-id:to:mime-version:date:dkim-signature;
+        bh=AT1w9hz6MG8jlnOKhaInOsO8qiNiTltaJWqfkUHBZuQ=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=faEP78Dmv3UbfPozFcprKrx5Mqkrio0EB/x5RmewuBA7VgLQt3c6Z6+GZeWa+msj2v
+         bJZvBqGobdppx1sVQUvcv7cKUjlxj3Up1+U2f3nyCY1WQfCdpQFaju/J1FDF6QbzZ24Y
+         VDac78eTp5dDIsZRuQ/2S3/6tyWM/ePXBQkrS6IXWv3hoKnt2Q2kO3MKZXevkSkOxdwz
+         nA7FWpBQoYl8+6NXhbE4beCeOZ6oJGSbCn8fDn+JXzsBWgfzske1oSr+FtN2veVwOjNv
+         uUvcy4VEB5Xziqg5TfwrdiCXpajxA64+SfyskRGS3GiMhOf6rTfWq/PAhtjzQ5eCnZ8h
+         sb0w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=BEEsAhCi;
+       spf=pass (google.com: domain of bmsuri1979@rediffmail.com designates 114.31.224.129 as permitted sender) smtp.mailfrom=bmsuri1979@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <bmsuri1979@rediffmail.com>
+Received: from f5mail-224-129.rediffmail.com (f5mail-224-129.rediffmail.com. [114.31.224.129])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-719090c1ef0si9211295b3a.279.2024.09.13.04.46.22
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 13 Sep 2024 04:46:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bmsuri1979@rediffmail.com designates 114.31.224.129 as permitted sender) client-ip=114.31.224.129;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=BEEsAhCi;
+       spf=pass (google.com: domain of bmsuri1979@rediffmail.com designates 114.31.224.129 as permitted sender) smtp.mailfrom=bmsuri1979@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1726227979;
+	bh=AT1w9hz6MG8jlnOKhaInOsO8qiNiTltaJWqfkUHBZuQ=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=BEEsAhCigvDjIehlEmoGXU6Gktc13R/eu6a1Mnv6bZ4A8t44/OQdZMoBsJ0bojAbv
+	 4wb7kx8nnt0e5ipjsAHeyOCaAJ+yAGTwDYEOP9n39CutC2CuFUmZNfaSWrAS1IwglP
+	 ial0sebkYrw1slPGOmI+CIPuuKHnhV1qYAWSd6oI=
+Received: (qmail 15185 invoked by uid 510); 13 Sep 2024 11:46:19 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 0
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudejjedggeefucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgfffkhffhpdfqfgfvnecuuegrihhlohhuthemuceftddtnecunecujfgurhepffggvffkshfuhfgtsegrtderredttdejnecuhfhrohhmpedfuefktfeujfgfofcuofetjfetggfkffgjtefntegjtedfuceosghmshhurhhiudeljeelsehrvgguihhffhhmrghilhdrtghomheqnecuggftrfgrthhtvghrnhepudekieduteeftdffvdeltdeihfffgfeuhfeltedtgeeitdejkeeigedufeeutdeunecukfhppedutdefrddvuddurddufedvrddujeeknecuvehluhhsthgvrhfuihiivgeptdenucfrrghrrghmpehmohguvgepshhmthhpohhuth
+X-Remote-IP: 103.211.132.178
+X-REDF-OSEN: bmsuri1979@rediffmail.com
+Date: 13 Sep 2024 11:46:19 -0000
+MIME-Version: 1.0
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Received: from unknown 103.211.132.178 by rediffmail.com via HTTP; 13 Sep 2024 11:46:19 -0000
+X-Senderscore: D=0&S=0
+Message-ID: <1726224983.S.30396.autosave.drafts.1726227979.15008@webmail.rediffmail.com>
+Sender: bmsuri1979@rediffmail.com
+Subject: =?utf-8?B?UmVwb3J0IHJlZ2FyZGluZyBwZW5kaW5nIGNhc2Ugb2Ygc3VzcGVuc2lvbg==?=
+From: "BIRBHUM MAHAVIDYALAYA" <bmsuri1979@rediffmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_e7056f0dac2fb1954375fd33b553749e"
+
+--=_e7056f0dac2fb1954375fd33b553749e
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+To
+The DPI
+Government of West Bengal
+Bikash Bhavan
+Kolkata 700091
+
+Respected Madam/Sir
+As per your requirement on the Note issued by Higher Education department, Govt. of West Bengal bearing Memo No. 21-Pr.Secy-HED/24 Dt. 29-08-24 I am pleased to state that our institution has no pending case of suspension of any employee as of today, but an employee of our institution PROF. AMIRUL KHAN, ASSISTANT PROFESSOR IN ENGLISH (Date of joining- 21/04/2017), was suspended from 25.10.2017, but then as per court order (ACJM, Bolpur) and GB resolution, his suspension was withdrawn and he was reinstated in his service on 27/07/2020. But he has not been approved of any salary during the period before his suspension and during his whole suspension. I, hence,&nbsp; humbly request to you to&nbsp; please look into this matter and approve and grant all his dues and financial benefits as early as possible. The summary of the case of Prof. Amirul Khan is as follows:
+
+Details of the Employee, Prof. Amirul Khan, Department of English, Birbhum Mahavidyalaya, Date of joining- 21/04/2017
+&nbsp;	Prof. Amirul Khan was absent without any intimation to the College authority from 25/10/2017.	Prof. Khan was suspended on and from 29/12/2017 with immediate effect as he was in Police custody since 25/10/2017.	He was acquitted by the learned court ACJM, Bolpur, Birbhum on 12/09/2019. 	The Governing Body withdrew Prof. Khan&rsquo;s suspension on 22/07/2020 &amp; Prof. Khan rejoined his service on 27/07/2020 after receiving the intimation letter from the Principal on 27/07/2020. 	The Governing Body in its meeting held on 31/12/2020 resolves to amend its earlier resolution regarding the suspension period of Prof. Khan and decides to effect the suspension from 25/10/2017 till its withdrawal. 	His service was confirmed from the very first date of his joining, i.e., 21/04/2017, as resolved by the Governing Body on 31/12/2020.	As per the statute of the Burdwan University, &ldquo;When the suspension of an employee is held to have been unjustifiable or not wholly justifiable, or when an employee who had been suspended, removed or dismissed from service is reinstated, the competent authority shall grant to him for the period of his absence from duty&mdash; (i) if he is honorably acquitted, all financial benefit including promotion due, if any, as if he had not been suspended, dismissed or removed.&rdquo; and &ldquo;In a case falling under clause (i) of sub-paragraph (e), the entire period of absence from duty shall be treated as the period spent on duty.&rdquo; 	The College submitted bill regarding his allowance, but no allowance has been approved during the suspension period. He has not been approved of any salary during the period before his suspension and the whole suspension period. Therefore, it is humbly requested to approve and grant all due financial benefits to Prof. Amirul Khan.
+&nbsp;
+&nbsp;Prof. Suprabhat Chowdhury
+Teacher-in-Charge
+Birbhum Mahavidyalaya
+&nbsp;
+--=_e7056f0dac2fb1954375fd33b553749e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+To<br />The DPI<br />Government of West Bengal<br />Bikash Bhavan<br />Kolk=
+ata 700091<br /><br />Respected Madam/Sir<br />As per your requirement on t=
+he Note issued by Higher Education department, Govt. of West Bengal bearing=
+ Memo No. 21-Pr.Secy-HED/24 Dt. 29-08-24 I am pleased to state that our ins=
+titution has no pending case of suspension of any employee as of today, but=
+ an employee of our institution<strong> PROF. AMIRUL KHAN, ASSISTANT PROFES=
+SOR IN ENGLISH (<span style=3D"font-size: 10pt;">Date of joining- 21/04/201=
+7</span>)</strong>, was <strong>suspended from 25.10.2017</strong>, but the=
+n as per court order (ACJM, Bolpur) and GB resolution, his suspension was w=
+ithdrawn and he was<strong> reinstated in his service on 27/07/202</strong>=
+0. But he has not been approved of any salary during the period before his =
+suspension and during his whole suspension. I, hence,&nbsp; humbly request =
+to you to&nbsp; please look into this matter and approve and grant all his =
+dues and financial benefits as early as possible. The summary of the case o=
+f Prof. Amirul Khan is as follows:<br /><br /><strong><span style=3D"font-s=
+ize:10.0pt;">Details of the Employee, Prof. Amirul Khan, Department of Engl=
+ish, Birbhum Mahavidyalaya, Date of joining- 21/04/2017</span></strong><br =
+/>&nbsp;<ol>	<li><span style=3D"font-size:10.0pt;">Prof. Amirul Khan was ab=
+sent without any intimation to the College authority from 25/10/2017.</span=
+></li>	<li><span style=3D"font-size:10.0pt;">Prof. Khan was<strong> suspend=
+ed on and from 29/12/2017</strong> with immediate effect as he was in Polic=
+e custody since 25/10/2017.</span></li>	<li><span style=3D"font-size:10.0pt=
+;">He was acquitted by the learned court ACJM, Bolpur, Birbhum on 12/09/201=
+9. </span></li>	<li><span style=3D"font-size:10.0pt;">The Governing Body wi=
+thdrew Prof. Khan&rsquo;s suspension on 22/07/2020 &amp; Prof. Khan rejoine=
+d his service on 27/07/2020 after receiving the intimation letter from the =
+Principal on 27/07/2020. </span></li>	<li><span style=3D"font-size:10.0pt;"=
+>The Governing Body in its meeting held on 31/12/2020 resolves to amend its=
+ earlier resolution regarding the suspension period of Prof. Khan and decid=
+es to effect the suspension from 25/10/2017 till its withdrawal. </span></l=
+i>	<li><span style=3D"font-size:10.0pt;">His service was confirmed from the=
+ very first date of his joining, i.e., 21/04/2017, as resolved by the Gover=
+ning Body on 31/12/2020.</span></li>	<li><span style=3D"font-size:10.0pt;">=
+As per the statute of the Burdwan University, &ldquo;</span><strong><span s=
+tyle=3D"font-size:10.0pt;">When the suspension of an employee is held to ha=
+ve been unjustifiable or not wholly justifiable, or when an employee who ha=
+d been suspended, removed or dismissed from service is reinstated, the comp=
+etent authority shall grant to him for the period of his absence from duty&=
+mdash; (i) if he is honorably acquitted, all financial benefit including pr=
+omotion due, if any, as if he had not been suspended, dismissed or removed.=
+</span></strong><span style=3D"font-size:10.0pt;">&rdquo; and &ldquo;<stron=
+g>In a case falling under clause (i) of sub-paragraph (e), the entire perio=
+d of absence from duty shall be treated as the period spent on duty</strong=
+>.&rdquo; </span></li>	<li><span style=3D"font-size:10.0pt;">The College su=
+bmitted bill regarding his allowance, but no allowance has been approved du=
+ring the suspension period. </span></li></ol><span style=3D"font-size:10.0p=
+t;">He has not been approved of any salary during the period before his sus=
+pension and the whole suspension period. Therefore, it is humbly requested =
+to approve and grant all due financial benefits to Prof. Amirul Khan.</span=
+><br />&nbsp;<br />&nbsp;Prof. Suprabhat Chowdhury<br /><span style=3D"font=
+-size:10.0pt;">Teacher-in-Charge</span><br /><span style=3D"font-size:10.0p=
+t;">Birbhum Mahavidyalaya</span><br />&nbsp;<br>
+--=_e7056f0dac2fb1954375fd33b553749e--

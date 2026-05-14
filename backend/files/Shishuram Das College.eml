@@ -1,0 +1,106 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2495:b0:89:ead2:3829 with SMTP id cq21csp173737dlb;
+        Thu, 26 Sep 2024 23:24:34 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHIWQl4NAZIEtUX2ElhmuQwdVu9hhDcQTvtkZuPdRXe+Hf/3qxPUz2pdQ7W6acI8gJVhzje
+X-Received: by 2002:a05:6902:906:b0:e11:7474:f296 with SMTP id 3f1490d57ef6-e2604b3e6cemr1471894276.19.1727418274403;
+        Thu, 26 Sep 2024 23:24:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727418274; cv=none;
+        d=google.com; s=arc-20240605;
+        b=GLg84Cs1+i/sdV/IUPeZb+YyHxbEE8+GgmktpXzG5uI2pvxNZ0kvoSRWeHNdepDObk
+         yB3YS2OlO8IYkUqwZ+ipI7otZLIu9lK6Rrm5LJO5x+6LcNnuls8jYvPIH7fOJJ1JSDbe
+         aZsvQWPlALTnqYQCqDIi7bx0hvoEftJGpV3+hs4q/p/YSYW5TAURSQqDnNpcW7UQVXqH
+         ek4lvyl3gzWSUNBD9kSi6w3ew1RIRUtZtEmZ7cl2Yj2LQ4Ux8x3w9Hgj2zLeqtvAKTQE
+         FfWuuGuhW6W5k8bGKVyOuvIxf+q66nlCnvaCx5jsMJrdd7Ed8lF2rFa0/t8hUGsM1I2P
+         KzFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature;
+        bh=mDHoaCIHoQcybHf6BpGOPdYJuIQR/OGtYVnOdc61kjs=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=bAWXqJhoE44nLWBKw8M7F/jJAwTr5gp0+HXpwILVAZW0ysISm2yb1YQoSQF9zwjJ3t
+         sQtvpmA+2B0l6O5qimCbp1BOUccNPymSiX2Gq7bHtzby8dG+trnGtqGG+IeyKrxO/t3L
+         Uj1xWA4Nwr8aNrmgjOmTgWJM8iFwwqTZNeVIXr02/O/pfPUDhBQWg37SBjfXa3NJ8SDx
+         osiF3RgqnF8VzrZdStRYYBdk2A8ZvND8ovKUhayOeaN/LR33SESGt6zasJCKRLOQHfS8
+         cUHa8t64JAFkU+H4D9eFZTmmC2WuRlC24lOl4yEJHoDVICJXUYVb7F7LZwb/u2ZGXImi
+         bQcg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=jbvd6pKr;
+       spf=pass (google.com: domain of nrmaiti@yahoo.com designates 66.163.188.83 as permitted sender) smtp.mailfrom=nrmaiti@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <nrmaiti@yahoo.com>
+Received: from sonic319-21.consmr.mail.ne1.yahoo.com (sonic319-21.consmr.mail.ne1.yahoo.com. [66.163.188.83])
+        by mx.google.com with ESMTPS id 3f1490d57ef6-e25e3f031e5si913232276.13.2024.09.26.23.24.34
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 26 Sep 2024 23:24:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nrmaiti@yahoo.com designates 66.163.188.83 as permitted sender) client-ip=66.163.188.83;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=jbvd6pKr;
+       spf=pass (google.com: domain of nrmaiti@yahoo.com designates 66.163.188.83 as permitted sender) smtp.mailfrom=nrmaiti@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727418273; bh=mDHoaCIHoQcybHf6BpGOPdYJuIQR/OGtYVnOdc61kjs=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=jbvd6pKrZ+r+8RL7ZyedLKPxhDpaE+GxfMeh1wKgVJs9G/6vTHkqrfnupnK6702pbXasLTxQu/Sb0OZs5Fhc68DFbC9uB3xU9vbDrbk2X5jPwmAM3zYSgT7AeUt7qCB2zXF4O1JvKlF5sSaSEmwVno8UuCDYdL5mBWKMdohNMD/yLPKcJPXCgkfnJ/dIYkroFvZ3HRkFsAO1iUkZQuv9s+5QSffCvD02HoswN2x5+n4bHX31uSsMUwZ7o0MHCwT6/HSX7E1KQTGqBqcFGu8hdi3keGnjST3ci9Rj4/RH3YghZRidZVgtmNPoEg0fFWs4Maj2Df629dTk9OwwmzYTMA==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727418273; bh=YXjUPNRc6HhcXUVkkJfUrJD/lde3TRkk76SnJhDXb88=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=hRhWlDsKzbLuVvivq1fFll2PT/h18ZaH6/uNBAeF8hNTmY8zr/R3EoIriUsGSgBgyg1ZBtj0AIIFKIPT+P2cAjx4e9RornGJ8wFcQYv4E3kg/Z3PhOyUH5wkhgKuPpvRLG3tJzNrhfcTQ3D0n6bNGhpxPF6vibBHWrydJ8v6jF+UWK0yHuRsDMA5jeQ8ZYxf7vDjq5zSTkBmIhmewRq90p33FoXBO/7AUys15Hi417SP9IZ2S8h2ulL88dXrGrD+dH1k2gTqCo11Er7o2nGnilNNmiyz5ljO2wLw/f974m93xscPk3SfCcvGGb+Fdlrm5zngdRXyyqSUeBTQtkqgkw==
+X-YMail-OSG: T0KORkIVM1lhIP2BMI272fbU2RzJULfOLAGnpXBzOXGwGVbpXyfFNwl26F1fEg4
+ 40RowqGeXQYvHcToryC0HYBvi64g.GIMe0fD6sIkRLoeT9nJ9xBwdLyASqwElga_h0YRCpm28JPq
+ xZNqCS6p47DR92x.6RHHwMJyA4F9vRITmGHPpNLTiYprFzXagMpTsuGkCzbMiQHENOraDWovBWZT
+ pWKggdMwBicar3l_BGJjX0mKUwoiPuo.PZm09LcyB13VIe.ZJccRToh6shiii9kz_OVFszZGBkwD
+ YiRw_2CVkwScvBlBkp1MeW9ua8X0O8qilp6vi5JSNu5thsJMdQKpJcRnBtblJir4tsYUoGtg98U.
+ pEiVz2ZqLSrzOQezbvtC7xt69HELII3dgM9r5YIQn_0tq9.mkuveJ_5zebfBTiXAmQxXWdvHqNYv
+ Cy9gU6kghTu2zXvyTBP0tshn2_kQtBIn9apSpjIiHcV1548cHlDTniLRp9xwDvvwopXslJsHUZyd
+ xVye7gcGQjBqP6sTjxOIk4Vtc1dOpDjYKt2I6wUEcIsHMkT5Kc62VBJEefOymRaNeL0jRyBgSnyN
+ 1ZlNt8u8ZBJD3Cr9xyBZz7sMWDTNanWKG4Fqqci4hcG_XL9rrRbhpLKK9rpWQucd74o.54CLAq51
+ 1o5DlFPDKyPhN24WnoDbjOMqmil2aErXQP2cERupjrRAQpe5Qap8gmYqHBHBz562TYyjD6lxrg2h
+ QqwTXvXMi0lQlLZ921oSQE7fs9eaig5cinBxgr3ZQ5joyy9IcUjpjlDkNbE4X0tkEmGOmOx5RDTx
+ ABX0W12baSnuUvssVOyZ_hOB8al1rPexoYUjhfOqUj1AAeOyWavm.pOHIEX1Ra56pQBw2St10_Bw
+ j6jgPINPL6ZttzWjtf4Y7LDwcWqjXIUsFf2aQ985KUxCU2C.inGMmdkbmsg.Chr2xzO_1AZP_BHW
+ 0HOEmQR9sHNpVth0JgIpN05cm9v5Me0X0ti8iKLoUtbi06qF0nZQ3.eUtcuex.VeudN.Cf_rN10c
+ 6JqoW6mp2gFeKZm0BNNNWsaiaQqKU9E9JyOaEnGTvW4IzXg4IYLuxcS1GJu0iZzIRuFWcUwCeVqs
+ Cm6VNA7UABma5QD4YOrtCwuUSX9pTdw.xYxT0209ZasGzPXZ_2afythXDxpZsFlFfT7pS6iMDiGY
+ CqYYvDTwUB3GxONsKWqi_G6uGHVMZGN4x.DMaaMAJIqtB6l_OjMnV6TPNxnC6AzY8AmlUb0W4CP4
+ SSOYMAPCQ2IVs8SH.n3DUQ.DwCXZ8a7CM_r2Vh6PxEdq8C._mf7qv2Lh2csksF9vG4Ko_wnUMxqz
+ C2E1y7sb0M_EBphqXGtcpoiRy3srWUBymJ0vRvi5sfPaCbjFlqV_742scCaaelfedyqc.mb6wtfm
+ uk4AaFmwW5mriYk8AFxsk3Z5ygMgQBCctwyy07GplV9zS98OjRALuvRJHQ4OqTXx85umcckdeYRd
+ gPhkv_Uru_UL1WyYemggi8R8FGcnMswBlbfFgUqD4EFulD1GvcSr61EYVsHgyMVAkCeT3YLZG7MJ
+ dlt55K_RrD5ieE7orYACbV5RdahOHQqy4iSRRwNw98WzpBvsx1SlLamThTnjJfWrsSty8MplaAqh
+ 4xiFLaCAmY4GXjWYZxy3FNDEMz7K1RikgDaQU7a15L3cjBHyZ3h_LvGGuWC9luN8gFaZXe1aEk0O
+ Bb98_KE17GAgW0MeKC4XK34ct01LJm4Pirf8uaZl.1NvT.MSfPdVHZLPN81RDt_frIVYt5ulekdK
+ YshJrvhjl0PldP3XvVUOlm6xrzcWl1KhZehLalbfs1aO0UlRzQ5pl.jgIL2Wq64VLUzfnM_YBTtq
+ USL5_iis.QnAPnlGA4TZGyWFlV8icD8R.ofZqIaY0j2JNP1h_p_oOV6Wz.1zQ3QC6uMki7hULTgg
+ C9g2yJAfrbn9JycA.JCQo2_sylKdT68MIRpyBVcZPboNkPQkIHThv22VMKzmC3Ak4id94_kCmUEl
+ aK1mArQTWC4Tb7Ct1diqUJ6OjtccLF.0FbxtfTYs6PfmsCKFzqV1AtkZyZBi4QDxhKicOCwwXD9v
+ WLWt2FTvlaJcyZ6awbSV6gY_z5ABSccm8GbYeJaHYUYSaAs36L8eV_HUp44gFI2Dl4q6aIr8PhWV
+ xqmkblm35UHWgYiKpeKb1w3OWnaRiuAI_8uIXiB8hftfFIjwAZ35ocFG1Qizb5pq9Iqwa0.pt3RO
+ 2QbMtTBjyZf9W.lEUiayp5URXHeUS8UA7307jN2Qo4CHv7Wqb3EPrNLfU0bKJuOdCvladYce3FcO
+ fEdZj7y4nqO4W3f0HpLb0XnSXRHmCuJqlIJYGEpu5JX138RmfVr_C.Kv2IobFsBp0Y0Fqutvj
+X-Sonic-MF: <nrmaiti@yahoo.com>
+X-Sonic-ID: d86f8a09-ae45-4ed7-b798-1fd0aed648fd
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic319.consmr.mail.ne1.yahoo.com with HTTP; Fri, 27 Sep 2024 06:24:33 +0000
+Date: Fri, 27 Sep 2024 06:24:24 +0000 (UTC)
+From: nilesh maiti <nrmaiti@yahoo.com>
+Reply-To: nilesh maiti <nrmaiti@yahoo.com>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <915137541.13314466.1727418264500@mail.yahoo.com>
+Subject: Shishuram Das College
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_13314465_1064107744.1727418264499"
+References: <915137541.13314466.1727418264500.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YahooMailAndroidMobile
+Content-Length: 941
+
+------=_Part_13314465_1064107744.1727418264499
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+No suspension case.
+Regards
+Dr Nilesh Ranjan Maiti=C2=A0Principal
+
+Yahoo Mail: Search, organise, conquer
+------=_Part_13314465_1064107744.1727418264499
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+No suspension case.<div><br></div><div>Regards</div><div><br></div><div>Dr Nilesh Ranjan Maiti&nbsp;</div><div>Principal</div><div><br><br><div id="ymail_android_signature"><a id="ymail_android_signature_link" href="https://mail.onelink.me/107872968?pid=NativePlacement&amp;c=Global_Acquisition_YMktg_315_EmailSignatureGrowth_YahooMail:Search,Organize,Conquer&amp;af_sub1=Acquisition&amp;af_sub2=Global_YMktg&amp;af_sub3=&amp;af_sub4=100000945&amp;af_sub5=OrganizeConquer__Static_">Yahoo Mail: Search, organise, conquer</a></div></div>
+------=_Part_13314465_1064107744.1727418264499--

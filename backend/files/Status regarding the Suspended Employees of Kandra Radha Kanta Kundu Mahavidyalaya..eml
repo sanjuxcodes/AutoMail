@@ -1,0 +1,113 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp1679872dlb;
+        Mon, 2 Sep 2024 03:19:03 -0700 (PDT)
+X-Received: by 2002:a05:6358:e48b:b0:1ad:d2a:75ea with SMTP id e5c5f4694b2df-1b7edb5ab75mr955781455d.14.1725272342948;
+        Mon, 02 Sep 2024 03:19:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725272342; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JlHYIhoF/kYUafpV9WeYw3ocH3eoAj8fagP6DWHHVPk5S7S5DmbdoMo8VAQzYz8GNx
+         JKrgn4zuIsBPa9hsYl42piUiMzQj37bwi4SD2U3UcBUPeTQD51u6YXBDfQUAQWy9+qAs
+         RoMHGk718Y8Xdv4oe9/U9TkLEfRmdL4HjgR2tbRrilEIqdKcU+ebnRTXoPOzz7RNlKjG
+         JUKn57pG9tp900/XSAfa2qJ3ELsLBzolXDlmfH/rQSI5QiVIoGo+b655TRVrTkrNt7GA
+         B3o+ZdYSMAtrolSFjIibrAhUZbF8UB9rZBVjPigBbjgpPssYRCfnz5Lef3EIEkj/L2Ge
+         5vlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=oOUPZlambsM9D3wFLDhHKL1jJw8A4iEd1D2GcKtvGqw=;
+        fh=a8xyPE5Eg2wZq1ll+IZRE9ATxiqxnE9h4p0ib47d8nw=;
+        b=CUPFMf8AMiCD/AsFrgKr0KcH/+XeH93i6giUYRoRX4MdyWPEDNvOwEl3BwZSmhVruM
+         gJZbx2S2G3shVV+JZv7GlcWwP1XIID/YMV6mE96lvqL28tr3HLJ9pEMQLJWOBNRo00Vx
+         and6xKXA/r5TRnqRGw0bcCCZmeevJoVb7W+DgnNGKL36iepAwWZY42EK8alw+eHPoleD
+         SeF/sdPeHle7KZRd0grjJEo6UxrpmCiIirmOKVVLq+1Ysg74os8b89xZB9cceADXFS4W
+         sStnL6xZ4Qzzj3oL7kxYb/npvttDzTgKR36KyiecZxz5GkCkD8IRzVKCu+MVj9fVdv0m
+         0MVQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="k8xx2Ni/";
+       spf=pass (google.com: domain of mrinalkantee@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mrinalkantee@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <mrinalkantee@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 41be03b00d2f7-7d22ea036fbsor2772476a12.9.2024.09.02.03.19.02
+        (Google Transport Security);
+        Mon, 02 Sep 2024 03:19:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mrinalkantee@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="k8xx2Ni/";
+       spf=pass (google.com: domain of mrinalkantee@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mrinalkantee@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725272342; x=1725877142; dara=google.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=oOUPZlambsM9D3wFLDhHKL1jJw8A4iEd1D2GcKtvGqw=;
+        b=k8xx2Ni/aBs9urWHu6N/S01a+RLxZHKkuZTAuQA9+lVTsEX0Mi93Zf5YZKgvY0LgBX
+         OmbOx/GzQpi8JUznWzslCuT8EmzI4uPOmW/hXG2crMxPSR07q5vwjOyutZrHLWelS3eI
+         58ENO7Lub0av5ye/lADJJI1QBkebicEmdp6ArrhI9w4I4bGj8iUTGNtjecV+iRQEAx6P
+         K+kpWAHAR4VbzPcbuvHTlwSjp3trHwCTJvU+q+KGklUc0uYUyN3DoO+5VHiwEk16j9FF
+         9eQ/cRyEim7iovPWJBmqqGEvHrumdrthugVtOR2Rz6IX1bmSltds8JjN0I0m5KJhBxDp
+         g09w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725272342; x=1725877142;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oOUPZlambsM9D3wFLDhHKL1jJw8A4iEd1D2GcKtvGqw=;
+        b=E3otfU+SuWJSioWlY6TXQXiIgJF/jx/6+HFcgExxRI7Ew1lLmxEa6KAQg47pBoAHPj
+         tk7NSXaKY+kHun6vQbA1GREf53srMoUvxFoH+s03Uw0LVbNpFWhbQjD4mjwuJw3i45dR
+         YdgggQVqOIzit3+G8VmG3SDQissfzn3F9wR74rLMYcqWjO7v42qcn3BrcQjwitCXyl40
+         HK+YKxfh0bY/sqbTlQZ8y8xeC9ziHZ8sQjBhNluZrE6PHDklR0+ZAgOtuC8BChKhAJUt
+         stQFI4MDcOZrPVYiyW0ShlNDXi+wD0MCjoSDbLpeEcL6q0Q3cRri1Wnla3edqNYwwIeo
+         T6WQ==
+X-Gm-Message-State: AOJu0YwKIYeJYCkjjipAp/dLuOXPzld0fVbZMjW+1CSgegCzHNHqIeg8
+	TC3q8fqhWm0FLrlgwM4Qo8U030KKCG5tobIPWGCH48VpJwZLme8tlOZQ57WT0sYI6d5Y61dPdwo
+	q82RbK5v3/BtfjSd/klu5ZDHEqq7cCw==
+X-Google-Smtp-Source: AGHT+IE+EanWRCjwZcmDtrEPEP3rbPRsscs4tncJXrnE3APRxjtAPVf64BiFUV2u2a5loaCpPQzCiBScYfBwhlzYtnY=
+X-Received: by 2002:a05:6a21:3189:b0:1cc:e42d:4d22 with SMTP id
+ adf61e73a8af0-1cece502c74mr6809126637.18.1725272341748; Mon, 02 Sep 2024
+ 03:19:01 -0700 (PDT)
+MIME-Version: 1.0
+From: Mrinalkanti Chattopadhyay <mrinalkantee@gmail.com>
+Date: Mon, 2 Sep 2024 15:48:25 +0530
+Message-ID: <CACbOiNjQwvLD6B59wV9cLWjBmm2yrnsyvg0__E5XM47UREJhkQ@mail.gmail.com>
+Subject: Status regarding the Suspended Employees of Kandra Radha Kanta Kundu Mahavidyalaya.
+To: grievance.hed.wb@gmail.com
+Cc: Samrat Laskar <samlasjdpi@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000001225620621204597"
+
+--0000000000001225620621204597
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir,
+        Undresigned is informing you that there is no Suspended employee
+till date for our College.
+
+Please Acknowledge the same.
+
+With Thanks and Regards.
+
+-- 
+Dr. Mrinal Kanti Chattopadhyay
+Principal
+Kandra Radhakanta Kundu Mahavidyalay
+Kandra
+Purba Bardhaman
+
+--0000000000001225620621204597
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Respected Sir,<div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 Undresigned=
+ is informing you that there is no Suspended employee till date for our Col=
+lege.</div><div><br></div><div>Please Acknowledge=C2=A0the same.</div><div>=
+<br></div><div>With Thanks and Regards.<br clear=3D"all"><div><br></div><sp=
+an class=3D"gmail_signature_prefix">-- </span><br><div dir=3D"ltr" class=3D=
+"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div>=
+Dr. Mrinal Kanti Chattopadhyay</div>
+<div>Principal</div>
+<div>Kandra Radhakanta Kundu Mahavidyalay</div>
+<div>Kandra</div>
+<div>Purba Bardhaman</div></div></div></div></div>
+
+--0000000000001225620621204597--

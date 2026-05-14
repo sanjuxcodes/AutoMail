@@ -1,0 +1,113 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp696091dlb;
+        Thu, 19 Sep 2024 23:15:44 -0700 (PDT)
+X-Received: by 2002:a05:6402:26d4:b0:5c4:6687:144 with SMTP id 4fb4d7f45d1cf-5c4668701e3mr430467a12.23.1726812943785;
+        Thu, 19 Sep 2024 23:15:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726812943; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VDDW4Y7TP76CQH0XZfymNqIWTJpYvt5qIQDsyxZHOHsYs7U17HcJCa5M2c6pmtnCzX
+         WVbB2PEqRnMdkOQJjYAmmIouONIt4i9sy2LpeQlxJW2C1tY4UOssyeLTys8bxh7TSiq3
+         eEMhKvEHCdkWvuKYVdqsXBLlnogI+4akYViJZ06G+zK6ytU5RR38aoKtvCXucRodXVrs
+         +Aa8cn5gZiiSFEavz6QqRJwS4s9GN7VgUGs6DvlUXQxEtPJKctQz6HGWr6zj4n2o5ivm
+         H/dc+U8PcYBZL6EiI4HaPWh1ggqiMECrOQLwpQfqbej33BhY1IzyOkfD612nIKCy+Bg9
+         pkXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=yg1fUv5XmE3MkSHRpTSutFI+sRv/JF58IJ+LmQRaHxA=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=f4KqqZjHJLPJxR4Mkp5yqB3XRJ0KdrqLGHBeqRYS2IZMTVnR1ZhMrXaXWuDs7UkUJ2
+         AAUmm7hmo1Uss9mIIK0Or4CqYOOF3tMSEV3koOnZs+Gy7hKwjph1SXVfCQiqRSlgsfqs
+         7sXYfQO3z23ZTz7LvAq9tWqWR5nWhTiP7ABZ88jUeSSKnGq88mBaKlTm2R8JLW0JSDgM
+         NgjC6AXOdg1zV5p1gk5YuC7Mx/RWv97KpFBdH6ygVo+QdTfYVa9Omhf4Ol5mZKPSul6S
+         WN8mnEaAWrrdmfBfSoQ7JNUfD54YK40sxj5v7wo53k1sTI5CeUtmLeruMWFz4nr0apnX
+         k9+A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=laT9faC3;
+       spf=pass (google.com: domain of durgapurwomenscollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=durgapurwomenscollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <durgapurwomenscollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 4fb4d7f45d1cf-5c4661d93basor88269a12.11.2024.09.19.23.15.43
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 19 Sep 2024 23:15:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of durgapurwomenscollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=laT9faC3;
+       spf=pass (google.com: domain of durgapurwomenscollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=durgapurwomenscollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726812943; x=1727417743; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yg1fUv5XmE3MkSHRpTSutFI+sRv/JF58IJ+LmQRaHxA=;
+        b=laT9faC3pfiII8cqxRnwDFMi+D2Mj/azKz0gYVHSlBPhfwDdDNucc4lH8kPmSBAOnk
+         v01xlqjsXSV8nfNeNkxAKvrkstrVXdw5fhVtv2whUZPYOWEGKz6QwgRkJywDWFh6SHxh
+         910TbPe1YZmXMx3PXWlscYLRWSxHyMxAXgnWZcPNqzCrluSTwCosXo0+avgdE07brHxz
+         Lt5w2Oeu7Vob/tVWShQmFFXgFSZOX9hN4MqfyNjztPZjufv9APQCh8tIBYq+Q2pT7O8t
+         /Ircs/CWkFSF9pFinRkTBp0Ub133aQ4Hz/7w0gDMyag/S09272ERklAipDKL+jg4I90j
+         8eZA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726812943; x=1727417743;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yg1fUv5XmE3MkSHRpTSutFI+sRv/JF58IJ+LmQRaHxA=;
+        b=YynOC2YOz6+Mu3JJiPrmq0hU3OwNcTdMPOOtbD377w27xBGkOn6R1yCXGPcfFdWUN7
+         aQ3wsK2IUw0r1t0yOVJjc93SDUdtPJVyHdDsTnlpYydUkd1hVMbc46eYN1DJe+AnA+xL
+         dnyUBzHRY9YT/PS0H9Hr/f0UssNe0LM+DbP0degaopD0LACJzGbLfctK+W0wB2gthInm
+         RP98TWpsVw8e4Nck23UP5/Uj/WkbX34AtqO9SsADc/afCKAM5ZwexqS2Lj3v2q2Rzg5s
+         xVh6dA5fx/gz5FT3/XKvqjrNKwdpJC2bpUbawCAHXzYU7sqSjbzn5Po9aehJK+/S4/SQ
+         K7BQ==
+X-Gm-Message-State: AOJu0YzlJ7pAJ17XQKgcCZ4SfAK1Ip9ZwNSzP4ZsPW6fcvRm3VTOQCIl
+	oMvzCwX+ZspAMCk8MHQOg4ThLAYlPLqtfaqZgDtx2fRu4TZAe6uaakjBwEHSUCm3Qls9rsSKxED
+	gB8WrFrvjCdfiHdW2NtIIUSQZuW+98g7E
+X-Google-Smtp-Source: AGHT+IFrNPdKUaiiYYUl6B27TcSEbrM81vhnxtH+elhaAdB9OshrwVRH1JkIgLHDHu0jeYvjEe58B8IgXmxVRoP5R5c=
+X-Received: by 2002:a05:6402:510e:b0:5c2:609d:397e with SMTP id
+ 4fb4d7f45d1cf-5c464a439d6mr1008592a12.15.1726812942813; Thu, 19 Sep 2024
+ 23:15:42 -0700 (PDT)
+MIME-Version: 1.0
+From: Durgapur womens <durgapurwomenscollege@gmail.com>
+Date: Fri, 20 Sep 2024 11:45:30 +0530
+Message-ID: <CAN-LnvJn3-g_v9EkNyRS_u+HAL-=TiK0W6W4JHsw1jtHONSqGA@mail.gmail.com>
+Subject: from Durgapur Women's College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000000cd204062286f8f0"
+
+--0000000000000cd204062286f8f0
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+No one is suspended right now from Durgapur Women's College. The
+termination of  Soummya Kanta Chatterjee  as SACT  of Hindi Departmenthas
+been approved by Governing Body of the College and the papers was sent to
+Higher Education,Bikash Bhawan , kolkata.
+
+*Dr. Mahananda Kanjilal*
+*Principal*
+*Durgapur Women's College*
+*M.G.Road, Durgapur**-713209*
+*Dist: Paschim Bardhaman*
+
+--0000000000000cd204062286f8f0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir,<div>No one is suspended right now from Durgapur Women=
+&#39;s College. The termination of=C2=A0 Soummya Kanta Chatterjee=C2=A0 as =
+SACT=C2=A0 of Hindi Departmenthas been approved by Governing Body of the Co=
+llege and the papers was sent to Higher Education,Bikash Bhawan , kolkata.<=
+br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signa=
+ture"><div dir=3D"ltr"><div style=3D"color:rgb(34,34,34)"><b><font color=3D=
+"#0000ff"><br></font></b></div><div style=3D"color:rgb(34,34,34)"><b><font =
+color=3D"#0000ff">Dr. Mahananda Kanjilal</font></b></div><div style=3D"colo=
+r:rgb(34,34,34)"><b><font color=3D"#0000ff">Principal</font></b></div><div =
+style=3D"color:rgb(34,34,34)"><b><font color=3D"#0000ff">Durgapur Women&#39=
+;s College</font></b></div><div style=3D"color:rgb(34,34,34)"><b><font colo=
+r=3D"#0000ff">M.G.Road, Durgapur</font></b><b><font color=3D"#0000ff">-7132=
+09</font></b></div><div style=3D"color:rgb(34,34,34)"><b><font color=3D"#00=
+00ff">Dist: Paschim Bardhaman</font></b></div></div></div></div></div>
+
+--0000000000000cd204062286f8f0--

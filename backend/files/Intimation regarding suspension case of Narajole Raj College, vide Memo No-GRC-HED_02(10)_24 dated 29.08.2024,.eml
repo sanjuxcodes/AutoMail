@@ -1,0 +1,132 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:a8c:b0:89:ead2:3829 with SMTP id dd12csp614381dlb;
+        Tue, 17 Sep 2024 22:58:35 -0700 (PDT)
+X-Received: by 2002:a05:6830:6a99:b0:710:fae8:fcbd with SMTP id 46e09a7af769-7110956b3d6mr15457068a34.22.1726639115461;
+        Tue, 17 Sep 2024 22:58:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726639115; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bjVfR1pABn/+h+rXuHEMdv0ak2ZPvD0FdI4knZObrXDy5viwr5b3qMYY5b+CtA799T
+         V9d56MZOrztrpDMwse8lBTTipPD82kmj4VbXsxk9Tqm92hl4mPT7rJXJCVWK2Zjz4KlZ
+         F4bxnFocp06PyC3DRvfld5UwvB6JQM4imifWIvJjYCDv0onHRYQGu+dPAir7d+GdU+Hs
+         QlDhjz2zwNibCAbAmQwUbUxwE90MxsTIY2+pEbdchfb6c1hhd2peWEcwmalgsHbwmUHb
+         K7Bvp6LDPzcRcovGvP8tbNCu33ZWl3dDj+cR7eH3JvpBuPhyFmBkjtVNYodZCmQFWc4n
+         YSCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=YkBUWPCOE6gR4m1MVVLVJ5rRZL0bJLYd30spadwtV6g=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=XnNjWgWCcX/5vyUFgHzLE5Ng9GFL1qVQGchF+TRAOM+HS8jcfKhP90NMt57+jy6XSK
+         hiW3+/b1tE04ChkWDgYQe/APAs+PFfhxNUcnumElOUWgjl8fxGF64mDgR7Erd1oI4MS3
+         xcwXWXFLhsVA9P4N45Z6VR9UJBf+Ppct9H3m0LhEyzj3fOB+HMlcHk0S+JHK9zqJfRfK
+         /f6FawShYUy5RzW7EZ2I5XRvXtVYrXexS7F2QhvQCV+XSSe2+vF3xZGbHMI9+jmemM+U
+         1RMJ0aIFqkoXCT4EluMhSzDXuFAzunDj6QU9xhYOUAb2qFip+F+bXKix1wU7uAvahD+Q
+         B00Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=bVF+Z07v;
+       spf=pass (google.com: domain of principalnarajolerajcollege23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalnarajolerajcollege23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principalnarajolerajcollege23@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 46e09a7af769-71239dad982sor3990537a34.0.2024.09.17.22.58.35
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Tue, 17 Sep 2024 22:58:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principalnarajolerajcollege23@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=bVF+Z07v;
+       spf=pass (google.com: domain of principalnarajolerajcollege23@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalnarajolerajcollege23@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726639115; x=1727243915; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=YkBUWPCOE6gR4m1MVVLVJ5rRZL0bJLYd30spadwtV6g=;
+        b=bVF+Z07vS/sYdUDcm0a9R/+zN+FIUiHe9+PBL0GSkjfU6Z/0bV8jLaOWOZdrrqREbI
+         z40Iv1AFnIYp0tCNXnTyhktBfCCqCh1PfAoHaYsZdQhktl6/YTmqe+MJEr3xX5srt1gK
+         8eRH8rEyA73ZHjJhlIkeuWI1sYVOtpTPRV0RQyr9DXXT/5z2ertWcVeYsxj34rTQ+Vvz
+         VfT53t3VGcZ2CtQFhx1leazZiYgbXxMWiyByDuG4APGAhOEGNpdddV0vz0XkkX93LhJw
+         24vC3JvZVfKcEfSECdhB5RBdrU01qMQGdcJehqZf/LVG+MNlehr24a/IRl5WnMnKesl3
+         gcUw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726639115; x=1727243915;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=YkBUWPCOE6gR4m1MVVLVJ5rRZL0bJLYd30spadwtV6g=;
+        b=K4Dcm2x4eIAIzGW/rmcf0XMjOljGGZ7caGLa1xrUWCNsIhaY4nzDxmIFZ7Y04xm91y
+         saqLYkqbw6KeyfEVUQxEPgejiei3XOBu6WXUVjKvf/jwisotI3r+FLMeIiHWrhhgb+co
+         jZRm16z4WDbqNXpaCygPWe0Dj0uuB4iaSMrTmMNAverofMygDkt5zLQ5igxRyR/xYqho
+         uaGsV/ocKPcXkvKt0PDZRWXY+xRaW1mCsgLNoC11CGPF79vFIp9SjDwDSpZRkGFnMvzV
+         FQBpOix2Ilf1lAfhWMQvnHC1gVB9gJ5HA6Kcwbn7j5j1HgUnrgXbUbuvl9gAbzXdbfOE
+         5kVQ==
+X-Gm-Message-State: AOJu0YyJf5KVXCRWCHWYMDc0ig9tjSNui04u6aHoOcZPmgKggJssCIMI
+	Ik+9Ac8JW3AOkCVhNyC2NTg4x5JM7+LfJs3Wer1do8wSwKfsM23VmdnMm5TR7rSBGPv9XCWYxZn
+	u45bnI9lWH0uBELWarORbf88S04o0mG3r
+X-Google-Smtp-Source: AGHT+IE5dzFMlbGrCYqJs6pR7Gika8cDFn8QidI9/8usoIlgO4/wzqvVXTZ60FlkVMV3OclYCNpbGg03AqekEw/+TTY=
+X-Received: by 2002:a05:6870:7011:b0:260:ffaf:8126 with SMTP id
+ 586e51a60fabf-27c3f253b62mr11282269fac.9.1726639114803; Tue, 17 Sep 2024
+ 22:58:34 -0700 (PDT)
+MIME-Version: 1.0
+From: "Dr. Basudev Mandal" <principalnarajolerajcollege23@gmail.com>
+Date: Wed, 18 Sep 2024 11:28:24 +0530
+Message-ID: <CA+UpfazVfb7L0ZQ=9wAouESk3GmrFM-LbyjMf2HcODc1__xdzg@mail.gmail.com>
+Subject: Intimation regarding suspension case of Narajole Raj College, vide
+ Memo No-GRC-HED/02(10)/24 dated 29.08.2024,
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000017e29706225e7f1c"
+
+--00000000000017e29706225e7f1c
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir,
+With reference to your office note vide Memo No-GRC-HED/02(10)/24 dated
+29.08.2024, I am to inform you that there is no case of suspension pending
+in our College till date. I am unable to print out the format due to
+continuous load shedding till now as our college is under severely flood
+affected (Ghatal Sub-division, Paschim Medinipur).
+Hope, you will consider the matter and take a note of this case.
+
+With thanks and regards,
+
+-- 
+
+*Dr. Basudev Mandal, Ph.D, FSABPrincipal*
+*Narajole Raj College*
+*Kismat, Narajole, Daspur PS*
+*Dist-Paschim Medinipur*
+
+
+*PIN 721211West Bengal, IndiaMob. No.+91 9434185409*
+*Email: bmandalamtvu@gmail.com
+<bmandalamtvu@gmail.com>/principalnarajolerajcollege23@gmail.com
+<principalnarajolerajcollege23@gmail.com>*
+
+--00000000000017e29706225e7f1c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Dear Sir,</div><div>With reference to your office not=
+e vide Memo No-GRC-HED/02(10)/24 dated 29.08.2024, I am to inform you that =
+there is no case of suspension pending in our College till date. I am unabl=
+e=C2=A0to print out the format due to continuous=C2=A0load shedding till no=
+w as our college is under severely=C2=A0flood affected (Ghatal Sub-division=
+, Paschim Medinipur).=C2=A0</div><div>Hope, you will consider the matter an=
+d=C2=A0take a=C2=A0note of this case.</div><div><br></div><div>With thanks =
+and regards,</div><div><br></div><span class=3D"gmail_signature_prefix">-- =
+</span><br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gma=
+il_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><div =
+dir=3D"ltr"><font color=3D"#0000ff"><b>Dr. Basudev Mandal, Ph.D, FSAB<br>Pr=
+incipal</b></font></div><div dir=3D"ltr"><font color=3D"#0000ff"><b>Narajol=
+e Raj College</b></font></div><div dir=3D"ltr"><font color=3D"#0000ff"><b>K=
+ismat, Narajole, Daspur PS</b></font></div><div dir=3D"ltr"><font color=3D"=
+#0000ff"><b>Dist-Paschim Medinipur</b></font></div><div dir=3D"ltr"><font c=
+olor=3D"#0000ff"><b>PIN 721211<br>West Bengal, India<br>Mob. No.+91 9434185=
+409</b></font></div><div dir=3D"ltr"><font color=3D"#0000ff"><b>Email: <a h=
+ref=3D"mailto:bmandalamtvu@gmail.com" target=3D"_blank">bmandalamtvu@gmail.=
+com</a>/<a href=3D"mailto:principalnarajolerajcollege23@gmail.com" target=
+=3D"_blank">principalnarajolerajcollege23@gmail.com</a></b></font></div></d=
+iv></div></div></div></div></div>
+
+--00000000000017e29706225e7f1c--

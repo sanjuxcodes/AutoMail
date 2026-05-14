@@ -1,0 +1,88 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6188:b0:86:fb3e:d4ed with SMTP id n8csp79949dln;
+        Wed, 4 Sep 2024 01:46:09 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGJtrPKOg8R2xRhabcjEg57V4dg2ycK3LOboKdIQizUK8eQF4OEhqJVFV+layjdExTvDUL0
+X-Received: by 2002:a05:6a21:3189:b0:1cc:e42d:4d22 with SMTP id adf61e73a8af0-1cece502c74mr14171404637.18.1725439569572;
+        Wed, 04 Sep 2024 01:46:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725439569; cv=none;
+        d=google.com; s=arc-20240605;
+        b=g/YD5DKR93q7uOz1UfxIzr4u3mXgwypmqueRbCR5RhW50lpQdbmeYv81k2/CkatUxy
+         M3XJ5fXdC0pEkIEmvGYEb7Ezc+Bb72dxDIFhv2XxhfzMYi1X3UNcRcOGOp73s/ZzFw/3
+         N5/sgZ65EyOE+XSaVvRTvVXKPnuRbNW5x49bQm2Ppe5PI3598qF9KAZJPVRaKBgKxJUh
+         CBbex+UrQAZvOPYX4iFemOg0iBvlCXQHFJdkTL0Q2DX8CVf9XOp4nBrBtx+/NClIgytK
+         HuAfmle3dIDkgqza+k6QBFIOLE8UMQ5cUzwM3tx6uu1Xqc8kD2q2qebyZ+Su+wgpsTPl
+         V89A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=cc:from:subject:sender:message-id:to:mime-version:date
+         :dkim-signature;
+        bh=ssrr6nofUJRuclcEyqKntST/wx7d+s80tpcccFo5184=;
+        fh=EUKCKsc3Kk3TLF8pPlZ4vEScH+5SscSenKlipfgtVfA=;
+        b=gRjp4azWglidDIVrOTikyYPfru6vTFjXmELoTLOGqZDlvmcJrMn4+Pae+Nxzr7zoG+
+         QLFHzq0gdoWrWvlwvRvWyRQmWkNdda9CLy9BeGZGl4NAvjwJ1HycGs0FGLx4ynnPXkEI
+         QqTCenE2KCl4087/5RaZAbU2/tGFrUrYWWO1r6JVTUd4Ilz9q93v/FeH9bSFA8XDVGRW
+         YuS6KkucMCkxMenMxOUtY5tRwXDKqLPwCjZDpjaLfVGkrMSw2ZQRncYFfaYszIaP9PlS
+         Gqr5rkvJ7BAAzx8ZcPaxjhGgU8aGFEFIGbXU37FyFKisMogRJPB3RgWnHBFMxF95WDA/
+         sgvA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=bv0LGpML;
+       spf=pass (google.com: domain of srgm_burdwan@rediffmail.com designates 114.31.224.118 as permitted sender) smtp.mailfrom=srgm_burdwan@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <srgm_burdwan@rediffmail.com>
+Received: from f5mail-224-118.rediffmail.com (f5mail-224-118.rediffmail.com. [114.31.224.118])
+        by mx.google.com with ESMTPS id d9443c01a7336-206aea2fa24si18187685ad.399.2024.09.04.01.46.08
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Sep 2024 01:46:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srgm_burdwan@rediffmail.com designates 114.31.224.118 as permitted sender) client-ip=114.31.224.118;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=bv0LGpML;
+       spf=pass (google.com: domain of srgm_burdwan@rediffmail.com designates 114.31.224.118 as permitted sender) smtp.mailfrom=srgm_burdwan@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1725439565;
+	bh=ssrr6nofUJRuclcEyqKntST/wx7d+s80tpcccFo5184=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=bv0LGpML+PyszKP39cGLaov2vlmJ7G/3l2QLEmjarp0ozdfcqdcl+K2pxTgXy87iq
+	 OP/m/S8icms6V009zNIDx+0XvtBvWOfJcNQ9+9XcGergHcoSwx07/HhGCkm1kApIV8
+	 wtuTVy+18HxzpLzCzsx7jn4bFJwdC9u1FaiEcC3k=
+Received: (qmail 14662 invoked by uid 510); 4 Sep 2024 08:46:05 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 0
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudehjedgtdekucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgfffkhffhpdfqfgfvnecuuegrihhlohhuthemuceftddtnecunecujfgurhepffggvffkshfuhfevtgesrgdtreertddtjeenucfhrhhomhepfdftrghshhgsvghhrghrihcuifhhohhshhdfuceoshhrghhmpggsuhhrugifrghnsehrvgguihhffhhmrghilhdrtghomheqnecuggftrfgrthhtvghrnhepfffhfeekueehgedtheegfeejgefhueeukeefudfhvdehieeikeduffffleffffffnecukfhppedvvdefrddvvdefrddugedtrdduleegnecuvehluhhsthgvrhfuihiivgeptdenucfrrghrrghmpehmohguvgepshhmthhpohhuth
+X-Remote-IP: 223.223.140.194
+X-REDF-OSEN: srgm_burdwan@rediffmail.com
+Date: 4 Sep 2024 08:46:05 -0000
+MIME-Version: 1.0
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Received: from unknown 223.223.140.194 by rediffmail.com via HTTP; 04 Sep 2024 08:46:05 -0000
+X-Senderscore: D=0&S=0
+Message-ID: <1725439563.S.29093.autosave.drafts.1725439565.14462@webmail.rediffmail.com>
+Sender: srgm_burdwan@rediffmail.com
+Subject: =?utf-8?B?UmVwb3J0IG9uIFN1c3BlbnNpb24gaW4gQ29sbGVnZQ==?=
+From: "Rashbehari Ghosh" <srgm_burdwan@rediffmail.com>
+Cc: "samlasjdpi" <samlasjdpi@gmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_5a68b49e517f6b1552b2ff02b4fe31ff"
+
+--=_5a68b49e517f6b1552b2ff02b4fe31ff
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+As per the office records, there is no cases of suspension of any employee. Our college which is located in Ukhrid, Khandaghosh, Purba Bardhaman has not faced such issue since its journey from 10.10.2010.
+
+regards
+
+Principal
+Sir Rashbehari Ghosh Mahavidyalaya
+--=_5a68b49e517f6b1552b2ff02b4fe31ff
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+Sir,<br />As per the office records, there is no cases of suspension of any=
+ employee. Our college which is located in Ukhrid, Khandaghosh, Purba Bardh=
+aman has not faced such issue since its journey from 10.10.2010.<br /><br /=
+>regards<br /><br />Principal<br />Sir Rashbehari Ghosh Mahavidyalaya<br>
+--=_5a68b49e517f6b1552b2ff02b4fe31ff--

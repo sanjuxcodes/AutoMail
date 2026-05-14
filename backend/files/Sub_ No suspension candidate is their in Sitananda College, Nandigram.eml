@@ -1,0 +1,143 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1888609dlb;
+        Sun, 22 Sep 2024 10:07:40 -0700 (PDT)
+X-Received: by 2002:a05:6a21:2d86:b0:1d2:e945:1779 with SMTP id adf61e73a8af0-1d30a987f41mr12011528637.36.1727024860045;
+        Sun, 22 Sep 2024 10:07:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727024860; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BWBT97eh63Nclu3DnY3LjeMIYkjhOZ7f4C3Wzm4VAw/AvYyrWPFeFELRGEXUPhiSyM
+         W26tBP1qijQCkQ2OU0vP6nK2+HJxSaIArkli+pEsEwoEd2FBFtJvPM/KHE/1wEaf2XX1
+         hqggHbslbNDf4zjY1oT0+hUfUTrx8CtsZqS39rEnoXFm1FIFKHSfmbC+3wSey8RuDk03
+         5yMnbn4Xga7sh+Dc3meX74QNlKu+gauaZ7OXeYhl4TpDNtuSuaxHor3Jiy5b3/AWAsU7
+         Wg457aeLYnqY+sc5QdQpuU6kjVDfHFv/n1lbKIFpLfYLenr4eRFSjJbbXBdGEtMJlTgH
+         gzxA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=KqX+rx6vmdQheiku1ThLaO61NRUAciqZuidd1/mdTB0=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=UmrNiGZbUylfktYSdF2l16YTjV9Pe9TFU8ToL3eb6NapzSbxQcUvt5xnUKo+CxooRd
+         fhvY8nAkjLycK8l4EI0j4J/gY/I4zCDTDTc55So27YCdFN/X3028MzbSd5vafeKnfa0L
+         72L9e85DKV0AAmGHjWUEXR3wvZafZLVSGRUvImGvckDOHp12ECvph3NOzL+GZ2XSlsEt
+         bOwKxejyuJJY3+ZG1oMYyZqH0MyDkCFV2/+IACRMCJuYPX7SgfcmGIfuhpKgSDqeRLSh
+         qoV1Y9gUiJJmoGJ8eVZD/cw4BSKFISLg52XVmx2S9KRTZ26ELQ8bg4JRzlVvME3MbPeP
+         vNTQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.vidyasagar.ac.in header.s=google header.b="EbK/SPrZ";
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of sitananda_college@mail.vidyasagar.ac.in) smtp.mailfrom=sitananda_college@mail.vidyasagar.ac.in;
+       dara=pass header.i=@gmail.com
+Return-Path: <sitananda_college@mail.vidyasagar.ac.in>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 41be03b00d2f7-7db498c584fsor9131570a12.1.2024.09.22.10.07.39
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sun, 22 Sep 2024 10:07:39 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of sitananda_college@mail.vidyasagar.ac.in) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.vidyasagar.ac.in header.s=google header.b="EbK/SPrZ";
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of sitananda_college@mail.vidyasagar.ac.in) smtp.mailfrom=sitananda_college@mail.vidyasagar.ac.in;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=mail.vidyasagar.ac.in; s=google; t=1727024859; x=1727629659; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=KqX+rx6vmdQheiku1ThLaO61NRUAciqZuidd1/mdTB0=;
+        b=EbK/SPrZDP6VbXsZINbEXHadK4NgSAA3n6J1tCk13dY5fFaC9tmyljj0gxVhzS76mo
+         JZJaxqPsEZKA2OLJBZP1uHtJBg8jG6EmRL1CSGk2uQvlEYNlneCc51b0jeHpM5q7ZBo6
+         i9Q0KfS7QP0ESHTv8DMu8ROAf97w08EFPfHACOF4HEjAu41B001jdFi14MhDie6RrrNg
+         lWxrfVN2y5w7QUWksdqB2ykswfsKAV/QVeG8U+nKZ5oIT/imzs4fGCbP66Uu1XIwaVNs
+         2gUHpflSNTA6xs9555W0g0X/Lgxc6KpTwCcY1aIrEm/RXjn81MmKAFRRUPt8LHdfcd/V
+         JVFQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727024859; x=1727629659;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=KqX+rx6vmdQheiku1ThLaO61NRUAciqZuidd1/mdTB0=;
+        b=eriBzYHnPcj4tjEvptNpSrJv2BHA8GXUsJxpeJmh3u61hTwXsR5dYQOdVaLTbeBn3C
+         sVJ12Kc4hK+oez/r4Dj/igSNurM1fSbjaAwZlmVUEW0s2KksDttfKpJRNoAMuu1UIl6d
+         AT3BhlUGzih//UYs72Ydmm3q/n3l797geiCnR7FB0v7eSksqB9hGAH+Lk4mLqYjuhe+f
+         DV+VXuwjcUilKZFIt+GLjHhkCXrCkxdAYwcZCyM2XdE0NU604PvAUyfiFXaGkABxpsD8
+         0acOXTAKx3huGcLz1s4GPEaaYm9YU6BwN2Ym1QLCKgS1LGrNTTdRX4xnM1KtdlWvEAKE
+         Fcbg==
+X-Gm-Message-State: AOJu0Yz259CAT42bq4oLkGNfunzaH/zhLsIUVg6DkDRc9VuVu8NXs+wG
+	DUMITH0P15YQg0wnBtPlDwLa8zasSBv7OAjQy7c0MIJqj1+i2t/K7PA8eq0XLqqx+cgsZDnaRf/
+	PcaaqYPGVIPxDwdv+Q0gYcRVXOHS0+93Fsj8f01HZL2tlCOGlow+ZSGaLI3u9zQNHFK17ejfVjz
+	E35OYv9Ic2u7ncCef3javgiuSoZkFyvyl2xaM=
+X-Google-Smtp-Source: AGHT+IEpOwnWcw/5CqeLgpKget41wUcv/gQxS3uMmwmJH55bpnlzWJvGiAlpAuREOwhNQu3+c58SKAyqsrJxvuwnvVY=
+X-Received: by 2002:a17:90b:b0f:b0:2d3:ccaa:453 with SMTP id
+ 98e67ed59e1d1-2dd7f72599amr11384085a91.35.1727024859088; Sun, 22 Sep 2024
+ 10:07:39 -0700 (PDT)
+MIME-Version: 1.0
+From: "Principal / TIC Sitananda College" <sitananda_college@mail.vidyasagar.ac.in>
+Date: Sun, 22 Sep 2024 22:37:26 +0530
+Message-ID: <CAPRLSDw7SL852MMm8XO7PA_78-K-e-ZSXLOcwQw3_atG37ZJDA@mail.gmail.com>
+Subject: Sub: No suspension candidate is their in Sitananda College, Nandigram
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000003eb1840622b84fb8"
+
+--0000000000003eb1840622b84fb8
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+Accountent ( Shri - Gur hari Das) of Sitananda College Nandigram was in
+suspension, but his suspension is already been withdrawn by the GB with
+full pay and allowances.
+
+Principal
+Sitananda College, Nandigram
+
+-- 
+
+
+
+************************************************************************************************************
+*
+CONFIDENTIALITY NOTICE*
+This communication (including any attachment/s) 
+is intended only for the use of the addressee(s) and contains information 
+that is PRIVILEGED AND CONFIDENTIAL. Unauthorized reading, dissemination, 
+distribution, or copying of this communication is prohibited.
+
+*DISCLAIMER*
+Any views or opinions presented in this email are solely those of the 
+author and do not necessarily represent those the University.
+
+WARNING:-
+This communication, including any attachments, may not be free of viruses, 
+interceptions or interference, and may not be compatible with your systems. 
+You should carry out your own virus checks before opening any attachment to 
+this e-mail. The sender of this e-mail and Vidyasagar University shall not 
+be liable for any damage that you may sustain as a result of viruses, 
+incompleteness of this message, a delay in receipt of this message or 
+computer problems experienced.
+
+--0000000000003eb1840622b84fb8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir,<div dir=3D"auto">Accountent ( Shri - Gur hari Das) o=
+f Sitananda College Nandigram was in suspension, but his suspension is alre=
+ady been withdrawn by the GB with full pay and allowances.=C2=A0</div><div =
+dir=3D"auto"><br></div><div dir=3D"auto">Principal=C2=A0</div><div dir=3D"a=
+uto">Sitananda College, Nandigram=C2=A0</div></div>
+
+<br>
+<font size=3D"2"><br><br><br>******************************<wbr>***********=
+*******************<wbr>******************************<wbr>****************=
+**<br><b><br><font color=3D"blue"><font size=3D"1">CONFIDENTIALITY NOTICE</=
+font></font></b></font><font color=3D"blue"><br><font size=3D"1">This commu=
+nication (including any attachment/s) is intended only for the use of the a=
+ddressee(s) and contains information that is PRIVILEGED AND CONFIDENTIAL. U=
+nauthorized reading, dissemination, distribution, or copying of this commun=
+ication is prohibited.</font><br><br><b><font size=3D"1">DISCLAIMER</font><=
+/b><br><font size=3D"1">Any views or </font><font size=3D"1">opinions prese=
+nted in this email are solely those of the author and do not necessarily re=
+present those the University.<br><br>WARNING:-<br>This communication, inclu=
+ding any attachments, may not be free of viruses, interceptions or interfer=
+ence, and may not be compatible with your systems. You should carry out you=
+r own virus checks before opening any attachment to this e-mail. The sender=
+ of this e-mail and Vidyasagar University shall not be liable for any damag=
+e that you may sustain as a result of viruses, incompleteness of this messa=
+ge, a delay in receipt of this message or computer problems experienced.<br=
+></font></font>
+--0000000000003eb1840622b84fb8--

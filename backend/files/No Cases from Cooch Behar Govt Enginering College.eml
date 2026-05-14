@@ -1,0 +1,94 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp1668234dlb;
+        Mon, 2 Sep 2024 02:48:30 -0700 (PDT)
+X-Received: by 2002:a05:6102:50a5:b0:497:70db:ffcf with SMTP id ada2fe7eead31-49a775baad1mr7953374137.19.1725270509870;
+        Mon, 02 Sep 2024 02:48:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725270509; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vp7sZkcjGkrsKe0TB57rnWJMNkUxYx12PIyhYdINJgDQHUKMNegcGEfWb8Qx2gIrqd
+         jhvR2zbjZZGF8CNSbWSAcij7aKGqs1XfVp1i/ehiyIReYqAZKtzemGP4R6RQqVWDlLxY
+         K6xuDaO6hwJogk6BAYna92zr2UDUZqPxenEcqtJA/pxL2a9V7VchNmPcqYNjCU/rezgd
+         9Ye7fdTygPsUAtj9cE8Xp5+66JJTb80+NVZHLd7OTKuAyQ0UTTXq3rwZ5H/DPatekYnq
+         3LQAJMCyX7Rgta0cEAknMJVXbtZcVor3eC6G1UF0FX6kUhPXftfJ5OjLm3F44XQarWDS
+         faZg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=y9gPe1UVdJNj6vtAMB5FOu7had8IK9nl4X2UBmCAmPM=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=YhuHZj1ZjHPIXfQsdVuZg713Av+TAm0IRz64xvVep3pRWKS4+G78pkRL3kS1IVENrZ
+         flE2KJmp4q+DW+Pdfl50BvkSqPQaaw39Chlwcr+rlNffAjOHhGPj8SyWHebb4mBYUNkW
+         9eCK89slDR6iRJAh6grvwYLLoVlxHTe9qUIPv2NBrxHeS370PSaVA3H2qRmnFFM+r1YU
+         j3bybe3vPC9bz116jbYzRD2eNyj36JXolHGwfUxTXpVl3i8E8SEj0ru9k7w62HCOhCSE
+         Dv4DVKmcIRLmwzv9mt6Eb8MNONjdtLoksWbUCtOAjwtJdbugfqWXue8zoLUA1RUPylRw
+         SpRw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=JaQQco2j;
+       spf=pass (google.com: domain of prabaldeb75@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=prabaldeb75@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <prabaldeb75@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ada2fe7eead31-49a5f3aeabasor2064340137.3.2024.09.02.02.48.29
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 02 Sep 2024 02:48:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of prabaldeb75@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=JaQQco2j;
+       spf=pass (google.com: domain of prabaldeb75@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=prabaldeb75@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725270509; x=1725875309; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=y9gPe1UVdJNj6vtAMB5FOu7had8IK9nl4X2UBmCAmPM=;
+        b=JaQQco2jCxUYKGxe6oAippUcu85rHyX7F4xus2YozHTvt/neegbO6KIi/q2NkqaP7s
+         12i3aiN1DsRyOBUswba6FWXMgg1+M2x0tP5LqZzx3+CcMgMBCavUXl2UKxsYKVih++ec
+         rBZon20WSdwf4P3CpYqYeAB/AtkAfgZZ4zYkN3WPUU4bJOM6jbOGCRbZzFJQLW9R7Ozz
+         P/pff01CYmQdlqdUQcGcRhdSPumE+5FQjf/bz13PRraZM8ceErwXk2BmVx5PvMADEd74
+         tIv6o+kg/J/0AbpSdyY/zfUQv4c4FDirCK/86wqzgeOM1P2FwSyIJse/2dbXCJAiWLNh
+         DAqw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725270509; x=1725875309;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=y9gPe1UVdJNj6vtAMB5FOu7had8IK9nl4X2UBmCAmPM=;
+        b=pt4QbgI1Dg4PoReK2G77qYCpqNg8YXPtSFrxQIL8VG32Eq/46DKkNUEe1Ju02H7MMX
+         URYh8AXLaBdCzvFYKU5JqOojMH3RPJHMk3/FqvGat+2PjNcbinH4ar/lzBKcvHm4Erdo
+         SFDzd5OXTwuxQLXyypQOGYxQPj5+ZqnzyVwsM0G52EbUwDJxHrNgtVwuZg+GIrrlCBm0
+         PSV5LMEbp2g0wQWj4mOXg75JIQ8+xPtPceG4BqOj3/Tr9D1XHWdX+OXNK4fuQYWl3BG6
+         c92kqVLBl2GfE4L0G9YyIpTOh6UrBOMHVcBHvZJsLfaxjzkTH0opcV+iY0GiTuYA+eCj
+         Ij8Q==
+X-Gm-Message-State: AOJu0YzvPVvf/uP0NgB1ejSbnagZV3YdUIiKECsXIBd573jUHf4Fivyb
+	f1KTpcSoGlIhK4yd31kFErgbYWM50KnFB2XkblCjFAghD/YcujsaqlSWvwcQRancUYQg7bnKipY
+	Ft0pFSb0LjSIfbqDSwUVPS6cZN6soSg==
+X-Google-Smtp-Source: AGHT+IHqGyuxiYK/7MECopoc9SKsCkkQ/uDihrkGPNIc2/U/jkacse+f8P4gjfmJ9m2b4LGeXEHOG6ExcHGno9I/m/0=
+X-Received: by 2002:a05:6102:dc7:b0:493:bb35:d8f9 with SMTP id
+ ada2fe7eead31-49a774d828emr9742921137.5.1725270509139; Mon, 02 Sep 2024
+ 02:48:29 -0700 (PDT)
+MIME-Version: 1.0
+From: "Dr. Prabal Deb" <prabaldeb75@gmail.com>
+Date: Mon, 2 Sep 2024 15:18:17 +0530
+Message-ID: <CAAhe52-CouVf2mRO8BmadXi11JzjL0TCqAjm+0eHQswd86qObw@mail.gmail.com>
+Subject: No Cases from Cooch Behar Govt Enginering College
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000d6bd7006211fd712"
+
+--000000000000d6bd7006211fd712
+Content-Type: text/plain; charset="UTF-8"
+
+Sir/Madam,
+We don't have any cases in Cooch Behar Govt Enginering College.
+This is for your kind information and necessary action.
+
+--000000000000d6bd7006211fd712
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir/Madam,<div dir=3D"auto">We don&#39;t have any cases i=
+n Cooch Behar Govt Enginering College.=C2=A0</div><div dir=3D"auto">This is=
+ for your kind information and necessary action.=C2=A0</div></div>
+
+--000000000000d6bd7006211fd712--

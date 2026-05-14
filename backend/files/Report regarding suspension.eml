@@ -1,0 +1,94 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:429f:b0:89:ead2:3829 with SMTP id bk31csp507713dlb;
+        Thu, 26 Sep 2024 11:14:36 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHtI4CMp18J+kAJB8ZEN1HwR9KZ+hzMwjGnk183ysiEiHaeN8cJcrIaVrF2WBQNMN2rkMQy
+X-Received: by 2002:ac8:5885:0:b0:458:34df:1e65 with SMTP id d75a77b69052e-45c9f270fbbmr5367091cf.44.1727374476485;
+        Thu, 26 Sep 2024 11:14:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727374476; cv=none;
+        d=google.com; s=arc-20240605;
+        b=RuWuoLlHmsWGOaOQOOxJgR4gbgyp4Cidp78KA3lctljlC6+OFbofJiJz8G2yZPAduW
+         U/kSBDS3JYvLhq5GHrzUMptitZ7ptMOczDNw0KloJuNfSJ8eB1xH+uXBvqtCYhyQDm/d
+         fM4yeWHdG8uX2mUfjW8cR0l+A1DUDXFxjMQfWO7Gspu49tXW76LQ86vvxFZDVyO1kHFr
+         piL6w+eRhBNZhCTYO9J9VRdBImVTGjTOy/pmsMUJcPajla1ymycPPiLFUm72Kqmkabrq
+         SHX7xH2MzTWKh18DxRHKgagnUfE+bpo+vJskrpIw2f9EyGOcK6Woo+w/4GyUrUauO88z
+         uKEQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:content-transfer-encoding:mime-version:subject
+         :message-id:to:from:date:dkim-signature;
+        bh=sjJaCzxCc9Jb/+DmAeSnQw2d9lGHk0+L0fnqcSBHJ/M=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=AeGUOJb2joOCSnpYoJ2JUIodJjPqcHsl5ZmPRJEW32va/wJDg2tSkfoH+hIhKeQL2g
+         cO+lS10kUFtaZY4l6LXpVNXt1six5gPPc3JJhzN9QO/n9dF1ZVNdHQa7LrSA8SQdxgLy
+         rVqPRNwbJ7OcLlHXQkU/MbHSr/Zk8n+ADUpox0uGPEgf+9u30ri/4PumLlTVyE8d+BOL
+         tDC4v9Rj74q4PLdnzmzGwojuodJBVqsvIn6sKysRFd0bynjRB/nNrqd+/z893O5FCBzH
+         4PLXohZ936Lq/0wGVZ2oVLTb0G4Za2jTkaiUSjKqUQl4umYG6MQH1xj5j1Cs8UqOQbKD
+         pjow==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=oCt+HyPD;
+       spf=pass (google.com: domain of subhankartripathi@yahoo.com designates 74.6.134.216 as permitted sender) smtp.mailfrom=subhankartripathi@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <subhankartripathi@yahoo.com>
+Received: from sonic315-42.consmr.mail.bf2.yahoo.com (sonic315-42.consmr.mail.bf2.yahoo.com. [74.6.134.216])
+        by mx.google.com with ESMTPS id d75a77b69052e-45c9f32861asi3138921cf.375.2024.09.26.11.14.36
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 26 Sep 2024 11:14:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of subhankartripathi@yahoo.com designates 74.6.134.216 as permitted sender) client-ip=74.6.134.216;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=oCt+HyPD;
+       spf=pass (google.com: domain of subhankartripathi@yahoo.com designates 74.6.134.216 as permitted sender) smtp.mailfrom=subhankartripathi@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727374476; bh=sjJaCzxCc9Jb/+DmAeSnQw2d9lGHk0+L0fnqcSBHJ/M=; h=Date:From:To:Subject:References:From:Subject:Reply-To; b=oCt+HyPD4o2GyRgn6OJ7F21ICeqV0E2b5e8PoZ4Sfp9v5eke8HknIfMCK0qbKdh+IvSbAv/o3o6oQwF/VV+IzCF0k6OJuFqUpME+xjJI5wOCmj81GW7/XwCa1ZZDK8fuy5ggIiIi2WgReAcoHzENpjOEt1SHNj1s6DhUWH81ekpnt/vceGSHXZlQa1JfHnjrYemC+CsZNlZhJ3ZWn0nsBBQ42AYK4N7KJHQaPI+cfrqNvsPLvmbLRR93gG+vgoZUyuhn7k9uGB8rNhAyotEAWVMtuVG6PWK7kvcyiFrQ3m1VOslYktxsJmFZfDbVlVfCt4RWLSaHffJw6wO7yen45Q==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1727374476; bh=4QBGCiOl+EaNrf2uvLZRD42Qjoe3yY9fiGc/HEgy17P=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=DxdsIavZENy7jQZPykhnQHUDO3PTwPog+GbAMqmS5edewW4qSqisWyZ7wqg8bcxwDe8qsG6OVNVXpo9+lPNRuGZGILv6gDMpjww7beA6osY5Cv289S20KHzO0/+2pRvRfa3iS/BGAv6qQKWole5+gLioUygUtzqDWVaVAqkf/Vn0T2U9IOa5/UipBVe3aNHujEMjIhnbTnVyQ67MXBYiQiq/LD3IaiV2eRiJbeo1FHJUCJGQoYYPFCxJHBv16qa/6qa5h/VCo1HGu1Ala8sBMIiAPxXrNTr4zfWScop+65xEiLe6wbScqzM6u0DAW5HJ4oeYso1ZnBvU6/tRx5Zxvw==
+X-YMail-OSG: rZOLSAMVM1navw6hNgpI1myI9cTU9ZrKJzeP6K2YsyG4Xk92uJp0IVuVcL6LF3_
+ wr4z.YqUhV2_C8EFmhAUC1h.gQ2wlTd_G7SqgxymGHgRth_JXIUxcvOfR2OR8lFCGm3hRpZU2Hs0
+ Fxccy60CEfmGIuN2QAYarAjagLB9SLuNylZUXk59l43YznQeqUY3knoVjhGtCbMgY_jEwHYYSXIr
+ _T_refH4hesFy6jMrszkM3SpW2Cdbz2ef6YAILMZLJfnKDE4015GuoVP156IcaDA5H9mLqSo41_6
+ lfSDkL6LIfgvUUWYLSdccCsmDm7lTLCZKvf15nGsUNPJBFkVr3zNz5L9XkQn4dYMawIfrPzO1SE.
+ tM6SnzafpWEDdjBtMMdaTGM_KM5.eimuozydH45Y9Z14pn3ELY62Pr5ZZ4evWCE3QGJAdlykWo7S
+ AjtR8jCpDo0i_B5RG3lQSwR6lgCF6nhyJVbfSOqF0AVThrk_pHzgooRLrCn1wLdXb7NwerUdS1Z2
+ PL83WXf8ov0vjanynCWOgL22gkDCSfiTyZBsqxq2fA3Z8P5pXoxdwt32E30OG6HwIOGDG2CRv30g
+ 4OUAvr0UDDeMvDnsFemceh6rKcMNAuTIQF43Kfu8ycGC1BBR_aiVzPOr83HaMVchyIThYjWfZVcB
+ Fthaf73WAPsdaoULrsbPGA2u_6NU3ftr0_PovrKgebpsiWfqvVj7KZOdMaJoLN0fQM4F_u1pqGGx
+ fh6Fu3YZ4Q6xoxpLKExtL81I79sySeYUnyRxOT_sYor_cwI.2f8wunpe2sVByWc0QfbWB4UXK6Zh
+ pio0VL0MnuwzD88Im2TqRfNLwbxWNuB.XMl_q_x34wvEZb3CLD2xRhFEuzS0CyZWdkcCVAudrHTo
+ d8pvVKYLAwCblkLOqmsjpwhLfc5OHCgfHzPW_u9_ws86jejGeifq72Dayp4uuDVFAXta47ONZxtY
+ xhsztiTPVf25x_Ex3N_B4dBS4Eyv0_N_9oB9EJ3TVwP0BybwU6DKFookD9zMikcPQR.v01TSMwyT
+ 47maezOhvAVZDltQqcat9t_aXxTazam4_N5pXTVzDmm2NVHxfhUfKjN7yb4onxV1uD_.BDPsQuYZ
+ 0Qzw17X8mMxPSxPUVi1QKVj1vk3o90OAbPYeeNDoRYUsVO_mnqm6AqJWNsvECD.cTo_e8hUXxSol
+ JbjQRg2qGnhEA1gRfGGqfjjOBCbxC0xSiW9iHzyFhSmdbGYrzWrimm9Nse1jJtyM2_I.5jCEirkK
+ _FKyvQiGfFbMw2ACzwSR9pYU2gjtjsie4LFI8gZLo0Z7yAjRIB9VEuDYaiAj6b952gZeScLDDFNY
+ X53YMrOj9VYV8AKdTzkx8irPq58ZktiZjMHtg4FR5PrxM1DNj9c5Kqald2adXTcQg8Oi.VazNtJ9
+ eByKPb67YuuLoML9ZZjXuzigjt6xNSNL8yfJ0MeuKnQ9ILw0sd343FkeDIonM_AVtIv.GoWCNTCc
+ EpWzYVl8Lx7Q2VoxMqGezJ.Pn.EwsHv2XkORRJaixjhhj1P_J52whtwpHfX.UPwBij3COvExUoMH
+ UyLajLlqSIVZjocxAV5i0xzIT25BDEJUzGAuJjDzleoah7j2nbPw2b9AayeVGUq.z0iLz49ijicf
+ OnnlPrJ1vLlvoDSTrUNoKDcUBTBebojZMf4trA1jEklbmyUYOw6Ff55ETfCogM.nEOtyb6KiI1.i
+ FTcPJ8MNT30h9CSi2PEC6bYPLldNqV0KMYMSjoxqbNfX0oWFQ812Qlwd8.ullBXZl9pYVhTm_ZEG
+ Yus7OMSE5JTeAci7VRdTs0VpRRgHLNixOvSVkdCWYtIKF5Me1nYsGCqYH_yJEA7nTgrv.TOdmIGM
+ 7H8b8pZu_FHjoJqquYil.NrxhULo7LIMdWFFjlGux.f8SU4z3LVUFUNcmU7eOkiF8cMt9L3es.Pn
+ kMponU64XSgogNvgJ8M0U2oOzcom7ao3PRR.XC7CmQJwL7OewDUEWdX3DbU91S6fsdyuBad4K.3R
+ BAeKuRnz5Dg6NPls_I93pVnHtX3Pq.9y.Be2iP.OF9FJf8V6sqawPQUFwkGnessxm802Whxw2vkd
+ cNq43mB594weHk63DuToWqEkdGDZ_cwXn4yLmBpUwuhFU7F.IMWDLvnUJu3BJa512y_ruLoBDHtl
+ HnyA8IIpSwg6tS94GreBuuz6_2iSDiFztm8hB0gwPMinQfh_a14o6PDx2eaeQ4i.y6qaxnH9srcA
+ udNuOsOh6gKaIAWDqn9Cjgf5861A19YL2wKvDQQbND6CfkTFu.8leANerNc3hGzTgYej8XTE-
+X-Sonic-MF: <subhankartripathi@yahoo.com>
+X-Sonic-ID: 3d4270fe-e44f-4f1d-bd61-f602e55bc396
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic315.consmr.mail.bf2.yahoo.com with HTTP; Thu, 26 Sep 2024 18:14:36 +0000
+Date: Thu, 26 Sep 2024 18:12:34 +0000 (UTC)
+From: subhankartripathi@yahoo.com
+To: grievance.hed.wb@gmail.com
+Message-ID: <1119297820.6799827.1727374354803@mail.yahoo.com>
+Subject: Report regarding suspension
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+References: <1119297820.6799827.1727374354803.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YMailMini
+Content-Length: 249
+
+There is none under suspension in Sarsuna college.
+
+------------------------------------------Sent from the Mail-ID of:Dr Subha=
+nkar TripathiPrincipal, Sarsuna College,=C2=A04/HB/A Ho-Chi-Minh Sarani,Sar=
+suna Upanagari,Kolkata- 700061, West Bengal

@@ -1,0 +1,121 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:627:b0:86:fb3e:d4ed with SMTP id 39csp51065dlb;
+        Fri, 6 Sep 2024 01:48:15 -0700 (PDT)
+X-Received: by 2002:a05:6902:268a:b0:e13:d834:604f with SMTP id 3f1490d57ef6-e1d34a1f7d2mr2058215276.50.1725612495405;
+        Fri, 06 Sep 2024 01:48:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725612495; cv=none;
+        d=google.com; s=arc-20160816;
+        b=gFbeiAmEXZOzSQlBkyVKuQkcCY5sBIog/RecrjmLsvW3IFKWCMGko5wrHms0EStJa6
+         bowvQPlGsJCF+8fgGS3hFmBEFUWn3YLfXg+Iad68CZAi12eKZSZyP9c0asPGaHAb0gUj
+         v3rGp427dk0jQYB07Ow1AdazTH1BXBenjzjzPB2RTLJg/YbQEH/pVo2hJmzfaHXrKXic
+         2DfkIHNlmhkJyaOP/fgaM1s255kiZWWD4liaLlDB2bF2r4Zig2h4xkcjQsrXbr7oK9if
+         vUSDIbS+J5QBTJ2ibF7mTS8C8M2axNF2VfQhcAmtqKn6rTckdnoS/aHMzoYyKLsJVNVT
+         uhsA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=oi1KMOHAFzPrf/Fcd+rTu1mDaMaiap9LzDhC7aXmEIE=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=PHfgddQ1UNCuRWSDX69xn35u4lmAM9V2EEKeuAQxdIlGsJn3U1+NZHy7zC+UA7AylM
+         VaK4eDcPLEaeT7KJclXNKJV4YbHhCbWCiby/fa+O6r1EUr8SPVzUkb+/cEhwxwOO/f6n
+         0YtL9mV+sTQ2jv8wjifCp7jhyXAolhHFJb7LqaTVkvKgqnvDRc+hwf4mU1UT5Bux1Z84
+         yMW2aIcOzP6ETC2hGgM9B7D000/strGH3vNScSJrEGzRgx78mNgl0xdZWdPW5IdNJik/
+         Pd7kMPV/0w/EfDATt8IhwZn6CPBZS4icxtuNa7pH03pnXTUnBNiormMH4rBrODLANSQi
+         1bSA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="F/2rRB/S";
+       spf=pass (google.com: domain of saldihacollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=saldihacollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <saldihacollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 3f1490d57ef6-e1d1da542c3sor1606195276.10.2024.09.06.01.48.15
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 06 Sep 2024 01:48:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of saldihacollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="F/2rRB/S";
+       spf=pass (google.com: domain of saldihacollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=saldihacollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725612495; x=1726217295; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=oi1KMOHAFzPrf/Fcd+rTu1mDaMaiap9LzDhC7aXmEIE=;
+        b=F/2rRB/Sezp5pMJkHto7YqBgO8H1KvIDBoacCmpbqhqRQnPCE+nc8D/Wfnmpdntmzi
+         eBd4rY3AducnyCgeiK1PJJJegD5u6OLHHUVAdvgA2IVb3Pna7gri2X35OUU4g37Llyq/
+         1yefR+xiYwULvKa32wBZg2zdNDurCA2eMLx0ntqybbOs2pbbWE0ne+y9kji8eeCF8WyS
+         XvnpbrSQti45sZVLdX9m6gLYYm6dJ6dhVFHXI9gvrSUDWCOozzZ9imqia+BzgfcbAXrf
+         F722hId28XWoKWuku4ZR0zEayGrIyXYQfBeZgojP8VUwvIybY7waHX52tcPN/giqIfi4
+         oPow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725612495; x=1726217295;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oi1KMOHAFzPrf/Fcd+rTu1mDaMaiap9LzDhC7aXmEIE=;
+        b=XTSVaAvEv8weY23Ijg/J57MNS71XNQXadZzojBVsDApEQLqBdkp8njU3zD7Npa/QQS
+         puAFHhDf+XXSgu7ppiKljWCwXKC2q9BHHn/GfNeyizhYfVPppdbE2+Jg19Ki1DlrX0wB
+         L+Ij14R8IOgT2BtzohaGhiinffcSPH6mGUhhcKUaTDbPsLlqiVJwKuc6hVGTj2XKu8Ne
+         FP9PlA7nkp/Nekpub7k5DcPzavTyQDZqsmQfkOn+PfO4Pt88BLLvH560m4Ndc4Iyw5Jh
+         jchiNkZfuienfqLXB4/CF490GLSxzQYYVB3Szic7KPw71jLaO7Tb5hQmzTgSJLZ2iDA1
+         WNYA==
+X-Gm-Message-State: AOJu0YzGpYAXjyOoC3ILeyeVPN/AwTbhfvbPI7igpG1QBxksa+7soSMv
+	1jVjb6OdyFm9vQper9iccFf+NxQZxZSnspyJ4XZ3AqkrvHO9TAiNi2mPRSd98STAu1fzOJ5ZtGO
+	cjxMMWZArDiG82t9VUQO95IhDNKat8w==
+X-Google-Smtp-Source: AGHT+IFoLG4Io5a92+/jWQ0aA7ngdI2LVj4duqFDCIgbg0i63AiX5jC0KHzasg4vrRevv+Du9zDX6h09TJ3MqedlD58=
+X-Received: by 2002:a05:6902:70a:b0:e1a:8d78:8d5d with SMTP id
+ 3f1490d57ef6-e1d34a23a93mr2369222276.56.1725612494710; Fri, 06 Sep 2024
+ 01:48:14 -0700 (PDT)
+MIME-Version: 1.0
+From: SALDIHA COLLEGE <saldihacollege@gmail.com>
+Date: Fri, 6 Sep 2024 14:17:16 +0530
+Message-ID: <CAPzqMt9vUx0vVqt0N=jAz4sp+jf39VWUxfbq50NBd-bADQppXQ@mail.gmail.com>
+Subject: Information regarding suspended officials of Saldiha College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c472b606216f7798"
+
+--000000000000c472b606216f7798
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir,
+   As per your instruction, I am sending herewith the details of the
+suspended Principal of Saldiha College.
+1. Name of the Suspended Employee : Dr. Shaikh Sirajuddin
+2.  Name of the office/Institution with address:  Saldiha College,
+Vill+P.O.-Saldiha, Dist-Bankura, WestBengal, Pin-722173
+3.  Suspended from :   01.06.2024
+4.  Reason for suspension:   Dr. Shaikh Sirajuddin is under jail custody
+vide PS Case No. 428/2023 dated 02.12.23.
+
+With regards,
+Teacher-In-Charge
+(Dr. Sanjoy Mukherjee)
+*Saldiha College (Under Bankura University)*
+*Saldiha, Bankura-722173*
+*West Bengal, INDIA*
+
+--000000000000c472b606216f7798
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br clear=3D"all"><div>Respected Sir,</div><div>=C2=A0 =C2=
+=A0As per your instruction, I am sending herewith the details of the suspen=
+ded Principal of Saldiha College.</div><div>1. Name of the Suspended Employ=
+ee : Dr. Shaikh Sirajuddin</div><div>2.=C2=A0 Name of the office/Institutio=
+n with address:=C2=A0 Saldiha College, Vill+P.O.-Saldiha, Dist-Bankura, Wes=
+tBengal, Pin-722173</div><div>3.=C2=A0 Suspended from :=C2=A0 =C2=A001.06.2=
+024</div><div>4.=C2=A0 Reason for suspension:=C2=A0 =C2=A0Dr. Shaikh Siraju=
+ddin is under jail custody vide PS Case No. 428/2023 dated 02.12.23.</div><=
+div><br></div><div>With regards,</div><div>Teacher-In-Charge</div>(Dr. Sanj=
+oy Mukherjee)<div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"g=
+mail_signature"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><div><b><font color=3D"#741b47">Saldiha College (=
+Under Bankura University)</font></b></div><div><font color=3D"#741b47"><spa=
+n style=3D"font-size:12.8px"><b>Saldiha, Bankura-722173</b></span><br></fon=
+t></div><div><span style=3D"font-size:12.8px"><b><font color=3D"#741b47">We=
+st Bengal, INDIA</font></b></span></div></div></div></div></div></div></div=
+></div>
+
+--000000000000c472b606216f7798--

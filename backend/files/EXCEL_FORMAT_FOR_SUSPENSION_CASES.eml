@@ -1,0 +1,296 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp724029dlb;
+        Fri, 20 Sep 2024 00:40:12 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCXcAKWapqNecNfL4i3uPPbPNEQ6wqXN9zmhSzLdlqIcTzXFATxWBo47D4RfPC7aB7Y4QvaxNY548cf2utDrCyuH@gmail.com
+X-Received: by 2002:a05:6a20:560f:b0:1d3:ef1:2611 with SMTP id adf61e73a8af0-1d30ef12800mr1554009637.6.1726817772705;
+        Fri, 20 Sep 2024 00:36:12 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IH06ZsMc6zjW++nxVuktAxqJ1U5B08vs4519nU/FrpeANAdXtcFpEBCfL4v68f7GJDoajA8
+X-Received: by 2002:a05:6a20:560f:b0:1d3:ef1:2611 with SMTP id adf61e73a8af0-1d30ef12800mr1553951637.6.1726817771244;
+        Fri, 20 Sep 2024 00:36:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726817771; cv=none;
+        d=google.com; s=arc-20240605;
+        b=FekgmqkNhrtTDn4wSaP5Su0ajjuu77NB2zyXhE6GaRDylbpQIXIEO3s3oShMLXv46N
+         +rsV7xliLxGcECk4TvDy8RKDEq+ub9aZEKA4afzjDgb9yc7uQkcebenjXI3R+7RFR+Mo
+         IyY+X2yjBqxWS74BTLKtb7Hrh3jpBF7LoTnLLgZphjbwmduIlUA4YsQI/s7ft3A51Joo
+         +E5f+Iz4fXlM0mebYgVh/POAkinxnU0qmDn8GZcsz56Ko2mjgh641CjfKPEeZRDuirun
+         6fSaJpaGmzxuIqZvqwbg1d9175JFaJtsM1fbcLhPAZxOeM7iYyPHTi/rR2ym0/0aRo39
+         WO7Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:in-reply-to:message-id:to:mime-version:date
+         :dkim-signature;
+        bh=kGIg27OW4wl4oN8mx+eRXBooCZ+0NGL2liiWRCwt+xc=;
+        fh=UuDTo561yq+YG2ZhSmdzoeK3OQKeCd6Tsy9EWLbB06o=;
+        b=IlCx43T6+VVdFBLYmpeZuC7vi3UIBIZ0WrMtlciRq0GinAUvtSzekcusLjUXCsp30n
+         iaGQIc8GG2kfgWVom4b8Q6TodQbTC73omqrQ6m2SzIwVpYALW0acwY/dctMXWKsXdqcH
+         xZXAHlxEUXvQ94kjTopxcZd7VqZvc7EGtIz+4gD3iAC3NDdKkGvySbo66IPk3CA9BH33
+         jBqvXOHc2U4r+zI2jX0Tw6DPXQA4ZSmjwylYzcNcXtKwkaUfiBk4PRMLJvD+TVD3G5ql
+         msG6lTeqteMzruHybc3gsdQeteUUDj7CdqCuzyfitUogijVyh8+KqZjzwULuTVPAQoV9
+         6txQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=Boa5I49E;
+       spf=pass (google.com: domain of sanjib_chatt@rediffmail.com designates 202.137.235.120 as permitted sender) smtp.mailfrom=sanjib_chatt@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <sanjib_chatt@rediffmail.com>
+Received: from f4mail-235-120.rediffmail.com (f4mail-235-120.rediffmail.com. [202.137.235.120])
+        by mx.google.com with ESMTPS id d9443c01a7336-207946d650bsi144506385ad.242.2024.09.20.00.36.10
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 20 Sep 2024 00:36:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sanjib_chatt@rediffmail.com designates 202.137.235.120 as permitted sender) client-ip=202.137.235.120;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=Boa5I49E;
+       spf=pass (google.com: domain of sanjib_chatt@rediffmail.com designates 202.137.235.120 as permitted sender) smtp.mailfrom=sanjib_chatt@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1726817768;
+	bh=kGIg27OW4wl4oN8mx+eRXBooCZ+0NGL2liiWRCwt+xc=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=Boa5I49EGq06BxvymXvMWFU2swsLhdRyzTYCwF7jufTYIYCHnW/9SOSKsBJs76mE7
+	 If/yazmR0cW8r4wLC4uqLUE5JgW7MaK0F+meB6JvUaqn7566O4xEzmFKF8qzlxcO6Z
+	 70Iuz+8uaxAK7srDnjXzv0s0itTivFvGTv8Z0TKc=
+Received: (qmail 16084 invoked by uid 510); 20 Sep 2024 07:36:08 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 30
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudelvddguddvhecutefuodetggdotefrodftvfcurfhrohhfihhlvgemucftgfffkffhhfdpqfgfvfenuceurghilhhouhhtmecufedttdenucgotffhvedqqdevohhnthgvnhhtvfihphgvvdculdeftddmnecujfgurhepffggvffkjghsuffhtgesmhdtreertddtjeenucfhrhhomhepfdfurghnjhhisgcuucevhhgrthhtohhprgguhhihrgihfdcuoehsrghnjhhisggptghhrghtthesrhgvughifhhfmhgrihhlrdgtohhmqeenucggtffrrghtthgvrhhnpefgleffjeeitdeivedttdevfeeikeelveejueehfeejgffhueetjeejtdefheejteenucfkphepuddtfedrvdegtddrleekrdduvddvnecuvehluhhsthgvrhfuihiivgeptdenucfrrghrrghmpehmohguvgepshhmthhpohhuth
+X-Remote-IP: 103.240.98.122
+X-REDF-OSEN: sanjib_chatt@rediffmail.com
+Date: 20 Sep 2024 07:36:08 -0000
+MIME-Version: 1.0
+To: "asisghoshjdpi" <asisghoshjdpi@gmail.com>, <grievance.hed.wb@gmail.com>
+Received: from unknown 103.240.98.122 by rediffmail.com via HTTP; 20 Sep 2024 07:36:08 -0000
+X-Senderscore: D=0&S=0
+Message-ID: <1726817613.S.24781.autosave.drafts.1726817768.15957@webmail.rediffmail.com>
+In-Reply-To: <1721896161.S.22439.autosave.drafts.1721896172.21425@webmail.rediffmail.com>
+Sender: sanjib_chatt@rediffmail.com
+Subject: =?utf-8?B?RVhDRUxfRk9STUFUX0ZPUl9TVVNQRU5TSU9OX0NBU0VT?=
+From: "Sanjib  Chattopadhyay" <sanjib_chatt@rediffmail.com>
+Content-Type: multipart/mixed;
+	boundary="=_1d7d9964564e1fd7ff7c0820f5b89bc9"
+
+--=_1d7d9964564e1fd7ff7c0820f5b89bc9
+Content-Type: multipart/alternative;
+	boundary="=_9024d3515d7110ddfe0bd2f5a9876ec8"
+
+--=_9024d3515d7110ddfe0bd2f5a9876ec8
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+Dr Asis Kumar GhoshJDPI,Higher Education DepartmentBikash Bhaban&nbsp;Kolkata 700091Dear Sir,Sending herewith the EXCEL_FORMAT_FOR_SUSPENSION_CASES&nbsp;for your kind perusal and necessary action. Actually there is no suspension case.&nbsp;
+With RegardsDr Sanjib ChattopadhyayPrincipalBangabasi Evening College
+--=_9024d3515d7110ddfe0bd2f5a9876ec8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<div class=3D"gmail_quote"><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex=
+"><span style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;fo=
+nt-size:12px">Dr Asis Kumar Ghosh</span><br style=3D"color:rgb(0,0,0);font-=
+family:Helvetica,sans-serif,arial;font-size:12px" /><span style=3D"color:rg=
+b(0,0,0);font-family:Helvetica,sans-serif,arial;font-size:12px">JDPI,</span=
+><br style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-=
+size:12px" /><span style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-ser=
+if,arial;font-size:12px">Higher Education Department</span><br style=3D"col=
+or:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-size:12px" /><spa=
+n style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-siz=
+e:12px">Bikash Bhaban&nbsp;</span><br style=3D"color:rgb(0,0,0);font-family=
+:Helvetica,sans-serif,arial;font-size:12px" /><span style=3D"color:rgb(0,0,=
+0);font-family:Helvetica,sans-serif,arial;font-size:12px">Kolkata 700091</s=
+pan><br style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;fo=
+nt-size:12px" /><span style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-=
+serif,arial;font-size:12px">Dear Sir,</span><br style=3D"color:rgb(0,0,0);f=
+ont-family:Helvetica,sans-serif,arial;font-size:12px" /><span style=3D"colo=
+r:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-size:12px">Sending=
+ herewith the </span>EXCEL_FORMAT_FOR_SUSPENSION_CASES<strong><u><span styl=
+e=3D"font-size:14pt;">&nbsp;</span></u></strong><span style=3D"color:rgb(0,=
+0,0);font-family:Helvetica,sans-serif,arial;font-size:12px">for your kind p=
+erusal and necessary action. Actually there is no suspension case.&nbsp;</s=
+pan><br /><span style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,=
+arial;font-size:12px">With Regards</span><br style=3D"color:rgb(0,0,0);font=
+-family:Helvetica,sans-serif,arial;font-size:12px" /><span style=3D"color:r=
+gb(0,0,0);font-family:Helvetica,sans-serif,arial;font-size:12px">Dr Sanjib =
+Chattopadhyay</span><br style=3D"color:rgb(0,0,0);font-family:Helvetica,san=
+s-serif,arial;font-size:12px" /><span style=3D"color:rgb(0,0,0);font-family=
+:Helvetica,sans-serif,arial;font-size:12px">Principal</span><br style=3D"co=
+lor:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-size:12px" /><sp=
+an style=3D"color:rgb(0,0,0);font-family:Helvetica,sans-serif,arial;font-si=
+ze:12px">Bangabasi Evening College</span></blockquote></div><br>
+--=_9024d3515d7110ddfe0bd2f5a9876ec8--
+
+--=_1d7d9964564e1fd7ff7c0820f5b89bc9
+Content-Transfer-Encoding: base64
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+ name="EXCEL_FORMAT_FOR_SUSPENSION_CASES.xlsx"; 
+Content-Disposition: attachment;
+ filename="EXCEL_FORMAT_FOR_SUSPENSION_CASES.xlsx"; 
+
+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
+dDEueG1sUEsFBgAAAAARABEABwQAAC4hAAAAAA==
+--=_1d7d9964564e1fd7ff7c0820f5b89bc9--

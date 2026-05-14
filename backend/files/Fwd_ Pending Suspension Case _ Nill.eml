@@ -1,0 +1,100 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2495:b0:89:ead2:3829 with SMTP id cq21csp161642dlb;
+        Thu, 26 Sep 2024 22:48:29 -0700 (PDT)
+X-Received: by 2002:a17:902:e804:b0:206:a011:32cc with SMTP id d9443c01a7336-20b367d914emr28636285ad.14.1727416109110;
+        Thu, 26 Sep 2024 22:48:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727416109; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XHKHA114V8OzGzEw/q0DZ+RxfToR2joPWU6VvsuRbsQkzfRgJ2E07TJ4T6JBvUOF/G
+         UnADqR03lMhNfj9cSt5g5lx0DOtToDowVjZvDcZsCjagzXvFs6WpbomkTxqFMxxj53YO
+         SgJ30OqRVYa3uVe0oiyo784QgOwhN/E+6w3cF3DIS5TzZs1gNXC6dRQOCBAtHI9GSTh3
+         NzP+oZdbkpxgPwxuqQOCLzL+yOugAzGqnzc5xTama3zTXYlMtO4UiZb/1EwVO03gHTO2
+         MqWmn6xK7a3x+QrrNkfpPuiLMxX3KhDrbgeeeWX1vX4KJwStCbfahv1fjqHgJsIIq0oV
+         FQ8A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:dkim-signature;
+        bh=9NNr6DdoV1sWnoqOv5cbAdO5DburSs4Ik6vTQkVaIt8=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=NEENAtnteTvAUm2sQBCnA9Wul8oL6ozqB/VTanOnUVGz33UwbigMiJefGrv7BXHoA2
+         Huukw62nnGFcgFUgYitdHRHnHWt5k/oBMd/hABCRUB0zLFj/jhb3UJtYz5A87V45iF+r
+         riBUDMQaosRPZA+FTs/IjK7fIWfc2uCyoZ5RQ9bv26lDDkCSgHpdGVp2OLp28+UoxuYQ
+         7TTlikxXNxLMFpX3AtfgsZVQ8Pr4tjZCrXkUqk8Prft8dF6k3w+vP2q89Q/y8FoGLOfs
+         LMdUCK7jadqyEbSdwvL9ndGkvwvqOrrTxnDyx2AtoZTOPWpyfU80AKJBegqMUGiAm/cm
+         uImA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=UR6olJrU;
+       spf=pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=shampasnl119@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <shampasnl119@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d9443c01a7336-20b37d84570sor7935545ad.3.2024.09.26.22.48.28
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 26 Sep 2024 22:48:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=UR6olJrU;
+       spf=pass (google.com: domain of shampasnl119@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=shampasnl119@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727416108; x=1728020908; dara=google.com;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=9NNr6DdoV1sWnoqOv5cbAdO5DburSs4Ik6vTQkVaIt8=;
+        b=UR6olJrUfMC4W7adhqxbhBk3XN+hiKFe4kP+hGbqyD8R44ODOvWjcMYPRPTFIC484a
+         tT466SpG+MCZbYRcWAGlhbf1FXOAc0wGKhdrqrMFmKVBQ9eE5KqtfI92P4xotjDWtanz
+         ORhOa8VwvaChE4Lj9Sz3GFRuWPjlWf8jMuX5dDVff49L7eJTIA3pMjhVSc19xDKe1KVz
+         ONp8Zusujqsy+qiIpXN83i2w3ogvf/BgQfgVdn/f7D4tGetJTYCvfZYaSku6f8Tx2nOG
+         h9R4tMxgZc+NcR/czIOoWfy+xuFaz5gu2lYoWkVJ3OJqXZUukYP/zKW/nsu7fBsPMu7C
+         58mw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727416108; x=1728020908;
+        h=content-transfer-encoding:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=9NNr6DdoV1sWnoqOv5cbAdO5DburSs4Ik6vTQkVaIt8=;
+        b=h3FyDzdfPWXP7liIaSY8sK72Eb2IBDOjjp+xG59qclpktnVN0U9kXntBtvxbyxYdv3
+         HK5i/s6o1OzQSCHxc8kg3DFTEW8QmJ1ssMjynBGtR3T6ANu2Xv/sAhObb8IZYl3/e4g1
+         oDhPj+CaISzWqBs+C9JwcanGL9c3IR4TMXZvBp0pgAaIGhz5J/ajaybPBsSNg657Zd2N
+         sNngqKu8+B1vDQzHxTWK/YaF7Bem6jePZ9bnvgazTVDNP+TZsDr3gXPMWKM//nz5gQvT
+         z4tRDguCQSCV6PxfIYsVqxFcvhnL+X1foUwAtjSwPRnHc9SMTqCuxdSyqspABMX7O5Yo
+         jAFQ==
+X-Gm-Message-State: AOJu0YwlnKETpyAT3t9uj8HIiUpKelONY9t0YcH3SjZtW+qxvBJ13i9s
+	uqTTsnBQsd/197zYcZjH8nkMEVOi050z4x0nmvTZmwg2pm3CohODSLfwyahRM+ubvPTsJXXd3Ci
+	bSnfprapBFG2dGTA7qh7ymwnc3ZWyIw==
+X-Google-Smtp-Source: AGHT+IGxnP3a+S24fNVxkbaNRcBWbnTTAGXb8fiolqqkUYwbIi/WoMjj5UPiGHHB4fHHAskdpq0xqQRGGRqSgoJqHWE=
+X-Received: by 2002:a17:903:2348:b0:202:3103:c250 with SMTP id
+ d9443c01a7336-20b37b7519fmr37927475ad.38.1727416108101; Thu, 26 Sep 2024
+ 22:48:28 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAOmhSvhJM6teEwg2PT2kQHROp8sjnaZ17bwsdcfcffG08QGF_A@mail.gmail.com>
+In-Reply-To: <CAOmhSvhJM6teEwg2PT2kQHROp8sjnaZ17bwsdcfcffG08QGF_A@mail.gmail.com>
+From: Shampa Mitra Sanyal <shampasnl119@gmail.com>
+Date: Fri, 27 Sep 2024 11:17:52 +0530
+Message-ID: <CABLuPV94YVa=5micOzRmH3YrfdcYee4Y=020EY-hCigNOG8auQ@mail.gmail.com>
+Subject: Fwd: Pending Suspension Case : Nill
+To: grievance.hed.wb@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: Shirakole Mahavidyalaya <shirakolemv@gmail.com>
+Date: Fri, Sep 27, 2024 at 11:14=E2=80=AFAM
+Subject: Pending Suspension Case : Nill
+To: Shampa Mitra Sanyal <shampasnl119@gmail.com>
+
+
+Respected Ma'am,
+
+This is to  inform you that, there is No pending suspension case in our col=
+lege.
+
+With regards,
+Dr. Samiran Mandal
+Principal
+Shirakole Mahavidyalaya

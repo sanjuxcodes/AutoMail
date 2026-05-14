@@ -1,0 +1,110 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp2132816dlb;
+        Mon, 23 Sep 2024 01:45:06 -0700 (PDT)
+X-Received: by 2002:a17:90a:c2c7:b0:2d8:8fe9:b015 with SMTP id 98e67ed59e1d1-2dd7f79e457mr14179974a91.39.1727081106542;
+        Mon, 23 Sep 2024 01:45:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727081106; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Qqnv+6CuVgnfaMDzKoTR5dtSYnG76YXPX7iiyoxBMDSKwEJXuIsI7bfYtq9Nd2lykU
+         VGSqA9yX6OFfi/mrRjPYrKqq1B0eRRQ7AuoAVEhEQ4+NyRyTf/KPHcSuZ5R7587JSmA1
+         muCbkisUyJa27bz0xynn1AvKR4matVnrZm2c62psWG4K0PaXflJu4A30clHJhI0Qx721
+         IDgLho+9lvKELUUrDDCLZzl96bRmL6KU6Ek6U2S2blKK7kFvds/GRtHwn0MuI67iPRKH
+         jcp0UHc0bGuc+O6IG7wGE9SWmrNOC69qMDc3h7UvGAC99z/AVla+ayFLsLnqKaL2bllu
+         iZ0w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=sU5qkAKfBEn9vuptzPnH9WMSDlU/h7DCWvuC7h470oo=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=uFerhi1D9ZFOsy78w8caSqeyXjDEPGIt0M3x+RWAcH6bYcx12PggwSrkWAtHQwUvs7
+         07or+QfWb2J+JAHai+f4ZrPLG3aTFgMpOt0wbePAv5/H7Wh2gl1Hnj1i+sWxTFvTzt54
+         29PQYxJPH4lwJwOCnBmR0qddyvElDjZhQuFR8XFYLHhNSj5lyN97JXR22hT9p9CD0Pm/
+         Evy9GDYhxi+z91MTgnSfu1iK9kHFVk8wSBwxD+UST75+JhnSRi8KYmPdY5tLlMzecyy0
+         78kI45/2X/fFu1q3SQASnfUxMAYYvP/5RNWu9uZ5lDdbBG9dASfczQ0Lcp5Qmol0A2R2
+         PmlA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Zr7yOOgf;
+       spf=pass (google.com: domain of bkccollegebonhooghly@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bkccollegebonhooghly@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <bkccollegebonhooghly@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 98e67ed59e1d1-2dbd01d4e11sor9474860a91.4.2024.09.23.01.45.06
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 23 Sep 2024 01:45:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bkccollegebonhooghly@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Zr7yOOgf;
+       spf=pass (google.com: domain of bkccollegebonhooghly@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bkccollegebonhooghly@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727081106; x=1727685906; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=sU5qkAKfBEn9vuptzPnH9WMSDlU/h7DCWvuC7h470oo=;
+        b=Zr7yOOgfy4+keHQYwxpJsH0bFFXn50t78MjUyuaBX6OhFzbg0mAMlq30Q5wUe6B99m
+         mG3X5oqappp/oI4TqmtTOIUKrBAkRU80DSSIzc1Mcr4MOvFO3z4gPOmoafvx8e2SjXhx
+         NlbMpJlBU5PxaSOohqGSsO6nrYpV9Rs7mLxfCwN+bDSUdNWaZMEDF3WvPRd1/DsPisiS
+         X0M2+kWt5f8SM/cJFfYFTNmRz3i8xAwr1jIbHlhx99c7qXUBK9CFXfJf1v/tbV1ZEQ0t
+         WWauIf1nDEnbwo7qtmb9ck0oWGy0IN6PHXCkf2hsWoX8YE5p15nBl2OOOyAQkxV/W2g3
+         FTcA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727081106; x=1727685906;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=sU5qkAKfBEn9vuptzPnH9WMSDlU/h7DCWvuC7h470oo=;
+        b=GjwaMz41y7mKCAwfkxG6iBRIhkQ368UpW7/M6Ve1ouTkufrxzn2wIrjfBUI1LP2NZL
+         zzWLE5tVszEenRBEk9Lm5t7inHyR1qEh+G12C3D3/Vu3lQt0moSN7ZvhXr5IOvPx4xvz
+         muJfHOHKseXAhRwQfBvULRqZirlvEMi8CdN7vfKANbxPiJJg27IvfZXbFfiCx19zy613
+         xlGbV2A2o8fSeB/HTneOrPPtnVRB1ryt+5ZbMDPhi/9m8R5mTgbqGmCQgJjgs/jFtFkn
+         tpp9pyNEs6/JIyQC31Dcxrnlz0vdWzixLJQ79zflAx1T95GJYMS7x1CjJlqcUy0E8p2P
+         GiMw==
+X-Gm-Message-State: AOJu0YzPxBDzw0ikuAKIUgz6siJVaAcqtxQc4uU7Vahkhhh4usZD8zSI
+	A0IW5wprOFuaRcjNWGmQHaCTc5Re3iHm7PMwgKuUrhiii2z+bB2SycixmatNmRMjhrL8q4R7JAy
+	j398rWgBkVDGOHipsd7qjUDygnXGlFg==
+X-Google-Smtp-Source: AGHT+IFROE6nCRcwq73PUnSA52vhik8RDc42XymMtNmLpbgFCBf+3q6rKpqGv/gh8Ku/xGPP30gNOXXrs32kA+SCq74=
+X-Received: by 2002:a17:90b:3b45:b0:2d8:d098:4f31 with SMTP id
+ 98e67ed59e1d1-2dd7f450f19mr12279852a91.17.1727081105829; Mon, 23 Sep 2024
+ 01:45:05 -0700 (PDT)
+MIME-Version: 1.0
+From: Brahmananda Keshab Chandra College <bkccollegebonhooghly@gmail.com>
+Date: Mon, 23 Sep 2024 14:12:45 +0530
+Message-ID: <CAPmzE6x4TGXRtjX644obB3suWmXSbZc29fD7ue5cwG11cCJe7Q@mail.gmail.com>
+Subject: Report on suspension case from BKC College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000cfba8f0622c567a4"
+
+--000000000000cfba8f0622c567a4
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir,
+There is no such case in our college .
+Regards
+
+Principal
+Brahmananda Keshab Chandra College
+111/2, B.T. Road, BonHooghly
+Kolkata 700108
+
+033 2577 5878
+
+*Save the environment and GO GREEN*
+
+--000000000000cfba8f0622c567a4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Sir,<div>There is no such case in our college .<br cl=
+ear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=
+=3D"ltr">Regards<div><br></div><div>Principal<div>Brahmananda Keshab Chandr=
+a College</div></div><div>111/2, B.T. Road, BonHooghly</div><div>Kolkata 70=
+0108</div><div><br></div><div>033 2577 5878</div><div><span style=3D"backgr=
+ound-color:rgb(238,238,238)"><font color=3D"#6aa84f"><br></font></span></di=
+v><div><b style=3D"background-color:rgb(238,238,238)"><font color=3D"#6aa84=
+f">Save the environment and GO GREEN</font></b></div></div></div></div></di=
+v></div></div></div></div></div>
+
+--000000000000cfba8f0622c567a4--

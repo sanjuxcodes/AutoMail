@@ -1,0 +1,130 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:2209:b0:89:ead2:3829 with SMTP id bu9csp699292dlb;
+        Mon, 9 Sep 2024 06:54:44 -0700 (PDT)
+X-Received: by 2002:a05:6a00:148a:b0:70d:2e24:af75 with SMTP id d2e1a72fcca58-718d5f06932mr17148002b3a.24.1725890083987;
+        Mon, 09 Sep 2024 06:54:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725890083; cv=none;
+        d=google.com; s=arc-20160816;
+        b=X+WMdvfn+b1uK3CuOh3RHmZ7pcaKCu6exvmBcmYDo1BPScyikMQkEAbGENoG0DOMcU
+         BQ8dfICzOdS0vrvXo/Yjxq4OskzrzI3E45Wd6XaHumOXcGcJegvvyEza/OVnA+fjLKhC
+         M2mzG0ecTzusnti5r3Y8rDJ9OMMLk9/mLt/gHCHuWb7yc0Sqz/fbCYT8ecl2Lh6VNdj2
+         gUPLKxB+nJpflKDj+mhuw5GO8WX4abTVVaJM8JdY9bppsQNXBvKMF7gEexR9mFYlJnCx
+         64FHTLNTtsn1y8zAdco8kmvebOe/A3GGc9X0PatNyhYGnSt8pVkp6bGB88yZyPjJOgXT
+         Hu0w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=KDGGo4t4M2b8m0rhHyTgxWITqM0i8lqkGe7R49740tE=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=adD6g3bSZukQI3PC87p2LEi2E9Hdbbc21r+06sSj3y3nPO+Nl0m6tSrPp/a4S7ZC4z
+         kbIs58uNoG3dr6RiH1CYyY3pL+ZbAh9c0oW1TAewjF452A44MNAEgcfn5woh31lIq+5x
+         8aNrc9zIgvW7xsAvAIr2rvvhpT6h+AyzlNTY796eCWCue+uFBk6u310I62wA6vAuVNEC
+         /LTzPPkX4TBuVYpgiN4gOkBEH6Bx6alEZOcEYwCSTOQBUbwVxnk5XHr5txf1SWeU/0WJ
+         jazePKvDO3HMSrmoMzC3suIqgwakuqeanm/1gx08Xiyi4AO7ByNgmTiTo84dbYcQHZcw
+         DUjg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=VysZk6im;
+       spf=pass (google.com: domain of prafullachandracollegegolpark@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=prafullachandracollegegolpark@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <prafullachandracollegegolpark@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d2e1a72fcca58-718e58d03cdsor4146260b3a.5.2024.09.09.06.54.43
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 09 Sep 2024 06:54:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of prafullachandracollegegolpark@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=VysZk6im;
+       spf=pass (google.com: domain of prafullachandracollegegolpark@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=prafullachandracollegegolpark@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725890083; x=1726494883; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=KDGGo4t4M2b8m0rhHyTgxWITqM0i8lqkGe7R49740tE=;
+        b=VysZk6imqjPNaWwgFHWAXZLG/YbPad0IYtUMYr81+UJDvfab8tzKk9A7CVkPp4f6r4
+         8w43wIRS20bvSvgWXodFEPtUPDJX5tVFBhyILedvzx/xLwBht/dEEZYjd7rXSVi0POBd
+         ENVnuLdimb6sfZ5+OWhbgnSfZmbyN14UuyBsuCvar7EHPFKN2agrpjAbtMntv+4DhRJx
+         G8NHPljGR2/Jbb3S6USBeSN0BBPcuMnDmt3R0VocgWjCkQNcAowXrJ7T/aY8Hrl/rJlp
+         EnoCArjKnkxyYGCtoTevHSbA48Ebv+wjgrdZx+2oF4fntNrRMqrFbXxUgXcjVTLXtNds
+         +6qA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725890083; x=1726494883;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=KDGGo4t4M2b8m0rhHyTgxWITqM0i8lqkGe7R49740tE=;
+        b=PmtQWsk+Yva6ghg5Th6TRokpMMzN8Q1Jztq84ZHfeudw0XIPYuEIpyQSLNuzf+RDgt
+         OXYeQDGPTkplLwOx5X5d82fe++Z73v+35IJ3nxC6ks0YSJY3v9RprG/ySkxNMhU9mKX+
+         Z9djuZTcybx/UokjFc3nYP6Sz82K2rwAl7jMbtFqHNAjkFq0ETo86G+448LOgAom7FLe
+         Tp3NnQh0CkSrsyeq3MTk80TqVuJxo4KBsXgZIRX58vx3tLohqqFKAw9BV5pYZAuwxVmI
+         miFXut1UiWoPQPA68fGOY3MGutHv+l7/40tFbgau5c1KDdm92vDnuB1MgPhER8ek3TAF
+         ztFg==
+X-Gm-Message-State: AOJu0YwwABz6m/OiOVXWURkKF8z93OWuaoREEv3cRpuQVshW4Tkw7f4Q
+	De/IXvk5p/2BWHl371sx4woKfGiEShX/jMBzfiC2LMsZL5Q+eJ0e4K/PnKJ1/MU1c4h2VqXBVFM
+	1kvxz1RCooM/Yh+vO3DLe+u4PB+TY+g==
+X-Google-Smtp-Source: AGHT+IGFE0xUA3gA/FxJuIQaPOgtxMBgiNMZtLXk3ghyMi/vLi248gVrWwG84Zt4QLaUX+kOPIQqmMvMWXEmCCCgvOM=
+X-Received: by 2002:a05:6a20:d503:b0:1c6:ba8b:1e26 with SMTP id
+ adf61e73a8af0-1cf1d164936mr15075456637.11.1725890083051; Mon, 09 Sep 2024
+ 06:54:43 -0700 (PDT)
+MIME-Version: 1.0
+From: Prafulla Chandra College <prafullachandracollegegolpark@gmail.com>
+Date: Mon, 9 Sep 2024 19:24:31 +0530
+Message-ID: <CAGekwWNfawr4zBmQP-q_fwwi0jLEa6D2CHQ0W-mf0PoeRnQ9mQ@mail.gmail.com>
+Subject: No Suspension case of Prafulla Chandra College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000005262bc0621b01925"
+
+--0000000000005262bc0621b01925
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir/Madam
+
+This is to inform you that we do not have any Teaching  & Non-teaching
+Staff suspension cases in our college.
+Kindly note it & do the needful.
+Please find the attachment herewith.
+
+Thanking You,
+
+*Dr. Ratnakar Pani*
+*Principal *
+*Prafulla Chandra College*
+*23/49, Gariahat Road*
+*Kolkata-700029.*
+
+
+
+
+*Prafulla Chandra College*
+*23/49, Gariahat Road*
+*Kolkata- 700 029*
+
+--0000000000005262bc0621b01925
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Respected Sir/Madam<div><br></div><div>This is to inform y=
+ou that we do not have any Teaching=C2=A0 &amp; Non-teaching Staff suspensi=
+on cases in our college.<br clear=3D"all"><div>Kindly note it &amp; do the =
+needful.</div><div>Please find the attachment herewith.</div><div><br></div=
+><div>Thanking You,</div><div><br></div><div><b>Dr. Ratnakar Pani</b></div>=
+<div><i><b>Principal=C2=A0</b></i></div><div><i>Prafulla Chandra College</i=
+></div><div><i>23/49, Gariahat Road</i></div><div><i><u>Kolkata-700029.</u>=
+</i></div><div><br></div><div><br></div><br><div dir=3D"ltr" class=3D"gmail=
+_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div style=
+=3D"text-align:left"><br></div><font face=3D"comic sans ms, sans-serif"><di=
+v style=3D"text-align:left"><font face=3D"comic sans ms, sans-serif"><b><i>=
+Prafulla Chandra College</i></b></font></div><div style=3D"text-align:left"=
+><font face=3D"comic sans ms, sans-serif"><b><i>23/49, Gariahat Road</i></b=
+></font></div><div style=3D"text-align:left"><font face=3D"comic sans ms, s=
+ans-serif"><u><b><i>Kolkata- 700 029</i></b></u></font></div><div><br></div=
+><div style=3D"text-align:left"><img width=3D"93" height=3D"96" src=3D"http=
+s://ci3.googleusercontent.com/mail-sig/AIorK4xyVscMUKsDQBxaEzNHsypxHRkkSTAO=
+Q-LtfF7J9Un6VALb6vrQ4RTKE2ZtEqfet-cjqQ6rJdhou0wp"></div></font><b><div styl=
+e=3D"text-align:center"><b><font face=3D"comic sans ms, sans-serif"><i></i>=
+</font></b></div></b><div style=3D"text-align:center"><br></div></div></div=
+></div></div>
+
+--0000000000005262bc0621b01925--

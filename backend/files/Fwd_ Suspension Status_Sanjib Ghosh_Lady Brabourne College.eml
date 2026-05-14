@@ -1,0 +1,320 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1669898dlb;
+        Sat, 21 Sep 2024 22:31:02 -0700 (PDT)
+X-Received: by 2002:a05:6e02:1fc9:b0:3a0:97fe:e89e with SMTP id e9e14a558f8ab-3a0c8d0922cmr60681955ab.18.1726983062202;
+        Sat, 21 Sep 2024 22:31:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726983062; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0Eis6pm/GPSZXqDZO8CXBOA5BFfh4GalwZhuPsZEIipa5iEMnqQWv0nSRalSRJEG2N
+         6xqUwzbhMdEWh31B/t4d6myCFHY82LLsWbJLYfNhoSNYmb9WQz0Eg22N1aztO406CPPA
+         /E0RdHaR9cJ3xl2FpNCsMmcemxHrEl5gnYSM2aTZXOoUA9zBS5l+8tdprpa6f/ca2foy
+         PTOYqlqG7/w1jw3QvNj6w0vAQtWyqlQo5q37B2bULfJmj0hTI7vGHf+uulFT03pNIDRW
+         OfEP9FMsQM4JRr1a9TX0MFiZtDf1vn469dV2KVkySGGA1kcKsOfTTVmTowAuSkNrb+T+
+         EkCw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=1xBXjlfd1RuQP6BU2snKbQlkvi5QHPHxFr3BeSrSZ6M=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=nZwpOUNLNjEH7gP7dUmMzmFKjk6dogpeZRxTSCMWnA+hoXZL5axpw+kkKwlf85NUMX
+         rFFagc/Ck6oTR8xWQAITYedxQat5857HHkbcu7dbnjYaff4Wg5TNx5riOpANlsmo8fsD
+         joEpjl0IDiy/HaFLj32TVAYIeXpWhEiyEoC2yoK0NpeNAmrf69hj3ikXwGf8zscZ1fzR
+         +HrKVL/ptBDLkjUcRk+vKSLlthTUcnDajOF4eHxixd6ss0dILWavzmf2Qs3QiRscjBF+
+         Nf14fChQci+ebZHH0xzqEtsKMldxoA9oY5SYsdyQlWbH37FXT34JEMYQVyyGxVYGHtMy
+         U9aA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=fUDV1TPc;
+       spf=pass (google.com: domain of adgjdpigov@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=adgjdpigov@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <adgjdpigov@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e9e14a558f8ab-3a092e71487sor35751735ab.16.2024.09.21.22.31.02
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sat, 21 Sep 2024 22:31:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of adgjdpigov@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=fUDV1TPc;
+       spf=pass (google.com: domain of adgjdpigov@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=adgjdpigov@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726983062; x=1727587862; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1xBXjlfd1RuQP6BU2snKbQlkvi5QHPHxFr3BeSrSZ6M=;
+        b=fUDV1TPc71sgQqZGnk0Hfi++yGlRkYIoioCb8y6CJmzFQiDSiGxXctYU9C6vq0eWqO
+         xBDxTWvLZjlYCvuoHAYoO0nwYJ/5fiHY4ryOEP6Gy0t7YUP5PBjqa7bIRu/h2dk860On
+         ETYettdKeoZG8xwAs00Rnt709A7xJ3Xu7WuEFMDmKW3ex2S/FN5sI+dkCJDIciVrbCnU
+         K+EpwV1iVcT8gGUZdMDhyvQl39t6HrNZe4gpuCcN5cT9W5xf081e2KFDC69BiVzyf/HK
+         BjoY/0XsqQYeT45WZy3O/17LIoTyHQYTE7UJXkeZStONz8kf0e3H1QtQ3QPlIdcw9Sis
+         yu0g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726983062; x=1727587862;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=1xBXjlfd1RuQP6BU2snKbQlkvi5QHPHxFr3BeSrSZ6M=;
+        b=klSvJcVd2GWxz+jtDGSzZTB32cKlmeYMVNbTdbNGHxUEv8an0VuM8ZvTf67QWNv6f4
+         BjmdEETJ4dl1i/3PznzwMR6bZ4OrsPFVj+UYznanrJNFmXuyqrDwrIPpA4EW0CjS6Kmq
+         gs0xnbL2ek9SMN2xqpCJTOrQ5uWQeaiIyy1fQKS3cDRKWcY874czaMjLMg5N77HoV+pD
+         WfXxiJOGyF1bPGh4noopIBbmODMuJ+IrpLp0DVDACZ8gFFC7Za2BiOKwn3j7Vir0KVPA
+         cDr0FrpQumAnpGYx+lvxgIhXdG5aSuZyh9x3jnMlEKMmAQL55a2YX75+w6wOZO2CF1wQ
+         wSPQ==
+X-Gm-Message-State: AOJu0YwRnF0ngdTI+S0622gV8jgS6vXi0zE9gZBB5RcHg6LZZqW8Z3gb
+	+2eqIMcXS3qapcZ5O2kkgmvhlIaYzByXn24bSDiiofyL/TEWiALNOTPybDf8pazNejZ20L4BBXj
+	jdyC6a6g0hpc3fwYRTW/ZCLeS2aW+pQ==
+X-Google-Smtp-Source: AGHT+IE0tLkGTEtxeKVqoE7gJvp+dP85QmHW7iYTVWuJLLZtbg8fgbcXb1B1NKXSvgiG/m8E/1yJGPAEQSoXCoaqAjY=
+X-Received: by 2002:a05:6e02:1648:b0:39f:7a06:2a62 with SMTP id
+ e9e14a558f8ab-3a0c8c5d451mr71312195ab.5.1726983061594; Sat, 21 Sep 2024
+ 22:31:01 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAFdCC9VBFMGVrYsvirFV1tYkavT4svap+YyzyGQB72e-fcYTkg@mail.gmail.com>
+In-Reply-To: <CAFdCC9VBFMGVrYsvirFV1tYkavT4svap+YyzyGQB72e-fcYTkg@mail.gmail.com>
+From: ARINDAM DASGUPTA <adgjdpigov@gmail.com>
+Date: Sun, 22 Sep 2024 11:00:48 +0530
+Message-ID: <CAJOLOLTYsQO1zk+5hg8Y6Oto_+Bg-J5jZCvDJ+O8wK7dW_ijRQ@mail.gmail.com>
+Subject: Fwd: Suspension Status_Sanjib Ghosh_Lady Brabourne College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000eb698e0622ae9361"
+
+--000000000000eb698e0622ae9361
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sir
+Please find the information received from the Principal, Lady Brabourne
+College, Kolkata regarding seeking clarification for resuming the full
+salary in favour of Sri Sanjib Ghosh, Cashier, Lady Brabourne College who
+is still drawing subsistence allowance after he has resumed his duties in
+the college on 21.09.2016
+Yours sincerely
+Arindam dasgupta
+JDPI
+
+---------- Forwarded message ---------
+From: Lady Brabourne Prl <prl@ladybrabourne.com>
+Date: Thu, Sep 19, 2024 at 4:15=E2=80=AFPM
+Subject: Suspension Status_Sanjib Ghosh_Lady Brabourne College
+To: ARINDAM DASGUPTA <arindam.dasgupta184@gmail.com>, ARINDAM DASGUPTA <
+adgjdpigov@gmail.com>
+
+
+Sir
+
+As per the suggestions received in the virtual meeting held on 18.9.2024
+regarding the =E2=80=98suspension cases=E2=80=99 the following facts are be=
+ing stated.
+
+*1.       *There was a Criminal case against Sri Sanjib Ghosh (u/s
+498A/406/325 of Indian Penal Code vide Baguihati P.S. Case No 329 dt
+26.4.2012) and subsequently *he was arrested by Police Authority on
+30.7.2012.*
+
+
+
+*2.       *The Lady Brabourne College authority received a letter (Memo No.
+647-Admn/(A) 10M-67/12 dated 2.11.2012) from Director of Public
+Instructions, Education Directorate, Bikash Bhavan, Salt Lake,
+Kolkata-700091, ordering to *put him under suspension w.e.f. 30.7.2012. It
+was mentioned in the same order that he was entitled to =E2=80=98subsistenc=
+e
+allowance=E2=80=99 w.e.f. 30.7.12. until further order.*
+
+
+
+*3.       *The Lady Brabourne College authority received a second letter
+(Memo No. 211 ILC/ 1C-88L/2016 dated 30.8.2016) from the Law Officer,
+Education Directorate, Bikash Bhavan, Salt Lake, Kolkata-700091, *directing
+to permit him to rejoin his duties mentioning that =E2=80=99subsistence all=
+owance
+has been sanctioned by the directorate Vide No. 348-AC dt. 4.7.2016. The
+order did not mention that his suspension was revoked.*
+
+
+
+*4.       *The said employee rejoined his services on 21.9.2016 and has
+been rendering his services since then. His performance has been absolutely
+sincere and satisfactory as before.
+
+
+
+*5.       *In reply to the queries received from your esteemed office on
+1.4.2024 and the grievance cell on 31.8.2024 the college has informed that =
+*we
+are awaiting an order from the Education Directorate ordering us for
+disbursal of salary instead of subsistence allowance to him.*
+
+
+
+*I will be thankful to you if you kindly let me know about his eligibility
+to draw full salary instead of subsistence allowance. *I may add here that
+the court case against him has still not been resolved and we have not
+received any intimation regarding this from the Hon=E2=80=99ble High Court =
+either.
+
+
+
+Yours sincerely
+
+Siuli Sarkar
+
+Principal
+
+Lady Brabourne
+College
+Date: 19.9.2024
+
+--000000000000eb698e0622ae9361
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir<div>Please find the information received from the Prin=
+cipal, Lady Brabourne College, Kolkata regarding seeking clarification for =
+resuming the full salary in favour of Sri Sanjib Ghosh, Cashier, Lady Brabo=
+urne College who is still drawing subsistence allowance after he has resume=
+d his duties in the college on 21.09.2016</div><div>Yours sincerely</div><d=
+iv>Arindam dasgupta</div><div>JDPI=C2=A0<br><br><div class=3D"gmail_quote">=
+<div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded message --------=
+-<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">Lady Brabourne P=
+rl</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:prl@ladybrabourne.com"=
+>prl@ladybrabourne.com</a>&gt;</span><br>Date: Thu, Sep 19, 2024 at 4:15=E2=
+=80=AFPM<br>Subject: Suspension Status_Sanjib Ghosh_Lady Brabourne College<=
+br>To: ARINDAM DASGUPTA &lt;<a href=3D"mailto:arindam.dasgupta184@gmail.com=
+">arindam.dasgupta184@gmail.com</a>&gt;, ARINDAM DASGUPTA &lt;<a href=3D"ma=
+ilto:adgjdpigov@gmail.com">adgjdpigov@gmail.com</a>&gt;<br></div><br><br><d=
+iv dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-heig=
+ht:107%;font-size:11pt;font-family:Calibri,sans-serif"><span style=3D"font-=
+size:12pt;line-height:107%">Sir</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif"><span style=3D"font-size:12pt;line-=
+height:107%">As per the
+suggestions received in the virtual meeting held on 18.9.2024 regarding the
+=E2=80=98suspension cases=E2=80=99 the following facts are being stated.</s=
+pan></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>1.<span style=3D"font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-weight:normal;fo=
+nt-stretch:normal;font-size:7pt;line-height:normal;font-family:&quot;Times =
+New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+</span></b>There was a Criminal case against Sri Sanjib
+Ghosh (u/s 498A/406/325 of Indian Penal Code vide Baguihati P.S. Case No 32=
+9 dt
+26.4.2012) and subsequently <b>he was arrested by Police Authority on 30.7.=
+2012.</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif">=C2=A0</p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>2.<span style=3D"font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-weight:normal;fo=
+nt-stretch:normal;font-size:7pt;line-height:normal;font-family:&quot;Times =
+New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+</span></b>The Lady Brabourne College authority
+received a letter (Memo No. 647-Admn/(A) 10M-67/12 dated 2.11.2012) from
+Director of Public Instructions, Education Directorate, Bikash Bhavan, Salt
+Lake, Kolkata-700091, ordering to <b>put him under suspension w.e.f. 30.7.2=
+012.
+It was mentioned in the same order that he was entitled to =E2=80=98subsist=
+ence
+allowance=E2=80=99 w.e.f. 30.7.12. until further order.</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>=C2=A0</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>3.<span style=3D"font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-weight:normal;fo=
+nt-stretch:normal;font-size:7pt;line-height:normal;font-family:&quot;Times =
+New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+</span></b>The Lady Brabourne College authority
+received a second letter (Memo No. 211 ILC/ 1C-88L/2016 dated 30.8.2016) fr=
+om
+the Law Officer, Education Directorate, Bikash Bhavan, Salt Lake,
+Kolkata-700091, <b>directing to permit him to rejoin his duties mentioning =
+that
+=E2=80=99subsistence allowance has been sanctioned by the directorate Vide =
+No. 348-AC
+dt. 4.7.2016. <u>The order did not mention that his suspension was revoked<=
+/u>.</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>=C2=A0</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>4.<span style=3D"font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-weight:normal;fo=
+nt-stretch:normal;font-size:7pt;line-height:normal;font-family:&quot;Times =
+New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+</span></b>The said employee rejoined his services on
+21.9.2016 and has been rendering his services since then. His performance h=
+as been
+absolutely sincere and satisfactory as before.<b></b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>=C2=A0</b></p>
+
+<p style=3D"margin:0cm 0cm 0cm 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>5.<span style=3D"font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-weight:normal;fo=
+nt-stretch:normal;font-size:7pt;line-height:normal;font-family:&quot;Times =
+New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+</span></b>In reply to the queries received from your
+esteemed office on 1.4.2024 and the grievance cell on 31.8.2024 the college=
+ has
+informed that <b>we are awaiting an order from the Education Directorate
+ordering us for disbursal of salary instead of subsistence allowance to him=
+.</b></p>
+
+<p style=3D"margin:0cm 0cm 8pt 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>=C2=A0</b></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif"><b>I will be thankful to you if you=
+ kindly let me know about
+his eligibility to draw full salary instead of subsistence allowance. </b>I=
+ may
+add here that the court case against him has still not been resolved and we
+have not received any intimation regarding this from the Hon=E2=80=99ble Hi=
+gh Court
+either.</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif">Yours sincerely</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif">Siuli Sarkar</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif">Principal</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 8pt;line-height:107%;font-si=
+ze:11pt;font-family:Calibri,sans-serif">Lady Brabourne College=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0
+Date: 19.9.2024</p>
+
+<p style=3D"margin:0cm 0cm 8pt 36pt;line-height:107%;font-size:11pt;font-fa=
+mily:Calibri,sans-serif"><b>=C2=A0</b></p></div>
+</div></div></div>
+
+--000000000000eb698e0622ae9361--

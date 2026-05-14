@@ -1,0 +1,105 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:429f:b0:89:ead2:3829 with SMTP id bk31csp492735dlb;
+        Thu, 26 Sep 2024 10:43:40 -0700 (PDT)
+X-Received: by 2002:a05:6902:2847:b0:e25:cb59:77d1 with SMTP id 3f1490d57ef6-e2604b5f434mr237103276.8.1727372620395;
+        Thu, 26 Sep 2024 10:43:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727372620; cv=none;
+        d=google.com; s=arc-20240605;
+        b=IKOHbMtLtB3GB95TkJxovEKuHGjExX+lyVxUcDTM4ytu3895jIMlZJryPU24FujFpL
+         CHwkTxZANri0FCcmLx9DQy90iikVGzG5Dav//5M3fDtdEvcVkl7EA9Z6436M9w10uZlo
+         /GnsPTeFdyL5uVvi9mS5s6y1DxRJBAQdNHOQPB89/EKaAWSLWdd+2xU1an2rWaqOsrny
+         75olHqr4T5CIUkp7XufvfNCWS+iE9HiF5wd0kLu9gCwioE68cnRcMGVsSCKjM4Ln66RZ
+         34mtq29oQ17K1NLo3Elb+YbsULWFbiJYBfT0nKtOPsSIDtYnzYboew71n06ZYC0+1BLv
+         V6oA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ZA3/O/Z9AlkkMVibuztgGXVJH32UtEcRWaoyvl5QTMI=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=CkBsy0Quzmt5a8DR1Cd/DTK0wg+5bXvSoyHk/k6nCN69mvfjIrN4go0d15CwdUk+7p
+         iPAwaHbc4Prl0yWsdr+UMstTQVxdRP8eNGbyLlWz4ypAAh/uNJB11iq2ZS/Z3kiLkrcr
+         q62cnbA1IiQRh46g0Q+Hsjd28J87GG4qc47cnGbYl0NAn4KNIY0zI+xdLCvgGETpMAq8
+         J3MlRToy+obXZZlsB9CSCb5G1IrICEZjtX7qQvjMCxzeBR6OifvwVn6bNTsCmJl8XxxE
+         zCDTC1yCRTPQFCj9fHt6vVooX034k3x2KvkM/izVsrH2VsM89bcfrkOqPPIzM+il9aeO
+         QmXw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FjFK2Lh3;
+       spf=pass (google.com: domain of principalscm15@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalscm15@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principalscm15@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 3f1490d57ef6-e25e400f27esor256701276.7.2024.09.26.10.43.40
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 26 Sep 2024 10:43:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principalscm15@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FjFK2Lh3;
+       spf=pass (google.com: domain of principalscm15@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalscm15@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727372620; x=1727977420; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ZA3/O/Z9AlkkMVibuztgGXVJH32UtEcRWaoyvl5QTMI=;
+        b=FjFK2Lh3Cv3KuQgL1QmDGhqvH196wD7smqrT0R7zufbz6HEFjHN+36dGm4XFsW6/5H
+         BFp4wc/BQ8oXthMFpQbk957FS88/jdBc5ROjBrWGhwKd5OqONYjeCoffd4AWWec03nGF
+         o/dIVIwXZET5f4lwBwHUQ7tNnCOGsAxMP1oznZ8U+ZQ9yz73elxQqu3GyevTKXkViqm1
+         WE1XPoCWV82RhWoNeRhs8T7CKCCMvHZT1N6sS1/j41vTN4Bh52o3eUnsbSFq4jaEhU/R
+         7SCJttFJLBS6oljCUjmzezTzpLg+V5NjcVhIIsYpHWcD0bCYRaX2YKq6JEj+LGLqt182
+         7/fg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727372620; x=1727977420;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ZA3/O/Z9AlkkMVibuztgGXVJH32UtEcRWaoyvl5QTMI=;
+        b=OA9H614jF7XqI49SF31N277WFtSQw5wfwirP/46QVLmc0NiatO1JQtuEKJ4nJBx7t5
+         Mr/KnPnU4sDYszPfR3PsE2NtURYS/sB8vLi4SslbxUO0BTtSW/xiKM9GLUdfInvTqsHK
+         nVkXEnioGW1lM9ckRpUlrXCLfVON5YbxNQtvUC9JwOwuOZecXiZ+h0KsVSsdv086e1/d
+         ASs/MERvHD2WRBcNxl6UcDdRs1InmasKMtgODCA78fhcHEudZ95qP6enzOiZA6YvC8gM
+         Awazrh0/+U3hNnK6SroZ/Wt/MYFkVHWrsTlIfWji3KSjLxm/3K7c8rjEX79LS9KHYUu6
+         ILHA==
+X-Gm-Message-State: AOJu0YxN+Qxm1oLoWwXFfd8podugasYwVm6X9XibV6Cmc+u718iG6hdW
+	7NhEJXFJehObsqvc47IxlUTWk5nEyVebJvplRO9zLzLuKSQ2mCUaPtw2/O0lXblJs94n4DGNmdo
+	x5jOESNEkNA8V/wOdMsZiATQuAx6ESQ==
+X-Google-Smtp-Source: AGHT+IGH0H1UYZdDzzTjFvqc2qx0S+fzAZPiFfkbZ0PAKfI2EJ5zZHDJBIxYa7QFshujcQtI6I1f5z75zDQmKJDFMkU=
+X-Received: by 2002:a05:6902:a07:b0:e25:cfe1:265f with SMTP id
+ 3f1490d57ef6-e2604d0cd25mr158557276.51.1727372619833; Thu, 26 Sep 2024
+ 10:43:39 -0700 (PDT)
+MIME-Version: 1.0
+From: "Dr. S.F. Haque" <principalscm15@gmail.com>
+Date: Thu, 26 Sep 2024 23:13:28 +0530
+Message-ID: <CAGkMECeUMSdEmXCPmeq4yDu6fyAhFAJiKg3Y9Sn3AD6JZLmqZw@mail.gmail.com>
+Subject: Sub:-Intimation letter
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000666a950623094750"
+
+--000000000000666a950623094750
+Content-Type: text/plain; charset="UTF-8"
+
+Sir/Madam,           Date: 26.09.2024+8
+                       I would like to inform you that Sadhan Chandra
+Mahavidyalaya has no pending suspension cases.
+                Thanking you
+
+Sincerely yours
+Dr S. F. Haque
+    Principal
+Sadhan Chandra Mahavidyalaya
+
+--000000000000666a950623094750
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir/Madam,=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Date: =
+26.09.2024+8<div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0I would like to inform you that Sadha=
+n Chandra Mahavidyalaya has no pending suspension cases.=C2=A0</div><div di=
+r=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Thanking=
+ you</div><div dir=3D"auto"><br></div><div dir=3D"auto">Sincerely yours</di=
+v><div dir=3D"auto">Dr S. F. Haque</div><div dir=3D"auto">=C2=A0 =C2=A0 Pri=
+ncipal</div><div dir=3D"auto">Sadhan Chandra Mahavidyalaya</div></div>
+
+--000000000000666a950623094750--

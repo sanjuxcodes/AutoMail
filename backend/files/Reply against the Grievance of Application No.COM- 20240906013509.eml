@@ -1,0 +1,138 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:a8c:b0:89:ead2:3829 with SMTP id dd12csp77739dlb;
+        Tue, 17 Sep 2024 01:05:35 -0700 (PDT)
+X-Received: by 2002:a05:690c:e:b0:6b2:d72a:9dfc with SMTP id 00721157ae682-6dbcc57fc8bmr99265377b3.33.1726560334883;
+        Tue, 17 Sep 2024 01:05:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726560334; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KrpXWmofmXByfxT0y8haQ7K9euHbzYvm/8B8gOM/2l44zq4j3+ychGa32cXydsTHG5
+         AHTKwkEL7ClAkFbANBlAH2OdZ2j3WeHKp0BWnI3rlOsoym5C2gK6k6SDHZxhpBkQEJMX
+         Z9PtyLTlvPtkd8yZQtyJrlSzcSzurllfEpxNjY1egl1rZVGBmLIHibwGWkg7EiQ9makK
+         DiNc4YdeqTnnOdjYDor+dHh8Wrr4QVgtX6kK8znRIh1ED5TOQWAZ/PHrkCKUZUlg20Pg
+         e2a7K3EmyXbNVqKm7ExMQjWRwaSiTs5mhXwc0lKanRjbrMk+ovsbPSDggSGaRgygJZ6p
+         sQnQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=NUY8wjTR0hhkjnJMfhXC4E0udIiVzPMENbNFKCIssXk=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=tGRQ8HMv6lhmyROaHagVrx4vyAfbV07zoYx6CYucXXMI4QZMJ0/yVFiQFuK9Wh1uop
+         PrQbRAYWU7T3kuqGZL3TPiVa+0ucLtS8eFybgCgs6DJW/WkQckKmqmia1WMHE+A8HiFg
+         Z50ibM20mUSB9QSXMg88AkMfhzmj4/ec+n8ogVHWh4k7IKMwNJujc61A8QSRXjaqW6H5
+         msgL2WVCU4ZHdTlAcdkr743BQtRq+45c1tXLHRPTxzYJk3NL0w7wtbFr9Cb3a86plH9X
+         Xdv/qePZDU+pFGCg9Hft/eUCf93iroYVi8THkZtmVLI7GJ33ZIDsNdQX//MoUnNb5Rqr
+         78fg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="GPrEJw/i";
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <wbcscchairman@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6dbe2f0623csor33313537b3.12.2024.09.17.01.05.34
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Tue, 17 Sep 2024 01:05:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="GPrEJw/i";
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726560334; x=1727165134; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=NUY8wjTR0hhkjnJMfhXC4E0udIiVzPMENbNFKCIssXk=;
+        b=GPrEJw/i9CROHSypVAwygfWj49j9wj5NffZBoN22Vz1GXOUJyb0g70gycTHfQLfDYr
+         LSCgA2W9Mprjx4W+GOA+NeHJYLWPIxGYJ7k+30wBRRVLkcU6qlX84cUlGf7TWQyGH4D2
+         yLhPVoDNNLyHBqRaHeWoUtuZYPOr0EMr2+xnYKiI3zJh4N1pHAihWFa+JomJnhLNT6oO
+         1zFpMiKHQFVusYMMAZ8cz6+AXKbnNx/N4IXqzddvXLyKHtxAPsYm8pRci9N2brlbz+5Y
+         ctAdLpdGyTHxmg3EvXCz8PWryIyF8yyd0gKrcXOHK81Jh8FXBzerR3cM5vEDEydwBGGo
+         o1DQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726560334; x=1727165134;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=NUY8wjTR0hhkjnJMfhXC4E0udIiVzPMENbNFKCIssXk=;
+        b=et6KzuoyaKaL3FcltsPvCzGv35H+Xu9goz/qusiNW0Vbb5cDAF2zqfoCerAG2Cnvf1
+         42L9ZDmExBI2Ai+EAHFPdKPtkrR7Pq1nJs1A9w+IzFjXfs+gUNWf9FMcfrVqkrnqlsJh
+         o18vi3APAky7RQOdPY64Pr2u+wcMM+B300LPqB7+o1TmJw8MTU4XOIgDkFw1itBP27Ce
+         pwJ0z4ALFLQe2D9KFq5lDOO532hSyjrQBZ/VJ4XAv4ODBXD1Jjxd3aoynmJfT68zCSD/
+         fiAuCnvr9JNquraD6G+Bah/AlNYA8Hjm8qTXg5ga4AzAr4VVVhXoVk3BhLHCYFxAMPns
+         zvTg==
+X-Gm-Message-State: AOJu0Yz39f+zHbfz6V172eYk4NGONZd1kkres+L+ng+Bweiu7buexzW7
+	YfB6KxEdOQcauSzrYOc0NixklfFgTqvDdT/XNlRb+e3/CcvWlIOTz/FU1AOhPkSSmtzI2Ms54MO
+	e3gd7l+FR4EKpoGp27e14z4z6AjgYBG5c
+X-Google-Smtp-Source: AGHT+IH+annDLthGa7t6qaJnLAj1TtvbXWrlOUJKMcHohv61KClNSy1B43RTCkRZktpy6d01ErLnvYuceaWPUZ2P0NU=
+X-Received: by 2002:a05:690c:7005:b0:6dd:b920:1cb5 with SMTP id
+ 00721157ae682-6ddb9201e00mr63776687b3.25.1726560334138; Tue, 17 Sep 2024
+ 01:05:34 -0700 (PDT)
+MIME-Version: 1.0
+From: Chairman West Bengal College Service Commission <wbcscchairman@gmail.com>
+Date: Tue, 17 Sep 2024 13:35:23 +0530
+Message-ID: <CAND_RKum8_vMnoLECqsa=aymFTkT0pzGGvE+D=YS_SqFe-d0VA@mail.gmail.com>
+Subject: Reply against the Grievance of Application No.COM- 20240906013509
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000066524606224c276e"
+
+--00000000000066524606224c276e
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Respected Madam/ Sir
+
+With Reference to the Grievance Application No. COM- 20240906013509 : The
+WBCSC recommends on the basis of the category of vacancy received in the
+form of requisition from the different state aided colleges of West Bengal.
+ The recounselling in the said category will be made as and when the vacanc=
+y
+ of the said category is available/ submitted/ reported by way of
+requisition to the WBCSC.
+
+Regards,
+Office of the Chairperson
+*West Bengal College Service Commission*
+=E2=80=9CASANNA=E2=80=9D Building, Plot No. DG-10/1, Premises No. 13-0327,
+Action Area =E2=80=93 1D, Rajarhat, New Town, Kolkata =E2=80=93 700 156
+
+--00000000000066524606224c276e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-size:small">Res=
+pected Madam/ Sir<div><br></div><div>With Reference to the=C2=A0<span class=
+=3D"gmail_default">G</span>rievance Application No.=C2=A0<span class=3D"gma=
+il_default">COM- 20240906013509</span>=C2=A0:=C2=A0<font face=3D"arial, san=
+s-serif">The WBCSC recommends on the basis of the category of vacancy recei=
+ved in the form of requisition from the different state aided colleges of W=
+est Bengal.<span class=3D"gmail_default">=C2=A0T</span></font><span style=
+=3D"font-family:arial,sans-serif">he=C2=A0<span class=3D"gmail_default">re<=
+/span>counselling in the said category<span class=3D"gmail_default">=C2=A0w=
+ill be made a</span></span><font face=3D"arial, sans-serif"><span class=3D"=
+gmail_default">s and when the v</span>acancy<span class=3D"gmail_default"><=
+/span></font><span class=3D"gmail_default" style=3D"font-family:arial,sans-=
+serif">=C2=A0of</span><span style=3D"font-family:arial,sans-serif">=C2=A0th=
+e said category</span><span class=3D"gmail_default" style=3D"font-family:ar=
+ial,sans-serif">=C2=A0is=C2=A0</span><span style=3D"font-family:arial,sans-=
+serif">available/ submitted/ report</span><span class=3D"gmail_default" sty=
+le=3D"font-family:arial,sans-serif">ed</span><span style=3D"font-family:ari=
+al,sans-serif">=C2=A0by way of requisition=C2=A0<span class=3D"gmail_defaul=
+t">to=C2=A0</span></span><span style=3D"font-family:arial,sans-serif">the W=
+BCSC<span class=3D"gmail_default">.</span></span></div><div><span style=3D"=
+font-family:arial,sans-serif"><span class=3D"gmail_default"><br></span></sp=
+an></div><div><span style=3D"font-family:arial,sans-serif"><span class=3D"g=
+mail_default">Regards,</span></span></div><div><span style=3D"font-family:a=
+rial,sans-serif"><span class=3D"gmail_default">Office of the Chairperson</s=
+pan></span></div></div><div dir=3D"ltr" class=3D"gmail_signature" data-smar=
+tmail=3D"gmail_signature"><div dir=3D"ltr"><div><font color=3D"#3d85c6"><b>=
+West Bengal College Service Commission</b><font size=3D"2"><span style=3D"f=
+ont-weight:normal"><br></span></font></font></div><div><font size=3D"2" col=
+or=3D"#3d85c6"><span style=3D"font-weight:normal">=E2=80=9CASANNA=E2=80=9D =
+Building, Plot No. DG-10/1, Premises No. 13-0327,</span></font></div><font =
+color=3D"#3d85c6"><font size=3D"2"><span style=3D"font-weight:normal"></spa=
+n></font><font size=3D"2"><span style=3D"font-weight:normal">Action Area =
+=E2=80=93 1D, Rajarhat, New Town, Kolkata =E2=80=93 700 156</span></font><b=
+r></font><br></div></div></div>
+
+--00000000000066524606224c276e--

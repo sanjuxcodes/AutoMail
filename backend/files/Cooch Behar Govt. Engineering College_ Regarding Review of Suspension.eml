@@ -1,0 +1,117 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:24a6:b0:86:fb3e:d4ed with SMTP id cq38csp2132228dlb;
+        Mon, 2 Sep 2024 22:35:58 -0700 (PDT)
+X-Received: by 2002:a05:690c:620c:b0:6d9:90f3:1a8e with SMTP id 00721157ae682-6d990f3200dmr52769607b3.37.1725341758448;
+        Mon, 02 Sep 2024 22:35:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725341758; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Zfnufse3N3U0YYUlFrXK0NDjLaC6QTwC6XZi1wSSYif8ZR3C81Rl+GSI/+Tn923865
+         MdDkSudUr9EIzWP5VIZE6F2b/9sVXTSg5Mp8COZrf1av5TLIj7O2D/lFoKVgMi/up3/Z
+         CwYdMd1ealF7OHU/oFnB9huVhZhdEnrelY8uhCn8cfgEZB8sNNjQOsZwEAjuDeikJYx3
+         eB8ZXv8AZlXfVfqx4el5oJLbL0qdGNNklPb7BMTSacrbpCEYxRHXI89iCrl+q1t2z1gl
+         bjed/UFFXSO8Suv2Ays5spzfaMHKMWHgmq8SWmEjzEAfkj2Dj2kp0t3yap3vIq585lCJ
+         3+pg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Yq7Dfnwt6RTRnA2MXG8gInf51IEHOTzVzUiGQKiNCkY=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=ydz+xl26Qr6WmRtlH+ZrjcPsbQcSfxJAEr8+OGDDtPv/ktrhFFUxf1e5FdNV3Iqvr4
+         PtGzhB9krw/ax5rrXxI2tgooy3aleyKyDds1jLgEUHSRTAMkAXOlSPqGqcN7e6Cd8I2q
+         eKpDnx+3S6BA/OsVkvrzMLk6kPfCZ56Te7PkpmzMrjcvNxL0fpJdiPKWMNGcWnx8uVqN
+         LPoEyzIuTPDc8g1FYHWBHjXbGPXwWer1pm6W+vq5fVzyN16jlzd4PqOvQXclBRN6DhPQ
+         fMgicMg/OngJnZTBccUQvenBGfpzw2vtCrO1gVEVu8S01lQN62kgsxvRo0n9pnljp68m
+         zJBQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=bmVNFprQ;
+       spf=pass (google.com: domain of principalcgec@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalcgec@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principalcgec@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6d9cbf1a8c9sor19003397b3.3.2024.09.02.22.35.58
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 02 Sep 2024 22:35:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principalcgec@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=bmVNFprQ;
+       spf=pass (google.com: domain of principalcgec@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalcgec@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725341758; x=1725946558; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Yq7Dfnwt6RTRnA2MXG8gInf51IEHOTzVzUiGQKiNCkY=;
+        b=bmVNFprQ2WZbTymeYhpRX1L1bYn8SPGRQj3mv2m01MS5cEfJdDv5UvPOKdavVknq+8
+         HIjIoD907XAljtodDVnk+U8zgrt07UbCSi3JzatecDmu4z4Cc0fop7YSyAoMnmmgcCMW
+         JcI6HWrtxPyL49Ler9wKY1CT+6VZLOv5QsTzsoAGjtfxkwlvSbHQB1MLoomt+9oNKFOM
+         I863ixJzRERj79YXS1BRUCJ4rAb/NjB78keYgbGW2HjI+jN/9fubOzZCYJS70JXRd+Zu
+         NMXiJrGJ3+yCOjzWRC7TFGNn2YQH+TMUpjqwdzUNeqm+4ZinX0VLlPL4BiYjNtL6cFZc
+         sFGg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725341758; x=1725946558;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Yq7Dfnwt6RTRnA2MXG8gInf51IEHOTzVzUiGQKiNCkY=;
+        b=eja+lajEgH938dZrr2pMQek1cneuY1iNWvMjv0GdyR7LfETBuGsC1iR9/rmzVnEoBf
+         OwuI1LmrEWjnpmWMgJMwzqNppDP22FytjK8wvoMokd9ERhOvJOg375JieFYka4EylsYW
+         XyuqOPpNbvJ7wbRqYQ3eCkDS8qIg8ugS45542tC+WXx3f93s5RsbBRWlcX8NRNa8/7aB
+         W1NeonUMMNFdgEl8IQKwiNXhZufAM+8aq8qhdEEdRLiyF9KrQyMg8kk4lrKyDIhgN7wl
+         c3+nCV8RWkE3WNrhVE7EwmHsX66shOADDyf9GY6CI+fKCFhjmLNClGnOrqZS03ur6TNT
+         Jslw==
+X-Gm-Message-State: AOJu0YxFkXDdGFOuspcsAaA795BW2V4zgh1nsFI6BrZrAI4sCXZSjZ3s
+	lx8SCa6gLkHpSifFF8z4kyix7xzf2v1A7N/4rUc/h3v55Wlhq+YEPsMQtkMmPry4SqI45MCpUVj
+	+XFISqyEzW1TJh4xNcyDBhZEG5Ro9VA==
+X-Google-Smtp-Source: AGHT+IGytJQQhXWAVZn8N7UQEZ3DE+HbwP0puhrFEw+Fss3KWCg7B3YLvLA1bRavgO0zim4umA4vXiu+qhQwoXn0e/Q=
+X-Received: by 2002:a05:690c:4589:b0:6d4:f41d:de2f with SMTP id
+ 00721157ae682-6d4f42d2475mr88250257b3.39.1725341757626; Mon, 02 Sep 2024
+ 22:35:57 -0700 (PDT)
+MIME-Version: 1.0
+From: Dr Prabal Deb <principalcgec@gmail.com>
+Date: Tue, 3 Sep 2024 11:04:46 -0700
+Message-ID: <CANLJi8B4AthWq4JN+qJHp=vP5RFJBMmyztEiJFS-tGWr51RYUA@mail.gmail.com>
+Subject: Cooch Behar Govt. Engineering College: Regarding Review of Suspension
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000009462e20621306ef0"
+
+--0000000000009462e20621306ef0
+Content-Type: text/plain; charset="UTF-8"
+
+To,
+The Principal Secretary,
+Department of Higher Education, Govt of West Bengal
+
+Ref: No 21-Pr-Secy-HED/24 Dt 29/08/24
+
+Sir,
+Cooch Behar Govt. Engineering College *doesn't have any case *of suspension.
+This is for kind information and necessary action.
+*Regards*
+*Dr. Prabal Deb.*
+*B.E., M.TECH, PhD (Engg)*
+*Principal*
+*COOCH BEHAR GOVERNMENT ENGINEERING COLLEGE*
+
+--0000000000009462e20621306ef0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">To,<div>The Principal Secretary,</div><div>Department of H=
+igher=C2=A0Education, Govt of West Bengal=C2=A0</div><div><br></div><div>Re=
+f: No 21-Pr-Secy-HED/24 Dt 29/08/24</div><div><br></div><div>Sir,</div><div=
+>Cooch Behar Govt. Engineering College <b>doesn&#39;t have any case </b>of =
+suspension.</div><div>This is for kind information and necessary action.=C2=
+=A0<br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" data-s=
+martmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><d=
+iv dir=3D"ltr"><div><b style=3D"font-size:large;font-family:&quot;Times New=
+ Roman&quot;,serif"><i>Regards</i></b></div><div><b style=3D"font-size:larg=
+e;font-family:&quot;Times New Roman&quot;,serif"><i>Dr. Prabal Deb.</i></b>=
+</div><div><b style=3D"color:rgb(0,0,0);font-size:12.8px"><i>B.E., M.TECH, =
+PhD (Engg)</i></b></div><div><div><b><font color=3D"#0000ff" size=3D"4">Pri=
+ncipal</font></b><br></div></div><div><b><font size=3D"2" color=3D"#0b5394"=
+>COOCH BEHAR GOVERNMENT ENGINEERING COLLEGE</font></b></div></div></div></d=
+iv></div></div></div></div></div></div>
+
+--0000000000009462e20621306ef0--

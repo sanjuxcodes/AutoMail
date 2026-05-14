@@ -1,0 +1,632 @@
+[
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-01",
+        "text": "For recurring issues identified in grievance communications (principal, suspended, suspension, details, gmail), the institution shall maintain a time-bound action tracker and provide category-specific disposal updates."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-02",
+        "text": "Where suspension is ordered, a formal memorandum of charges shall be issued within fifteen working days, failing which the authority shall record written reasons for delay."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-03",
+        "text": "No suspension shall ordinarily exceed ninety days without documented review by the competent authority and communication of review outcome to the employee."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-04",
+        "text": "Departmental inquiry shall be initiated promptly with appointment of an inquiry officer and presenting officer through a written order."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-05",
+        "text": "The suspended employee shall be provided access to relied-upon documents unless disclosure is legally restricted and reasons are recorded in writing."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-06",
+        "text": "A clear schedule of inquiry hearings shall be communicated at least seven days in advance to ensure procedural fairness."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-07",
+        "text": "Requests for adjournment shall be considered only on justified grounds and shall not be used to prolong proceedings unreasonably."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-08",
+        "text": "Subsistence allowance shall be released as per applicable service rules and any delay beyond one salary cycle shall be explained in writing."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-09",
+        "text": "If criminal investigation is cited as the basis of suspension, periodic administrative review shall continue independently of trial timelines."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-10",
+        "text": "Witness examination and cross-examination records shall be preserved and made available in the case file for appellate review."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-11",
+        "text": "Final disciplinary order shall contain findings on each article of charge, evidentiary basis, and reasons for penalty imposed."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-12",
+        "text": "Penalty shall be proportionate to proven misconduct and shall consider prior service record and mitigating submissions."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-13",
+        "text": "Where charges are not proved, reinstatement shall be processed without avoidable delay and consequential service benefits handled under rules."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-14",
+        "text": "Where only part of charges are proved, authority shall issue a reasoned order distinguishing proved and unproved allegations."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-15",
+        "text": "Appeal rights, timeline, and appellate authority details shall be explicitly provided in the final order."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-16",
+        "text": "Records of suspension, review, inquiry proceedings, and reinstatement decision shall be digitized for institutional accountability."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-17",
+        "text": "Institution head shall submit quarterly suspension pendency statement to higher authority for monitoring excessive delays."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-18",
+        "text": "In case of prolonged suspension, authority shall consider transfer to non-sensitive duties where permissible under service rules."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-19",
+        "text": "Complaints regarding procedural irregularity in disciplinary process shall be examined by designated grievance authority within thirty days."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-01",
+        "text": "For recurring issues identified in grievance communications (court, chandra, principal, dated, jalpaiguri), the institution shall maintain a time-bound action tracker and provide category-specific disposal updates."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-02",
+        "text": "Any information regarding FIR or arrest involving institutional personnel shall be reported to the head of institution within twenty-four hours of receipt."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-03",
+        "text": "Upon receipt of credible arrest information, the institution shall verify facts through available official channels before issuing administrative orders."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-04",
+        "text": "Administrative action shall distinguish between registration of FIR, arrest, remand status, and filing of chargesheet."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-05",
+        "text": "Where arrest exceeds forty-eight hours, service consequences shall be processed strictly in accordance with applicable service regulations."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-06",
+        "text": "Institution shall nominate a nodal officer for coordination with law enforcement and for maintaining documented communication logs."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-07",
+        "text": "No public communication shall disclose sensitive personal data beyond legally permissible limits during ongoing investigation."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-08",
+        "text": "Academic and examination continuity measures shall be arranged to avoid disruption where key functionaries are unavailable due to legal proceedings."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-09",
+        "text": "If allegations concern campus safety, immediate interim safeguards shall be implemented pending competent authority decision."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-10",
+        "text": "Institution shall preserve relevant records and electronic logs that may be sought by lawful investigative agencies."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-11",
+        "text": "Legal status updates received from courts or police shall be placed before competent authority for periodic administrative review."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-12",
+        "text": "Where acquittal or closure report is received, consequential administrative review shall be initiated within thirty days."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-13",
+        "text": "Where chargesheet is filed, disciplinary authority may proceed under service rules independent of criminal trial timetable, subject to legal advice."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-14",
+        "text": "Students and staff shall be informed only through authorized notice channels to prevent rumor-driven disruption."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-15",
+        "text": "Victim-support and grievance channels shall remain available and confidential during criminal case handling."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-16",
+        "text": "Any intimidation, retaliation, or interference with witnesses shall attract immediate disciplinary scrutiny."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-17",
+        "text": "Institution shall prepare monthly status report on pending FIR-linked administrative actions for supervisory authority."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-18",
+        "text": "Requests for certified copies of institutional records for legal proceedings shall be processed under record-disclosure rules."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-19",
+        "text": "All FIR/arrest related files shall include timeline sheet indicating event date, reporting date, action date, and review date."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-01",
+        "text": "For recurring issues identified in grievance communications (nbsp, gmail, message, grievance, forwarded), the institution shall maintain a time-bound action tracker and provide category-specific disposal updates."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-02",
+        "text": "Examination schedule, admit-card release, and evaluation timelines shall be published in advance through official institutional channels."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-03",
+        "text": "Result publication delay beyond notified timeline shall be accompanied by a formal notice indicating revised date and cause of delay."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-04",
+        "text": "Students may apply for rechecking or review within the notified window through prescribed form and fee process."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-05",
+        "text": "Rechecking shall verify totaling, unmarked answers, and data transfer integrity without re-evaluation unless specifically permitted by regulations."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-06",
+        "text": "Applications for correction of name, roll number, subject code, or paper mismatch shall be processed on priority before final mark-sheet issuance."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-07",
+        "text": "Tabulation errors identified post-publication shall be rectified through approval workflow with audit trail."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-08",
+        "text": "Provisional certificates may be issued where final documents are delayed, subject to verification of completion status."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-09",
+        "text": "Absentee and withheld cases shall be clearly tagged with reasons and expected resolution path in student portal or notice board."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-10",
+        "text": "Backlog, supplementary, and special examination notices shall include eligibility, fee, and timeline details."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-11",
+        "text": "Internal assessment disputes shall be reviewed by department-level committee with recorded findings."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-12",
+        "text": "Examination grievance cells shall acknowledge complaints within three working days and provide disposal timeline."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-13",
+        "text": "Digitized scripts or marks data shall be retained for the notified retention period for dispute resolution."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-14",
+        "text": "If server or portal outage affects form submission, compensatory submission window shall be provided through official notice."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-15",
+        "text": "Late fee waiver in exceptional cases shall be governed by transparent criteria and competent authority approval."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-16",
+        "text": "Result correction orders shall be communicated to all affected sections including scholarship and migration desks."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-17",
+        "text": "Student requests for transcript and duplicate mark-sheet shall be processed through standardized SLA-based workflow."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-18",
+        "text": "Misconduct in examinations shall be processed under unfair-means rules with opportunity of hearing."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Semester / Examination",
+        "clause_id": "EXM-19",
+        "text": "Semester progression decisions impacted by pending result disputes shall be handled through interim academic protection measures where permitted."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-01",
+        "text": "For recurring issues identified in grievance communications (principal, grievance, regards, west, bengal), the institution shall maintain a time-bound action tracker and provide category-specific disposal updates."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-02",
+        "text": "All miscellaneous administrative grievances shall be acknowledged within three working days with a unique tracking reference."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-03",
+        "text": "The concerned section shall provide a reasoned response within fifteen working days unless a longer period is approved with recorded reasons."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-04",
+        "text": "Requests for certificates and attested copies shall follow published document checklist and service timelines."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-05",
+        "text": "Fee-related corrections, refunds, and ledger mismatches shall be processed through finance verification with auditable entries."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-06",
+        "text": "Scholarship verification delays shall be escalated to nodal officer with weekly status update until disposal."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-07",
+        "text": "Transfer, migration, and no-objection requests shall be disposed based on eligibility and outstanding dues verification."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-08",
+        "text": "Hostel-related grievances on allotment, safety, and facilities shall be reviewed by hostel committee with action minutes."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-09",
+        "text": "Accessibility and student-support requests shall be prioritized under inclusive support norms."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-10",
+        "text": "Where grievance concerns multiple departments, a lead coordinating officer shall be designated for single-point communication."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-11",
+        "text": "All decisions impacting student rights or employee service conditions shall state factual basis and applicable rule position."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-12",
+        "text": "If requested records are unavailable, response shall indicate reason, custodian, and next review date."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-13",
+        "text": "Digital grievance portal entries shall be mapped to manual register to prevent duplication and closure mismatch."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-14",
+        "text": "Escalation matrix and appellate contact details shall be displayed in official notices and portal pages."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-15",
+        "text": "Repeated grievances on the same unresolved issue shall be tagged for supervisory review."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-16",
+        "text": "Time-bound action taken report shall be generated for grievances marked urgent by competent authority."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-17",
+        "text": "Interim relief measures, where permissible, shall be considered to prevent avoidable hardship during final disposal."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-18",
+        "text": "Communication to complainant shall remain factual, respectful, and free from speculative statements."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Miscellaneous",
+        "clause_id": "MSC-19",
+        "text": "Quarterly analytics of miscellaneous grievances shall be prepared to identify recurring administrative bottlenecks."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Grievance Scope",
+        "clause_id": "GSC-01",
+        "text": "Only grievances directly related to institutional academic, administrative, or service matters shall be accepted for processing."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Grievance Scope",
+        "clause_id": "GSC-02",
+        "text": "Complaints unrelated to institutional functions or involving purely personal disputes shall be rejected as out of scope with reasons."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Submission Rules",
+        "clause_id": "SUB-01",
+        "text": "Grievances should be submitted within thirty days of occurrence unless justified with valid supporting reasons."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Submission Rules",
+        "clause_id": "SUB-02",
+        "text": "Grievances missing mandatory documents or required fields may be rejected until complete information is provided."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Complaint Handling",
+        "clause_id": "CMP-01",
+        "text": "Anonymous complaints shall be processed only if supported by verifiable evidence; otherwise, they may be declined."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Complaint Handling",
+        "clause_id": "CMP-02",
+        "text": "Repeated grievances on identical issues without new evidence may be reviewed for duplication and may be rejected after supervisory review."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Legal Matters",
+        "clause_id": "LEG-01",
+        "text": "Grievances concerning matters that are sub judice shall not be adjudicated while the matter is pending before a court of law."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Legal Matters",
+        "clause_id": "LEG-02",
+        "text": "In sub judice cases, the complainant shall be informed of the limitation and advised to await judicial outcome."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Communication",
+        "clause_id": "COM-01",
+        "text": "All grievance status updates shall be communicated through official channels such as email, SMS, or portal notifications."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Communication",
+        "clause_id": "COM-02",
+        "text": "Acknowledgement with a tracking number shall be issued upon successful submission of a grievance."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "System / Portal",
+        "clause_id": "SYS-01",
+        "text": "Technical issues in grievance portal submission shall be supported with alternative submission mechanisms and user guidance."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Scholarship",
+        "clause_id": "SCH-01",
+        "text": "Scholarship applications shall be processed within a defined timeline, and delays beyond thirty working days shall be escalated."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Scholarship",
+        "clause_id": "SCH-02",
+        "text": "Scholarship disbursement delays shall be reviewed and corrective action initiated with status updates to the applicant."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Escalation",
+        "clause_id": "ESC-01",
+        "text": "Unresolved grievances at institutional level may be escalated to higher authorities with defined timelines for response."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Records & Tracking",
+        "clause_id": "REC-01",
+        "text": "All grievances shall be registered with a unique identifier and tracked through both digital and manual systems."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Records & Tracking",
+        "clause_id": "REC-02",
+        "text": "Discrepancies between manual and digital grievance records shall be resolved through verification and synchronization."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-20",
+        "text": "No employee shall be suspended without issuance of show cause notice and opportunity of hearing unless exceptional circumstances are recorded."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-21",
+        "text": "Departmental inquiry shall be initiated within a reasonable period after suspension and delay shall be justified."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-22",
+        "text": "Employees under disciplinary proceedings shall have access to relevant documents for defense."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Suspension / Disciplinary",
+        "clause_id": "SUS-23",
+        "text": "Disciplinary action shall not be taken without proper investigation and adherence to principles of natural justice."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-20",
+        "text": "FIR against institutional staff shall trigger administrative review and appropriate action under service rules."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-21",
+        "text": "Arrest of employee shall be reviewed for service continuation as per applicable regulations."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-22",
+        "text": "Police investigations affecting institutional duties shall be documented and reviewed periodically."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "FIR / Arrest",
+        "clause_id": "FIR-23",
+        "text": "Court cases involving staff shall be assessed for administrative implications."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Non-Suspension Service",
+        "clause_id": "SER-01",
+        "text": "Salary increments shall be processed within prescribed timelines and delays shall be addressed."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Non-Suspension Service",
+        "clause_id": "SER-02",
+        "text": "Transfer and posting requests shall be processed based on policy guidelines and timelines."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Non-Suspension Service",
+        "clause_id": "SER-03",
+        "text": "Promotion cases shall be reviewed periodically and processed as per eligibility."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Non-Suspension Service",
+        "clause_id": "SER-04",
+        "text": "Leave applications shall be processed within reasonable time and communicated to employees."
+    },
+    {
+        "policy_id": "DEMO_POLICY",
+        "section_title": "Non-Suspension Service",
+        "clause_id": "SER-05",
+        "text": "Errors in service records shall be corrected upon verification and request."
+    }
+]

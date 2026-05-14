@@ -1,0 +1,94 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1754957dlb;
+        Sun, 22 Sep 2024 04:14:13 -0700 (PDT)
+X-Received: by 2002:a05:6512:2396:b0:535:681d:34a4 with SMTP id 2adb3069b0e04-536ac2d66b1mr3892622e87.7.1727003653631;
+        Sun, 22 Sep 2024 04:14:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727003653; cv=none;
+        d=google.com; s=arc-20240605;
+        b=AKvuUchGj8MyvPs35lMyAJ4+ERxevre7P+BMCSWbEgxBA9KUTOpcvKOQ9uUeB5ofeW
+         UhQ/3bLkzI9AbRT2g+5nBwY2jap/anClsZrCVL+NyghFc5/6BiVjo6lMcK+oFobnwtfj
+         QHvI7arqH56y71IE41Q1rv0y8De5t8wgrVt8OWzt8bhpeF1RWrWhYIFub/ctY5NADjIC
+         G8/4sMD5Gkwyi6fy+VHVmaczLl0/ZD7GXMCjQGWFQFXnZO/NOHc0thYugsKBeg5qcRdA
+         war6/eA/k/2xPDvYeY6xJzk0i13oepdv1ymgT8naq+ioX2RTMMU/m1+C/BG6tDOjbIpD
+         /ZVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=FqirN31yhg32kOMLPvHqJjFFyXGZGvA3pCaOolix1Aw=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=JDHfR6yl29B/DorseJip7GMzE4qJ7URwdMRUcFKIad6RCVth4ScJhLPORcsBXbyJPI
+         n0k+fyM5pSyKEtoXq44bkI0rD9LjcChbtPNxgQBDnSoAJPb4SJze29/fdeuFUks67fFp
+         XG5HctKxtD4jtT+n7DEMBDXJoxsQ0Z1g/n0j/PdEiwwUXeNFI63O+yN93I1bscNMbefU
+         1DsMN/GdYg0VvQdY1pRV5khUCe5x04bGiPE1efPSrRrLqBtYv6PrjrKPrebl2SBovSZB
+         woJigvAqbsxHxlIfc3XL84gJkR8HBBKVCSHxBz+q29wmC9kiZPVvihi8aAKzdvh1fhoH
+         e0SQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Atd/LLvR";
+       spf=pass (google.com: domain of rksm.college@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rksm.college@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <rksm.college@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 2adb3069b0e04-536baf68bc5sor512546e87.5.2024.09.22.04.14.11
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sun, 22 Sep 2024 04:14:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rksm.college@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Atd/LLvR";
+       spf=pass (google.com: domain of rksm.college@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rksm.college@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727003651; x=1727608451; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=FqirN31yhg32kOMLPvHqJjFFyXGZGvA3pCaOolix1Aw=;
+        b=Atd/LLvR0sdzhxOBLdwERQeeFwamkzRJKN9EqeA4d/PrB5xM3FunGYxZaXJZ+DVKsB
+         peGXhQ/0weRW7kULHpnUIJJxi1kwJSv1gUZvThFzOXmPL0qYovbz+d/PEW/xM0ASEVuY
+         aOUCy8nbWeEZpvP8wx6oICrUt/WOTfFRvZhc8+Ar+3gB1mG++Q+fWVJRLFt6N+rZy6vr
+         +ub4Crrzh/d78qsrepJXSR9rfZ8dbtgGvMsAcZsdsxWb5MC+k841aVGfRvgsYdi4WHPF
+         jeki7QgtsSliBZC2N3S8FuMz07dpj7oj1bdGpWm222S17Zb/zG7O9MWpjC7yRSJQnnbb
+         R2uw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727003651; x=1727608451;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=FqirN31yhg32kOMLPvHqJjFFyXGZGvA3pCaOolix1Aw=;
+        b=UwLc0TDtzxalz1kVUN5g+bpHBNaxrTfJQuN9M5dd8HmY/d61bNbgfeW7fads+tn0Hm
+         T+IBklep5zl82fBprvm7NDXahe5g/2HLORoVHdZt4Cn1D8T6b07gYff940CgpwXuKVrG
+         7qkqVd/xjqZGQ1sWKmLDVi9W8FiKlqqtqDijJvqX4NrJ6R9m3cAVP9QgcoeKX5YGUr+H
+         3TRvTWlci+E1gsl8RwMZXPaCrC9zKKCM9JyMtH9Q9Rc8SMJeI3cibUuAcmFHTEaWifer
+         B2AI2aHPIRILZJnJFrLkjwCN3QxeZUBfUOctwjEfl05A7WZ/5RMHbv20KQQucO0WuuJs
+         HW0A==
+X-Gm-Message-State: AOJu0YyMknPZDqmdXG3ckdcrlVm18fAu0li+4jIMJEA7l2w390HZJZ8l
+	Qek6oj8kpy1Rq/+bcJtYjm5gXoNTL8zbmXGpR3sZUygDO7z1a3X2Ns3IZLqyeo3z10n/z/DnOza
+	D0vxqYZa9mbsG5l/gPZca9rmdOt6H
+X-Google-Smtp-Source: AGHT+IEP9EmbjwaSHOgEfpkiG7phUQNBBCCG0qV4/PVUDwUxwdT9M0iA20OwPghqfpnkVdunCjohXtEGjgcFHLALoVQ=
+X-Received: by 2002:a2e:4c01:0:b0:2ef:2cdb:5053 with SMTP id
+ 38308e7fff4ca-2f7cb348334mr29221101fa.37.1727003650453; Sun, 22 Sep 2024
+ 04:14:10 -0700 (PDT)
+MIME-Version: 1.0
+From: Ramakrishna Sarada Mission Vivekananda Vidyabhaban <rksm.college@gmail.com>
+Date: Sun, 22 Sep 2024 16:43:58 +0530
+Message-ID: <CADRv5NfN_XqwtNRFqA-9svBYmv-cwC+QK4sbi5xV5QVh2MHudQ@mail.gmail.com>
+Subject: Suspension case - NIL
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000001c77230622b35f5b"
+
+--0000000000001c77230622b35f5b
+Content-Type: text/plain; charset="UTF-8"
+
+This is for your information that suspension is nil at our College.
+RAMAKRISHNASARADA MISSION
+VIVEKANANDA VIDYABHAVAN
+
+--0000000000001c77230622b35f5b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">This is for your information that suspension is nil at ou=
+r College.<div dir=3D"auto">RAMAKRISHNASARADA MISSION=C2=A0</div><div dir=
+=3D"auto">VIVEKANANDA VIDYABHAVAN=C2=A0</div></div>
+
+--0000000000001c77230622b35f5b--

@@ -1,0 +1,108 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:726:b0:89:ead2:3829 with SMTP id 38csp790710dlh;
+        Thu, 12 Sep 2024 03:03:52 -0700 (PDT)
+X-Received: by 2002:a05:6000:18a9:b0:374:c847:86d with SMTP id ffacd0b85a97d-378c2d06115mr1654622f8f.16.1726135432089;
+        Thu, 12 Sep 2024 03:03:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726135432; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OdhLm6aZVHMKbFSUGvz0NkVawfqHQrOrcjUWw3Jj3oX1IoDzraeZgOgLI/wlFFGkJZ
+         sw0gwIw2JC70EwKVbT1Ryt0GsqevfZz+1du3Txd8g41h6vm4nT9f4rUowCGg5/LflpqB
+         btRWtnYF9ODip6qNY7yGPwIGTALClaecZklD/u1ihFogpM/TmaYikbpH8y/L6w3kL4zz
+         IBIWWn47uDdq68W+jGDVAu1RGanTNfWreiM11DAD+4ZGGSwvojGx6kfei4APC90erexB
+         GReT//XOfdK8oLikUToN5RxXBY/Hg+POqWN1iEXaJZZj+8XV5tqZyyhTFyQJmB7SOj2S
+         MT5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=xhtmlEbl3vGaoT7ywCfH9Zextco/OMYIicWk/ab8/sM=;
+        fh=14d6mZTpBFtmYb2ZhhXSYxEeW1ppEHTDuPpPSfwyRVc=;
+        b=XdmHogs8v88+bWlnLadaHMioP1GMNP+wDGGtJvoCx5EdjOiTDAABaVaodazBYzxVGI
+         xXlTrhefF5Ak/7jgZbLy6DSKPZTeVFOYOU3NROkHI4mnDpVmCx0j6mRExclOvK7m8AuL
+         FsGsX5drjQwhiTNyuE3srhxS4n088PxqaA5u/oQGfmxKwBv8/IUvA/a1FgBPUOgPKYCH
+         ISNV2Bmc6j6CkiuyiOzzNkBZIDt687T5sNcthT4E15jpTXa6Mm/dZY5j8bTExn81KV/R
+         vJKIX8yphOTFylvfT7HDD9x2fsxfRkxG01i553dgNIt8xsJNIyRXykO9Lxyyd6n9Uikw
+         fJ4g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=VNs8cHo7;
+       spf=pass (google.com: domain of dr.nilanjan.de@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dr.nilanjan.de@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <dr.nilanjan.de@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ffacd0b85a97d-378956d62d7sor2811542f8f.5.2024.09.12.03.03.51
+        (Google Transport Security);
+        Thu, 12 Sep 2024 03:03:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dr.nilanjan.de@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=VNs8cHo7;
+       spf=pass (google.com: domain of dr.nilanjan.de@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dr.nilanjan.de@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726135431; x=1726740231; dara=google.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=xhtmlEbl3vGaoT7ywCfH9Zextco/OMYIicWk/ab8/sM=;
+        b=VNs8cHo7I+fw3Vh4FByYAX2ForIJcnK0fYM/Z9WOCE9y1jZuXRMjF6YT120fPo1+YV
+         nuiz/WVe4oNfRYJW1JNI0YgbCFZDgufBe6KNuTAZlUdLhyTMekFvs7ZqaKTerWK84z9p
+         0aiSz0sIoR3Rr+cAhfk5gww4kgpRglbJBxE4wjTjarY080mLiyJ+Np55ymB6RclQuQze
+         UzOagM8DokdbIk/hRWuTo7Nvr6YaPjjzz6jmdNWXI7GnahHpjNqZEaDMQXhHn5YVA34D
+         zoKYBKqTwksT8ycIOMxMaIWaGNnyqO7IiQCQvsl2hUijpM39My89ny9zcRTStcVIAy60
+         OAkQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726135431; x=1726740231;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=xhtmlEbl3vGaoT7ywCfH9Zextco/OMYIicWk/ab8/sM=;
+        b=hjbTAoBhLJ3FXBCPyyZp6VJgCCQE/Z8RvGHlo8ZGXwDogpwQDExqszKr6zh+QB8187
+         IfUbLmiwSXv9iMs1zaaDvIkhx6p3piMBx6dalgkGS0r5dYeP03OuUwYrSrqRteHQ+oqM
+         b+BKEWSxdau+EtucOYnDE3Wkh1LSbLzuNjdWXy9YFlEhFGf2vKzRMMHt44qxpnJfYvJA
+         YJMjdliQr16CpyxubyGGuaqjK/7zYPvuuBqABl+Lup5OYC9oWLvhHwxGgIfo2w535+nv
+         sfi/L7Nu6PdhXna8dHZXdOyaept1A6QME4iLeTOuL75BcQHnXANcx6qAyUbul9V3Z820
+         K1+g==
+X-Gm-Message-State: AOJu0YycPAHBE91NNv4lOjQ974MA7bK0UH5rUI0AqZ7ggZZqoWXjgura
+	7ckxwlm0kNX2Nc1ioeiyhc/W7p2uXAmeZ5yS6oRkyYI01XZWBJu5kVADHmDB+I2Bva00876Kc+S
+	+F1L5X5aq49GoOdzZJWy4BPEKhy+i3J7O
+X-Google-Smtp-Source: AGHT+IFEDlamIAKDkjZrA2Qpjv/bWmwERdvUEFXvZTHdHE+lw2z6Zh0WGCx04yHLU2UCdiwUzapZws8qk6KEFbLf/p8=
+X-Received: by 2002:a5d:4806:0:b0:374:bad0:2b72 with SMTP id
+ ffacd0b85a97d-378c2cfeb58mr1364863f8f.11.1726135430954; Thu, 12 Sep 2024
+ 03:03:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Nilanjan De <dr.nilanjan.de@gmail.com>
+Date: Thu, 12 Sep 2024 15:33:39 +0530
+Message-ID: <CALUR1mAWfHZWOfU0CXDdcRa_ria9-SWUd=oiY_BLxQNPNtC1fw@mail.gmail.com>
+Subject: Information regarding suspended staff of Tehatta Sadananda Mahavidyalaya
+To: grievance.hed.wb@gmail.com
+Cc: samlasjdpi@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000003249150621e9395b"
+
+--0000000000003249150621e9395b
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir,
+
+In response to your direction (No-GRC-HED/02(10)/24, Dated 29.08.24), this
+is for your kind information that Tehatta Sadananda Mahavidyalaya, Tehatta,
+Purba Bardhaman, West Bengal, don't have any suspended staff at present.
+
+Thanking you.
+
+Sincerely
+
+Dr. Nilanjan De
+Principal
+Tehatta Sadananda Mahavidyalaya
+
+--0000000000003249150621e9395b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Respected Sir,<div><br></div><div>In response to your dire=
+ction (No-GRC-HED/02(10)/24, Dated 29.08.24), this is for your kind informa=
+tion that Tehatta Sadananda Mahavidyalaya, Tehatta, Purba Bardhaman, West B=
+engal, don&#39;t have any suspended staff at present.</div><div><br></div><=
+div>Thanking you.</div><div><br></div><div>Sincerely</div><div><br></div><d=
+iv>Dr. Nilanjan De</div><div>Principal</div><div>Tehatta Sadananda Mahavidy=
+alaya</div></div>
+
+--0000000000003249150621e9395b--

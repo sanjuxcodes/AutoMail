@@ -1,0 +1,101 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:726:b0:89:ead2:3829 with SMTP id 38csp675119dlh;
+        Wed, 11 Sep 2024 21:06:52 -0700 (PDT)
+X-Received: by 2002:a05:690c:7109:b0:6d6:aa50:924e with SMTP id 00721157ae682-6dbb6b984d0mr16400107b3.36.1726114011906;
+        Wed, 11 Sep 2024 21:06:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726114011; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nwj94Tvu4nJFiJvgCS/DKlgt50lB5UV6aVo8LJuFu2dHp4EHVtNDWenQAZGsrU7y1u
+         zaSv4zrVPI4ZTDIUqlYMHYbcfL7zJRqpfdzw+ZzwTKx6N6YuJZwLOIOg20gpM2ikwLao
+         E3yUcQySJm9DbxcqEb1j5GnEgA4YL6Q051orWgTxUYt8Uo6s6hZvWplro90zkVblbMMx
+         EKr7MbVFIvcPBMzFU2jAdvVHX5takVXZQvX3BDHmlOXuQ7IzroRrWq+mKGJuCRRrQ1Ck
+         6GcNgQPP39sPWB2kkJnce6rOBFAmP6psn+BZLE4qE7KK5GXqyv+VlvbeIFoFFmq2ERQy
+         9PvA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=1nscr+o+37+2zX8169KoBOh1LRDUElOjhwEtpI1jqAo=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=S+EpynLBYKJQ5F0VhBMeRzJI7mKwyn+//P+0o0+Wjvy/V6W85EwuXd7EjQjOYTDp21
+         f/ji985CZHYPETv5rWfvpp2jMocHwFUQuCzpLF0QND+816wZBc3jhslR8bWhqAUzAtyY
+         xFyj2Dl3MeD+n1JHS58TePwiq/QQqRsV2zfE2luSZXvPOBYbk5ZDmzJKMUlTJDKxCr8K
+         SshnNkf16UnxnxlO4LjeFA/PVW/B0WjpPMTiZzigppMHm+ShSpgXLKpuH2IzMaXRr8jM
+         1qyAuS3ntxVHjwynphUZdL9yxakX4LEEpXT1s2h4vTBW3tSn89gWpO2lijOToxtRxW8F
+         GS/A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=cnXV9qjb;
+       spf=pass (google.com: domain of amdangacollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=amdangacollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <amdangacollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6db5c00630esor73393297b3.0.2024.09.11.21.06.51
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Wed, 11 Sep 2024 21:06:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of amdangacollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=cnXV9qjb;
+       spf=pass (google.com: domain of amdangacollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=amdangacollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726114011; x=1726718811; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=1nscr+o+37+2zX8169KoBOh1LRDUElOjhwEtpI1jqAo=;
+        b=cnXV9qjbwvF9r5L+31ivQD6Ybtu/6y3W4uo+Pt/xHgCdTF7faxSGOKQutB6AmjVQXZ
+         2Zi6JKaaakRPiYqxtNTnGnFrHmGFhOq0YbaUQ40LnXVP7RxtxgqLrtbycmm7oAkEgy1l
+         xliUcYxPfPHSTx4MykKBCzVQ2M/Wc0VlklTBAdSGzBEE72aN9xYrEzIjoUTKAGw/Tfgr
+         ZIuzbLyjLH0AHkI5Sa5xpC9NSIKDMlZnVKuhE5PSuE+0pkiKi7SCIv+GRluSFg4fNlJf
+         J2YYTdGFRgt9RyP8sIXkaSoo14qPmfwrLqmg/n9aL3LFdxFkaO7zNXq7i2doNk8/bWdm
+         Y/DQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726114011; x=1726718811;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1nscr+o+37+2zX8169KoBOh1LRDUElOjhwEtpI1jqAo=;
+        b=gkSmZq5yXg1a9+ajIFuESJHefXE90TpcKWLpDX4GJiiNv93zxXPoHfIV1D2qUGhUF6
+         Easa4otqf2eobqDb9yqHZQKDnVElXeUSkKNrqxqiaQY7dOL/rvq9Dk9O2qlmPR71fu7t
+         Up0mcs44jmL3rnPwUBpIe1KD1nh5CuSViELS6l5A0IqiBF1xuq0WuDApc58ydxtDEb4D
+         Pcdjy/k7aWEZTJMoti64C0pcU+bAkhkZrUsm+O9p1nFiwn/uMsDKqD2YsYQkSaHhVixh
+         eVrJtnAarkmytd6sk7vPpa1i8fjVUhCIaapSdp2ge42eyNo509ojzGRm3O6K4P9GgsCd
+         qiNQ==
+X-Gm-Message-State: AOJu0YwmE0s805zhX4JwFHumUTI4yzrvYM0aF7iOd0SDQnXb+qypPI5P
+	Yn4Ru5k2qllCIZkhC6PVuwhj6dvk7pVvvDabotjCgvl0NLYLkGWUa1s85zvjsfMzVh2Vwxpm7gA
+	vMRz+JFBDLgekJ6+QL243a8arAXNYia7V
+X-Google-Smtp-Source: AGHT+IEY2zrxvi29krqtBVDOw8yEkeaKl5p+za4JqE5Jz8vlyjXQsLW3i7CbAr3tXbfhoPcyTmkkdwuZYJB7tbGQjss=
+X-Received: by 2002:a05:690c:3585:b0:6d9:90f3:1a79 with SMTP id
+ 00721157ae682-6dbb6b9850amr18581957b3.32.1726114011021; Wed, 11 Sep 2024
+ 21:06:51 -0700 (PDT)
+MIME-Version: 1.0
+From: AmdangaCollege <amdangacollege@gmail.com>
+Date: Thu, 12 Sep 2024 09:36:38 +0530
+Message-ID: <CAO9YTBhOso4-ckx62RC=g4KBp0oMWOj0TRq74vQtqYPvzZEYLw@mail.gmail.com>
+Subject: NotificationNo.21-Pr.Secy-HED/24 Dtd. 29-08-24
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000078088b0621e43c7e"
+
+--00000000000078088b0621e43c7e
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+In response to your notification No.21-Pr.Secy-HED/24 Dt.29-08-24 please
+allow me to inform you that there are no cases of suspension at our
+institution, i.e. Amdanga Jugal Kishore Mahavidyalaya.
+This is for your kind information.
+Regards,
+Principal
+Amdanga Jugal Kishore Mahavidyalaya
+
+--00000000000078088b0621e43c7e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir,<div>In response to your notification No.21-Pr.Secy-HE=
+D/24 Dt.29-08-24 please allow me to inform you that there are no cases of s=
+uspension at our institution, i.e. Amdanga Jugal Kishore Mahavidyalaya.<br>=
+This is for your=C2=A0kind information.</div><div>Regards,</div><div>Princi=
+pal</div><div>Amdanga Jugal Kishore Mahavidyalaya</div></div>
+
+--00000000000078088b0621e43c7e--

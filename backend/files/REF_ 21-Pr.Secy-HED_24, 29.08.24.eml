@@ -1,0 +1,132 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp234006dlb;
+        Fri, 13 Sep 2024 04:16:36 -0700 (PDT)
+X-Received: by 2002:a05:6602:158c:b0:82a:a403:f0df with SMTP id ca18e2360f4ac-82d1f8a81dfmr800061639f.2.1726226195743;
+        Fri, 13 Sep 2024 04:16:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726226195; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sGK4nO8kck6XwWT3rghwikEv3xNArnyHDCTo3lpqI+j3pWI+6HvlB4MX0TfJC6TvWp
+         zmxHtcjjLjMLCK3xVSvz8e7G+I8m4QXGn/jV1koRgaPpkCir+nLoreNoJLb3BuZzJuqa
+         G/rkxIPu+o5awF2ilY5XK59ug8JyiU33glJN2uok16Vb5zK817DXu/gvr4TPRrmKPiey
+         lIOrsVSy0ZKwpp2SP1zds94SJRZG7f76LYF90un95HpVisX6QsHGW3/H3Rx/Y/Kr1I4B
+         QVoIiDru0AE4pVRPE7kRAqsEkAt70FnhOT8Femhc0klCrcp/eSmKPHoh4Wvwv0h9WLuB
+         BbkQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=2BGFJDK94HIkobY7UiSLMUmrpVZTPKbZjbdDiJrdfQU=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=reNzCbYc8jOeirtQ7ni+06O90N+Du4esx4BdD6U4UsOztK5hpVtNl5udMYJdKi620t
+         KuT7CfoF/7jbEIsTzheoiR84zwHYg+xyaMwYNqOgwWGNTs4bcoDmJpNufXSqdFCSe+nJ
+         Ia6CaDk1/3kPHhYktaF+whgtmIDfJ+wGJYpJvjXKxNFDXeoodwkwdqxJ25uru7jtRiiD
+         N7xcaMmrD5A+p5e3Od+ca0ExD9VNgY31u7Suv1cbgSBsJWSIKyNFzoBZCp9l7r8zHXWx
+         NMbuwLgs2aUkRwe/MIzaKWXvZk/Agxm/bHkO4iE40MN0j3vaZHEiGvIyAyqK70MgzAKj
+         8qEA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=K0PNLMhU;
+       spf=pass (google.com: domain of abhedanandamahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=abhedanandamahavidyalaya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <abhedanandamahavidyalaya@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 8926c6da1cb9f-4d1fef9e855sor2485962173.2.2024.09.13.04.16.35
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 04:16:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of abhedanandamahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=K0PNLMhU;
+       spf=pass (google.com: domain of abhedanandamahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=abhedanandamahavidyalaya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726226195; x=1726830995; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=2BGFJDK94HIkobY7UiSLMUmrpVZTPKbZjbdDiJrdfQU=;
+        b=K0PNLMhUwKCN2QoO4NpNv7UqCH3ea2/feg/6o5/pUcncGF/MuRE/y3sjxlswIFxB7b
+         PjUSK2xDo8V/ak5yY+jttDnrh5OumfZROM1yUpBZgzECbv+CyMjO/5vPyAocd7M8Sh5W
+         rDDNdYZ0bNaGnsf6lnynvzF8cSxvWC7lCgDRPwatLeWTGbzUE/CLtMNC3BTXz0tPwBUZ
+         GxzA0eIuryz+hBhiasX/bVDnIesizQXvg6ga6qfagTHQvxG1N2hOq3NghT63P4B7yiO0
+         z0TGggW3Y94cWGMy61NnfONmROkszPClo/PfdWUnCdzyq7w/3s5NtbA2zh+dg31psyIh
+         RL8Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726226195; x=1726830995;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=2BGFJDK94HIkobY7UiSLMUmrpVZTPKbZjbdDiJrdfQU=;
+        b=dNzpuDpWCZnS4D+E/8TZ/f5XtINtHx8hYpZjZmleEk2l8HAd3LdyaQCy1mIylGxSSd
+         zHPtSnbscs3VMWYO1sVHi1M1rYbArqXGpgItOsU2NdIRHNSDPXJ/MzWhKR022kM0/1dE
+         0up1X7b3dKAf6wdvZy75yqk8gL6loOHbEIEb0F5zxzbkenxzKVHe0UDbJDhgq3vl1GjM
+         JhPSkQA5IkhNVLY0UmJ4JnMd948DFMFTEfu0urnHRkfxg3AyIy8Gd611n48bEL9JKjS2
+         3iwqMe/SnSXBYbRg/a7ElqE5IDtpkGLiZ9EPlROKE/N7B7DmVmLBudbfkyJjo7SMUasb
+         QfZA==
+X-Gm-Message-State: AOJu0YzNsXs0wZlVL9/POvFaduEjjs4ZC7A1t6fvnfCCBKh/3Oze6E3v
+	7Pw6S8EaEFPhv75M9cxk5Gsg96wcWAg60NX0Wh4wZTqnAZ68J40F2qix7TchZ73zgdzFzHgdqaQ
+	dkNbXhqPIZDK8i1E/aB1bYPPuggzUFw==
+X-Google-Smtp-Source: AGHT+IEqnqZXQF9Yc4W3ve73aimYHiSnlqUGcE+DNqlx1eKDe92FbZpi/hUdemTSjRp0dSO8z0zo645XujoGSmarEOw=
+X-Received: by 2002:a05:6e02:216d:b0:39f:54bc:dd28 with SMTP id
+ e9e14a558f8ab-3a084902764mr60712665ab.6.1726226195082; Fri, 13 Sep 2024
+ 04:16:35 -0700 (PDT)
+MIME-Version: 1.0
+From: ABHEDANANDA MAHAVIDYALAYA <abhedanandamahavidyalaya@gmail.com>
+Date: Fri, 13 Sep 2024 16:46:24 +0530
+Message-ID: <CANE5a8dSqsW4dWs1Q+_H1-gUoj0x+n46NZ8f3naabENsY=mrzg@mail.gmail.com>
+Subject: REF: 21-Pr.Secy-HED/24, 29.08.24
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000028f5db0621fe5b7f"
+
+--00000000000028f5db0621fe5b7f
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+Inviting reference to the letter mentioned above, we declare that there is
+no case of suspension of employee at Abhedananda Mahavidyalaya, Sainthia,
+Birbhum.
+
+This is for your information and action.
+
+Regards,
+
+
+Sincerely
+
+*Dr. Gautam Sen,*
+*Principal,*
+*Abhedananda Mahavidyalaya,*
+*Sainthia, Birbhum.*
+*Phn: 03462263449*
+*Mobile: 9434182461/9002480581*
+
+--00000000000028f5db0621fe5b7f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir,<div>Inviting reference to the letter mentioned above,=
+ we declare that there is no case of suspension of employee at Abhedananda =
+Mahavidyalaya, Sainthia, Birbhum.</div><div><br></div><div>This is for your=
+ information and action.</div><div><br></div><div>Regards,</div><div><br></=
+div><div><br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" =
+data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><span style=3D"bac=
+kground-color:rgb(0,0,255)"><span style=3D"background-color:rgb(255,255,255=
+)"><span style=3D"background-color:rgb(111,168,220)"><span style=3D"backgro=
+und-color:rgb(243,243,243)"><font color=3D"#000000">Sincerely</font></span>=
+</span></span></span></div><div><span style=3D"background-color:rgb(0,0,255=
+)"><b><span style=3D"background-color:rgb(255,255,255)"><span style=3D"colo=
+r:rgb(0,0,255);background-color:rgb(111,168,220)"><span style=3D"background=
+-color:rgb(243,243,243)"><br></span></span></span></b></span></div><div><sp=
+an style=3D"background-color:rgb(0,0,255)"><b><span style=3D"background-col=
+or:rgb(255,255,255)"><span></span><span style=3D"color:rgb(0,0,255);backgro=
+und-color:rgb(111,168,220)"><span style=3D"background-color:rgb(243,243,243=
+)">Dr. Gautam Sen,</span></span></span></b></span></div><div><span style=3D=
+"color:rgb(0,0,255);background-color:rgb(243,243,243)"><b>Principal,</b></s=
+pan></div><div><span style=3D"color:rgb(0,0,255);background-color:rgb(243,2=
+43,243)"><b>Abhedananda Mahavidyalaya,</b></span></div><div><span style=3D"=
+color:rgb(0,0,255);background-color:rgb(243,243,243)"><b>Sainthia, Birbhum.=
+</b></span></div><div><span style=3D"color:rgb(0,0,255);background-color:rg=
+b(243,243,243)"><b>Phn: 03462263449</b></span></div><div><span style=3D"col=
+or:rgb(0,0,255)"><span style=3D"background-color:rgb(255,255,255)"><b>Mobil=
+e: 9434182461/9002480581</b></span></span></div></div></div></div></div></d=
+iv>
+
+--00000000000028f5db0621fe5b7f--

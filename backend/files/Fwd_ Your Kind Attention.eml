@@ -1,0 +1,126 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:429f:b0:89:ead2:3829 with SMTP id bk31csp516742dlb;
+        Thu, 26 Sep 2024 11:34:36 -0700 (PDT)
+X-Received: by 2002:a05:6808:3c98:b0:3e1:7059:c76f with SMTP id 5614622812f47-3e39354361emr511272b6e.16.1727375675794;
+        Thu, 26 Sep 2024 11:34:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727375675; cv=none;
+        d=google.com; s=arc-20240605;
+        b=NOORt+mOg0sxfjLGLLyZ3Ztqs68uxX1FWmbiLBp5XjRdlVjGfY0abLgeryblsPdfWp
+         81rZyFLP1747ZcKPZXldAp8mWzt9QN5EtvRfo1x7bkyCHO6u2nh/5VGKqst85YDU+TA9
+         TlTJnf3iJtjvaKa3Qp/IAEPGY2T/mBIf61bXqtu8IiROKRGRwR5eqERgJer2dBfG01Bu
+         CqE0OnyBgTJRfPqkvmYaLgTf7PRlBzLOHEu6NtH+XbUnw6uM7uGKjRGwFZvsTb0frIJW
+         IDA728dC3myt/5KVJlsGDRnPDgHs5yPrfr6owHLhUOFNCUj07zj/DPfOTYM75MkAa068
+         uk8w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=+weSmVSux1KIQUuGn8hbCHIamY6ollIztVUnXVOeyaE=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=GimjojUnmZpHHZKwVQfo3Ol3qD4Uw8ke5V8klXJfa5gPS8aajcTlFnirSwLdhH1Th1
+         foMJEpw/pjC+p8ApzJTDlHselzLPyPYVM0n9I3VSS7zBC2Omt1DeCwbMEv0rAQQadYqr
+         GifnBlaYRimmrqFNXOQ7UCU3kXQI7U7EZLTv7KD9yvP7WHTAb3JYHr4azFcU0fOH/53v
+         AivQFI8D7S28d7GQ+Fe051TLvEL+M+xbKFXQ8+rbjCKKQfLLTXMFh3LuTSLw9KiOWsEZ
+         xwv/xXO7E842LI2ibCFhhyvXbPer8WlVd9iNlNYq/LJ27m//jRCPuQ9RBPzQajcrWkbb
+         gKbA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=I1inC9Al;
+       spf=pass (google.com: domain of assistantdpibikashbhavan@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=assistantdpibikashbhavan@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <assistantdpibikashbhavan@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 5614622812f47-3e3932b55c0sor130634b6e.3.2024.09.26.11.34.35
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 26 Sep 2024 11:34:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of assistantdpibikashbhavan@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=I1inC9Al;
+       spf=pass (google.com: domain of assistantdpibikashbhavan@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=assistantdpibikashbhavan@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727375675; x=1727980475; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+weSmVSux1KIQUuGn8hbCHIamY6ollIztVUnXVOeyaE=;
+        b=I1inC9Al80Z7Lt4b4vHw50R8jJLSEusT+xctohu+bp4nZkguLEMXkLxYGU6Hqll3n8
+         N1I4qSCYL5Zxo6ROLEJejOQYHRLNXGIERz0eS16sO1C0dpIalWumLWemRd+Sw8xsk2Ek
+         NGzO3cmkTUfjuFSaIhmcaKdJ3Lf/NBo4EwDIMfm6cuPNAs4f5ZiofxDu58GTmpgm1Otg
+         czhyo6aCPcfA7RoMqi9vAR7xWxnq+cqSOsTqm+BrpoblFaptZ/EX2wsEFSfB05S93IyY
+         z3A3xSXZqilUWhx5YDiI8uYg9pGdsXOfY4IJCxcmhnIs9QwDtVNNOX4oOrJaufGE7tg5
+         AfeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727375675; x=1727980475;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=+weSmVSux1KIQUuGn8hbCHIamY6ollIztVUnXVOeyaE=;
+        b=gxrX0TcNvI5IEzt0xxPoSI7nthD13Dl8clGpEuWyfVMHhT0toW31wq1abHdMrFaXXd
+         cNBDZL3OQyWpS2Fs01UB3LQs3/Z2IQ/hncMFw5BqFUr+DhLyPl8WvOjFeD4UkW2cHIOo
+         zbHp2H+riWcdb8XjeYZlzvZ/7QCx32L0L+1EhLL4lPef/mBl0hhACXdVZknASfufJ4k5
+         IlzYv84pXwsM6cvtm5zkmboJZF0eR9oc8U0Da5zrAR0cnQkDVP5xEQs0hq120MOrZlaf
+         lbu6ebJz735+ZEWxS23Ut1fXVWYTtDYfd88XWM8h7nfkYU6Sby3gBXrb8yEOXLK/Cbt7
+         7NOg==
+X-Gm-Message-State: AOJu0YyTdzA2QwLUzxM8eRyrZHcVPTSIUi29XToIUCs0EYNLxHdtXtoC
+	13kQCKqUvuJUE4G5OGWHddIqnzxryq5O/TGF3cXtH3pr7SKKvxZpBxUwIi3IkEWcrqLUdeieGpt
+	8TsnBYL0+YoT5gtfUZSD+9m57txrDKA==
+X-Google-Smtp-Source: AGHT+IGnJ2I+4jE6SMjn1imM+Bp/c6aM0GSZk14MOR05hxF2GfTJhUN8Qn7HsmHTdH6/9jHHpTdgg49OfN0EtccIlXc=
+X-Received: by 2002:a05:6808:f89:b0:3e0:3b50:6fcd with SMTP id
+ 5614622812f47-3e2a32c42eamr2206710b6e.5.1727375675263; Thu, 26 Sep 2024
+ 11:34:35 -0700 (PDT)
+MIME-Version: 1.0
+References: <CANE_vT+=+d=rLKFkQP4RGgMn5YEcFjPW+R-q95gPWDkTPPhgxw@mail.gmail.com>
+In-Reply-To: <CANE_vT+=+d=rLKFkQP4RGgMn5YEcFjPW+R-q95gPWDkTPPhgxw@mail.gmail.com>
+From: Assistant DPI <assistantdpibikashbhavan@gmail.com>
+Date: Fri, 27 Sep 2024 00:04:22 +0530
+Message-ID: <CA+dtdpA-w++fbm3nGpBZVX_4OzeNnD=PAECQvvhMnx+C5t0Q=w@mail.gmail.com>
+Subject: Fwd: Your Kind Attention
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000008491fa062309fd5d"
+
+--0000000000008491fa062309fd5d
+Content-Type: text/plain; charset="UTF-8"
+
+From Birpara College,  Alipurduar
+
+---------- Forwarded message ---------
+From: Birpara College <birparacollege@gmail.com>
+Date: Mon, 23 Sept, 2024, 14:06
+Subject: Your Kind Attention
+To: <assistantdpibikashbhavan@gmail.com>
+
+
+Respected Sir
+This is to draw your kind attention to the fact that we have *No Suspension
+Cases at Birpara College*. This is for your kind and necessary information.
+                        Thanking You
+Regards
+Yours Sincerely
+Dr. Kaustav Chakrabarti
+Principal, Birpara College
+Alipurduar District
+West Bengal
+
+--0000000000008491fa062309fd5d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">From Birpara College,=C2=A0 Alipurduar=C2=A0</div><br><di=
+v class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Fo=
+rwarded message ---------<br>From: <strong class=3D"gmail_sendername" dir=
+=3D"auto">Birpara College</strong> <span dir=3D"auto">&lt;<a href=3D"mailto=
+:birparacollege@gmail.com">birparacollege@gmail.com</a>&gt;</span><br>Date:=
+ Mon, 23 Sept, 2024, 14:06<br>Subject: Your Kind Attention<br>To:  &lt;<a h=
+ref=3D"mailto:assistantdpibikashbhavan@gmail.com">assistantdpibikashbhavan@=
+gmail.com</a>&gt;<br></div><br><br><div dir=3D"ltr">Respected Sir<div>This =
+is to draw your kind attention=C2=A0to the fact that we have <b><u>No Suspe=
+nsion Cases at Birpara College</u></b>. This is for your kind and necessary=
+ information.</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Thanking You</div><div>Regards</div><div=
+>Yours Sincerely</div><div>Dr. Kaustav Chakrabarti</div><div>Principal, Bir=
+para College</div><div>Alipurduar District</div><div>West Bengal</div><div>=
+<br></div><div>=C2=A0</div></div>
+</div>
+
+--0000000000008491fa062309fd5d--

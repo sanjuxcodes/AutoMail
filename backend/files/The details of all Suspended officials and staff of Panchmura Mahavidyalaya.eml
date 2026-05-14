@@ -1,0 +1,305 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp391801dlb;
+        Sat, 14 Sep 2024 08:06:17 -0700 (PDT)
+X-Received: by 2002:a17:906:fe4d:b0:a7a:b385:37c5 with SMTP id a640c23a62f3a-a902943825cmr1046101366b.17.1726326376960;
+        Sat, 14 Sep 2024 08:06:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726326376; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Q1AQUhozY8FAhYxr5g6s+HgFfmXYsEXtlU44dWTQqPBq2nVoVFPeJ3SCSH0FrAutiH
+         kHwSJjCllsnRh37wqL6OmXzjjG9cxnFwiVxTOsGNdzfANmgKJ72/22zaJ2U3x2B3isP6
+         RwFft4LcoDmld6zn2dDus9TSthh/qR34RkIJr5AP2i2/16ign3w2/S3B43mnGWrwDI4n
+         XT08tplmtbecWyB6by6ml4vBclhyu4PsEu/XY3Tm91A/HQLpTE6XhTPxos6X9xsxR3Pr
+         CrTOx2golSmaXNM6bVO63wJH4YdPOJHcHJYRpZFytDdyeQpqIpUGVkzrbsvHYXCdJ5j2
+         jYvA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Hi88qcXuTWlmAyHia8i4bEN/BucVaRIw7j7Jn9tgdR0=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=xwJyYerdi2m4aWYrtUOlmzJb2XYFerxResB7T5pzgoO6c/lnGOQRD7Q4R+Lbnq+87u
+         21loNaGspEACuZfU3xTqpJrIJwiWkEnPkE3iEnWmZDngGpgs66k0iSUu21H1/Of4UKnr
+         Rmp7Ht0PTsWxZ+hQX/37ZPjIN1mRamB72SMG0h3c31wbvlElZeG+w4Tz7O4yamm13Y26
+         YHSIkdLSFljPu75tZDDVrK5MUCd/6OKGbOICO/Iag/gihp34JDlqwQPu0Rt6pScaztwn
+         kzjMNDtAKOp5+qdhqT9eVHafA+EKzj+r0LC+5T3x2SKJJT3DPWJcfSAfuYvUdXHCMS6H
+         Mv6g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Ykxu4NH5;
+       spf=pass (google.com: domain of pmmahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pmmahavidyalaya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <pmmahavidyalaya@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-a90613062d5sor55847866b.19.2024.09.14.08.06.16
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sat, 14 Sep 2024 08:06:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pmmahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Ykxu4NH5;
+       spf=pass (google.com: domain of pmmahavidyalaya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pmmahavidyalaya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726326376; x=1726931176; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Hi88qcXuTWlmAyHia8i4bEN/BucVaRIw7j7Jn9tgdR0=;
+        b=Ykxu4NH5wGvALoMzhwmtkbBmoYw2dSdLojFVARJpTzMlIRBfA4ozkDvtgnBCgKtuli
+         hJv6jPVmwUND2SQKIf1fE2aTJvtiqQwmbGm6uPs2Us5+eDolvYWWw18/zigI1wrdizvb
+         QT6c8NzjwHiWSPZ1JLGiCQZ7oIOkD45wnyh47XTkKdSsEIrQnnuzzIVovGHkCK4t7/1B
+         OoiKqahT9LUQ8VxZLdJz5jme+FytDjV5l/H2IInj+TUH0CuL4FUJ0dgUG/Q80hpSop0E
+         uuzCWquKXqrgqsJmNZJfdeV1TKEUKVNWVkQMrJGQfhdprAKXPkXfzfR44S7RNSZWs/j4
+         l4Uw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726326376; x=1726931176;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Hi88qcXuTWlmAyHia8i4bEN/BucVaRIw7j7Jn9tgdR0=;
+        b=swyegJle0GCoOWbqTVtG6rp4D0DUGAOhZQspUErpi/famM92wAjZDoXzrljfdSCjnO
+         Aje+rfDuET0P+kB7SJUdgv+vTLoY/k0IFJCdOHQUbZc268To+9xnkBqgR+nDbBvmtmBR
+         +InsM06jw5iErMnYuXEWsbeCV1wmV+Yrh/es+xCkivE8urTVZw4zJ3j4CI+8NtS2p+dw
+         DuxkpN1LiUtLSP3erZnIqcDf2Up++eTxl3ByOuwzT47FdL40+xTWC23L0sPlBwG7fxOj
+         cmme4ZBntn8ouOybSOSmpa/7DEwmcs5gOHBd9RfKgXHTi4aOaEiFrMeTOG1YgKFrIVtx
+         21qA==
+X-Gm-Message-State: AOJu0YwCq9nMcOk6gzRwBzMH5IrocnAG3P5smbrTjDBRDdLX67Yp5Vjt
+	me/2eGo0VBeQSYYm9/lnFUNcSjzh2NQjD++PmB2vppXBnNHUNn0sDsKdgBPQGcAoXsoTfgPMjV1
+	bnsPZBLEr+at+cY44ham4GDfa0sRJ4h8MA/c=
+X-Google-Smtp-Source: AGHT+IHemHWY/vEzeI4Nk8CxPVwT9iNW1E004tSa+17hcCU++6OowgjrCtBHu7lhyloN5fYFWgZp0W2fX1UiZ1UXQLE=
+X-Received: by 2002:a17:906:fe09:b0:a7a:b070:92c6 with SMTP id
+ a640c23a62f3a-a9029617408mr1015217466b.50.1726326375000; Sat, 14 Sep 2024
+ 08:06:15 -0700 (PDT)
+MIME-Version: 1.0
+From: Panchmura Mahavidyalaya <pmmahavidyalaya@gmail.com>
+Date: Sat, 14 Sep 2024 20:36:03 +0530
+Message-ID: <CAKJXnF+GyfbyAe7Rh1OWCZxvzd0zpx+BTGOf1U9JTLuaf0j85w@mail.gmail.com>
+Subject: The details of all Suspended officials and staff of Panchmura Mahavidyalaya
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000005934c8062215ae33"
+
+--0000000000005934c8062215ae33
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir, please read the attached file.
+Name of the Suspended Employee Name of the Office / Institution with
+address Suspended
+from Reason for suspension Any other details
+NIL PANCHMURA MAHAVIDYALAYA PANCHMURA, BANKURA,WB PIN-722156 NA NA NA
+With thanks,
+*Dr. Anal Biswas *
+Principal
+Panchmura Mahavidyalaya
+Panchmura, Bankura
+
+--0000000000005934c8062215ae33
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"630" style=3D"border-collapse:collapse;width:473pt">
+
+ <colgroup><col width=3D"64" style=3D"width:48pt">
+ <col width=3D"146" span=3D"2" style=3D"width:110pt">
+ <col width=3D"71" style=3D"width:53pt">
+ <col width=3D"75" style=3D"width:56pt">
+ <col width=3D"64" span=3D"2" style=3D"width:48pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" width=3D"64" style=3D"height:14.4pt;width:48pt;padding-=
+top:1px;padding-right:1px;padding-left:1px;color:black;font-size:11pt;font-=
+family:Calibri,sans-serif;vertical-align:bottom;border:none">Respected Sir,=
+ please read the attached file.</td>
+  <td width=3D"146" style=3D"width:110pt;padding-top:1px;padding-right:1px;=
+padding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;=
+vertical-align:bottom;border:none"><br></td>
+  <td width=3D"146" style=3D"width:110pt;padding-top:1px;padding-right:1px;=
+padding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;=
+vertical-align:bottom;border:none"></td>
+  <td width=3D"71" style=3D"width:53pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;ve=
+rtical-align:bottom;border:none"></td>
+  <td width=3D"75" style=3D"width:56pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;ve=
+rtical-align:bottom;border:none"></td>
+  <td width=3D"64" style=3D"width:48pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;ve=
+rtical-align:bottom;border:none"></td>
+  <td width=3D"64" style=3D"width:48pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;ve=
+rtical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" style=3D"height:14.4pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-seri=
+f;vertical-align:bottom;border:none"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"630" style=3D"border-collapse:collapse;width:473=
+pt">
+
+ <colgroup><col width=3D"64" style=3D"width:48pt">
+ <col width=3D"146" span=3D"2" style=3D"width:110pt">
+ <col width=3D"71" style=3D"width:53pt">
+ <col width=3D"75" style=3D"width:56pt">
+ <col width=3D"64" span=3D"2" style=3D"width:48pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" width=3D"64" style=3D"height:14.4pt;width:48pt;padding-=
+top:1px;padding-right:1px;padding-left:1px;font-size:11pt;vertical-align:bo=
+ttom;border:none"></td>
+  <td width=3D"146" style=3D"width:110pt;padding-top:1px;padding-right:1px;=
+padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td width=3D"146" style=3D"width:110pt;padding-top:1px;padding-right:1px;=
+padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td width=3D"71" style=3D"width:53pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td width=3D"75" style=3D"width:56pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td width=3D"64" style=3D"width:48pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td width=3D"64" style=3D"width:48pt;padding-top:1px;padding-right:1px;pa=
+dding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" style=3D"height:14.4pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"58" style=3D"height:43.2pt">
+  <td height=3D"58" style=3D"height:43.2pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td class=3D"gmail-xl66" width=3D"146" style=3D"width:110pt;text-align:ce=
+nter;border:0.5pt solid windowtext;padding-top:1px;padding-right:1px;paddin=
+g-left:1px;font-size:11pt;vertical-align:bottom">Name of the Suspended Empl=
+oyee</td>
+  <td class=3D"gmail-xl66" width=3D"146" style=3D"border-left:none;width:11=
+0pt;text-align:center;border-top:0.5pt solid windowtext;border-right:0.5pt =
+solid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;paddi=
+ng-right:1px;padding-left:1px;font-size:11pt;vertical-align:bottom">Name of=
+ the
+  Office / Institution with address</td>
+  <td class=3D"gmail-xl66" width=3D"71" style=3D"border-left:none;width:53p=
+t;text-align:center;border-top:0.5pt solid windowtext;border-right:0.5pt so=
+lid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;padding=
+-right:1px;padding-left:1px;font-size:11pt;vertical-align:bottom">Suspended=
+ from</td>
+  <td class=3D"gmail-xl66" width=3D"75" style=3D"border-left:none;width:56p=
+t;text-align:center;border-top:0.5pt solid windowtext;border-right:0.5pt so=
+lid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;padding=
+-right:1px;padding-left:1px;font-size:11pt;vertical-align:bottom">Reason fo=
+r
+  suspension</td>
+  <td class=3D"gmail-xl66" width=3D"64" style=3D"border-left:none;width:48p=
+t;text-align:center;border-top:0.5pt solid windowtext;border-right:0.5pt so=
+lid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;padding=
+-right:1px;padding-left:1px;font-size:11pt;vertical-align:bottom">Any other=
+ details</td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"97" style=3D"height:72.6pt">
+  <td height=3D"97" style=3D"height:72.6pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td class=3D"gmail-xl65" width=3D"146" style=3D"border-top:none;width:110=
+pt;text-align:center;vertical-align:middle;border-right:0.5pt solid windowt=
+ext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid windowtext=
+;padding-top:1px;padding-right:1px;padding-left:1px;font-size:11pt">NIL</td=
+>
+  <td class=3D"gmail-xl65" width=3D"146" style=3D"border-top:none;border-le=
+ft:none;width:110pt;text-align:center;vertical-align:middle;border-right:0.=
+5pt solid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;p=
+adding-right:1px;padding-left:1px;font-size:11pt">PANCHMURA
+  MAHAVIDYALAYA PANCHMURA, BANKURA,WB PIN-722156</td>
+  <td class=3D"gmail-xl65" width=3D"71" style=3D"border-top:none;border-lef=
+t:none;width:53pt;text-align:center;vertical-align:middle;border-right:0.5p=
+t solid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;pad=
+ding-right:1px;padding-left:1px;font-size:11pt">NA</td>
+  <td class=3D"gmail-xl65" width=3D"75" style=3D"border-top:none;border-lef=
+t:none;width:56pt;text-align:center;vertical-align:middle;border-right:0.5p=
+t solid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;pad=
+ding-right:1px;padding-left:1px;font-size:11pt">NA</td>
+  <td class=3D"gmail-xl65" width=3D"64" style=3D"border-top:none;border-lef=
+t:none;width:48pt;text-align:center;vertical-align:middle;border-right:0.5p=
+t solid windowtext;border-bottom:0.5pt solid windowtext;padding-top:1px;pad=
+ding-right:1px;padding-left:1px;font-size:11pt">NA</td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" style=3D"height:14.4pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" style=3D"height:14.4pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+ <tr height=3D"19" style=3D"height:14.4pt">
+  <td height=3D"19" style=3D"height:14.4pt;padding-top:1px;padding-right:1p=
+x;padding-left:1px;font-size:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+  <td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;font-size=
+:11pt;vertical-align:bottom;border:none"></td>
+ </tr>
+
+</tbody></table></td><td style=3D"padding-top:1px;padding-right:1px;padding=
+-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-serif;vertica=
+l-align:bottom;border:none"></td><td style=3D"padding-top:1px;padding-right=
+:1px;padding-left:1px;color:black;font-size:11pt;font-family:Calibri,sans-s=
+erif;vertical-align:bottom;border:none"></td><td style=3D"padding-top:1px;p=
+adding-right:1px;padding-left:1px;color:black;font-size:11pt;font-family:Ca=
+libri,sans-serif;vertical-align:bottom;border:none"></td><td style=3D"paddi=
+ng-top:1px;padding-right:1px;padding-left:1px;color:black;font-size:11pt;fo=
+nt-family:Calibri,sans-serif;vertical-align:bottom;border:none"></td><td st=
+yle=3D"padding-top:1px;padding-right:1px;padding-left:1px;color:black;font-=
+size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;border:none"=
+></td><td style=3D"padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none"></td></tr>
+
+</tbody></table></div><div dir=3D"ltr" class=3D"gmail_signature" data-smart=
+mail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div d=
+ir=3D"ltr"><div>With thanks,=C2=A0</div><div><span style=3D"background-colo=
+r:rgb(255,255,255)"><font color=3D"#0000ff"><i><b>Dr. Anal Biswas=C2=A0</b>=
+</i></font></span><br>Principal<br>Panchmura Mahavidyalaya<br>Panchmura, Ba=
+nkura</div></div></div></div></div></div></div></div>
+
+--0000000000005934c8062215ae33--

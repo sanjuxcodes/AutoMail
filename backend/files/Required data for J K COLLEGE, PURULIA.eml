@@ -1,0 +1,98 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp410655dlb;
+        Fri, 13 Sep 2024 09:02:46 -0700 (PDT)
+X-Received: by 2002:a05:690c:b:b0:6c8:7827:f271 with SMTP id 00721157ae682-6dbb6b36349mr71846517b3.19.1726243366635;
+        Fri, 13 Sep 2024 09:02:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726243366; cv=none;
+        d=google.com; s=arc-20160816;
+        b=P1xqcq8evJNw7nlgOBB92znvC+zJdD4GUw7uq+tT2mt+eMwSN3zSU5PQsLh9SIkTEI
+         W5xksCOjM9Dzb5pUmtMkLYP7hy0vMX4fLzkG4o61udIb/oudqJONDJQ+Du05drs/M38J
+         0XkCzjVO9g+zeshbTokS6FcS2mPmhoinWeOiXpPv/s6wEhNZixUf98CsY3aCfAcYuDDJ
+         2LsBhuOk8HVQpLN3UqEJ+/Pf92mAtiSqHUwxmKMUBg7TbSGWiNSBb2+FO2fWEQNpGs4J
+         y40MnLUiDxHHsFKX3VzRmQJcz8x5WEuW0ievSYCrOyeCPMX3uUk0+ijXWVGCLkzpCm9G
+         +tFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=CFUVM0TVmYdaUfWVHczPaKsCjtwzaTbsbTE61OsMKAs=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=lBYH6h/duV/dnW27zSDXdiDtRImxWDClMDoQKFe/IAVrnZFLUvf2zztT1ra1Xvw6yr
+         gU5Vvs4TqMVS2lzYkxW9uhl+UoB6DjPzLOGGVc0cui8qti5FENBgA+ayn+zCOr2Dnb71
+         DPbKBFpT0TkOr3xqBF261V2xTV5MWMGx2KwOUU5Pp8CK9XNdV96hh9WnCXEac9lzUAkC
+         nWKdYp2YCqVOGZlZwW5Kz0HjnqD2HbAeyMq/C+x5Dem/H/L8r17/1T0EaJ9eGdrCo+7p
+         XHxoyOLRvIsseEKflEoZhy/LbNdO2DHuqP2DX/96SFNZq6PxJgM0LS5FOzzLfkpwzB01
+         GNbA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="D/XLww5o";
+       spf=pass (google.com: domain of jkcp.1948@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jkcp.1948@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <jkcp.1948@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6dbe01c5affsor222607b3.1.2024.09.13.09.02.46
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 09:02:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jkcp.1948@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="D/XLww5o";
+       spf=pass (google.com: domain of jkcp.1948@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jkcp.1948@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726243366; x=1726848166; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=CFUVM0TVmYdaUfWVHczPaKsCjtwzaTbsbTE61OsMKAs=;
+        b=D/XLww5oiI91jjFj9T7hSY3HeCFbmbi/9Y0nt4fG1YvIqHeZ1AYAJTJLRZplij8AuZ
+         /Ikhd86uKzlxEnaiHvJBcO3F0OojoUVySgM55knO56IJQSzGAUs8B9DnItQXF99puRze
+         l4AxUM5f/XNKBeBMiOA5WeZnImb9wuhDRY9y4joYeciTVLm93AZWbp6rOC9Ebrba38AS
+         B/yHWL0LqvZn7U5n9dXhir9A2l5u4OzxkK9NuXaqiS5P7RP0gwqk8swL/xZcueLpYquf
+         yU7GKI/4eIlGszT8sGaIg63NDoM4k69wcHcAbWLEAi4Mx1P+2oF9yu2whDRfYNYQMbfU
+         GHuQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726243366; x=1726848166;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=CFUVM0TVmYdaUfWVHczPaKsCjtwzaTbsbTE61OsMKAs=;
+        b=tvs9RJPsf1BWNWwH0yN0AQu5ep4wMXAhgL6XD1GdO5MUhDBpVUtya5AOotkgX/kPEp
+         c5dRswuUSa2IzVS57IZnQcVOb0YwMlAAUm57OSksrNOK3HVzW0/sIfB/TKsHVafEBX3N
+         CZHpxjdx3jiG7uaDx+U9DLhUZW0PWpSQ8RZdwXKkYmXl4HU9UUbZ4N61VzMMJ8WTRFlF
+         49poK+sqTH38HZbEyQ0gKVYC25iMuPy3cZiBYOBDFXBjbNHoC/n7yRiEKdD9IXOeHtWL
+         UmEBok3ToDHK8qXUCFTA2vla8iP0QMMrYlmrOuoYQTELfvKOeY+Wy7UQt4Ymx5glSJLJ
+         PbQQ==
+X-Gm-Message-State: AOJu0YxO2HFyiq/HzqwfkLl09tSq6+Kkad5ZwFldlcn1CxkjVQA6crFX
+	l1Rm3iyf9GPXZwESxip5A6k/vfJBhIZdJ/R5nT30Pe9PX3JuoKC5yadNI67rLddyDU1Vs5Mz+0a
+	QQNfNcE27xTeE1WqGc2y92y5zu/Xn8g==
+X-Google-Smtp-Source: AGHT+IHFBiUfigaAjBiGbUZmOGNsWE1aYFk+WOcAJr5a6ZHaVM7dc9qgsDmLw1Og1hf+9RycI7rBuswyS57wRTwuqko=
+X-Received: by 2002:a05:690c:640e:b0:6db:de99:28ae with SMTP id
+ 00721157ae682-6dbde992a62mr5991057b3.17.1726243365725; Fri, 13 Sep 2024
+ 09:02:45 -0700 (PDT)
+MIME-Version: 1.0
+From: JKCollege Purulia <jkcp.1948@gmail.com>
+Date: Fri, 13 Sep 2024 21:32:34 +0530
+Message-ID: <CAD76-fYjdrfymHU56mCiD0ExdYRTzO+GKOnE93K-FvUawvBkdw@mail.gmail.com>
+Subject: Required data for J K COLLEGE, PURULIA
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000009c2d6c0622025a0a"
+
+--0000000000009c2d6c0622025a0a
+Content-Type: text/plain; charset="UTF-8"
+
+Sir/Madam,
+In response to your query this is to inform you that none in our college is
+in suspended condition.
+Regards,
+Principal,
+J K College, Purulia
+
+--0000000000009c2d6c0622025a0a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir/Madam,<div dir=3D"auto">In response=C2=A0to your quer=
+y this is to inform=C2=A0you that none in our college is in suspended condi=
+tion.<div dir=3D"auto">Regards,</div><div dir=3D"auto">Principal,</div><div=
+ dir=3D"auto">J K College, Purulia=C2=A0</div></div></div>
+
+--0000000000009c2d6c0622025a0a--

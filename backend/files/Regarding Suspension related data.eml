@@ -1,0 +1,102 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp137272dlb;
+        Fri, 13 Sep 2024 00:05:23 -0700 (PDT)
+X-Received: by 2002:a05:6e02:1c83:b0:39f:7a74:e6d2 with SMTP id e9e14a558f8ab-3a0848ebad4mr54198705ab.3.1726211123568;
+        Fri, 13 Sep 2024 00:05:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726211123; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bOtHKMn9ywHAssZqUKUEWjWWcym5mNnlqRfbslOp2G6FFVgJPk4UX2011XzK6zBv1T
+         AVshgG+TkBhWa6hBtQmdAsefBKQskYhoNvr2OGU2IZEz1VUc5C8/xJ4B9I/yf3fctNka
+         ZyMgIqfwcCfitLxtIHXimjDT+7NvYw83dpuGJw+nXfWkLiOkKbguuU0g1JlG+Smt4Riv
+         P1aJWQbuUaHFVOOeB/ItHbLe+YtfOnqz32Ewt4Mo4HPhs0Jxt4DM+eRe42Mg9cxAchzR
+         DgjplcFxZ/F6WP2/FJit/Tlp6kShAf2zH8gwnAVD2yE6HPvBtwXjX6lqe+NeEZb/BKhb
+         HV6Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=aD1KxdzRgpfldye1ej5lLXmYGxZWPgZWgNE5GSSBTwY=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=Xt0jM8Ig5JCHFKLxMoY7cmt1hF6NIk56DMeIq+inKJnnX4R7r4vxu9zP65ZxpAlZq5
+         +FYuSAfJ+G7Upv/aLgJLGMpvPlswSzzuBczkJo4/OuXUhXtqTSMZrUvE4Qs598Y5OQ7K
+         Td9qXZ+wYtD1h4HzncWhMQumkbucv6AvZiXiHq5m7jbqCeA8GBaGxC31CJmGJKvDN1Cz
+         TyHm09iNT3EbF22a7YhR78q8fPWv/ynHX/5YRnaO6j8kyg9by1BEPoj1qDEDD7gZXX9s
+         DQ6MQ3Mgv3uph2FghuVsTyvGyL5cCEgf/6VhmSiyFPZ3Pm5vwxci2G3EBSZJrLdOUvRu
+         XEDg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Cq8/azz5";
+       spf=pass (google.com: domain of principalramananda@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalramananda@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principalramananda@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e9e14a558f8ab-3a05901345esor38470335ab.13.2024.09.13.00.05.23
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 00:05:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principalramananda@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Cq8/azz5";
+       spf=pass (google.com: domain of principalramananda@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principalramananda@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726211123; x=1726815923; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=aD1KxdzRgpfldye1ej5lLXmYGxZWPgZWgNE5GSSBTwY=;
+        b=Cq8/azz5dfpMvuN8LwTS2oTk4xQCjxghu1J75FBWun1N1g1GE/mnuZ/oOw/YvGravJ
+         Eqk55bynjxbGXK/iY3Ts9NmRa3ntqaRDCD8y0KagYOgzbtfljl8kB2EBWDTRTtpej18x
+         vIuQtHgQXi/vgXL5Kr5A/KjEn5hO4Vs4MbfZGf6QAa2GADIZMM+uv0ABPXJBrK0ebaRH
+         mBc2tXu5cFCKaDJyOrJQzEprA+2tVwpt7HYOvxKI7NJQgM2ClaiZRhyCjFweRfLdUiPM
+         mrzp56ibdojG1VT3fMQy5rpWAR7p/TCe8JFGhn1H2W1Bwu6S2Xamn50Fq001WgZTAKM0
+         E6cg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726211123; x=1726815923;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=aD1KxdzRgpfldye1ej5lLXmYGxZWPgZWgNE5GSSBTwY=;
+        b=D2ax3UQV7d36rrt+Tegr8cmixq8uP2b4cXSxoySadRwmYcHt0AF/QVL08aNCqFGsv4
+         mgAojrPMnZpFXj5phel/GNQPDxZaGyBenJ2W4viD3MkRlzY0+QuO6SgfLA+cC2oUd7d+
+         dZTIlZR2O+/w2cF0fgYGRZBC/S8vuKSpcDuYu0qMhOG2ZPnEMIgrKXBd4EB9UH69fgL7
+         bC72m2+m4K7AWCouWPt7YuACinwZTnyObOa0EqEZDzWu/QI0WnAcXBihXgYxcHHbv5w2
+         igxbwZljjRqFJ1ob1trSKbPNPWgd37ixycemrT6O0+5CjVgsqg8t+Ly2ALuorhT7bZnH
+         BVTA==
+X-Gm-Message-State: AOJu0YwZyDZI/i7d0yQJb7wlRTRLQPQAK7JZrExUsft2rAPvqiNTpWTr
+	Y155mQpJ9OvrHYbzi0DGYvQEERqEiE7Nr0K7XE00cGJqmz5xewtcTqrbZjV5OEGYOYsJEBiF8Tf
+	ptiNMvTCLVfn0wobgwsw8PGfSoWZEDw==
+X-Google-Smtp-Source: AGHT+IHXrU2nR9yeWO6Em6UsJIpWD3UWJZwBfqfYGUUXHt92uMfsLmrc/9JrQvWcfJtrZ8lpE1Eo2g9EAmzlbwJY8vg=
+X-Received: by 2002:a05:6e02:1a6d:b0:39f:5521:2cd4 with SMTP id
+ e9e14a558f8ab-3a084982683mr56747995ab.26.1726211122782; Fri, 13 Sep 2024
+ 00:05:22 -0700 (PDT)
+MIME-Version: 1.0
+From: Swapna Ghorai <principalramananda@gmail.com>
+Date: Fri, 13 Sep 2024 12:34:59 +0530
+Message-ID: <CAH5FdgBaiBCab-0oKjUHw8Tv4wQ-0vYhqDstMZK2xFgNt2XRyA@mail.gmail.com>
+Subject: Regarding Suspension related data
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c7e7930621fad8a0"
+
+--000000000000c7e7930621fad8a0
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir/ Madam,
+We have no suspended teachers or non-teaching stuff in our college till now.
+Thanking You,
+Sd/-
+(Dr. Swapna Ghorai)
+Principal
+Ramananda College
+Bishnupur, Bankura
+
+--000000000000c7e7930621fad8a0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Respected Sir/ Madam,<div>We have no suspended teachers or=
+ non-teaching stuff in our college till now.</div><div>Thanking You,<br cle=
+ar=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr"><div>Sd/-</div><div>(Dr. Swapna Ghora=
+i)<br>Principal</div><div>Ramananda College</div><div>Bishnupur, Bankura</d=
+iv></div></div></div></div></div>
+
+--000000000000c7e7930621fad8a0--

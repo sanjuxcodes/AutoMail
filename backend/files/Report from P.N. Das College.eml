@@ -1,0 +1,93 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1251805dlb;
+        Fri, 20 Sep 2024 21:33:59 -0700 (PDT)
+X-Received: by 2002:a17:907:c7d4:b0:a8d:75ab:17aa with SMTP id a640c23a62f3a-a90d5033ffcmr384504666b.37.1726893239594;
+        Fri, 20 Sep 2024 21:33:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726893239; cv=none;
+        d=google.com; s=arc-20240605;
+        b=KsyzRsJfbWdBB9eLtCK8CJ1ZBt4qgK8B2WOmsmTOVBJj6bW0d56dCmDG60aXdgiyMj
+         6sDNStz+/nzNHoRW5gIi5sn+ivV9aW6QoGehbXslsEhwGtCV2xf+n+TeqFdm/2kfr5gR
+         KEsLwC/ORph8lY2Tfc23FVyDDxw533Ul6nwIKLO/1U62zDNYOVxGZq8wCUNMCpHKkBaj
+         yZOZA9WzU0qBjcJP6cWg3hqCnmL2MN2GFGAZlY+y7nGTmHThac+l2EQW7vQstQG+zL/c
+         irZbboJUFJFHB4Q1c9CLGRexG06Z62lHDp4gT5cfmf68Uk9Q2Ym7g+thKufFhXG4pYnl
+         Vh0Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=wjmPvBQbsMjqhwT5u6AFN0D2IhOmXizYoNYeEs5Jpkw=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=aBpCjMIi3tR5t0jIVawTLrDmAZMDfiDq/0phywQtQEPeHk/hyjzmubWQDNHEzUuhD3
+         cmP5Cf+tDUN397ELp0Yi+KBy/YoZS4KkOGy4ITyisGEr7+HUDGzFMhSmAsKdoLyWUREf
+         X+nWr5otpRYYs8BCw2bkuNowdAOhv6R1VYsd1TOrcKh1w8tJbxcIYO3p20+7JyGhl9xQ
+         QzGdocW3W2cd/qyas0RSAE0EYMYAGmiizX/Bf7zwRrl8f97DBztNpyZpKRbIvhdSJlJx
+         8O9Y6BP4EpbY/vG51wpoluxbIGDS37XZN+obn6JMvo7XbD4VGd34/ZgR7NFT/qMOtju3
+         hgCA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hEBS4smm;
+       spf=pass (google.com: domain of pndc.principal11@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pndc.principal11@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <pndc.principal11@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-a90e4de34a0sor37532366b.21.2024.09.20.21.33.59
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 20 Sep 2024 21:33:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pndc.principal11@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hEBS4smm;
+       spf=pass (google.com: domain of pndc.principal11@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pndc.principal11@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726893238; x=1727498038; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=wjmPvBQbsMjqhwT5u6AFN0D2IhOmXizYoNYeEs5Jpkw=;
+        b=hEBS4smmdQHIWpv55UbUXhHKLCHMFazr73hHylwLgNXFU4OaPRXmwImJ0638wQC2IF
+         0grrs3gbWfRKdtSe7T53ZuXO/6javcpj4/IY9htouQkrNQvvl6U5xzunr80N8brg075Q
+         auy37zOpRyMldfSmRHXdryjuMSBa11cu4NzA0dI70jW5Y1n3q3n8m0iOyXCpvUTcUcwx
+         JZ2gTCsL8AAbO0KTlbpWaJzntI+ZnO1y2gE7SIUgVW1bFtnOX4PkjAIAJQFRGINzG3v6
+         +e3BDQOD/tehPO64e4QI7vDZp4QhVH8W0uGdWD7gKS4zFH9XKyD4H6olb3mGvdckZQTy
+         HHiA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726893238; x=1727498038;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=wjmPvBQbsMjqhwT5u6AFN0D2IhOmXizYoNYeEs5Jpkw=;
+        b=AmK6L6isJgJTYPcM1nTHJuZdlkNrT3F/qz/j9aWw7uLF7WTSNYHKsceUmYNmecoZfE
+         Dp29BIpw4mNDjFEGM/On2wsQvEVCBoGrS6MLsS0XBECV4pL1dYEcvJadF/wDivI2v89l
+         TkDhf6xNaQ6KHoelYENfP6gWrzqXMNoa1GcyIx5qsq46v9p+uwRJyG+t3co3K+xznV3Q
+         giT6nNj9Rn75wPuHa4kEzV0ski4NhV38UIUS/DBhHRw4r+ZOmtQwwxKtkvnP2MByVuqx
+         srbKS54VF5C7p+8Oa14Y0JeLgSEL3+JwK48gJbeQCST79UaBqYuVF5v7iVql4ykQKLWa
+         /1MA==
+X-Gm-Message-State: AOJu0YxzmTtZ0KyIInrPXmcKUg4oNRYtPu5izpt1YHi6k5t3JNEzoaZc
+	SAYrMcjsAJhRXSyMJm0Yt71iRHE5JQP6dtbGcsWnXfgXRvymbPF7FzM1MPC3wbjcsRGHqimXwV0
+	04Mz0Oz81EdGSFh4A4ji5VCnLcEpGhA==
+X-Google-Smtp-Source: AGHT+IFL5emsy9V1vUhffEvhDwbFopnzTsSHS3qKrNeO9R81FCjOtIHeHKqHaZ7icAvTJVHIXyTnx2sVHxB3Xq6yb34=
+X-Received: by 2002:a05:6402:3546:b0:5c4:61f9:1eba with SMTP id
+ 4fb4d7f45d1cf-5c464a7d22emr3071335a12.34.1726893238382; Fri, 20 Sep 2024
+ 21:33:58 -0700 (PDT)
+MIME-Version: 1.0
+From: P N DAS COLLEGE PNDC <pndc.principal11@gmail.com>
+Date: Sat, 21 Sep 2024 10:03:44 +0530
+Message-ID: <CAD5PVh-4H2ezKNPJOtyWohv7REc6fzgkfw2gZzAr9jw3aqDMPA@mail.gmail.com>
+Subject: Report from P.N. Das College
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000009f87c062299aa36"
+
+--00000000000009f87c062299aa36
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir,
+No staff member of P.N. Das College is under suspension.
+Principal
+P.N. Das College
+North 24 Parganas
+
+--00000000000009f87c062299aa36
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Dear Sir,<div dir="auto">No staff member of P.N. Das College is under suspension.</div><div dir="auto">Principal</div><div dir="auto">P.N. Das College</div><div dir="auto">North 24 Parganas<br><div dir="auto"><br></div></div></div>
+
+--00000000000009f87c062299aa36--

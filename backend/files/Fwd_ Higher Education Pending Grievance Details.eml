@@ -1,0 +1,258 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6729:b0:89:ead2:3829 with SMTP id bq41csp235445dlb;
+        Tue, 10 Sep 2024 00:27:49 -0700 (PDT)
+X-Received: by 2002:a05:690c:2d09:b0:6db:5567:6907 with SMTP id 00721157ae682-6db55676eb2mr99914037b3.14.1725953269618;
+        Tue, 10 Sep 2024 00:27:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1725953269; cv=none;
+        d=google.com; s=arc-20160816;
+        b=q0NxHI5dgnPgvyQOGoWkFn+O7cPSS1fKhAX8pCe5oA9Ls3T5n9vPqrb5eAWnnfQIL8
+         oZzeTZxIGUqRNz3FI8+1xdYU9bb4jhs0BtO45SZWo2NsCSMmXgw/9ZhPGWQ0w5WKtEAc
+         gB3zMxqkNfrNY4SMz6BcRFr0nQNFZIj+EH12wvD4F1S86F7UBNm4ZVIlHjYiejsF4Gpv
+         oCT8xaHUYhp7HLf/aetme6fQKKlTc20TWt4D+buUQKoBF1hPJaDdZZA/DhcWc2hOwTK9
+         G78kY9tWVFESElVtLCsBdC6kD9iH5pMARBsJ1/35wUem/x7EBSHxi98mOgGKOlt8Pxb5
+         /ybg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=SuGLaBJug12/cuarDAOLM1K0pO+wNSKM/kIOnSUp0TQ=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=eKonPx7DkgOS2S0ZOqidJGbgmZkRKLtkjsNyT7W03njrjawOThl8xCdKjbn08lg9Tt
+         HnlxOPJU0ndUo+ecIBEBN30fJrcN63/l6lezGUuQUhHDT5yFFZAZABpDCEbkAjjvnO1q
+         D1gH1bgJR9nQAUi8ihWk+m1Sw8XwzJcbtYct3le04Q1p4le5I9Uhxs0R2Y7uH8PWpzTn
+         o695OL3j3iWkH3zQ+15QYAUAkeqVfCDWlBXoiWH2av1xWZMnCZN516Y/KUnNDnvv0hLB
+         a09jOvZZUPsCSzevKtKQnF/8RtswgwG660IWLwnCKHT1IFaBgq2tE8kFGDs3AFL7TiqG
+         IneQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZJL23pzy;
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <wbcscchairman@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6db5c640742sor43354177b3.10.2024.09.10.00.27.49
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Tue, 10 Sep 2024 00:27:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZJL23pzy;
+       spf=pass (google.com: domain of wbcscchairman@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wbcscchairman@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1725953269; x=1726558069; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=SuGLaBJug12/cuarDAOLM1K0pO+wNSKM/kIOnSUp0TQ=;
+        b=ZJL23pzyQU04CXyJpWRpuPMhcM+FOAtzbA1QqjpMjnufAezWuE/MWyp0AibhqIonGL
+         uUs2l0IPp44iqq4018uYzuRjuU8V6/aqszMKj6549ckH7Z0SDNqsPjBNnZ++G6uohc1O
+         xAJPzxJKL/50VAaLgRN9VH+a6CUtgHHsVNohNFGYxYCmDcFOohUajUM4odENVEGrXSl9
+         /5DHNhLcZBXTMW9E8V2A94F/fvQ4PyoqSSO4mV/PypxhaYdkXYlbpplXhllGi2FzZCDJ
+         hlQPjVDwZoTayo1Nr4HtbbZ/LWhFG8dR1X3cTV/otG/5CQCyO4QvLFPdslbQh7ShLFfj
+         nNAw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1725953269; x=1726558069;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=SuGLaBJug12/cuarDAOLM1K0pO+wNSKM/kIOnSUp0TQ=;
+        b=u4Uhc7E4o4z0CIxKtIvU3oRDDvS7fC1e0QRFMkDNpBK3cvgPusmNe1/qc3da1az+X4
+         fE8wgEuJ33GpRlwW7HkWlje7fMb5XRUZ+Ep5OBMdmlmvjF3TKbFwfiGijXGr1apxSgQD
+         ApLEEduUlO5+coEasIzlisXaQlmIepLRAKqdfiG0jpfoOO+oCd6QLXW/k3LLT+j6O+vT
+         3mV6UoNOhH6Arxbko4n6c53ferYe/jROQw8hBjdP66deIBMggHaKpiFsGJL44TukW6qj
+         gE2fRss88+uCjHLUJ1lFghTA/SWXeYXQnUGv6EJWy5oJCD7pizYAxx2s8WvVtHRWBFR1
+         W8pQ==
+X-Gm-Message-State: AOJu0YwymTDYFxFd5b0fiuDK7QdiekAqmUfn0Kai0vRCnMOSl/kNLPNS
+	OBhwGFgrM2Chu4Mo4T9VK/AmO2v+TcVK3OnYCFJu8TpC4LCtmfk6oYqOEY0cnhTu85cJFqrRXph
+	enDRp34Lipr92wayiEdkS9bA/qewMrlcf
+X-Google-Smtp-Source: AGHT+IHQ9qK6Pju2QxiGID6SLLX4wGWy7v2yg9ZSy33bTtkWOjU20guIKei/g5LpVGc4+GQVcI90zUWZahbESs53RbU=
+X-Received: by 2002:a05:690c:f93:b0:615:2a14:4ea6 with SMTP id
+ 00721157ae682-6db44d6a3bfmr147230187b3.8.1725953268840; Tue, 10 Sep 2024
+ 00:27:48 -0700 (PDT)
+MIME-Version: 1.0
+References: <OF631E8440.B820CEA9-ON65258B67.001F70E9@wb.gov.in>
+ <CAND_RKv+4Vv1_G20gmkkFCm+Z3LWwHWjohvS9ozVB=eZQMUG1g@mail.gmail.com>
+ <CAPyMf_f7B-ZED3CQn2F1qCdLyJkO2EZEFUGKJ2kLQJEF_DCgSQ@mail.gmail.com> <CAND_RKuXVoSYk1K_ph-cUXC3pyN9SNKsxDzi9=Uc10eHwBAAwQ@mail.gmail.com>
+In-Reply-To: <CAND_RKuXVoSYk1K_ph-cUXC3pyN9SNKsxDzi9=Uc10eHwBAAwQ@mail.gmail.com>
+From: Chairman West Bengal College Service Commission <wbcscchairman@gmail.com>
+Date: Tue, 10 Sep 2024 12:57:31 +0530
+Message-ID: <CAND_RKvg4NZ2rY8TpXfCO9VOQMQz4Jk+sFdhZhhqFVvqoN8+xQ@mail.gmail.com>
+Subject: Fwd: Higher Education Pending Grievance Details
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000007d340b0621becf90"
+
+--0000000000007d340b0621becf90
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+UmVzcGVjdGVkIE1hZGFtLyBTaXINCg0KV2l0aCBSZWZlcmVuY2UgdG8gdGhlIEdyaWV2YW5jZSBT
+bC5Oby4gMSAoQ09NLSAyMDI0MDkwNjAyMjIxOCkgOiBUaGUgV0JDU0MNCndpbGwgcHVibGlzaCB0
+aGUgbWVyaXQgbGlzdCBhcyBhbmQgd2hlbiB0aGUgdmFjYW5jeSBpcyByZWNlaXZlZCBmcm9tIHRo
+ZQ0Kc3RhdGUtYWlkZWQgZ2VuZXJhbCBkZWdyZWUgY29sbGVnZXMuDQoNCldpdGggUmVmZXJlbmNl
+IHRvIHRoZSBHcmlldmFuY2UgU2wuTm8uIDIgKENPTS0gMjAyNDA5MDYxMjU0MTYpIDogVGhlIFdC
+Q1NDDQpyZWNvbW1lbmRzIG9uIHRoZSBiYXNpcyBvZiB0aGUgY2F0ZWdvcnkgb2YgdmFjYW5jeSBy
+ZWNlaXZlZCBpbiB0aGUgZm9ybSBvZg0KcmVxdWlzaXRpb24gZnJvbSB0aGUgZGlmZmVyZW50IHN0
+YXRlIGFpZGVkIGNvbGxlZ2VzIG9mIFdlc3QgQmVuZ2FsLg0KVGhlIHJlY291bnNlbGxpbmcNCmlu
+IHRoZSBzYWlkIGNhdGVnb3J5IHdpbGwgYmUgbWFkZSBhcyBhbmQgd2hlbiB0aGUgdmFjYW5jeSBv
+ZiB0aGUgc2FpZA0KY2F0ZWdvcnkgaXMgYXZhaWxhYmxlLyBzdWJtaXR0ZWQvIHJlcG9ydGVkIGJ5
+IHdheSBvZiByZXF1aXNpdGlvbiB0byB0aGUNCldCQ1NDLg0KDQpSZWdhcmRzLA0KT2ZmaWNlIG9m
+IHRoZSBDaGFpcnBlcnNvbg0KLS0NCipXZXN0IEJlbmdhbCBDb2xsZWdlIFNlcnZpY2UgQ29tbWlz
+c2lvbioNCuKAnEFTQU5OQeKAnSBCdWlsZGluZywgUGxvdCBOby4gREctMTAvMSwgUHJlbWlzZXMg
+Tm8uIDEzLTAzMjcsDQpBY3Rpb24gQXJlYSDigJMgMUQsIFJhamFyaGF0LCBOZXcgVG93biwgS29s
+a2F0YSDigJMgNzAwIDE1Ng0KDQoNCg0KDQoNCg0KPg0KPiAtLS0tLS0tLS0tIEZvcndhcmRlZCBt
+ZXNzYWdlIC0tLS0tLS0tLQ0KPiBGcm9tOiBIaWdoZXIgRWR1Y2F0aW9uLSBHcmlldmFuY2UgPGhp
+Z2hlZHUtZ3JpZXZhbmNlQHdiLmdvdi5pbj4NCj4gRGF0ZTogTW9uLCA5IFNlcHQsIDIwMjQsIDEx
+OjA3IHBtDQo+IFN1YmplY3Q6IEhpZ2hlciBFZHVjYXRpb24gUGVuZGluZyBHcmlldmFuY2UgRGV0
+YWlscw0KPiBUbzogPHdiY3NjY2hhaXJtYW5AZ21haWwuY29tPg0KPg0KPg0KPiBEZWFyIERyLiBE
+aXBhayBLdW1hciBLYXIsDQo+DQo+IEtpbmRseSBmaW5kIHRoZSBiZWxvdyBHcmlldmFuY2UgRGV0
+YWlscy4NCj4gU2wgTm8gQXBwbGljYXRpb24gTm8gRnVsbCBOYW1lIE1vYmlsZSBDYXRlZ29yeSBT
+dWItQ2F0ZWdvcnkgQ29tcGxhaW50DQo+IERldGFpbHMgUmVsZXZhbnQgQXBwbGljYXRpb24gTm8g
+U3RhdHVzDQo+IDIgQ09NLTIwMjQwOTA2MDIyMjE4IDIwMjQtMDktMDYgMTg6MDA6MzkgRHJJbmRy
+YW5pIFNhcmthciA5MTc5ODA4NTE2NDYgV2VzdA0KPiBCZW5nYWwgQ29sbGVnZSBTZXJ2aWNlIENv
+bW1pc3Npb24gTWlzY2VsbGFuZW91cyBQbGVhc2UgcmVmdW5kIHRoZSB3YmNzYw0KPiBhcHBsaWNh
+dGlvbiBmZWVzLiBXaGVuIHRoZXJlIGlzIG5vIHZhY2FuY3kgaW4gc2MgY2F0ZWdvcnkgb2Ygam91
+cm5hbGlzbQ0KPiBzdWJqZWN0IHRoZW4gd2h5IGRvIHdiY3NjIHRha2UgYXBwbGljYXRpb25zIGZl
+ZXMhIE5BDQo+IDMgQ09NLTIwMjQwOTA2MTI1NDE2IDIwMjQtMDktMDYgMTY6MzI6MzcgVGFubW95
+IE1hbmRhbCA5MTk5MzI3MzgyMTIgV2VzdA0KPiBCZW5nYWwgQ29sbGVnZSBTZXJ2aWNlIENvbW1p
+c3Npb24gU2VydmljZSBNYXR0ZXJzIG9mIEVtcGxveWVlcyDgpobgpq7gpr8gV0JDU0MNCj4g4KaP
+4KawIOCmrOCmvuCmguCmsuCmviDgpqzgpr/gprfgp5/gp4fgprAg4Kau4KeH4Kan4Ka+IOCmpOCm
+vuCmsuCmv+CmleCmvuCmreCngeCmleCnjeCmpOClpChBZHZ0LiBObyAwMS8yMDIwKSDgpqrgp43g
+pq/gpr7gpqjgp4fgprLgp4fgprAg4Kau4KeH4Kef4Ka+4KamIOCnpyDgpqzgppvgprDgp4fgprAN
+Cj4g4Ka54Kay4KeH4KaTIOCmuOCmruCnnyDgpqrgp43gprDgpr7gp58g4Ka24KeH4Ka34KeH4Kaw
+IOCmpuCmv+CmleCnh+ClpCDgp68g4Kau4Ka+4Ka4IOCmheCmpOCmv+CmleCnjeCmsOCmvuCmqOCn
+jeCmpCDgprngp5/gp4cg4KaX4KeH4Kay4KeH4KaTIOCmj+CmluCmqOCniyDgpqrgprDgp43gpq/g
+pqjgp43gpqQg4Kao4Ka/4Kef4KeL4KaXDQo+IOCmquCmvuCmhyDgpqjgpr/gpaQg4Kak4Ka+4KaH
+IOCmhuCmquCmqOCmvuCmsCDgppXgpr7gppvgp4cg4KaG4Kau4Ka+4KawIOCmheCmqOCngeCmsOCn
+i+Cmpywg4Kav4Kak4KeLIOCmnOCmsuCmpuCmvyDgprjgpq7gp43gpq3gpqwg4Kav4KeH4KaoIOCm
+huCmruCmvuCmleCnhyDgpqjgpr/gp5/gp4vgppcg4Kam4KeH4KaT4Kef4Ka+IOCmueCnn+ClpA0K
+PiBOQQ0KPg0KPiBUaGFua3MgJiBSZWdhcmRzLA0KPiBTdWJocmEgRGV5Lg0KPiAtLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0NCj4NCj4gRGlzY2xhaW1lcjogVEhJUyBJUyBBIFNZU1RFTSBH
+RU5FUkFURUQgRU1BSUwNCj4gLS0tLS0tLS0tLS0tLS0tRE8gTk9UIFJFUExZLS0tLS0tLS0tLS0t
+LS0tLS0tDQo+DQo=
+--0000000000007d340b0621becf90
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-size:small"><br=
+></div><div class=3D"gmail_quote"><div dir=3D"ltr"><div class=3D"gmail_quot=
+e"><div dir=3D"ltr">Respected Madam/ Sir<div><br></div><div>With Reference =
+to the=C2=A0<span class=3D"gmail_default">G</span>rievance Sl.No<span class=
+=3D"gmail_default">.</span>=C2=A01<span class=3D"gmail_default">=C2=A0(COM-=
+ 20240906022218)</span>=C2=A0: The WBCSC will publish the merit list as and=
+ when the vacancy is received from the state-aided general degree colleges.=
+<br></div><div><br></div><div>With Reference to the=C2=A0<span class=3D"gma=
+il_default">G</span>rievance Sl.No<span class=3D"gmail_default">.</span>=C2=
+=A02<span class=3D"gmail_default">=C2=A0(COM- 20240906125416)</span>=C2=A0:=
+=C2=A0<font face=3D"arial, sans-serif">The WBCSC recommends on the basis of=
+ the category of vacancy received in the form of requisition from the diffe=
+rent state aided colleges of West Bengal.<span class=3D"gmail_default">=C2=
+=A0T</span></font><span style=3D"font-family:arial,sans-serif">he=C2=A0<spa=
+n class=3D"gmail_default">re</span>counselling in the said category<span cl=
+ass=3D"gmail_default">=C2=A0will be made a</span></span><font face=3D"arial=
+, sans-serif"><span class=3D"gmail_default">s and when the v</span>acancy<s=
+pan class=3D"gmail_default"></span></font><span class=3D"gmail_default" sty=
+le=3D"font-family:arial,sans-serif">=C2=A0of</span><span style=3D"font-fami=
+ly:arial,sans-serif">=C2=A0the said category</span><span class=3D"gmail_def=
+ault" style=3D"font-family:arial,sans-serif">=C2=A0is=C2=A0</span><span sty=
+le=3D"font-family:arial,sans-serif">available/ submitted/ report</span><spa=
+n class=3D"gmail_default" style=3D"font-family:arial,sans-serif">ed</span><=
+span style=3D"font-family:arial,sans-serif">=C2=A0by way of requisition=C2=
+=A0<span class=3D"gmail_default">to=C2=A0</span></span><span style=3D"font-=
+family:arial,sans-serif">the WBCSC.</span><br></div><div><span style=3D"fon=
+t-family:arial,sans-serif"><br></span></div><div><span style=3D"font-family=
+:arial,sans-serif">Regards,</span></div><div><span style=3D"font-family:ari=
+al,sans-serif">Office of the Chairperson</span></div><div><div dir=3D"ltr">=
+<span class=3D"gmail_signature_prefix">--</span><br><div dir=3D"ltr" class=
+=3D"gmail_signature"><div dir=3D"ltr"><div><font color=3D"#3d85c6"><b>West =
+Bengal College Service Commission</b><font size=3D"2"><br></font></font></d=
+iv><div><font size=3D"2" color=3D"#3d85c6">=E2=80=9CASANNA=E2=80=9D Buildin=
+g, Plot No. DG-10/1, Premises No. 13-0327,</font></div><font color=3D"#3d85=
+c6"><font size=3D"2"></font><font size=3D"2">Action Area =E2=80=93 1D, Raja=
+rhat, New Town, Kolkata =E2=80=93 700 156</font><br></font><br></div></div>=
+</div><br class=3D"gmail-Apple-interchange-newline"></div><div><br></div><d=
+iv><br></div></div><br><div class=3D"gmail_quote"><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,20=
+4,204);padding-left:1ex"><br><br><div class=3D"gmail_quote"><div dir=3D"ltr=
+" class=3D"gmail_attr">---------- Forwarded message ---------<br>From: <str=
+ong class=3D"gmail_sendername" dir=3D"auto">Higher Education- Grievance</st=
+rong> <span dir=3D"auto">&lt;<a href=3D"mailto:highedu-grievance@wb.gov.in"=
+ target=3D"_blank">highedu-grievance@wb.gov.in</a>&gt;</span><br>Date: Mon,=
+ 9 Sept, 2024, 11:07 pm<br>Subject: Higher Education Pending Grievance Deta=
+ils<br>To:  &lt;<a href=3D"mailto:wbcscchairman@gmail.com" target=3D"_blank=
+">wbcscchairman@gmail.com</a>&gt;<br></div><br><br><div><p>Dear Dr. Dipak K=
+umar Kar,</p><p>Kindly find the below Grievance Details.</p><table border=
+=3D"1" cellpadding=3D"5" cellspacing=3D"0" style=3D"border-collapse:collaps=
+e;width:100%"><tbody><tr>
+                        <th style=3D"padding:8px">Sl No</th>
+                        <th style=3D"padding:8px">Application No</th>
+                        <th style=3D"padding:8px">Full Name</th>
+                        <th style=3D"padding:8px">Mobile</th>
+                        <th style=3D"padding:8px">Category</th>
+                        <th style=3D"padding:8px">Sub-Category</th>
+                        <th style=3D"padding:8px">Complaint Details</th>
+						<th style=3D"padding:8px">Relevant Application No</th>
+                        <th style=3D"padding:8px">Status</th>
+                    </tr><tr>
+                            <td style=3D"padding:8px">2</td>
+                            <td style=3D"padding:8px">COM-20240906022218</t=
+d>
+                            <td style=3D"padding:8px">2024-09-06 18:00:39</=
+td>
+                            <td style=3D"padding:8px">DrIndrani Sarkar</td>
+                            <td style=3D"padding:8px">917980851646</td>
+                            <td style=3D"padding:8px">West Bengal College S=
+ervice Commission</td>
+                            <td style=3D"padding:8px">Miscellaneous</td>
+							<td style=3D"padding:8px">Please refund the wbcsc application fees. =
+When there is no vacancy in sc category of journalism subject then why do w=
+bcsc take applications fees!</td>
+                            <td style=3D"padding:8px">NA</td>
+                        </tr><tr>
+                            <td style=3D"padding:8px">3</td>
+                            <td style=3D"padding:8px">COM-20240906125416</t=
+d>
+                            <td style=3D"padding:8px">2024-09-06 16:32:37</=
+td>
+                            <td style=3D"padding:8px">Tanmoy Mandal</td>
+                            <td style=3D"padding:8px">919932738212</td>
+                            <td style=3D"padding:8px">West Bengal College S=
+ervice Commission</td>
+                            <td style=3D"padding:8px">Service Matters of Em=
+ployees</td>
+							<td style=3D"padding:8px">=E0=A6=86=E0=A6=AE=E0=A6=BF WBCSC =E0=A6=
+=8F=E0=A6=B0 =E0=A6=AC=E0=A6=BE=E0=A6=82=E0=A6=B2=E0=A6=BE =E0=A6=AC=E0=A6=
+=BF=E0=A6=B7=E0=A7=9F=E0=A7=87=E0=A6=B0 =E0=A6=AE=E0=A7=87=E0=A6=A7=E0=A6=
+=BE =E0=A6=A4=E0=A6=BE=E0=A6=B2=E0=A6=BF=E0=A6=95=E0=A6=BE=E0=A6=AD=E0=A7=
+=81=E0=A6=95=E0=A7=8D=E0=A6=A4=E0=A5=A4(Advt. No 01/2020) =E0=A6=AA=E0=A7=
+=8D=E0=A6=AF=E0=A6=BE=E0=A6=A8=E0=A7=87=E0=A6=B2=E0=A7=87=E0=A6=B0 =E0=A6=
+=AE=E0=A7=87=E0=A7=9F=E0=A6=BE=E0=A6=A6 =E0=A7=A7 =E0=A6=AC=E0=A6=9B=E0=A6=
+=B0=E0=A7=87=E0=A6=B0 =E0=A6=B9=E0=A6=B2=E0=A7=87=E0=A6=93 =E0=A6=B8=E0=A6=
+=AE=E0=A7=9F =E0=A6=AA=E0=A7=8D=E0=A6=B0=E0=A6=BE=E0=A7=9F =E0=A6=B6=E0=A7=
+=87=E0=A6=B7=E0=A7=87=E0=A6=B0 =E0=A6=A6=E0=A6=BF=E0=A6=95=E0=A7=87=E0=A5=
+=A4 =E0=A7=AF =E0=A6=AE=E0=A6=BE=E0=A6=B8 =E0=A6=85=E0=A6=A4=E0=A6=BF=E0=A6=
+=95=E0=A7=8D=E0=A6=B0=E0=A6=BE=E0=A6=A8=E0=A7=8D=E0=A6=A4 =E0=A6=B9=E0=A7=
+=9F=E0=A7=87 =E0=A6=97=E0=A7=87=E0=A6=B2=E0=A7=87=E0=A6=93  =E0=A6=8F=E0=A6=
+=96=E0=A6=A8=E0=A7=8B =E0=A6=AA=E0=A6=B0=E0=A7=8D=E0=A6=AF=E0=A6=A8=E0=A7=
+=8D=E0=A6=A4 =E0=A6=A8=E0=A6=BF=E0=A7=9F=E0=A7=8B=E0=A6=97 =E0=A6=AA=E0=A6=
+=BE=E0=A6=87 =E0=A6=A8=E0=A6=BF=E0=A5=A4 =E0=A6=A4=E0=A6=BE=E0=A6=87 =E0=A6=
+=86=E0=A6=AA=E0=A6=A8=E0=A6=BE=E0=A6=B0 =E0=A6=95=E0=A6=BE=E0=A6=9B=E0=A7=
+=87 =E0=A6=86=E0=A6=AE=E0=A6=BE=E0=A6=B0 =E0=A6=85=E0=A6=A8=E0=A7=81=E0=A6=
+=B0=E0=A7=8B=E0=A6=A7, =E0=A6=AF=E0=A6=A4=E0=A7=8B =E0=A6=9C=E0=A6=B2=E0=A6=
+=A6=E0=A6=BF =E0=A6=B8=E0=A6=AE=E0=A7=8D=E0=A6=AD=E0=A6=AC =E0=A6=AF=E0=A7=
+=87=E0=A6=A8 =E0=A6=86=E0=A6=AE=E0=A6=BE=E0=A6=95=E0=A7=87 =E0=A6=A8=E0=A6=
+=BF=E0=A7=9F=E0=A7=8B=E0=A6=97 =E0=A6=A6=E0=A7=87=E0=A6=93=E0=A7=9F=E0=A6=
+=BE =E0=A6=B9=E0=A7=9F=E0=A5=A4</td>
+                            <td style=3D"padding:8px">NA</td>
+                        </tr></tbody></table><p>Thanks &amp; Regards,<br>Su=
+bhra Dey.</p><hr style=3D"border-width:1px 0px 0px;border-right-style:initi=
+al;border-bottom-style:initial;border-left-style:initial;border-right-color=
+:initial;border-bottom-color:initial;border-left-color:initial;border-top-s=
+tyle:solid;border-top-color:rgb(204,204,204)"><p>Disclaimer: THIS IS A SYST=
+EM GENERATED EMAIL<br>---------------DO NOT REPLY------------------</p></di=
+v></div>
+</blockquote></div>
+</div><br clear=3D"all"><div><br></div></div></div><div><br></div><div dir=
+=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div =
+dir=3D"ltr"><br></div></div></div>
+
+--0000000000007d340b0621becf90--

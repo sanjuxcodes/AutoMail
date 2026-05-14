@@ -1,0 +1,91 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp662475dlb;
+        Thu, 19 Sep 2024 21:17:41 -0700 (PDT)
+X-Received: by 2002:a05:6102:94a:b0:49b:fe9f:42fb with SMTP id ada2fe7eead31-49fc956b77cmr826633137.13.1726805861669;
+        Thu, 19 Sep 2024 21:17:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726805861; cv=none;
+        d=google.com; s=arc-20160816;
+        b=DTU85lUdtIB9NSc9K0ZvZYaAh9N5PRSWpdWfTIF0P2fPs4gcUUAc0ufPQvn3gfke/a
+         sfG4Nh/0Bf+JYsPnwb6vVAOyik2Ufy/C4gFneVXbxv/wxarGIJra0B1NppB+kaQhs9B4
+         iktWCNtTsFCgo4tM9NPHolpqOuMcGBDoXKS6ZaeA6eqW+m44OeLGPS1sZQEVYbsSbezp
+         PgsLcgkwCCRlZs97hWFZjV+LTNx6Gv3CXrXH8msIFCGjRnFOYd1MpsNP7ZTCAvlaKlxG
+         Sz0uq3Hdpmvd5MRNbFIT4KmFkxRg00F4nqSW/SzUmUbSMmbwOu6W5MbXo1b5eeveKYpz
+         zlRQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=oRSN1UVxD9PxS0RWX0ZrET7PC3Niwv1xp/l5FDOQlYA=;
+        fh=LsDMjGD5efnVReSNUxdXq+HveSjpXslNuMHiMGMmbmE=;
+        b=uefxbERbIGgdgo4WCKBxJ4V5rcJz6TksiR41Tk6eh/DKLUlpx1uFMgTb1VOVmFNzRx
+         4tdyy37bEhMU6l3Eb8N/vp0F2v3UFyC4lmYo3dPnWjlMIqAZe+XnZUkM3ylR6lgnlBwx
+         RjD4BtihCitDiB9juseyl7LJveDh0e3rLV+0bF4IDb+3x5HSKanEHd7jsg1ikkTSkUR7
+         EZilSYWWF5bkEiXScKnvpka+CK/trLReWgSzghn2xjEm/7ZBpdGubwoKDlv0zboJsbC7
+         uekRe2QUW4EcyOiMdJd+A7NjHR40kc5IWj4gQT5rgvKCluymgplyIGYsG/PY9Ku0rp7j
+         Te1w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=iBLKMpbA;
+       spf=pass (google.com: domain of principal.scgc@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal.scgc@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principal.scgc@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ada2fe7eead31-49e6b437ce9sor1879895137.11.2024.09.19.21.17.41
+        (Google Transport Security);
+        Thu, 19 Sep 2024 21:17:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principal.scgc@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=iBLKMpbA;
+       spf=pass (google.com: domain of principal.scgc@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal.scgc@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726805861; x=1727410661; dara=google.com;
+        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=oRSN1UVxD9PxS0RWX0ZrET7PC3Niwv1xp/l5FDOQlYA=;
+        b=iBLKMpbA4yChNGSBEEHdnV8BK5Ahx3OG2LBvFP49JoUWfUiO+joBNblCB/dafJWRPT
+         vpYQKbS2LtkHcq0hORucsAw5DKMMKvV7lMtJYavWA13zw2F1ONQGqtlT4vSgOc3dYfR/
+         vIc1OXQyZh9JGk1tPGLJpsC+F16cF7KjfSJD8MfjNOQ6puFXh6tBIRYGZSYTnirvXC6+
+         M9iVgI/nCp5AaFjefOkkwc6Wb9a9J9OWwQPvj7rXvfmRUbJK06SrurZn2swb6QPoK4+9
+         3nNm9edGBUCPlfAlsEqQjA6fZyIu+wxEPZK7DrpwkWtfOIz8qzlYNpUL9/+fkWMdPZ5u
+         esHQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726805861; x=1727410661;
+        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oRSN1UVxD9PxS0RWX0ZrET7PC3Niwv1xp/l5FDOQlYA=;
+        b=B5Qf+ai3h5LOFbyzJHlrNJUDVTjgwmEb1TR4FLwTzBYffGZLg1Rm2chbqRsKmDWzKT
+         g87Y2KAufgk1PROi3NxUitI1vcRSS/jpKSAVHrNgnHvkaLIRWMOrr/5EWCI5QzfvuUxQ
+         Ex5wsF8sD/I6vsqxK+W1w7bZJDiL5Sdh6vHjnI0Fu3l5qIDz4gZ/5BgioV0hTj2JtD2u
+         gttjD7LButrDpOKrp0MDzvL/+O4hNM69/nPmwrOeEDJxoOEzrRyVGey0e9jVFAu5AF6R
+         eO316C8ICvqvS9TSV9D4xJaymr43DUP1tCSamQ10/k0IyGeemRPuirtxEhHRAaIT9bkD
+         tmnw==
+X-Gm-Message-State: AOJu0YydS/8t4ECfud7iWj6NjZkEaZy/4+wdXCq30KJNt3yO29Myf1Hx
+	peXy2igqY8T3I368aNKfAz54MaZmw1T7Ar0W4lqGr2QS/BqiIDv9J+NfxAMNSCGAivCW5bW/nNj
+	WdbpXwRBpZkNSEV4mEgX1C6F1SCQPBA==
+X-Google-Smtp-Source: AGHT+IFh8nO/x+YTWtNHI+vwjDvi/rUjgdb/o5vgz55xAz4QoyWZ7Wq/xaPxxDdcgF2uQzkBNWeUumjl0ywbGAjdVNE=
+X-Received: by 2002:a05:6102:a53:b0:49b:bf66:90e4 with SMTP id
+ ada2fe7eead31-49fc956c52fmr767018137.16.1726805861054; Thu, 19 Sep 2024
+ 21:17:41 -0700 (PDT)
+MIME-Version: 1.0
+From: Principal Scgc <principal.scgc@gmail.com>
+Date: Fri, 20 Sep 2024 09:47:29 +0530
+Message-ID: <CAM2V7q2J09dENfE+UUEjaKSfa4kcfokfA+tFkNYq1Ccr+85Umw@mail.gmail.com>
+Subject: 'EXCEL FORMAT FOR SUSPENSION CASES'
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Cc: Asis Ghosh <asisghoshjdpi@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000f1c1a106228551c1"
+
+--000000000000f1c1a106228551c1
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,
+Please find the attachment.
+Thank you.
+
+--000000000000f1c1a106228551c1
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Sir,<div dir="auto">Please find the attachment.</div><div dir="auto">Thank you.</div></div>
+
+--000000000000f1c1a106228551c1--

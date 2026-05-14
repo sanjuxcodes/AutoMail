@@ -1,0 +1,94 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp291916dlb;
+        Fri, 13 Sep 2024 05:59:24 -0700 (PDT)
+X-Received: by 2002:a2e:515a:0:b0:2f3:b71a:1e91 with SMTP id 38308e7fff4ca-2f787dc4303mr28484701fa.17.1726232364712;
+        Fri, 13 Sep 2024 05:59:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726232364; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dzGA5IgO/4eVlpLBnGEZCk9QXoKaBvMdD+1nzsii7dPr8A8T1iBwSXYSuH06CXEhk9
+         wq28nw1qXPtZUrv7CEmo4R6wDinPLWxtv5iHRNabcKkwCmNCL6+HX4FITNgUdsCR2TZJ
+         fhGHmMH7WZL7uucvH66tnep1v8e/qzlTeKy+eDCIM3OD2Gm1aHjC5Ybh1S0mVxuzbI0r
+         sN5xr9qaL5r+2Bz6ypeO74v0N/e9N5hE7yIzx7krATrzSOVPqQVRdeKloDu1LqgHXp1w
+         8IqVYsKeMTkVXCMje7cT0U6VxzrXtEj5BTOkdT13DCX1Oj92zT+h0Umgvp0haGlhnb+R
+         Wgfg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=N/sGTOg7sIxCdDpkt/V0GokLAP6Xa4whyfQkMwoYCVs=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=i5bIegCGQzyDMsqH0ru+fK5Zq60BcFArexC+ap76gXJItkh1Xt8DEK/yVDhcaYhd02
+         FbO7qLmtyYkjkYgVivkoI0yQpoqFC49w3w6UG88lLoghzXXHXJROCG8TkqdL8kthQBgA
+         Yskn9f4IRI3RSJWmU7OrCD92EzjB12E83U+rhkgMZLaZwx82dW05xJNa05P4sKxZm96f
+         zx0ddfObuW1sdqlLCnRqD/+8+zuFEwKFl0CLPWThR8GfzFHqaHp/D86Q/ekZOx9INpcU
+         YgDRa+Mug91bHVOprJRgvDr+B+1aIOICMetq5uvoRjNbbe+VYVXO7IDyWNHLFFcpw6E3
+         Xw/Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Cg4YRNow;
+       spf=pass (google.com: domain of surividyasagarcollege1942@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=surividyasagarcollege1942@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <surividyasagarcollege1942@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-2f75c0d8eacsor28119701fa.14.2024.09.13.05.59.24
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 05:59:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of surividyasagarcollege1942@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Cg4YRNow;
+       spf=pass (google.com: domain of surividyasagarcollege1942@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=surividyasagarcollege1942@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726232364; x=1726837164; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=N/sGTOg7sIxCdDpkt/V0GokLAP6Xa4whyfQkMwoYCVs=;
+        b=Cg4YRNowLIV/TfArY2UH4+V7AywTwyLA4XPp4123UVannp0HWvPyVD7ZFz2sMWHDaQ
+         B5Tg8a/s+Iufu7Qgd71ojW8jOuyL1aDMVVCteCUKBNTWq7f3acmrXm3qZbU74GC+6Dcd
+         KqfuLvklwRkVDXXt/Lnr/sBk63nAp3yZpPdMnGRwmSvZ6CI9vahytUi7zYt/xL7op9IG
+         XuqG74/zS1nvrDx50ErbudZPn2bMmD+tDhwgUYo+QDNAhiUj4EmqTQaqbTgMqtqEIlZN
+         DKLsSpZOTu0v+exzyX4x7BtX3z/WuZlOGln2rTE7yeGS1f0NTub1mj4iVZ0MwEmAC0XX
+         jL9g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726232364; x=1726837164;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=N/sGTOg7sIxCdDpkt/V0GokLAP6Xa4whyfQkMwoYCVs=;
+        b=Kmsp1YW6t8i0YqZhuJZDcIkYZJD0b8wvYZCtaHxfZLgoEQwt4+HKDJV6ZA7bK7+wrT
+         KiZ2dgK8I8Yf4/AWITanS2UkxqvcpcoffWbsm/u3ErlgjQSGT2LTiZXGrWw2B5XiW+01
+         dERaIDbh607AZTJi/k9ZowB4fPcAaZOX5Wgj9dvWDjW2D5mC9hjGjH21iYN+DXnLERhK
+         hFBTFrV4Wa5+rorD1sG2aL78OGDfKWEWU0s2mk/RF1mhILM9zNWA3pg8ey9kmq7garQt
+         J2kHd+5sMmXNLNskaQX9NQcHK4hdQFLKqfo3ut/aHB//4ZYOymFR+qLxYo1jTGcAY18F
+         Hhrg==
+X-Gm-Message-State: AOJu0Yzv7tZ2ILjmRLivUtFX/6PGZ6mV7vuly55Lkk7K8unYZ064ydFE
+	iaa4iYPNBQrcUIGLwgp1Odc6gfWfOPL5Jkc+SZHaoPs1yhe2F/QEIy3l7z01NaGVZbSqgFjP+0A
+	j6smrpv34PXFZ0fbVBuE455GzPKb6mA==
+X-Google-Smtp-Source: AGHT+IHcxM8Zc3MEwj0OW91ad/R/IdxLjm7FNy+diGbekXj56SnOyKXnCMU9O4AWwAN9I8/fVn1c4qaKZ3D1RbLts5A=
+X-Received: by 2002:a2e:a543:0:b0:2f6:4f17:aec9 with SMTP id
+ 38308e7fff4ca-2f78c95dbfcmr31245731fa.16.1726232363554; Fri, 13 Sep 2024
+ 05:59:23 -0700 (PDT)
+MIME-Version: 1.0
+From: SURI VIDYASAGAR COLLEGE <surividyasagarcollege1942@gmail.com>
+Date: Fri, 13 Sep 2024 18:29:12 +0530
+Message-ID: <CADvFA_uwx_S5uBCPv1HcRn_CuvSfzJshiKNXEsEFr4B-mtCWOA@mail.gmail.com>
+Subject: Report on Pending cases of suspension in the College
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000d465ba0621ffca48"
+
+--000000000000d465ba0621ffca48
+Content-Type: text/plain; charset="UTF-8"
+
+Sir/Madam,
+As per our Grievance & Redressal Cell record, there are no pending Cases of
+suspension at Suri Vidyasagar College.
+Thanking you,
+Principal
+Suri Vidyasagar College
+
+--000000000000d465ba0621ffca48
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">Sir/Madam,<div>As per our Grievance &amp; Redressal Cell record, there are no pending Cases of suspension at Suri Vidyasagar College.</div><div>Thanking you,</div><div>Principal</div><div>Suri Vidyasagar College</div></div>
+
+--000000000000d465ba0621ffca48--

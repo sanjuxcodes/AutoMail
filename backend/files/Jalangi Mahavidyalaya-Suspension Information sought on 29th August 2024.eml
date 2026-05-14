@@ -1,0 +1,170 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp269957dlb;
+        Sat, 14 Sep 2024 02:46:03 -0700 (PDT)
+X-Received: by 2002:a17:907:c7da:b0:a86:ac91:a571 with SMTP id a640c23a62f3a-a9029663027mr819179966b.56.1726307162737;
+        Sat, 14 Sep 2024 02:46:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726307162; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yx77gKvg1a1h4COi7K1OebMK725kngep6mTrdiZHD5N0M1iBuI1VQ+EyXKPMnD+flk
+         cn8haoScbovFC+wxRzHgvgqA0udruw0U7l2vkwMdKC0ov9Y+EbvFL21z0BV209nBBkKj
+         YDmoHJXY8ZRYwBpL758ZbixRwPM/PEu8VMoZ4nsi46D/bRkb7xmy8KavJ4jt4Dd9rtu2
+         hieG5GajoNxV2AH53Rtj/Db21KGXJ3oFR6hxJw8jRuwCwtV5PJ567PWIakbE2NlqmlN8
+         PtN5o5/Xe7SH3ql4sFj9kS73/wVjmplZ9LiFEA9NEcJWUibWRtOJe/AB1kj66hsvMEEv
+         qQjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=HETuhwVqqI7d63kovmdzE/12Eg+pTCQmXvncqG2yyds=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=aZDS1AUP3bMvK2ivKUPn713YMTr037LILliQ6irfflONPdIddZyJPycdqyETf5CPuJ
+         Gcg8xwWH/9BiFLOhU2aUGsEWwpS6lz7wG4e3Eq/gHxbN8jT4B7+ZeEQxpbQFOo8AlzBF
+         EBNJIjMqGOyc5hvryWXtzUrY8qcsxy1i7KiSyQiaihdh0uNoZKWSqqS+UpEmZjwU5xYa
+         vBkApxILuiu+6czQklqGL/0XkNM4E8+qYyemjtPHqMGzXpRyJTBlm8GPFkX1FhGE5+3S
+         8oXEVuxqsGZXN92n34UlyU2C6oF3XnjUm+wl9y/gypJlp0tmr0pm+ucqOqIhQtEaEufc
+         rfDg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="IJ/tSzov";
+       spf=pass (google.com: domain of jalangi.mahavidyalaya2010@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jalangi.mahavidyalaya2010@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <jalangi.mahavidyalaya2010@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 4fb4d7f45d1cf-5c42bb4d423sor233070a12.3.2024.09.14.02.46.02
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Sat, 14 Sep 2024 02:46:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jalangi.mahavidyalaya2010@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="IJ/tSzov";
+       spf=pass (google.com: domain of jalangi.mahavidyalaya2010@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jalangi.mahavidyalaya2010@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726307162; x=1726911962; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HETuhwVqqI7d63kovmdzE/12Eg+pTCQmXvncqG2yyds=;
+        b=IJ/tSzov/nkN/3MlqD67jPdyNiWreh6nIccQVOv64damB9HFaqdhu70DupXKJlyfBB
+         XFtbrqjytzL2TioufPWxl+KI+zO3RdxRNmQX+jruguVBTrZxtzq4xIfvPbYUidiUzJkc
+         DxCGvUG/lxWTB6arnGp5j1hLUNsnrimn13aWjVMO42WIE5HsWd90kWmnYN2L7sywPq58
+         mE9Sy9HqX3AXztprt6ogE77NStyZQF5ag1ETkmRFF1YGWQk1e6fByUJCKiO3KpiMYk7e
+         /RwUQAgpG28hMXZYQPjNOKRiMGVfKXPiWjxGdlNYLeU5AjZNhKJQ9LzbjJhXkx2NPcvO
+         ynlA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726307162; x=1726911962;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HETuhwVqqI7d63kovmdzE/12Eg+pTCQmXvncqG2yyds=;
+        b=Cvx9/mVbkGzSPFpQ0+eRsWvxIe8Kb63/rlMP1EUJlnzxSwynoPUnr3cRN2E+wSjkPZ
+         Ms8w8s9VUcE3oYvtK74zeqPLQbI3JFu9z+hsJZ4dageJZxAuNj6B3pDu+66J70qeaokQ
+         pOuo0OmCREpJwfOGmga1bSU67cmBFJ63zsyDEqVi9YXt0yAM0aWHCkUVZLTsvWUiz2vB
+         8RFD9KavE/P7WLyWRQsL8hGu7D8eQfYUeLqxQZftRMgR3h4k2G+3rgW89UaCgU1rGyPL
+         UNwDf3j2cEYomBvl0fUIo7MSI16QS7bl72xMcGBovb1IIZMEWvKuPQbt30cmZZIJeB+G
+         wSGw==
+X-Gm-Message-State: AOJu0YyuaDJlmywcXj/jBItgrPOzDs+Drgc0qt6GmRBOtzKFsxM/u+4s
+	mfZ9KgZMPr7tj6AZQ7MQcbIqH+5qhYj6KSur4FIwMEYWzaZhDq4Tqt8C6WjRKZqfP8vtpG/SONN
+	SRXUmWm+lIR6ka58CuNxfKkMpVBK4DQ==
+X-Google-Smtp-Source: AGHT+IEeLIEYZOmGPJDr0km2+3IkV4eS/xpXKEGS7RruLbRXiyxbw+9Dgx+GrOV2p8xD4hlXAXTG9pni/QyiQ46w3us=
+X-Received: by 2002:a05:6402:1e8b:b0:5c2:5620:8ba3 with SMTP id
+ 4fb4d7f45d1cf-5c413e5227dmr6747590a12.30.1726307160927; Sat, 14 Sep 2024
+ 02:46:00 -0700 (PDT)
+MIME-Version: 1.0
+From: Jalangi Mahavidyalaya <jalangi.mahavidyalaya2010@gmail.com>
+Date: Sat, 14 Sep 2024 15:15:48 +0530
+Message-ID: <CAESMqftAU78OO6eUNB6s7bu5nS_ne_R+SjrmX9=oOmT0KcXaBQ@mail.gmail.com>
+Subject: Jalangi Mahavidyalaya-Suspension Information sought on 29th August 2024
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000019b83f0622113593"
+
+--00000000000019b83f0622113593
+Content-Type: text/plain; charset="UTF-8"
+
+With due reference to letter no. GRC-HED/02(10)/24 dated 29th August 2024
+from the Higher Education Department, Government of West Bengal, we would
+like to inform you in that context that no official falls in the category
+of suspension either active or retired.
+
+Name of the suspended Employee
+
+Name of the Office/Institution with Address
+
+Suspended from
+
+Reason for Suspension
+
+Any Other Details
+
+ NA
+
+NA
+
+NA
+
+NA
+
+NA
+
+
+
+With regards,
+
+Jalangi Mahavidyalaya
+
+--00000000000019b83f0622113593
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><div style=3D"font-size:12.8px" dir=3D"auto"><div style=
+=3D"width:352px;margin:16px 0px"><div><div dir=3D"ltr"><p style=3D"margin:0=
+cm 0cm 8pt;line-height:16.7919px;font-size:11pt;font-family:&#39;calibri&#3=
+9;,sans-serif">With due reference to letter no. GRC-HED/02(10)/24 dated 29<=
+sup>th</sup>=C2=A0August 2024 from the Higher Education Department, Governm=
+ent of West Bengal, we would like to inform you in that context that no off=
+icial falls in the category of suspension either active or retired.</p><tab=
+le border=3D"1" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collaps=
+e:collapse;border:none"><tbody><tr><td width=3D"98" valign=3D"top" style=3D=
+"width:73.75pt;border:1pt solid;padding:0cm 5.4pt"><p style=3D"margin:0cm;l=
+ine-height:normal;font-size:11pt;font-family:&#39;calibri&#39;,sans-serif">=
+Name of the suspended Employee</p></td><td width=3D"117" valign=3D"top" sty=
+le=3D"width:87.4pt;border-top:1pt solid;border-right:1pt solid;border-botto=
+m:1pt solid;border-left:none;padding:0cm 5.4pt"><p style=3D"margin:0cm;line=
+-height:normal;font-size:11pt;font-family:&#39;calibri&#39;,sans-serif">Nam=
+e of the Office/Institution with Address</p></td><td width=3D"98" valign=3D=
+"top" style=3D"width:73.85pt;border-top:1pt solid;border-right:1pt solid;bo=
+rder-bottom:1pt solid;border-left:none;padding:0cm 5.4pt"><p style=3D"margi=
+n:0cm;line-height:normal;font-size:11pt;font-family:&#39;calibri&#39;,sans-=
+serif">Suspended from</p></td><td width=3D"99" valign=3D"top" style=3D"widt=
+h:73.95pt;border-top:1pt solid;border-right:1pt solid;border-bottom:1pt sol=
+id;border-left:none;padding:0cm 5.4pt"><p style=3D"margin:0cm;line-height:n=
+ormal;font-size:11pt;font-family:&#39;calibri&#39;,sans-serif">Reason for S=
+uspension</p></td><td width=3D"96" valign=3D"top" style=3D"width:72.2pt;bor=
+der-top:1pt solid;border-right:1pt solid;border-bottom:1pt solid;border-lef=
+t:none;padding:0cm 5.4pt"><p style=3D"margin:0cm;line-height:normal;font-si=
+ze:11pt;font-family:&#39;calibri&#39;,sans-serif">Any Other Details</p></td=
+></tr><tr><td width=3D"98" valign=3D"top" style=3D"width:73.75pt;border-rig=
+ht:1pt solid;border-bottom:1pt solid;border-left:1pt solid;border-top:none;=
+padding:0cm 5.4pt"><p style=3D"margin:0cm;line-height:normal;font-size:11pt=
+;font-family:&#39;calibri&#39;,sans-serif">=C2=A0NA</p></td><td width=3D"11=
+7" valign=3D"top" style=3D"width:87.4pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid;border-right:1pt solid;padding:0cm 5.4pt"><p style=3D=
+"margin:0cm;line-height:normal;font-size:11pt;font-family:&#39;calibri&#39;=
+,sans-serif">NA</p></td><td width=3D"98" valign=3D"top" style=3D"width:73.8=
+5pt;border-top:none;border-left:none;border-bottom:1pt solid;border-right:1=
+pt solid;padding:0cm 5.4pt"><p style=3D"margin:0cm;line-height:normal;font-=
+size:11pt;font-family:&#39;calibri&#39;,sans-serif">NA</p></td><td width=3D=
+"99" valign=3D"top" style=3D"width:73.95pt;border-top:none;border-left:none=
+;border-bottom:1pt solid;border-right:1pt solid;padding:0cm 5.4pt"><p style=
+=3D"margin:0cm;line-height:normal;font-size:11pt;font-family:&#39;calibri&#=
+39;,sans-serif">NA</p></td><td width=3D"96" valign=3D"top" style=3D"width:7=
+2.2pt;border-top:none;border-left:none;border-bottom:1pt solid;border-right=
+:1pt solid;padding:0cm 5.4pt"><p style=3D"margin:0cm;line-height:normal;fon=
+t-size:11pt;font-family:&#39;calibri&#39;,sans-serif">NA</p></td></tr></tbo=
+dy></table><p style=3D"margin:0cm 0cm 8pt;line-height:16.7919px;font-size:1=
+1pt;font-family:&#39;calibri&#39;,sans-serif">=C2=A0</p><p style=3D"margin:=
+0cm 0cm 8pt;line-height:16.7919px;font-size:11pt;font-family:&#39;calibri&#=
+39;,sans-serif">With regards,</p><p style=3D"margin:0cm 0cm 8pt;line-height=
+:16.7919px;font-size:11pt;font-family:&#39;calibri&#39;,sans-serif">Jalangi=
+ Mahavidyalaya</p></div></div></div><div style=3D"height:0px"></div></div><=
+br></div>
+
+--00000000000019b83f0622113593--

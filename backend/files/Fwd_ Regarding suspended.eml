@@ -1,0 +1,127 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp1387361dlb;
+        Mon, 16 Sep 2024 11:26:59 -0700 (PDT)
+X-Received: by 2002:a2e:859:0:b0:2f3:b74c:48d7 with SMTP id 38308e7fff4ca-2f791a09185mr47604241fa.25.1726511218755;
+        Mon, 16 Sep 2024 11:26:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726511218; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KQmUAa9zL8KKOqvUdDdiR85LnmVUIEqD6cj+kJ/iDf5OeNWaka1q4JavK2TtY/gYBb
+         lpEYuY86EnYRs8irjxtolvDgniBW559s7H9ZKzQSuBmkCQldozn2/PUMzd1q6FgbgI5q
+         mXOkLNpno5jYiEES0i39AAOJuvA/KRPZPAIFCZgLjnJ7ZDR04rXvo+Ibc/9Lzlp/8L67
+         NnNlvuqjDH5HU2nXScXeyLjTb3EpZXwFbpwZKDgfWyJ/mbkDUUyxkbGwJqs69Qso9ifx
+         QsnhLcNCWD4sk7kDplVPq/0FfR71DRCdBqzYNHdIRM5j2Bwrxn+vbQRb/HMWnC4shpWF
+         RaJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=ozSK1C4AuAmHYzBmDBV+hfAZhKNf52fCBu/a1IvBKAc=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=haEU64BDA/twIglq8luw142ghT4PoBKICKoXUJiIHfzTQ0D3kkCRoUeZT/6bkDLMeY
+         yYO3U+NOUhPP1Aam+MKGiCTNlwi8yzkAX+tWuYC/981YDMoNOuxAXEu3XdfS7740wySD
+         r7Lbh36emH8Alog4sCeXbt8bKk8KXtwFXQsEI8wsRhC5knLPYcsRA6a9G8dhIyKHd4Og
+         pg46N7DDvk3L6LRFPlPcBKYMiU/YDjsX7F9+JJCyYL6DihB22tXblD4q423x9KNT/T7R
+         YkcQl68zylnhJ4tO5OPkFyv6XZAER1uPXKQfLiTA7i5GbZVRCa1G/kz+HkoiSC5PC1ZH
+         VLDQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QXrvZpKf;
+       spf=pass (google.com: domain of hooghlywomenscollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=hooghlywomenscollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <hooghlywomenscollege@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-2f79d2c9aeasor5119271fa.1.2024.09.16.11.26.58
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 16 Sep 2024 11:26:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hooghlywomenscollege@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QXrvZpKf;
+       spf=pass (google.com: domain of hooghlywomenscollege@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=hooghlywomenscollege@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726511217; x=1727116017; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ozSK1C4AuAmHYzBmDBV+hfAZhKNf52fCBu/a1IvBKAc=;
+        b=QXrvZpKfdu4H6x1B07sYmZ17NMLLdKFEqD42uI2yxszQjzLfWhvRbg7VUPKz21d+4k
+         N+lVcFq+uvy3zt403NOFe8TdNlfdHO/48DsCvULuaBF1FZLJUTzpGMaSsO2GBZ3SgNwr
+         cxk7x7XAKFpGCaGKB9WEPUwSdA2E392PqS9jMnhm2HSDT7Xw6fha7SY1a8xxAxFTsn6q
+         VeeCSfgOob/5Rk3k4J7AwPOVrXU7YvGWMqPx4zckhwycMJB7hEb/rbpeyJk2xdEUOBUi
+         QnSmu70bEJ/XNX1ZL6akCQAf4tRo5VLXNHFvqILJfBbX2pOUsDvIbEGjmiI1f05kg0Oo
+         8MwQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726511217; x=1727116017;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=ozSK1C4AuAmHYzBmDBV+hfAZhKNf52fCBu/a1IvBKAc=;
+        b=oqCo2FZzWepvOnSy+caWJSMIcHBK0pTP33MMktbFzU/MgIO8cl8HjOwT6lC30G/nL8
+         YhiuUMJX7+FAxKq5XsGqvwJ/zdT945tXcAgffyB2FA/kFpLXTRlAtcT4/7CA2dfMdxdV
+         9qdsBpI8jESf/Cz6RCstrjq/FiGKpkL3yBQcUwsD8nCDmxdRzV4Vh45P5xP9dzFX1BRz
+         MJIgJg8qf4frlQd0K2QqLzfPAdCeFCVYPMWYcWjmlIOA7sNCs1kc6tNYwoBHt7mlNcUL
+         0Yg4CNb71UwWC31B8dDjNdptlRYQfjTBBroxSI/jWaT0Gv9x6LuYX14wKLaMuL0O4YIe
+         f0yw==
+X-Gm-Message-State: AOJu0YzzD7yBrXwWbKvrYqo3wqF2le/PYeSVmxxZHX/AJVp0GV1D4scl
+	2yEI2GEf1nPbEFsCtDfChDLgDSvrM9cKntN4lMoPb2PXMAG7YfxyE4LivZMsqLYXKte/wLoS2Gg
+	SSw5eWIyOu1vCnaBhumt+4Yow60Z3ug==
+X-Google-Smtp-Source: AGHT+IGtba51grhwWcqIWinFzJO/+Wf9Q/oz21b0KFElNDkfKcV8MOilAM9VHbwVDWvc3oUOfNtoCHc1VHFSBcccoK8=
+X-Received: by 2002:a2e:be1f:0:b0:2f7:64b9:ff90 with SMTP id
+ 38308e7fff4ca-2f7918e9558mr59346431fa.9.1726511217021; Mon, 16 Sep 2024
+ 11:26:57 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAGTUGoAxmOu_bzL4AtgPnU-NPeVJBaK+PtKJGAd+qPKbdxu0Fw@mail.gmail.com>
+In-Reply-To: <CAGTUGoAxmOu_bzL4AtgPnU-NPeVJBaK+PtKJGAd+qPKbdxu0Fw@mail.gmail.com>
+From: "Hooghly Women's College" <hooghlywomenscollege@gmail.com>
+Date: Mon, 16 Sep 2024 23:56:24 +0530
+Message-ID: <CAGTUGoCDzMoUdhS0OjsZWT51mkipeh9zSNZXvRzRZp95cEnFBQ@mail.gmail.com>
+Subject: Fwd: Regarding suspended
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000ca9c9c062240b72a"
+
+--000000000000ca9c9c062240b72a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: Hooghly Women's College <hooghlywomenscollege@gmail.com>
+Date: Mon, Sep 16, 2024 at 10:26=E2=80=AFPM
+Subject: Regarding suspended
+To: Samrat Laskar <samlasjdpi@gmail.com>
+
+
+Sir,
+This is to inform you that no Staff in our college got suspended in the
+last ten years.
+
+--
+
+*Dr. Sima Banerjee*
+
+*Principal *
+*Hooghly Women's College*
+
+--000000000000ca9c9c062240b72a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong cla=
+ss=3D"gmail_sendername" dir=3D"auto">Hooghly Women&#39;s College</strong> <=
+span dir=3D"auto">&lt;<a href=3D"mailto:hooghlywomenscollege@gmail.com">hoo=
+ghlywomenscollege@gmail.com</a>&gt;</span><br>Date: Mon, Sep 16, 2024 at 10=
+:26=E2=80=AFPM<br>Subject: Regarding suspended<br>To: Samrat Laskar &lt;<a =
+href=3D"mailto:samlasjdpi@gmail.com">samlasjdpi@gmail.com</a>&gt;<br></div>=
+<br><br><div dir=3D"ltr"><div>Sir,<br></div>This is to inform you that no S=
+taff in our college got suspended in the last ten years.<br clear=3D"all"><=
+div><br></div><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"=
+gmail_signature"><div dir=3D"ltr">--<br></div></div></div></div><div dir=3D=
+"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=
+=3D"ltr"><div><div><b><font size=3D"2"><span style=3D"font-family:comic san=
+s ms,sans-serif">Dr. Sima Banerjee<br></span></font></b></div><b><font size=
+=3D"2"><span style=3D"font-family:comic sans ms,sans-serif">Principal <br><=
+/span></font></b></div><b><font size=3D"2"><span style=3D"font-family:comic=
+ sans ms,sans-serif">Hooghly Women&#39;s College</span></font></b><br></div=
+></div></div>
+
+--000000000000ca9c9c062240b72a--

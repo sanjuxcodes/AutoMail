@@ -1,0 +1,104 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp199865dlb;
+        Fri, 13 Sep 2024 03:00:27 -0700 (PDT)
+X-Received: by 2002:a05:651c:b22:b0:2f7:65b0:ff28 with SMTP id 38308e7fff4ca-2f787f5098dmr34504221fa.39.1726221626988;
+        Fri, 13 Sep 2024 03:00:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726221626; cv=none;
+        d=google.com; s=arc-20160816;
+        b=utZn6d8ihdym4RnpumeEV37htOA6zh8XkMtYEXuYe8yFE/2fxaQAmLbhxmN9eVu51T
+         MWmCIj66JN5P9btJHSQ9uwBQP/zHt68HaeN13LYv88vJSHp7TA+A9SoJFobmGio+fPa6
+         gPLReIOYQKjbr6vrl97au8mneMTLKJqhHAphK/hUjo/Ut2RgoRBgEU7na07uW6Jax+u5
+         jvL744NKSUbFhM6Hs1buEr9o9KLZudgLlEaWBw+/xfQvIqCFbL2u+zP1gpDmmk90mZKm
+         0WFSRcCgVN6QfXb3tqoD7HsMFlZ/ML5IXPNFSurlnVqa2LDxBjLMwmDxBd7xg6VTeowi
+         JW+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ed+Pe0IoVMFlHboU4vm2hZyUpoR35g4M9HUMGgI5r8Q=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=mhvRm3940HS1c/AouP1D3qLgFxLZ/1/bisZql6OEn90Nush5vekAXjwAdtydtz2/rD
+         iX/H6PqE4YOFxeObrWGA/MJxsZ/vrIsHo9iO8xvtMIAQsmSUnicubcqwiBrb/RiqHUkb
+         tVKPMy4wW/21xdcmKHqoeIeocF42xC+eLb+6TGcwL5NLBBOWdDPi/NlC3JKIZmZ0gF6A
+         bPQp2jEgip89vVI2wieRd0Tq6MRp6N/XoiJtBGC9xjhqJl+MoS50eBlGdtC8atKgs2p4
+         dF/vYN0tnsIzc/zkI3Hp27+eW1lbzqTZM7PnMIrleXStz1iMamUl3NzqJKmw0JdCWklt
+         2nBA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=iAV5bFFc;
+       spf=pass (google.com: domain of panihatimahavidyalaya1976@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=panihatimahavidyalaya1976@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <panihatimahavidyalaya1976@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 4fb4d7f45d1cf-5c3ebd41d5fsor2844334a12.3.2024.09.13.03.00.26
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Fri, 13 Sep 2024 03:00:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of panihatimahavidyalaya1976@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=iAV5bFFc;
+       spf=pass (google.com: domain of panihatimahavidyalaya1976@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=panihatimahavidyalaya1976@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726221626; x=1726826426; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ed+Pe0IoVMFlHboU4vm2hZyUpoR35g4M9HUMGgI5r8Q=;
+        b=iAV5bFFcc0iHSsNBFXfCh7pZbN53kElPggQ6wY7oRlH2hvtLhty0yepP8uM4UZvTNA
+         91FeWvq/yhTAnBKsO9m9gEfypCQso+DtV1AKit9fVqlpiVCB9ZWpBplKhGKbUOZ3hOTI
+         vVj3JyuaXmi+POjg26tzrLv0Vh3W1BuVxerC1ucLUVFcwiZs6KIwFmYUv/f65ZV/HoB7
+         hcNFivoWHy7eRc21QxIY5n1OpjXPiXrcbQXw+90wVGjTPm/I04jYXD6L+9dNFG67E2cO
+         U2uiF3TRI0F1up3mU8ORlMB0RN/9tAVbdXAZhGlN6cps038lm9lOii4icW5eaS5z4fiA
+         Vl/w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726221626; x=1726826426;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ed+Pe0IoVMFlHboU4vm2hZyUpoR35g4M9HUMGgI5r8Q=;
+        b=ScQZjtrGySNEn7uxnoGxwuasvrZN9f45XGzDNKvDwGMCy8CcPtYK0TpPLhtTQPyExx
+         mqbc4bJuO/54VDGO0v+2msD8EDcqC048tLvfye+YZJE+aH+X7/llI0M7Y7iGCacODSoP
+         Tk98Ixq1iffTKecRdWig8KIMSsmwy/Auiy2vaOQh6xWmDIvUR5g41odQ143MZ9zOel14
+         xmzO6B322i7cBxdirn6h123lBUSPQLD4HM2vUqEJ99OaZeDc4Z016ePtw2gkGukfrdna
+         n0/IBIKs8ABCaJ1E6BXEvVlGpQD+k58VAnRFv0yROEFexneC1y7AegPFzh9vK6ZHolCB
+         Dl5Q==
+X-Gm-Message-State: AOJu0Yw8JtaCNShN94uA81pmNL0ns4jXRdh4nr08WRYP/LXGgDc7az5r
+	PYFEE+FMr8UOzGuWcVAskG5NhL9f1wg1qCViMLlBSCt+XDVjVd0xsi+JeT+DcGxO9OqWHcq5BsP
+	KMaTk7Wgl5fJRscGoP1luyUFqBBDIYg==
+X-Google-Smtp-Source: AGHT+IE/jQdVC7LVuto7LHKQJdxA0WjHeu+kNZkRje4MDrXhw0iy0iPhfDWIIeaCSXTkTZZ/KdpfBOZw1rK56+kmb4Y=
+X-Received: by 2002:aa7:d91a:0:b0:5c2:634a:fc1e with SMTP id
+ 4fb4d7f45d1cf-5c413e4bcc1mr4712936a12.23.1726221625272; Fri, 13 Sep 2024
+ 03:00:25 -0700 (PDT)
+MIME-Version: 1.0
+From: Panihati Mahavidyalaya <panihatimahavidyalaya1976@gmail.com>
+Date: Fri, 13 Sep 2024 15:30:16 +0530
+Message-ID: <CAP2GzM-n4ERigAJ6NNkLzjM-eLN9LHoDKhM15=zkPkdznJtqdA@mail.gmail.com>
+Subject: Re. Suspension Case in Panihati Mahavidyalaya
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c731a80621fd4ad9"
+
+--000000000000c731a80621fd4ad9
+Content-Type: text/plain; charset="UTF-8"
+
+*Suspension Case: NIL*
+
+Thanks and regards,
+*Dr. Debapriya De*
+Principal & Secretary
+Governing Body
+Panihati Mahavidyalaya
+
+--000000000000c731a80621fd4ad9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><b>Suspension Case: NIL</b><br clear=3D"all"><div><br></di=
+v><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signat=
+ure"><div dir=3D"ltr"><div dir=3D"ltr"><div style=3D"color:rgb(34,34,34)">T=
+hanks and regards,</div><div style=3D"color:rgb(34,34,34)"><b>Dr. Debapriya=
+ De</b></div><div style=3D"color:rgb(34,34,34)"><font color=3D"#0000ff">Pri=
+ncipal &amp; Secretary=C2=A0</font></div><div style=3D"color:rgb(34,34,34)"=
+><font color=3D"#0000ff">Governing Body</font></div><div style=3D"color:rgb=
+(34,34,34)"><font color=3D"#000000">Panihati Mahavidyalaya</font></div></di=
+v></div></div></div>
+
+--000000000000c731a80621fd4ad9--

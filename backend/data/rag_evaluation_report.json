@@ -1,0 +1,248 @@
+[
+  {
+    "case": "Time limit grievance",
+    "input": {
+      "subject": "Delayed complaint submission",
+      "sender": "principal@example.edu",
+      "email_content": "We are submitting a grievance regarding scholarship delay that happened 4 months ago. Please advise if this can still be accepted and what details are required."
+    },
+    "summary": {
+      "generation_mode": "policy_guardrail_fallback",
+      "retrieved_count": 5,
+      "is_grounded": true,
+      "supported_sentence_ratio": 1.0,
+      "top_clauses": [
+        "5.2-SCH",
+        "5.1",
+        "4.2"
+      ]
+    },
+    "result": {
+      "suggested_reply": "Dear principal@example.edu,\n\nThis is with reference to your email regarding \"Delayed complaint submission\". [C1]\nBased on the policy material currently available in the system, the relevant provisions are: [C1]\n- Clause 5.2-SCH (Resolution Timeline): Scholarship-related grievances shall be resolved within 30 working days. [C1]\n- Clause 5.1 (Administrative Review): Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated. [C2]\n- Clause 4.2 (Required Information): A grievance submission must include applicant\u2019s full name, registered mobile number and email ID, institution name, detailed description of the grievance, and supporting documents if applicable. Incomplete submissions... [C3]\nPlease follow the applicable institutional grievance process and submit complete supporting details for formal action. [C1]\n\nSincerely,\nGrievance Support Desk\nDepartment of Higher Education\nGovernment of West Bengal",
+      "generation_mode": "policy_guardrail_fallback",
+      "retrieval": {
+        "top_k": 5,
+        "similarity_threshold": 0.6,
+        "query": "Delayed complaint submission\nWe are submitting a grievance regarding scholarship delay that happened 4 months ago. Please advise if this can still be accepted and what details are required.",
+        "matches": [
+          {
+            "text": "Scholarship-related grievances shall be resolved within 30 working days.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Resolution Timeline",
+              "clause_id": "5.2-SCH"
+            },
+            "score": 0.6264183521270752,
+            "lexical_score": 0.0714,
+            "hybrid_score": 0.4877
+          },
+          {
+            "text": "Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Administrative Review",
+              "clause_id": "5.1"
+            },
+            "score": 0.540963888168335,
+            "lexical_score": 0.1429,
+            "hybrid_score": 0.4414
+          },
+          {
+            "text": "A grievance submission must include applicant\u2019s full name, registered mobile number and email ID, institution name, detailed description of the grievance, and supporting documents if applicable. Incomplete submissions may be rejected.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Required Information",
+              "clause_id": "4.2"
+            },
+            "score": 0.5158095359802246,
+            "lexical_score": 0.2143,
+            "hybrid_score": 0.4404
+          },
+          {
+            "text": "If a grievance cannot be resolved at the institutional level, it may be escalated to the Department of Higher Education, Government of West Bengal for further review and appropriate direction.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Escalation Procedure",
+              "clause_id": "5.4"
+            },
+            "score": 0.4879639148712158,
+            "lexical_score": 0.1786,
+            "hybrid_score": 0.4106
+          },
+          {
+            "text": "A grievance shall be rejected if it falls outside the defined scope, is submitted beyond the 90-day limit without justification, mandatory information is missing, or the matter is sub judice.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Grounds for Rejection",
+              "clause_id": "6.0"
+            },
+            "score": 0.4823090732097626,
+            "lexical_score": 0.1429,
+            "hybrid_score": 0.3974
+          }
+        ],
+        "context_blocks": [
+          {
+            "id": "C1",
+            "clause_id": "5.2-SCH",
+            "section": "Resolution Timeline",
+            "policy_id": "HED_GRS",
+            "text": "Scholarship-related grievances shall be resolved within 30 working days.",
+            "score": 0.6264183521270752
+          },
+          {
+            "id": "C2",
+            "clause_id": "5.1",
+            "section": "Administrative Review",
+            "policy_id": "HED_GRS",
+            "text": "Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated.",
+            "score": 0.540963888168335
+          },
+          {
+            "id": "C3",
+            "clause_id": "4.2",
+            "section": "Required Information",
+            "policy_id": "HED_GRS",
+            "text": "A grievance submission must include applicant\u2019s full name, registered mobile number and email ID, institution name, detailed description of the grievance, and supporting documents if applicable. Incomplete submissions may be rejected.",
+            "score": 0.5158095359802246
+          },
+          {
+            "id": "C4",
+            "clause_id": "5.4",
+            "section": "Escalation Procedure",
+            "policy_id": "HED_GRS",
+            "text": "If a grievance cannot be resolved at the institutional level, it may be escalated to the Department of Higher Education, Government of West Bengal for further review and appropriate direction.",
+            "score": 0.4879639148712158
+          },
+          {
+            "id": "C5",
+            "clause_id": "6.0",
+            "section": "Grounds for Rejection",
+            "policy_id": "HED_GRS",
+            "text": "A grievance shall be rejected if it falls outside the defined scope, is submitted beyond the 90-day limit without justification, mandatory information is missing, or the matter is sub judice.",
+            "score": 0.4823090732097626
+          }
+        ]
+      },
+      "grounding_report": {
+        "is_grounded": true,
+        "supported_sentence_ratio": 1.0,
+        "support_threshold": 0.3,
+        "unsupported_sentences": [],
+        "notes": "Token-overlap heuristic for quick hallucination risk screening."
+      }
+    }
+  },
+  {
+    "case": "Examination correction",
+    "input": {
+      "subject": "Result correction request",
+      "sender": "student@example.edu",
+      "email_content": "I need rechecking and correction of my semester examination result. Please guide me on process and expected communication."
+    },
+    "summary": {
+      "generation_mode": "policy_guardrail_fallback",
+      "retrieved_count": 2,
+      "is_grounded": true,
+      "supported_sentence_ratio": 1.0,
+      "top_clauses": [
+        "5.3-EXM",
+        "5.1"
+      ]
+    },
+    "result": {
+      "suggested_reply": "Dear student@example.edu,\n\nThis is with reference to your email regarding \"Result correction request\". [C1]\nBased on the policy material currently available in the system, the relevant provisions are: [C1]\n- Clause 5.3-EXM (Examination Related Grievances): In cases where the grievance concerns examination evaluation, rechecking or result correction, the institution shall follow the applicable examination regulations and communicate the outcome to the applicant. [C1]\n- Clause 5.1 (Administrative Review): Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated. [C2]\nPlease follow the applicable institutional grievance process and submit complete supporting details for formal action. [C1]\n\nSincerely,\nGrievance Support Desk\nDepartment of Higher Education\nGovernment of West Bengal",
+      "generation_mode": "policy_guardrail_fallback",
+      "retrieval": {
+        "top_k": 5,
+        "similarity_threshold": 0.6,
+        "query": "Result correction request\nI need rechecking and correction of my semester examination result. Please guide me on process and expected communication.",
+        "matches": [
+          {
+            "text": "In cases where the grievance concerns examination evaluation, rechecking or result correction, the institution shall follow the applicable examination regulations and communicate the outcome to the applicant.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Examination Related Grievances",
+              "clause_id": "5.3-EXM"
+            },
+            "score": 0.5823725461959839,
+            "lexical_score": 0.2778,
+            "hybrid_score": 0.5062
+          },
+          {
+            "text": "Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated.",
+            "metadata": {
+              "policy_id": "HED_GRS",
+              "section": "Administrative Review",
+              "clause_id": "5.1"
+            },
+            "score": 0.48257115483283997,
+            "lexical_score": 0.1111,
+            "hybrid_score": 0.3897
+          }
+        ],
+        "context_blocks": [
+          {
+            "id": "C1",
+            "clause_id": "5.3-EXM",
+            "section": "Examination Related Grievances",
+            "policy_id": "HED_GRS",
+            "text": "In cases where the grievance concerns examination evaluation, rechecking or result correction, the institution shall follow the applicable examination regulations and communicate the outcome to the applicant.",
+            "score": 0.5823725461959839
+          },
+          {
+            "id": "C2",
+            "clause_id": "5.1",
+            "section": "Administrative Review",
+            "policy_id": "HED_GRS",
+            "text": "Institutions shall ensure that grievances relating to administrative delays, examination results, scholarship disbursement, or student services are reviewed promptly and appropriate corrective measures are initiated.",
+            "score": 0.48257115483283997
+          }
+        ]
+      },
+      "grounding_report": {
+        "is_grounded": true,
+        "supported_sentence_ratio": 1.0,
+        "support_threshold": 0.3,
+        "unsupported_sentences": [],
+        "notes": "Token-overlap heuristic for quick hallucination risk screening."
+      }
+    }
+  },
+  {
+    "case": "Out of scope random request",
+    "input": {
+      "subject": "Hostel food menu complaint",
+      "sender": "user@example.edu",
+      "email_content": "Please redesign the weekly hostel food menu and provide a nutrition chart for all hostels immediately."
+    },
+    "summary": {
+      "generation_mode": "fallback_no_policy_match",
+      "retrieved_count": 0,
+      "is_grounded": false,
+      "supported_sentence_ratio": 0.0,
+      "top_clauses": []
+    },
+    "result": {
+      "suggested_reply": "Dear Sir/Madam,\nThank you for contacting the Department of Higher Education, Government of West Bengal.\nBased on the currently available policy documents in this system, we could not find a matching clause for your request.\nKindly submit complete grievance details and supporting documents through the official grievance channel for manual review by the competent authority.\nSincerely,\nGrievance Support Desk\nDepartment of Higher Education\nGovernment of West Bengal",
+      "generation_mode": "fallback_no_policy_match",
+      "retrieval": {
+        "top_k": 5,
+        "similarity_threshold": 0.6,
+        "query": "Hostel food menu complaint\nPlease redesign the weekly hostel food menu and provide a nutrition chart for all hostels immediately.",
+        "matches": []
+      },
+      "grounding_report": {
+        "is_grounded": false,
+        "supported_sentence_ratio": 0.0,
+        "unsupported_sentences": [
+          "Dear Sir/Madam,\nThank you for contacting the Department of Higher Education, Government of West Bengal.",
+          "Based on the currently available policy documents in this system, we could not find a matching clause for your request.",
+          "Kindly submit complete grievance details and supporting documents through the official grievance channel for manual review by the competent authority.",
+          "Sincerely,\nGrievance Support Desk\nDepartment of Higher Education\nGovernment of West Bengal"
+        ],
+        "notes": "No policy matches were retrieved, so this response is guidance-only fallback."
+      }
+    }
+  }
+]

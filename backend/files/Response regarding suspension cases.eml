@@ -1,0 +1,117 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:43a5:b0:89:ead2:3829 with SMTP id bo37csp130528dlb;
+        Thu, 12 Sep 2024 23:42:42 -0700 (PDT)
+X-Received: by 2002:a05:6e02:1fc2:b0:3a0:5642:c78 with SMTP id e9e14a558f8ab-3a08491ddcbmr50216095ab.15.1726209762192;
+        Thu, 12 Sep 2024 23:42:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726209762; cv=none;
+        d=google.com; s=arc-20160816;
+        b=d4Luj8bEH+phWEKby1U6mD69bjbztdvoP0lxQ2RQpBaGYXMBzwqm87qYFKEh83o+aQ
+         MAYDhNO3dfw6tTWwE1zCwXV+V4f5uYC/r/17Y1ieBCnbxPoi9TwDt5VeZAcduoopqp11
+         v5TALtSJgdHiOJ/3XGVvU7YwqSwACUauPKBiOc8jsE6YgHidfb3gpHJMzYLR3OtABS9P
+         jRMNdt5/nrpcTKlyVWsoOiPndzMoyhJAAAYnDBZuNsk9ty1NvAMBPWU0czuddkxgFCTQ
+         SXSpTGpNIzejYt2A/eLemexs2f6LklB+y4KVf/+lkDpM7XrVSYFBaOTHRpDhvKNb4OH/
+         6vhw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=a+LP1a7eoMpRsZFBw5DJPh/i9Z2uNheMVHEJ3wrcabg=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=h+pkM9tZ7AAB9ZeF0xwwJMkc/RKHKHbJ5BMU2P7M62+7OKgeVu/dcbUKlNwFORc6rx
+         C9aLp5RhUC2kkyxztUiG81P93o7fZhW5XALVtqnSU/Tsmz9nQ/yHXmK0drcEhCTDOlFm
+         RKvH/+msukH27ceo9yt+5PcpZpWA/ggqzi0Dp0SSd0qin4MvdLT2gvoXm14nSKzkArq/
+         CRCohT02XZWeR4kdhnqIgwTQ1s+y2VnKBg5Ovd9oxOA03DTl3owQ1sEfV7i8hImJSGYe
+         WekRExggHb1ciqK4odpqvAMh/iij28O+GLRebaIXCBPTSYTXrbE8lInw0vWRpkmfTo1m
+         kA7Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hpkcaiKE;
+       spf=pass (google.com: domain of principal.ddmrm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal.ddmrm@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <principal.ddmrm@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e9e14a558f8ab-3a059013428sor44862625ab.14.2024.09.12.23.42.42
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Thu, 12 Sep 2024 23:42:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of principal.ddmrm@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=hpkcaiKE;
+       spf=pass (google.com: domain of principal.ddmrm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=principal.ddmrm@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726209762; x=1726814562; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=a+LP1a7eoMpRsZFBw5DJPh/i9Z2uNheMVHEJ3wrcabg=;
+        b=hpkcaiKEE4nSyyP4v8VGnftCGt0v+gSf8dyOYuB/SDvyMpJjE5W5/pY9HCUctcT7/5
+         kb85DxeiJF244OGehUOaky5p3NU0Yod8NRQDmtLx0RoO3Rlupcu+dpr7a2TqKY0dLycH
+         Nk7Dvd/MHcoK9Ir8VAb3LxUvgAC2L7dVsRgBxBz0kQk5YPNZ6bueBwoNuWqk1A90cY15
+         VRFiQG0hRWQC0NIIk0mnFXRVMkVH8WgQsQgJd0QsRlE1cv74YurdrWYsoz/VEtmH4VUa
+         inxQmHjzkJbR9uQpafbshoujDvMQ+Uc9sLWBojqJVhUFR59GgmXUCLHvrz2VgMDzkyzg
+         TSGA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726209762; x=1726814562;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=a+LP1a7eoMpRsZFBw5DJPh/i9Z2uNheMVHEJ3wrcabg=;
+        b=pMidAlVBFgRk7sQ0h6i+Cvc7STwr7jj39Ga3CYhGd+rrs93288lCWp5B2wI8qTwwJ8
+         uc86TtTXx9CfuO1D4bvbko4zHOZoQJ+poiDBX5YovIQH5POhAS+6zOAQrGz3X7neo0zE
+         2zPk8IXtc8fab/NuHiAebF+42gPcmjeTEuOoK0g5LfirM5o0eFdg5OZOYb31PAbBFwEd
+         gM1t97cm8qmwJSTyAsIrLULljGIQqLlIaoPX+bIBJ3u+tZ7Jikn5TgQBr1eOew/WscUt
+         oyikv/4IqJM3koCUgnbUNFjrS5eA5cFCA7E3N1Y2w38qtNVC6F/GJdMBeYuFVD+FSBGY
+         jTGg==
+X-Gm-Message-State: AOJu0YyRwUuRRGnsEPhmQTCUkTsDSiO7uSYtlesH4j+T2WKzun3v6Y+0
+	4bHtgvL8e2RQGe3POMv5mWAjFuIHmqT0MnBWsjO5TGYzlVYbPoCVQKYjq8IdfScxih5wx2qu4JC
+	KkWvNOxqrkIHHbvNZ6BQc3NOLk57hUHlaTto=
+X-Google-Smtp-Source: AGHT+IHRcRM/uEO61fGwkHHBgBb5Z4bMT3yzp7zSmikqoyLZIvsuTjABIJuith/+iypC4mL2QIvI8LMJ8WELd4+xSkY=
+X-Received: by 2002:a92:c56a:0:b0:3a0:8d8a:47c with SMTP id
+ e9e14a558f8ab-3a08d8a07e8mr5290425ab.14.1726209761599; Thu, 12 Sep 2024
+ 23:42:41 -0700 (PDT)
+MIME-Version: 1.0
+From: "Prof. Arijit Saha" <principal.ddmrm@gmail.com>
+Date: Fri, 13 Sep 2024 12:12:25 +0530
+Message-ID: <CAAFj=VkE6gQJR8KZ+b6MvWbsL4NCsJ57EVF46qgsjS21e9HKbA@mail.gmail.com>
+Subject: Response regarding suspension cases
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000a5e9ca0621fa8717"
+
+--000000000000a5e9ca0621fa8717
+Content-Type: text/plain; charset="UTF-8"
+
+Sir/Madam
+
+At Dum Dum Motijheel Rabindra Mahavidyalaya, there is no case of suspension
+at present.
+
+Best regards
+Prof. (Dr.) Arijit Saha, FIETE, FOSI, LMISTE, LMIAENG
+
+*Principal & Secretary, *
+*Dum Dum Motijheel Rabindra Mahavidyalaya (Govt. Aided)*
+*208/B/2, Dum Dum Road, Kolkata 700074**, India*
+*M: 9433076156*
+
+--000000000000a5e9ca0621fa8717
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Sir/Madam<div><br></div><div>At Dum Dum Motijheel Rabindra=
+ Mahavidyalaya, there is no case of suspension at present.</div><div>=C2=A0=
+<br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" data-smar=
+tmail=3D"gmail_signature"><div dir=3D"ltr"><div><div style=3D"color:rgb(0,0=
+,0);font-size:16px"><div dir=3D"ltr"><font face=3D"garamond, times new roma=
+n, serif">Best regards</font><br></div><div><font face=3D"garamond, times n=
+ew roman, serif">Prof. (Dr.) Arijit Saha, FIETE, FOSI, LMISTE, LMIAENG</fon=
+t></div><div><font face=3D"garamond, times new roman, serif"><br></font></d=
+iv><i style=3D"font-family:&quot;new times&quot;,serif">Principal &amp; Sec=
+retary,=C2=A0</i></div><div style=3D"color:rgb(0,0,0);font-size:16px"><i st=
+yle=3D"font-family:&quot;new times&quot;,serif">Dum Dum Motijheel Rabindra =
+Mahavidyalaya (Govt. Aided)</i></div><div style=3D"color:rgb(0,0,0);font-si=
+ze:16px"><i style=3D"font-family:&quot;new times&quot;,serif">208/B/2, Dum =
+Dum Road, Kolkata 700074</i><i style=3D"font-family:&quot;new times&quot;,s=
+erif">,=C2=A0India</i></div></div><div style=3D"color:rgb(0,0,0);font-famil=
+y:&quot;new times&quot;,serif;font-size:16px"><i>M: 9433076156</i></div></d=
+iv></div></div></div></div>
+
+--000000000000a5e9ca0621fa8717--

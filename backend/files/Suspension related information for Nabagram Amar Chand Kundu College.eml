@@ -1,0 +1,111 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1284984dlb;
+        Fri, 20 Sep 2024 23:49:08 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEH647qDpCIEzC6l7hNY8mzyBsFmorGrUchc797z0w67FRYs4P3c+jwfwcvJ1iYbTqJqz4J
+X-Received: by 2002:a05:622a:1a95:b0:458:2aaf:5aaf with SMTP id d75a77b69052e-45b226d150cmr82175151cf.8.1726901347810;
+        Fri, 20 Sep 2024 23:49:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726901347; cv=none;
+        d=google.com; s=arc-20240605;
+        b=FV7IP43Aa3fxqcbMkTj5rqCGZXncIg1ZkhLTADgxKTPST/kVgvwQC1z1JbYQoOcTNk
+         aZa41CWKS5DMxkNkJ8iNGHFTUkPMf5MxOXRlivyYVquo0gtBcCF8TYwENo5XmsW+V0eL
+         e87vRsx2N7nMsSYjk/ItScJtCmrTT89gqE5sXj7Kt1l2G2gEp4z/Y7Qi8LPAbqoW2/JS
+         whqR9tb+67qNAJkQqWNBM2w3IEgZbCMkIMS/PKEvYijeChQkH2f3voCEvfH/5Xt2lMaF
+         hyhrDesfrsxPikx1SqKs2WO2lwiJIn6gd0VjdEL+cyi/lTv7gMUVyh4GGaid1ELqTb3a
+         w7Jw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature;
+        bh=CF5heORenDgfnMktS1Hql9GRbTohvhBOCk2r1TTcQ/Y=;
+        fh=01fGfKOSxeJ45fug4YRIzJop9QyelC8RGxLaWvJFeaU=;
+        b=WflAQT7b5ORfTHsRA3I1Yz4jx2MVJq3ix84nC7XL7t+0QeQ/FiLrRVcmivAJJbluah
+         M8bkbasnEesuKdme7oLX+LLYoEvv+LJrFK19V2Y7GsCH1Cr9B4KNtME4ECUFJBM1AVpW
+         yhv8v9k30R68Mn/Lxjr0HB1xer8QitE2QFheKQy6iQjJ7ZBQ2UbgLFQjuPoZSj/nEhcW
+         rUr4zE9yMKaNfygWfZWmN9k9al9RNgzb3zSuzNZmQkxLKHeiGQXbPasUgJuUmeC0X5hP
+         Yr8OcOii+f+Ru99F+YIMp6iEo9N4F26zYbmweR9WeaARqQm8wZSmgniqz1oyx90tkUrD
+         lOtw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b="B/TAVlq/";
+       spf=pass (google.com: domain of nackcollege@yahoo.com designates 66.163.188.146 as permitted sender) smtp.mailfrom=nackcollege@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <nackcollege@yahoo.com>
+Received: from sonic303-20.consmr.mail.ne1.yahoo.com (sonic303-20.consmr.mail.ne1.yahoo.com. [66.163.188.146])
+        by mx.google.com with ESMTPS id d75a77b69052e-45b1792eda8si57188741cf.561.2024.09.20.23.49.07
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 20 Sep 2024 23:49:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nackcollege@yahoo.com designates 66.163.188.146 as permitted sender) client-ip=66.163.188.146;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b="B/TAVlq/";
+       spf=pass (google.com: domain of nackcollege@yahoo.com designates 66.163.188.146 as permitted sender) smtp.mailfrom=nackcollege@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1726901347; bh=CF5heORenDgfnMktS1Hql9GRbTohvhBOCk2r1TTcQ/Y=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=B/TAVlq/4UADjDUvxJ1RED1ypbJAfRWBbVjrDN3vNsRcZuhHL2H5x+nDJ1Y7vLlLjM6RG/HFuVTKgOsEkfbugTHpRui80DBtFKj9sg1PlRUEstpXqJi0PdbtJ5gSR4Ei2qJIFQgdH9DaVPlSr0rzCsTGiHa250FTVleGG073/YUIpuU5LEM7h2BOJiGb5SnTWoSUXo0dUTqWyMAEy0nwQcyCo6PkF/o4Xa//RUExyy7IjUfqnGYHvdLiE+t0aRis+lC+izPXuYTHgp9nhpJSlD8TRxrwuk2d6f+pzj8V6634UlEiqBBOLfCpC6+RQ5vVeR7+nXn4Hy9XPq11CxEXSQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1726901347; bh=CNiqJVSwbFhDgEj0zdSohWot1B1pCpxUiJLt0bo00zA=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=ZTQxOHCEpXsR9RPIecpCcvkNn1aSDwlfYsuQiqk7kBqko1FNMaGLj7PgPDws1YiUCBM/1lV85ajc5m7mC/lXr8l1I8Wz0u6Ou6oPNZbdHd4Hi1uoXIGYd/O4CrDH4GIj57jms6RssgZ/4jlWotfEcrpDBqZBRLUBOYB3xKozJjnXpxGi7dOv8+mdS1b/Xcf01qeQWtEex1OP6xDFFZ+giKK0CI+74+rBI2RPcOAOgS1ndvOPKxstU5ydSJ9cBLVUTc5vI4Z8RU4hUopIT6uZpSuWHV9ZV8yFEzLIQhtTZFnGYdKutZbTZ2ka/6B+oMQ2c8vJhdj9/zPp6e4Jf2503A==
+X-YMail-OSG: 8qonxbcVM1nSnehZsKZUhBYdAWB.gyqKuN5ZkbD_X8gMHkXuX8hOwplnfDN7dB1
+ 8szVrfNfAtFMJJgAdZBnLPdmaMIj1Im9Z_uqkuH5sDY7BRc2v19snpxq.z2HEamzOsW2lbjCN98j
+ V58SQOcrHJeSyx4JGRfp2CgArEbXHBjjoNUOG79FGtkoCLgTnowUPWMd_1FDXLSieNOoQPNexHfi
+ g_AL.K5yc6nG8KrxEE3ZavokZX667ZgsaBnlLIjkzONVGjqZ6upN3WbofcYKy0UcPJPzXHuxASW9
+ UR1G9HV24b6b14Ddun6K8WmY2IuxzNScS7xmHnlKZN.dc6sGpx.KSrROYSboO1g22JGgxKHAoK7w
+ 9a73PEgvyMPJKaN9mAv14RxAQza03X2aJ4h_PDxzmmtEkz9bM3UP_k7M_k3h3dyPjWeADaSuFwCQ
+ 23ctMW.0ZHxiO06hYmkkT93wdreYx3XMNfk7LcSTjvRv1EZLZrci7ZzJV_ZvTapdSowj.mOZgHzu
+ c68ZnuFHzsxfkGkBXspZSlI98yGSO00BA2waCs5uSetZR0fv.xgNT2D7lv5ZwaZ3wlvjq5kbHMyh
+ v4LdGxGzE04sliWNVvKZG87vPxMmRKCTXHQcwrt5WerHsE1yktE42GEf4ffP5xwn7.Gu.ABDFz9Q
+ O47KHJpMtlMwc.fiv.TGSDmtFPyT0RPkCQG1WRWF2KY_bI6mQKx73dYjXCxipHh2UMc5PzWC4QbZ
+ wks0Iq0LHZW0BHJSTBimVJRQ5vsbF.8cn3Jdq7uUKzDJpPZX8prAYs5ToinqErKuDJz2F4mn.3s1
+ maQmU0KEmEd7tArWee.Jq9NiHFSHh6mRIQ_mnNdF56zxLEVJw9Xi.b5Mk9_mj2dG5bZBhGTim97h
+ jPUnOlr.4.Ddyvpjtv2t_BH5v7k_5k37kRnQbF00Ty9xTlC5G0lmnk5asq6Tl1nk9ad1gW2zjQsl
+ qH0VpEvWf.DeFgIokHsOsNbkgISKYDFfjj43HmzsRB9k5xq_b3uIuGweaOBljt0j.JMyKClE4Fkg
+ ZW7_x3dvP05w7GTUynjI89mH9cQBbXo4.y5rDiPGdNiqKVxMhr.Y3KTsX1L_vTFzq6fqosKfakSU
+ 6BjBakSqsxbEt8FJK.9gOVXUVMGd_LQik06MV8RFbtZ3chsxvrcMjuCaPPwpkPBHlBWJkNzyGHIE
+ lh7EHM4vwxkexc0XP4hBdRGKB4BZQ46MojFkpSfAdfhKm23hTNPuH8wR12GPYxTI6IGgxtUB_a0V
+ LtwvsxPKSb8ZzVuJwGAPUozVYqZa0IYI_lIQoihcXvLkiccdAFuKYPg15AC1nGN2S_V9EjZIsutS
+ ZcqGJn.TwH4XYgjVhfVisoIlsbyFb9P186NPEpsH036deY1p1EfouUCaiClh1P.cqwNy3Kmj.dAG
+ 25gI5ESL7HYM5jqoD44kyyktmsaFf67Osb_WW_OsAUWEKmEsBEPlCmorMgm_cnJKHxytZVVnfXEX
+ IfpZRyScI6DsJKsgPqmjitFKQkelJ1KbJN9PIjkCq5sjid.oMykAwU3J_H9vq.sOoGBLYWAtM0nB
+ TGZ.rW7e7lCMf7Lu5Rlzeb6hQADO61V7FjWVCm8SSw2JTHr.vrmf7ZrkNue2mc1M9ye6dQYPfpqJ
+ lIv7zxbh5w4HpSdZzZ8oohGNK.J2g90lpLAgChqSg9Iioe7c2GrTlwRVfuNf.5RSSfWF7icRlG7P
+ Ig.UnYCuKQoDh1BW_Tsyqg9l9U0PwO1dQk97ZyeahNGpdl9DrjRX0vI8iLd98bkl0Wo2YA0YR2MZ
+ S7swhYh9TqtOE9JN_7vIakCfX9AqPUoT1L2zhX72q5UkWDrNMarr0T0vevlAqhuXbWSccYcFv0EN
+ 6JYc2c_wNSCaZYi7HawOnq2iGNwmk5fX1mOKZijlJxmYmYcvxUOvUVLCeSJv53rtXFLA7yic8W.w
+ wkGEXvRXe06BKW.SGWO.z7FHIXijW6N5qsdyzB6TjRJgirsAT6c9jLIVB1bE_gXT_SkMVbmwCZFI
+ DvtqaapQzK9hV.WdwCW_T5XWwOVUIMVh83u9acBA5w_TJAaiNCXFLkkuk0kYISTuqHfXZNVSoNMI
+ hoYDPKyjL7HJwdl0CsRyfGFZmZIWY9TNcNHtIKHpip_xld9siUKiSDC2Dj5mztYWsMp6asrJZvgg
+ sU4fpqMJdsqLc7lQLx4TWWF0ytOFan5r_bt4RTR30hrh6jttK0TAhlFVjEjQrj4FAgkiE7m9meVf
+ JUfs4LJ7oyIDK2OANS1PugPBU6OQ82siBRyEQiNkw.9D4jCjt8SAuXVk_AJx0BTMOxpBMqAdtMyf
+ y.lT42ZRNZ.166w3bxWtnNmoT2myvQhO1ndUuXhgBLRqsOl_gVOKUc3Z7OzbIl3GwniJG3kTPLU6
+ CEB3Di3XcjRKgLBWVvC._OceDmCGJMDdz4mY0OSWAoKXqtlGeCf6bwTpX97smncZY6A--
+X-Sonic-MF: <nackcollege@yahoo.com>
+X-Sonic-ID: 4c0e880a-c51c-4ab6-b6fa-d4a28f7306d5
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic303.consmr.mail.ne1.yahoo.com with HTTP; Sat, 21 Sep 2024 06:49:07 +0000
+Date: Sat, 21 Sep 2024 06:48:57 +0000 (UTC)
+From: Nabagram ACK College <nackcollege@yahoo.com>
+Reply-To: Nabagram ACK College <nackcollege@yahoo.com>
+To: "grievance.hed.wb@gmail.com" <grievance.hed.wb@gmail.com>
+Message-ID: <2003211341.10851488.1726901337884@mail.yahoo.com>
+Subject: Suspension related information for Nabagram Amar Chand Kundu
+ College
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10851487_2124819856.1726901337883"
+References: <2003211341.10851488.1726901337884.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.22645 YahooMailAndroidMobile
+Content-Length: 1600
+
+------=_Part_10851487_2124819856.1726901337883
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Sir/Madam,=C2=A0In response to the notification vide ref No. GRC-HED/02(10)=
+/24 dated 29/08/24, this is to inform you that Nabagram Amar Chand Kundu Co=
+llege , Nabagram, Murshidabad is a Govt. Aided general degree college. At p=
+resent the college have no suspension related case.=C2=A0Thank you.With reg=
+ards,=C2=A0Dr. Soumitra Kar=C2=A0Principal=C2=A0Nabagram Amar Chand Kundu C=
+ollege=C2=A0
+
+Yahoo Mail: Search, organise, conquer
+------=_Part_10851487_2124819856.1726901337883
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Sir/Madam,&nbsp;<div>In response to the notification vide ref No. GRC-HED/02(10)/24 dated 29/08/24, this is to inform you that Nabagram Amar Chand Kundu College , Nabagram, Murshidabad is a Govt. Aided general degree college. At present the college have no suspension related case.&nbsp;</div><div>Thank you.</div><div>With regards,&nbsp;</div><div>Dr. Soumitra Kar&nbsp;</div><div>Principal&nbsp;</div><div>Nabagram Amar Chand Kundu College&nbsp;</div><div><br><br><div id="ymail_android_signature"><a id="ymail_android_signature_link" href="https://mail.onelink.me/107872968?pid=NativePlacement&amp;c=Global_Acquisition_YMktg_315_EmailSignatureGrowth_YahooMail:Search,Organize,Conquer&amp;af_sub1=Acquisition&amp;af_sub2=Global_YMktg&amp;af_sub3=&amp;af_sub4=100000945&amp;af_sub5=OrganizeConquer__Static_">Yahoo Mail: Search, organise, conquer</a></div></div>
+------=_Part_10851487_2124819856.1726901337883--

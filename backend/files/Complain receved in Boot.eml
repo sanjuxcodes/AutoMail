@@ -1,0 +1,238 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:627:b0:86:fb3e:d4ed with SMTP id 39csp155028dlb;
+        Fri, 6 Sep 2024 05:33:54 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFuFyqcyVoMHpxLLCZYbku9Gy8e9sMjs/M21/boMrIJsTDesSIpS1er9Q48z0Tp62VvtpTR
+X-Received: by 2002:a05:6a21:3414:b0:1cc:d7fa:6ea6 with SMTP id adf61e73a8af0-1cce1097977mr27068216637.35.1725626033919;
+        Fri, 06 Sep 2024 05:33:53 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1725626033; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=R/1RiEzudVa31QIrXXudptI6YmjgDga1+vI8pSKXuD6y7loWiGXvwx4/ygx90cuJ3H
+         z9QhWDvMKM6TVAPtQK+4fYdVs4AN0SRZ0Tm173Mh52h3t8FXArNJGwdvG8S/9aw8ekGJ
+         17JVZeYLoOrm5Z7FJsBBqIPk+Xv/qvmbqCN6Pq71pSW00bbgRP1KOycCQTk0/iX/P2zf
+         f3d3QtvOMEi1YpD4cyxWLw0NMq66wcJBmf84v8YZYlhAYu2O49LpJZol3Sqn8Pf8yp0e
+         ALe97FOkbtDH1VxwPMoq88OEkIyp83k+arhpBFanq+3MYnbD2UJf52iltmOR8K6aiDFH
+         OZmA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=user-agent:importance:mime-version:subject:references:in-reply-to
+         :message-id:to:from:date:dkim-signature;
+        bh=FHaVegq/oGTWXSW7j6LwqaWUqiJXT11AMHZC78pcEk8=;
+        fh=ljDXAgLmOk9WLbHuKnGRTJKOMgADMBYIm0rjNBInOBc=;
+        b=OaJk18f5Cd2ofSC6LWSubb/S9vBpN1nEbpK+yxUIWAbAxYd/glP/7JJh+6i2YMVgH3
+         EakqR9W+eD5k/1UUvPHibwT9hGwmRqRyRErrQXkPNvnApKlMCRqfmxmk4MWVDhVmqCJ2
+         9PX614RfLiRkLWviTrir8JmBzu49fk2EBCczCze4g0AIyOei50/4CywcYK7SlXHRP6+Y
+         ZuUx08SEFyWLnkViZ4p2kGfHWplGV31RVTCn9XUMvH0XwgN4h734Mr8uKRRt2pEIJBpM
+         X8TvWwmfjtQrIGXC16h3Wwr+OTEAWPCkvtizy5ADW33sCyRg3tduUc0h8x3XFVqc8K7s
+         fP1g==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@wbjeeb.in header.s=zohomail header.b=Qyrm0Sb5;
+       arc=pass (i=1 spf=pass spfdomain=wbjeeb.in dkim=pass dkdomain=wbjeeb.in dmarc=pass fromdomain=wbjeeb.in>);
+       spf=pass (google.com: domain of registrar@wbjeeb.in designates 136.143.184.17 as permitted sender) smtp.mailfrom=registrar@wbjeeb.in
+Return-Path: <registrar@wbjeeb.in>
+Received: from sender3-op-o17.zoho.com (sender3-op-o17.zoho.com. [136.143.184.17])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-7179776ab3esi2792576b3a.349.2024.09.06.05.33.53
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 06 Sep 2024 05:33:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of registrar@wbjeeb.in designates 136.143.184.17 as permitted sender) client-ip=136.143.184.17;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wbjeeb.in header.s=zohomail header.b=Qyrm0Sb5;
+       arc=pass (i=1 spf=pass spfdomain=wbjeeb.in dkim=pass dkdomain=wbjeeb.in dmarc=pass fromdomain=wbjeeb.in>);
+       spf=pass (google.com: domain of registrar@wbjeeb.in designates 136.143.184.17 as permitted sender) smtp.mailfrom=registrar@wbjeeb.in
+ARC-Seal: i=1; a=rsa-sha256; t=1725626031; cv=none; 
+	d=zohomail.com; s=zohoarc; 
+	b=Tomm7Ni4VL8OWWS25/3fGhmIzCo+0gjNAv3/HzKy/w12drGov+qK83VYMqzH/Y4k+jS45Zm+fCNcDUOYkJeie27lB0RwzZWNC4pKF5HfmADtxF61X7mANh+hg+gd1Fx1BGhBaoeqD1KLhJawcfxq4DsAlGCsNj49Xxg4nTIPDXc=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail.com; s=zohoarc; 
+	t=1725626031; h=Content-Type:Date:Date:From:From:In-Reply-To:MIME-Version:Message-ID:References:Subject:Subject:To:To:Message-Id:Reply-To:Cc; 
+	bh=FHaVegq/oGTWXSW7j6LwqaWUqiJXT11AMHZC78pcEk8=; 
+	b=Vl9H/FCyBQY3dZ0c9x76TJf468EISxDKLweI9Cc70MEm+nm52dpjZBwuKhDiXQyF3aaCNs/68vE2woLZgJHPWY4k+Z3qgibQlvIECYIv5l8zQIbjcN2TbYjvtNDY5fQ86BGAzTv1cdLoXbSwIWMxjhkVN4hg5Fax1d+4rsWBhos=
+ARC-Authentication-Results: i=1; mx.zohomail.com;
+	dkim=pass  header.i=wbjeeb.in;
+	spf=pass  smtp.mailfrom=registrar@wbjeeb.in;
+	dmarc=pass header.from=<registrar@wbjeeb.in>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1725626031;
+	s=zohomail; d=wbjeeb.in; i=registrar@wbjeeb.in;
+	h=Date:Date:From:From:To:To:Message-Id:Message-Id:In-Reply-To:References:Subject:Subject:MIME-Version:Content-Type:Reply-To:Cc;
+	bh=FHaVegq/oGTWXSW7j6LwqaWUqiJXT11AMHZC78pcEk8=;
+	b=Qyrm0Sb5BuFL1DOxryPUK2qvjhu905xcatiEyZj74CvnbTKDEpGU0ILz0XH5L93a
+	5ZAjMqMd+uEipu/4H1SceC3hBDWrVTVCbXtqI3ymZiRTmF+PpWLly0F0PVnYnkwohlG
+	74JSmIA0fMyySgrtdQ1vJf2XDkdHce9kcnP5LN8M=
+Received: from mail.zoho.com by mx.zohomail.com
+	with SMTP id 1725626025623256.30945775343514; Fri, 6 Sep 2024 05:33:45 -0700 (PDT)
+Date: Fri, 06 Sep 2024 18:03:45 +0530
+From: Registrar WBJEEB <registrar@wbjeeb.in>
+To: "Grievance Redressal Cell HED WB" <grievance.hed.wb@gmail.com>
+Message-Id: <191c7538677.d0d30f1615430.2385140568197404298@wbjeeb.in>
+In-Reply-To: <CAF3vyrH4+egJJRdztnqCVaLO6xWp3xcjiZQz=+NDUDpTUmAarA@mail.gmail.com>
+References: <CAF3vyrG6TNLaVFVapeHkO+OevChHxxgTHzuUhCfjkyemeaQ3JQ@mail.gmail.com> <CAF3vyrH4+egJJRdztnqCVaLO6xWp3xcjiZQz=+NDUDpTUmAarA@mail.gmail.com>
+Subject: Re: Fwd: Complain receved in Boot
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_50122_419306259.1725626025591"
+Importance: Medium
+User-Agent: Zoho Mail
+X-Mailer: Zoho Mail
+
+------=_Part_50122_419306259.1725626025591
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sir
+
+The West Bengal Joint Entrance Examinations Board is no where=C2=A0 concern=
+ed with the complaint.
+
+
+
+With regards
+
+Registrar,WBJEEB=C2=A0
+
+
+
+
+
+
+
+---- On Fri, 06 Sep 2024 12:44:39 +0530 Grievance Redressal Cell HED WB <gr=
+ievance.hed.wb@gmail.com> wrote ---
+
+
+
+
+
+---------- Forwarded message ---------
+From: Grievance Redressal Cell HED WB <mailto:grievance.hed.wb@gmail.com>
+Date: Fri, Sep 6, 2024 at 8:40=E2=80=AFAM
+Subject: Complain receved in Boot
+To:  <mailto:jointsecretarysed@gmail.com>
+
+
+
+Dear Sir Pls seeSudip
+  Bandyopadhyay
+
+
+917908863385
+
+
+Other
+  Cells/Institutions under Higher Education Department
+
+
+Miscellaneous
+
+
+There
+  are no hm still last 10 year,tic is so rude,he can't call meeting tme to =
+time
+------=_Part_50122_419306259.1725626025591
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>=
+<meta content=3D"text/html;charset=3DUTF-8" http-equiv=3D"Content-Type"></h=
+ead><body ><div style=3D"font-family: Verdana, Arial, Helvetica, sans-serif=
+; font-size: 10pt;"><div style=3D"color: rgb(0, 0, 0); font-family: Verdana=
+, Arial, Helvetica, sans-serif; font-size: 13.3333px; font-style: normal; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;=
+ letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; t=
+ext-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-widt=
+h: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;">Sir<br></div><div style=3D"color: rgb(0, 0, 0); font-fami=
+ly: Verdana, Arial, Helvetica, sans-serif; font-size: 13.3333px; font-style=
+: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-w=
+eight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-ind=
+ent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-=
+stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); text-decoration-thickness: initial; text-decoration-style: initial; text=
+-decoration-color: initial;">The West Bengal Joint Entrance Examinations Bo=
+ard is no where&nbsp; concerned with the complaint.<br></div><div style=3D"=
+color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; fo=
+nt-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: =
+2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; wo=
+rd-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; backg=
+round-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-d=
+ecoration-style: initial; text-decoration-color: initial;"><br></div><div s=
+tyle=3D"color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-s=
+erif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; o=
+rphans: 2; text-align: start; text-indent: 0px; text-transform: none; widow=
+s: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: norma=
+l; background-color: rgb(255, 255, 255); text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;">With reg=
+ards<br></div><div style=3D"color: rgb(0, 0, 0); font-family: Verdana, Aria=
+l, Helvetica, sans-serif; font-size: 13.3333px; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; lette=
+r-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-tr=
+ansform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); text-decoratio=
+n-thickness: initial; text-decoration-style: initial; text-decoration-color=
+: initial;">Registrar,WBJEEB&nbsp;<br></div><div><br></div><div class=3D"zm=
+ail_extra_hr" style=3D"border-top: 1px solid rgb(204, 204, 204); height: 0p=
+x; margin-top: 10px; margin-bottom: 10px; line-height: 0px;"><br></div><div=
+ class=3D"zmail_extra" data-zbluepencil-ignore=3D"true"><div><br></div><div=
+ id=3D"Zm-_Id_-Sgn1">---- On Fri, 06 Sep 2024 12:44:39 +0530 <b>Grievance R=
+edressal Cell HED WB &lt;grievance.hed.wb@gmail.com&gt;</b> wrote ---<br></=
+div><div><br></div><blockquote id=3D"blockquote_zmail" style=3D"margin: 0px=
+;"><div><div dir=3D"ltr"><br><br><div class=3D"x_113831324gmail_quote"><div=
+ class=3D"x_113831324gmail_attr" dir=3D"ltr">---------- Forwarded message -=
+--------<br>From: <b dir=3D"auto" class=3D"x_113831324gmail_sendername">Gri=
+evance Redressal Cell HED WB</b> <span dir=3D"auto">&lt;<a target=3D"_blank=
+" href=3D"mailto:grievance.hed.wb@gmail.com">grievance.hed.wb@gmail.com</a>=
+&gt;</span><br>Date: Fri, Sep 6, 2024 at 8:40=E2=80=AFAM<br>Subject: Compla=
+in receved in Boot<br>To:  &lt;<a target=3D"_blank" href=3D"mailto:jointsec=
+retarysed@gmail.com">jointsecretarysed@gmail.com</a>&gt;<br></div><br><br><=
+div dir=3D"ltr">Dear Sir Pls see<div><table style=3D"background-size: initi=
+al; margin-left: 6.75pt; margin-right: 6.75pt" align=3D"left" cellpadding=
+=3D"0" border=3D"0"><tbody><tr><td style=3D"border-width: 1pt 1pt 3pt; bord=
+er-color: rgb(221, 221, 221) windowtext windowtext; border-style: solid; pa=
+dding: 6pt 7.5pt" valign=3D"top"><p style=3D"margin: 0cm 0cm 15pt; line-hei=
+ght: normal;" class=3D""><span class=3D"font" style=3D"font-family:Calibri,=
+ &quot;sans-serif&quot;"><span class=3D"size" style=3D"font-size: 11pt; mar=
+gin: 0cm 0cm 15pt; line-height: normal;"><span class=3D"colour" style=3D"co=
+lor:rgb(33, 37, 41)"><span class=3D"font" style=3D"font-family:Arial, &quot=
+;sans-serif&quot;"><span class=3D"size" style=3D"font-size:12pt">Sudip
+  Bandyopadhyay</span></span></span></span></span><br></p></td><td style=3D=
+"border-width: 1pt 1pt 3pt; border-color: rgb(221, 221, 221) windowtext win=
+dowtext; border-style: solid; padding: 6pt 7.5pt" valign=3D"top"><p style=
+=3D"margin: 0cm 0cm 15pt; line-height: normal;" class=3D""><span class=3D"f=
+ont" style=3D"font-family:Calibri, &quot;sans-serif&quot;"><span class=3D"s=
+ize" style=3D"font-size: 11pt; margin: 0cm 0cm 15pt; line-height: normal;">=
+<span class=3D"colour" style=3D"color:rgb(33, 37, 41)"><span class=3D"font"=
+ style=3D"font-family:Arial, &quot;sans-serif&quot;"><span class=3D"size" s=
+tyle=3D"font-size:12pt">917908863385</span></span></span></span></span><br>=
+</p></td><td style=3D"border-width: 1pt 1pt 3pt; border-color: rgb(221, 221=
+, 221) windowtext windowtext; border-style: solid; padding: 6pt 7.5pt" vali=
+gn=3D"top"><p style=3D"margin: 0cm 0cm 15pt; line-height: normal;" class=3D=
+""><span class=3D"font" style=3D"font-family:Calibri, &quot;sans-serif&quot=
+;"><span class=3D"size" style=3D"font-size: 11pt; margin: 0cm 0cm 15pt; lin=
+e-height: normal;"><span class=3D"colour" style=3D"color:rgb(33, 37, 41)"><=
+span class=3D"font" style=3D"font-family:Arial, &quot;sans-serif&quot;"><sp=
+an class=3D"size" style=3D"font-size:12pt">Other
+  Cells/Institutions under Higher Education Department</span></span></span>=
+</span></span><br></p></td><td style=3D"border-width: 1pt 1pt 3pt; border-c=
+olor: rgb(221, 221, 221) windowtext windowtext; border-style: solid; paddin=
+g: 6pt 7.5pt" valign=3D"top"><p style=3D"margin: 0cm 0cm 15pt; line-height:=
+ normal;" class=3D""><span class=3D"font" style=3D"font-family:Calibri, &qu=
+ot;sans-serif&quot;"><span class=3D"size" style=3D"font-size: 11pt; margin:=
+ 0cm 0cm 15pt; line-height: normal;"><span class=3D"colour" style=3D"color:=
+rgb(33, 37, 41)"><span class=3D"font" style=3D"font-family:Arial, &quot;san=
+s-serif&quot;"><span class=3D"size" style=3D"font-size:12pt">Miscellaneous<=
+/span></span></span></span></span><br></p></td><td style=3D"border-width: 1=
+pt 1pt 3pt; border-color: rgb(221, 221, 221) windowtext windowtext; border-=
+style: solid; padding: 6pt 7.5pt" valign=3D"top"><p style=3D"margin: 0cm 0c=
+m 15pt; line-height: normal;" class=3D""><span class=3D"font" style=3D"font=
+-family:Calibri, &quot;sans-serif&quot;"><span class=3D"size" style=3D"font=
+-size: 11pt; margin: 0cm 0cm 15pt; line-height: normal;"><span class=3D"col=
+our" style=3D"color:rgb(33, 37, 41)"><span class=3D"font" style=3D"font-fam=
+ily:Arial, &quot;sans-serif&quot;"><span class=3D"size" style=3D"font-size:=
+12pt">There
+  are no hm still last 10 year,tic is so rude,he can't call meeting tme to =
+time</span></span></span></span></span><br></p></td></tr></tbody></table></=
+div></div></div></div></div></blockquote></div><div><br></div></div><br></b=
+ody></html>
+------=_Part_50122_419306259.1725626025591--
+

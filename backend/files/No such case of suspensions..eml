@@ -1,0 +1,87 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:a8c:b0:89:ead2:3829 with SMTP id dd12csp127132dlb;
+        Tue, 17 Sep 2024 03:20:44 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFNzp2wPObxfIY08hwYqLQB06kPTQBxVHDSjmjTtPQu0LSdnGTVSTeQDmdb0LkFsZcjONG4
+X-Received: by 2002:a05:6a20:a10d:b0:1cf:3624:adda with SMTP id adf61e73a8af0-1cf6f1606e9mr30101379637.4.1726568444567;
+        Tue, 17 Sep 2024 03:20:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726568444; cv=none;
+        d=google.com; s=arc-20240605;
+        b=j8KFa4odsTyg8T8l7DXP+08alr+7afUFqNRCntt5sgcA9V+JkvYLzn5YNpBJTIjtq6
+         cc2petC82n8xpKUutJBNblbF42Bz3YFMxEzGy3OuGvvcv3ItxFtXxx2H5CIvHAusXlsa
+         0Wiv2Z8yVZfm+KHJ44sF30PksL88mjdgkPayeHoAQl07MYfQ/qLGkyilsXYua/StApog
+         N4uV/fHk+SOanmCPQyx6eeZQHe291Nevm6cxU2GfujwW6FMxhdC6Ln9degZWaCV30zPy
+         1tfcZJtjjAHMzSVeZTMS/rQen3SF63f/yAu2oZA+l6XcCO4IJlzvhLfawkciA7WbSB4Q
+         r5rg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=from:subject:sender:to:mime-version:message-id:date:dkim-signature;
+        bh=wDx86OM0Ac9udmSpTdK1au8me2x/b5knYLaFdOEJqrc=;
+        fh=+ZLbLWn/l/XTvAiF6yPHBIX6F5VHQevdrYk5oe1V2hQ=;
+        b=hn684cXo8pVreeEuGj+cTWAC6z18MpVELo+13SpDyr2PUDSjmRrKW7S7uB4I/BjA7k
+         P8E7egQupKKLjIpWBzkl+x22Tio4AAYjv9vy6SwgZXVrINIYWuW8EawSapvOAJ0UzByV
+         v5ju6o8WJN1vO2L/u1xO8+OOdS6BQbWpfJrMqQJNmQilDmzbeCvPtbvebTn5V6mekMmU
+         EhDP95uiAS1QsJN+0fjf4Alyj2LKyaRy7t2giKdux4Cwr12Po2KAZGvk3HUep3zTXHvT
+         lhOZU5MzDNVOB4bPkTpCH2jVOXxiCuGd5dUesh7lBcSMggMIFefsnjYTW+eid+DaUJkg
+         Azug==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=IXMf9UCq;
+       spf=pass (google.com: domain of sambhunathcollege@rediffmail.com designates 114.31.224.158 as permitted sender) smtp.mailfrom=sambhunathcollege@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+Return-Path: <sambhunathcollege@rediffmail.com>
+Received: from f5mail-224-158.rediffmail.com (f5mail-224-158.rediffmail.com. [114.31.224.158])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-71944b79a09si8093780b3a.223.2024.09.17.03.20.43
+        for <grievance.hed.wb@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 17 Sep 2024 03:20:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sambhunathcollege@rediffmail.com designates 114.31.224.158 as permitted sender) client-ip=114.31.224.158;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rediffmail.com header.s=mail header.b=IXMf9UCq;
+       spf=pass (google.com: domain of sambhunathcollege@rediffmail.com designates 114.31.224.158 as permitted sender) smtp.mailfrom=sambhunathcollege@rediffmail.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=rediffmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rediffmail.com;
+	s=mail; t=1726568442;
+	bh=wDx86OM0Ac9udmSpTdK1au8me2x/b5knYLaFdOEJqrc=;
+	h=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;
+	b=IXMf9UCq6mnSH2rfpk4cbT764rmKDCjuYBlcBN4a2BSyXcwAVBjydKoTbw7V3doQr
+	 IGumpXajcTKB+MghXHou0jAYRmZOxMT1AFE2RMeiED2Fkk1oPxoGfGtqLbRQp4JurY
+	 5s3E40F4xW/yQEb7x4MUslds0SuVBh6H0WW+8vf4=
+Received: (qmail 2219 invoked by uid 510); 17 Sep 2024 10:20:42 -0000
+x-m-msg: asd54ad564ad7aa6sd5as6d5; a6da7d6asas6dasd77; 5dad65ad5sd;
+X-OUT-VDRT-SpamState: 0\LEGIT
+X-OUT-VDRT-SpamScore: 0
+X-OUT-VDRT-SpamCause: gggruggvucftvghtrhhoucdtuddrgeeftddrudekjedgvdekucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgfffkhffhpdfqfgfvnecuuegrihhlohhuthemuceftddtnecunecujfgurhepfffkggfvshfuhfgtsegrtddvredttdejnecuhfhrohhmpedfufetofeujfgfpfetvffjucevqffnnffgiffgfdcuoehsrghmsghhuhhnrghthhgtohhllhgvghgvsehrvgguihhffhhmrghilhdrtghomheqnecuggftrfgrthhtvghrnhepjeeludevjeegfeevhfdttdeftdekkeetjeejleffgfffgedvhedutefgtdejieeunecukfhppedutdeirdduleeirddutddrudeljeenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepmhhouggvpehsmhhtphhouhht
+X-Remote-IP: 106.196.10.197
+X-REDF-OSEN: sambhunathcollege@rediffmail.com
+Date: 17 Sep 2024 10:20:42 -0000
+Message-ID: <20240917102042.2214.qmail@f5mail-224-158.rediffmail.com>
+MIME-Version: 1.0
+To: <grievance.hed.wb@gmail.com>
+Received: from unknown 106.196.10.197 by rediffmail.com via HTTP; 17 Sep 2024 10:20:42 -0000
+X-Senderscore: D=0&S=0
+Sender: sambhunathcollege@rediffmail.com
+Subject: =?utf-8?B?Tm8gc3VjaCBjYXNlIG9mIHN1c3BlbnNpb25zLg==?=
+From: "SAMBHUNATH COLLEGE" <sambhunathcollege@rediffmail.com>
+Content-Type: multipart/alternative;
+	boundary="=_1d4abe463fdb5cce41aa71623674f43e"
+
+--=_1d4abe463fdb5cce41aa71623674f43e
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+No such case of suspensions.
+
+DR. NISITH NATH CHAKROVORTY
+Principal
+Sambhu Nath College
+Labpur, Birbhum 731303
+West Bengal, INDIA
+--=_1d4abe463fdb5cce41aa71623674f43e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+No such case of suspensions.<br><br>DR. NISITH NATH CHAKROVORTY<br />
+Principal<br />
+Sambhu Nath College<br />
+Labpur, Birbhum 731303<br />
+West Bengal, INDIA<br>
+--=_1d4abe463fdb5cce41aa71623674f43e--

@@ -1,0 +1,155 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:65a4:b0:89:ead2:3829 with SMTP id bd36csp1778492dlb;
+        Sun, 22 Sep 2024 05:21:28 -0700 (PDT)
+X-Received: by 2002:a05:6122:478c:b0:502:bcda:f3fb with SMTP id 71dfb90a1353d-503e045b3b2mr4595104e0c.6.1727007688364;
+        Sun, 22 Sep 2024 05:21:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1727007688; cv=none;
+        d=google.com; s=arc-20240605;
+        b=SCs6aXew7PLPWAQoOSM0Ivz1mgzkf9x5c9NoZQBLMuMQw9xcBrdIB02mrJbzrwfwud
+         mkkYohDqd2Zd47faB9AeoBgQvCYAJlhHfhs/JI4BNZjSVHGH5ChAgfHA5GmKeo9onVLe
+         3dH5gAkF3iVOZ+GXSTTG+qribWEgpF/+sAB6OPveBT3ejH+sH85lbeL0/dXp+HJDdloR
+         SPc3ErEIDAYl/Dc2x3+K76G8Ha3uDQJT99HKuy+gR6ZHVQHbNDnlcJIodxR2qIlAZIm+
+         eU0rWWEoeX5wvxX7yk0jFQ6Zu9NLl3qJkWkTLAX1eDvDQgo97HFgUHDz8FyOvPPicqU4
+         L93w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=gLn2FhKdDAUHxRgooRU7G0Didivp4PdiyuxgbuSbNvQ=;
+        fh=8rxaRdtQb49eb5Niw9j/WFl7P7AJUuIvMWdjgBgvt5s=;
+        b=M51hxFJr6Fv1S5pGm/hr60YlWON3TQOHYELzD+voHVRg/YvRyPrB612TcIvxKvdXKq
+         GSpiQska31fs/RnCLgFYb7Fr/f+1f1yiHA0jQY2Pinwide/Gv3SKhZcRCY+YAnyCjhqC
+         UoERC4QAOlk8YUVBidgi0kEN9p3GGRXWB+FAbtlwTFDiLOTMr7fuFch89kk7oIrR0r8F
+         fvbo7z0OlJw7OQQ6Ft5GrtA59WI9LNNKcTED2wObcsHSzpCcrcehFAFFWQZHmGCl21bR
+         FFvCtKE7R+9mgbLcpRKNWABwdRCTuSY7tYknRa01pfJn1tfxsP+54eLiadH7e8H58Wa9
+         e97w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=N5H2+hoB;
+       spf=pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=asisghoshjdpi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <asisghoshjdpi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 71dfb90a1353d-5039dbe5e6bsor647169e0c.1.2024.09.22.05.21.27
+        (Google Transport Security);
+        Sun, 22 Sep 2024 05:21:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=N5H2+hoB;
+       spf=pass (google.com: domain of asisghoshjdpi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=asisghoshjdpi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1727007687; x=1727612487; dara=google.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=gLn2FhKdDAUHxRgooRU7G0Didivp4PdiyuxgbuSbNvQ=;
+        b=N5H2+hoBPtZmG0+etV3ba0H7yj3/pjxh9l6wKCvEnBeugd2WN/xfkqKIrSTcYJJgEq
+         YvLcxjyzrbaCNT8n6tN5m9OGFhJSZ3IeIvP75v/5H8gGqkBZneoIG33dd87YlmuNuTS1
+         /1qYYJ0sYwdrwLI+OmEr+lCqHoDMCQpSd5M1Uvut3uRw6venKAjI4fbGSoPm2ah+JqPl
+         0wPmAr8c3zxxTNqstaZuNWr+3gGFpvQSZLg+V+sG8vjSRQrKoZsG3bUh67rWKXtT35Aq
+         by6SfHK1JPZUf5amnJNlPbcYDEHAsMYsw7CBgra40h6RtjfkfPLhamxRPXwvXI2hM8xf
+         IvPQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1727007687; x=1727612487;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=gLn2FhKdDAUHxRgooRU7G0Didivp4PdiyuxgbuSbNvQ=;
+        b=TfbTceAHru7nRHfVkXORcPBZCpD6wEp08U7JyPK5caj/dAQWMorKv1wOGTp9HfAflV
+         hwz3Ww72Upstrxfm6y4wrALI3dNGExgI9OGKcx3L88Jfj1DzoXnI2kQqM87Vl2QMbez/
+         0fj/yS7MOr68IljnD4j7ImT+dNRQIGXZ+NRF8IpXXdsVZ+iuNbsZIG4K1j5XFhJijOhS
+         w3CfcOK0naJvLzu2CNv419iU0dp13iIr9WQl9qPLIgLzxwrDZCpkzw4Osu3kizEqcC9/
+         gmBcgEU8YvRE5PTEt/Df5fFz0ShN+Hr/rPD+PwU0fbwvl9BAWIDs6WCbnORQ9Jt0jonq
+         rblg==
+X-Gm-Message-State: AOJu0YxLJLQTsyOy56Fmx1RJRpq8wAOSZxEDGOoVfL3izD/VthJ22+Mz
+	xDcsNF8fgACbKsnqXwzJP3X15svExEXnv+b2fWDpp8yp0+tgyaAxQNrLUvYjCUQI37VC8ZdYrbf
+	rlasnszYGtRVwSNrEjzy+Bh+n9AUuiw==
+X-Google-Smtp-Source: AGHT+IEkUaCQXCyTcMtis0Hk1vJBguEgQEQB8nzdEXuynyL91ZsUMc5utIL1wi+b09mU42zKoUk47skEi3Ot4fssGgo=
+X-Received: by 2002:a05:6102:3ecf:b0:493:31f9:d14e with SMTP id
+ ada2fe7eead31-49fc752cf74mr2340744137.2.1727007687470; Sun, 22 Sep 2024
+ 05:21:27 -0700 (PDT)
+MIME-Version: 1.0
+References: <CABwvL5kjAq=8aAjv=5m5dTvuhK_N-RNUAWRRfzWmxWQ5XytUYQ@mail.gmail.com>
+In-Reply-To: <CABwvL5kjAq=8aAjv=5m5dTvuhK_N-RNUAWRRfzWmxWQ5XytUYQ@mail.gmail.com>
+From: Asis Ghosh <asisghoshjdpi@gmail.com>
+Date: Sun, 22 Sep 2024 17:51:16 +0530
+Message-ID: <CALQBz5pwqiApN9M0wcxpV8pU5vnYddAYn_twbwBOfdLmEu=vJg@mail.gmail.com>
+Subject: Re: Excel format for suspension cases
+To: "Teacher in Charge St. Paul's C. M. College" <ticspcmc@gmail.com>
+Cc: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000bc77970622b44f4b"
+
+--000000000000bc77970622b44f4b
+Content-Type: text/plain; charset="UTF-8"
+
+Respected Sir,
+Please revisit the case of suspension and submit a report with update
+opinion of GB Resolution .As in the report ,the date mentioned is long ago
+about 5 years back ,so you are requested to submit the recent opinion of GB
+by 24 th September,2024 .
+Regarfs
+
+On Sat, 21 Sept, 2024, 3:38 pm Teacher in Charge St. Paul's C. M. College, <
+ticspcmc@gmail.com> wrote:
+
+> Respected Sir,
+>               Please find the attachments regarding suspended employee.
+> Sorry for inadvertent delay.
+> Regards
+> Dr. Sudipta Midday
+> *Teacher-in-Charge*
+> *St. Paul's Cathedral Mission College*
+>
+> *33/1 Raja Rammohan Roy Sarani,
+> <https://www.google.com/maps/search/33%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+009+West+Bengal,+India?entry=gmail&source=g>*
+>
+> *Kolkata 700 009
+> <https://www.google.com/maps/search/33%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+009+West+Bengal,+India?entry=gmail&source=g>*
+>
+> *West Bengal, India
+> <https://www.google.com/maps/search/33%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+009+West+Bengal,+India?entry=gmail&source=g>*
+>
+>
+
+--000000000000bc77970622b44f4b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Respected Sir,<br>
+Please revisit the case of suspension and submit a report with update opini=
+on of GB Resolution .As in the report ,the date mentioned is long ago about=
+ 5 years back ,so you are requested to submit the recent opinion of GB by 2=
+4 th September,2024 .<br>
+Regarfs</p>
+<br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Sat=
+, 21 Sept, 2024, 3:38 pm Teacher in Charge St. Paul&#39;s C. M. College, &l=
+t;<a href=3D"mailto:ticspcmc@gmail.com">ticspcmc@gmail.com</a>&gt; wrote:<b=
+r></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border=
+-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Respected Sir,<div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Please=C2=A0find the attac=
+hments regarding suspended employee. Sorry for inadvertent delay.<br clear=
+=3D"all"><div>Regards</div><div dir=3D"ltr" class=3D"gmail_signature" data-=
+smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><=
+div dir=3D"ltr"><div><div><div><div><div><div>Dr. Sudipta Midday</div><span=
+ style=3D"color:rgb(11,83,148)"><span style=3D"font-family:arial,helvetica,=
+sans-serif"><b>Teacher-in-Charge</b></span></span><br></div><span style=3D"=
+color:rgb(0,0,255)"><span style=3D"font-family:comic sans ms,sans-serif"><b=
+>St. Paul&#39;s Cathedral Mission College</b></span><br></span></div><span =
+style=3D"color:rgb(116,27,71)"><b><font size=3D"1"><span style=3D"font-fami=
+ly:arial narrow,sans-serif"><a href=3D"https://www.google.com/maps/search/3=
+3%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+009+West+Bengal,+India?entry=3D=
+gmail&amp;source=3Dg">33/1 Raja Rammohan Roy Sarani,</a><br></span></font><=
+/b></span></div><span style=3D"color:rgb(116,27,71)"><b><font size=3D"1"><s=
+pan style=3D"font-family:arial narrow,sans-serif"><a href=3D"https://www.go=
+ogle.com/maps/search/33%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+009+West+=
+Bengal,+India?entry=3Dgmail&amp;source=3Dg">Kolkata 700 009</a><br></span><=
+/font></b></span></div><span style=3D"color:rgb(116,27,71)"><b><font size=
+=3D"1"><span style=3D"font-family:arial narrow,sans-serif"><a href=3D"https=
+://www.google.com/maps/search/33%2F1+Raja+Rammohan+Roy+Sarani,+Kolkata+700+=
+009+West+Bengal,+India?entry=3Dgmail&amp;source=3Dg">West Bengal, India</a>=
+<br></span></font></b></span></div><br></div></div></div></div></div></div>=
+</div></div>
+</blockquote></div>
+
+--000000000000bc77970622b44f4b--

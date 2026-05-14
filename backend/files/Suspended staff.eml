@@ -1,0 +1,93 @@
+Delivered-To: grievance.hed.wb@gmail.com
+Received: by 2002:a05:7022:6997:b0:89:ead2:3829 with SMTP id cj23csp1363657dlb;
+        Mon, 16 Sep 2024 10:36:49 -0700 (PDT)
+X-Received: by 2002:a05:6e02:1c0c:b0:3a0:45ac:322b with SMTP id e9e14a558f8ab-3a08494af8fmr151084195ab.25.1726508209393;
+        Mon, 16 Sep 2024 10:36:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726508209; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TnPOzSMFmqlUkC+m0wcKxqE7bEF885JC+5CpY0aK37WQeC5DRynPTe93+6kyLZxjOr
+         Jn6y+dPhGsJldiUeJJSpnEu3sBfp1rw039Q5ILdHM07EuPoYzsDpw1hQDWQN4FNeOlzB
+         HN0guRKA4AdcZ0WpCAglz2eKMfR7qlJhnmBcjbHWOT6C2EmeCfue7EZTNqv/a8UVO3Bc
+         HV5K0x3JuID3/hjwV4s/GCXotV1yfS4Kg625aIRDq2j2dICwhLWbwibj5s+sj815B69M
+         mmlc9M/yhn5ThPiZEHuAUOqCPU5ja1w7T+osXx8ZcaWYJNTJAkEvux+RzhJO6XQ6dXlW
+         mvnA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=jSA77h699OG2AQIVeFG9SY1OiXYl6Z81hsdfwANE0lA=;
+        fh=5/dz+V9kxGh56UUv2cPaREevOr7zFUoeD/YnnJHlhSk=;
+        b=XTI67UuZOs2I+vRQfH6XS7niYy0gqxmtVmhej3xdst6u7D8BOvE2X0lBQTmDIQsVoW
+         ITLgp8urscAj/+VIpu2mVPypZCIsi0mAGCMeBuu0qr//DJCmWuFtV/pAdXrQX35kwj88
+         ffQWcfQgDQwXUfn+MzIMDoTDPis5ZwxN8UBOdZ63roc2Q0oVzOeiaN1+8upZr3cPqO/x
+         07J1raZybvdACf4IWpKRStoSVS+hmUPwPk8FjZH6bVI4UOQ9H1SP88AZ4wJ+NzDwS18f
+         CUSL1E8PD4rTF2AVSPkJeQxAnHtYL9pQo1cx3zeAZ9LSSatvFFP64bWftZA65xF0fNnE
+         kUrQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="AFRwU/cS";
+       spf=pass (google.com: domain of tapas.munshi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=tapas.munshi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <tapas.munshi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e9e14a558f8ab-3a092e1d282sor9875165ab.9.2024.09.16.10.36.49
+        for <grievance.hed.wb@gmail.com>
+        (Google Transport Security);
+        Mon, 16 Sep 2024 10:36:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of tapas.munshi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="AFRwU/cS";
+       spf=pass (google.com: domain of tapas.munshi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=tapas.munshi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726508209; x=1727113009; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=jSA77h699OG2AQIVeFG9SY1OiXYl6Z81hsdfwANE0lA=;
+        b=AFRwU/cSKfc+Q3RP7z9lBZW8r0UmpuJyWXBbnbH4nc2dfZJ1a3CtcQxPSButCylStT
+         jtt5FojRwnsftE3uzkKEVi3plbjXl3dJscunNQbbKg3F3cysgFSQaxRK6D5fmblZuvpx
+         JoqX1MUa69/ED6dtax5Ld3y//OC4dNDNLoWfE/L8l49X2XQS08N6FZTDcfpdCWrZFpLO
+         yQIU+MngzLOv7zg7NwpnruwM16tNY6bo8X3v2G49mYpgzbnq89DwG/eaMsCbdtf3RVK8
+         9yVaJLdq+yXTTkOb3M4nVBBSkIOCN6tgI8WXJEBQz1AwTYeTf3U/UrpbwgmRz+ILNRUW
+         Lo0A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726508209; x=1727113009;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=jSA77h699OG2AQIVeFG9SY1OiXYl6Z81hsdfwANE0lA=;
+        b=COuC2SEWc4aAsAQNXj6P0QUKnf3hji0PcdCgYcz2bOdY6aCU5NzAyDOSpcGgwsdd8/
+         lFu/gVO6rW7ET9N8L/fTtktBYAQZl86Z0QImoj0FQtsQwXVEYmubXJqdauhJfT89oki2
+         sc1Q5RDJbPza2qZwKv3yvD3AF036VfVJCWpgVy/IXPxiTWxzmFdoLODu7Xr9fuKPgn69
+         6nWM7mJ2FrDb+o1lbu2YyVPVGGQ1TiGQXEmZyzqKBARKf/o7ROreCpUqY9RjwrfqwcOQ
+         JsR2z1OUQe2gPDQmfhd+W2BztWVUpH4BltxjTJRgFs6aYyd4FBP9LwHIkDsVpeBNNqzn
+         6z9w==
+X-Gm-Message-State: AOJu0YyRn8qX+Bn9Ujn2S8sTfBMDc4Ta0Idt3GhKxwAlmZd2B3acECRx
+	By6iCq/r6gGlEDBou/TCuwIbWeXw7zBlkaPqwZUB2l/l4doKvG4tiyyhTUpb8phENdJs9Dt5Swo
+	2G39wKWxUwl+wPR6Hy50PFfMiqBa6LQ==
+X-Google-Smtp-Source: AGHT+IHXqlVYktU6+wgeWjF8VLv1ohVlwZn7YOtYOqCJnHfpEynd4fT/FkuGQvC3LrMhGbqPNFG+LcsyU32VCjg4R2o=
+X-Received: by 2002:a05:6e02:5af:b0:3a0:8ca0:3bb with SMTP id
+ e9e14a558f8ab-3a08ca00461mr73116155ab.11.1726508208697; Mon, 16 Sep 2024
+ 10:36:48 -0700 (PDT)
+MIME-Version: 1.0
+From: Tapas Kumar Munshi <tapas.munshi@gmail.com>
+Date: Mon, 16 Sep 2024 23:06:37 +0530
+Message-ID: <CALPKxCvkCt_vVYi99hN-SQQ4yBEGOjGPkzOcUFMWLW2p4Q_21A@mail.gmail.com>
+Subject: Suspended staff
+To: grievance.hed.wb@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000007b3bc806224004f6"
+
+--0000000000007b3bc806224004f6
+Content-Type: text/plain; charset="UTF-8"
+
+Sir,I like to let you know that no staff or  officials are under any
+suspension from our  mahavidyalaya during the period 200hv to2024
+
+--0000000000007b3bc806224004f6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sir,I like to let you know that no staff or=C2=A0 officia=
+ls are under any suspension from our=C2=A0 mahavidyalaya during the period =
+200hv to2024</div>
+
+--0000000000007b3bc806224004f6--
